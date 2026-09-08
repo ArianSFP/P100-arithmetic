@@ -1,0 +1,32 @@
+META tokens=64 n=512 k=2048 experts=16 seed=3911 pattern=0 sm=56 candidate_grid=5
+CHECK aw_t64_m64_sk2 outputs=524288 samples=256 bad=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK q4_r2_w4_n64_m7 outputs=524288 samples=256 bad=0 nonfinite=0 rel_l2=0.0005992153844 maxabs=0.05245113373
+TIME aw_t64_m64_sk2 prep=0 rep=0 us=597.378662
+TIME aw_t64_m64_sk2 prep=1 rep=0 us=596.639954
+TIME q4_r2_w4_n64_m7 prep=0 rep=0 us=322.447998
+TIME q4_r2_w4_n64_m7 prep=1 rep=0 us=349.242645
+TIME q4_r2_w4_n64_m7 prep=0 rep=1 us=321.930664
+TIME q4_r2_w4_n64_m7 prep=1 rep=1 us=348.813354
+TIME aw_t64_m64_sk2 prep=0 rep=1 us=596.370667
+TIME aw_t64_m64_sk2 prep=1 rep=1 us=593.733337
+TIME aw_t64_m64_sk2 prep=0 rep=2 us=587.365356
+TIME aw_t64_m64_sk2 prep=1 rep=2 us=586.989319
+TIME q4_r2_w4_n64_m7 prep=0 rep=2 us=317.109344
+TIME q4_r2_w4_n64_m7 prep=1 rep=2 us=343.805328
+TIME q4_r2_w4_n64_m7 prep=0 rep=3 us=316.936005
+TIME q4_r2_w4_n64_m7 prep=1 rep=3 us=343.640015
+TIME aw_t64_m64_sk2 prep=0 rep=3 us=588.034668
+TIME aw_t64_m64_sk2 prep=1 rep=3 us=587.002686
+TIME aw_t64_m64_sk2 prep=0 rep=4 us=566.829285
+TIME aw_t64_m64_sk2 prep=1 rep=4 us=544.880005
+TIME q4_r2_w4_n64_m7 prep=0 rep=4 us=292.850677
+TIME q4_r2_w4_n64_m7 prep=1 rep=4 us=319.909332
+TIME q4_r2_w4_n64_m7 prep=0 rep=5 us=293.029327
+TIME q4_r2_w4_n64_m7 prep=1 rep=5 us=319.720001
+TIME aw_t64_m64_sk2 prep=0 rep=5 us=544.776001
+TIME aw_t64_m64_sk2 prep=1 rep=5 us=544.450684
+TIME aw_t64_m64_sk2 prep=0 rep=6 us=544.65332
+TIME aw_t64_m64_sk2 prep=1 rep=6 us=544.695984
+TIME q4_r2_w4_n64_m7 prep=0 rep=6 us=293.399994
+TIME q4_r2_w4_n64_m7 prep=1 rep=6 us=320.063995
+PASS

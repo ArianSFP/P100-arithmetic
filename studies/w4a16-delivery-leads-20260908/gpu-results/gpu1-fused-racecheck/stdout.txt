@@ -1,0 +1,22 @@
+========= COMPUTE-SANITIZER
+VECTOR_PREP 0 GRID 0
+SCRATCH tiled_half_bytes=1572864 tiled_float_bytes=3145728 weight_layout_bytes=442368
+META tokens=65 n=128 k=96 experts=64 seed=3911 pattern=0 sm=56 candidate_grid=2 warmup_ms=0 f32_only=1
+CHECK aw_t64_f32 outputs=532480 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_t64_a16 outputs=532480 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_q4_a16 outputs=532480 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK q4_m64n64b128s1d1u8r outputs=532480 samples=256 bad=0 changed=131 nonfinite=0 rel_l2=9.406154553e-09 maxabs=7.629394531e-06
+CHECK delivery_fused_u32 outputs=532480 samples=256 bad=0 changed=131 nonfinite=0 rel_l2=9.406154553e-09 maxabs=7.629394531e-06
+WARMUP_COMPLETE
+TIME aw_t64_f32 prep=0 rep=0 us=462651.906
+TIME aw_t64_f32 prep=1 rep=0 us=431894.656
+TIME aw_t64_a16 prep=0 rep=0 us=421826.812
+TIME aw_t64_a16 prep=1 rep=0 us=476333.281
+TIME aw_q4_a16 prep=0 rep=0 us=469068.594
+TIME aw_q4_a16 prep=1 rep=0 us=467280.719
+TIME q4_m64n64b128s1d1u8r prep=0 rep=0 us=396966.219
+TIME q4_m64n64b128s1d1u8r prep=1 rep=0 us=422819.344
+TIME delivery_fused_u32 prep=0 rep=0 us=397250.531
+TIME delivery_fused_u32 prep=1 rep=0 us=398908.344
+PASS
+========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)

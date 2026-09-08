@@ -1,0 +1,232 @@
+[
+  {
+    "symbol": "_Z13prepare_tiledILb1EEvPKfPviii",
+    "registers": 38,
+    "shared_bytes": 4224
+  },
+  {
+    "symbol": "_Z13prepare_tiledILb0EEvPKfPviii",
+    "registers": 38,
+    "shared_bytes": 4224
+  },
+  {
+    "symbol": "_Z11q4_f32_tileILi64ELi64ELi128ELi1ELi1ELi8ELi0EEvPK6__halfPKhPfiiii",
+    "registers": 106,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z11q4_f32_tileILi64ELi64ELi128ELi1ELi1ELi8ELi1EEvPK6__halfPKhPfiiii",
+    "registers": 106,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z17aw_q4_service_m64ILb1ELb1ELb0ELi2ELb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi",
+    "registers": 96,
+    "shared_bytes": 32768
+  },
+  {
+    "symbol": "_Z17aw_q8_service_m64ILb1ELb1ELb0ELi2ELb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi",
+    "registers": 96,
+    "shared_bytes": 32768
+  },
+  {
+    "symbol": "_Z17aw_q8_service_m64ILb0ELb1ELb0ELi2ELb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi",
+    "registers": 93,
+    "shared_bytes": 32768
+  },
+  {
+    "symbol": "_Z13delivery_leadILi0ELi1ELi16ELi2EEvPKvPKhPfiiii",
+    "registers": 87,
+    "shared_bytes": 12288
+  },
+  {
+    "symbol": "_Z13delivery_leadILi0ELi1ELi8ELi2EEvPKvPKhPfiiii",
+    "registers": 88,
+    "shared_bytes": 12288
+  },
+  {
+    "symbol": "_Z13delivery_leadILi0ELi1ELi4ELi2EEvPKvPKhPfiiii",
+    "registers": 88,
+    "shared_bytes": 12288
+  },
+  {
+    "symbol": "_Z13delivery_leadILi3ELi1ELi8ELi1EEvPKvPKhPfiiii",
+    "registers": 105,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi3ELi1ELi4ELi1EEvPKvPKhPfiiii",
+    "registers": 104,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi2ELi1ELi8ELi1EEvPKvPKhPfiiii",
+    "registers": 112,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi2ELi1ELi4ELi1EEvPKvPKhPfiiii",
+    "registers": 112,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi1ELi1ELi8ELi1EEvPKvPKhPfiiii",
+    "registers": 105,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi1ELi1ELi4ELi1EEvPKvPKhPfiiii",
+    "registers": 104,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi0ELi1ELi8ELi1EEvPKvPKhPfiiii",
+    "registers": 107,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi0ELi1ELi4ELi1EEvPKvPKhPfiiii",
+    "registers": 107,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi3ELi1ELi4ELi0EEvPKvPKhPfiiii",
+    "registers": 104,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi2ELi1ELi4ELi0EEvPKvPKhPfiiii",
+    "registers": 112,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi1ELi1ELi4ELi0EEvPKvPKhPfiiii",
+    "registers": 104,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi0ELi1ELi4ELi0EEvPKvPKhPfiiii",
+    "registers": 110,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi3ELi1ELi32ELi0EEvPKvPKhPfiiii",
+    "registers": 102,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi3ELi1ELi16ELi0EEvPKvPKhPfiiii",
+    "registers": 102,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi3ELi1ELi8ELi0EEvPKvPKhPfiiii",
+    "registers": 104,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi3ELi0ELi32ELi0EEvPKvPKhPfiiii",
+    "registers": 100,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi3ELi0ELi16ELi0EEvPKvPKhPfiiii",
+    "registers": 100,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi3ELi0ELi8ELi0EEvPKvPKhPfiiii",
+    "registers": 102,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi2ELi1ELi32ELi0EEvPKvPKhPfiiii",
+    "registers": 109,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi2ELi1ELi16ELi0EEvPKvPKhPfiiii",
+    "registers": 109,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi2ELi1ELi8ELi0EEvPKvPKhPfiiii",
+    "registers": 112,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi2ELi0ELi32ELi0EEvPKvPKhPfiiii",
+    "registers": 108,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi2ELi0ELi16ELi0EEvPKvPKhPfiiii",
+    "registers": 108,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi2ELi0ELi8ELi0EEvPKvPKhPfiiii",
+    "registers": 111,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi1ELi1ELi32ELi0EEvPKvPKhPfiiii",
+    "registers": 102,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi1ELi1ELi16ELi0EEvPKvPKhPfiiii",
+    "registers": 102,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi1ELi1ELi8ELi0EEvPKvPKhPfiiii",
+    "registers": 104,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi1ELi0ELi32ELi0EEvPKvPKhPfiiii",
+    "registers": 100,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi1ELi0ELi16ELi0EEvPKvPKhPfiiii",
+    "registers": 100,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi1ELi0ELi8ELi0EEvPKvPKhPfiiii",
+    "registers": 102,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi0ELi1ELi32ELi0EEvPKvPKhPfiiii",
+    "registers": 107,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi0ELi1ELi16ELi0EEvPKvPKhPfiiii",
+    "registers": 107,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi0ELi1ELi8ELi0EEvPKvPKhPfiiii",
+    "registers": 110,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi0ELi0ELi32ELi0EEvPKvPKhPfiiii",
+    "registers": 104,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi0ELi0ELi16ELi0EEvPKvPKhPfiiii",
+    "registers": 103,
+    "shared_bytes": 16384
+  },
+  {
+    "symbol": "_Z13delivery_leadILi0ELi0ELi8ELi0EEvPKvPKhPfiiii",
+    "registers": 106,
+    "shared_bytes": 16384
+  }
+]

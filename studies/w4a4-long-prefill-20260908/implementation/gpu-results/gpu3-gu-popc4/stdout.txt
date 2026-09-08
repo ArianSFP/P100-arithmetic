@@ -1,0 +1,16 @@
+FIXTURE pattern=0 seed=3911 raw_to_half_changed=0
+PREP_CHECK activation_groups=1048576 weight_groups=2097152 bad=0
+CHECK current_q4_T64_A16 cpu_samples=16384 finite_outputs=8388608 rel_l2=0 quality_qualified=0
+CHECK popc4 cpu_samples=16384 finite_outputs=8388608 rel_l2=0.068207798 quality_qualified=0
+WORKLOAD counts=256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256 N=512 K=2048 baseline_grid=112 candidate_grid=280 weight_prep_every_pipeline=1 activation_prep_every_pipeline=1 plane_scratch_bytes=62914560
+TIME rep=0 config=current_q4_T64_A16 pipeline_us=7060.800293
+TIME rep=0 config=popc4 pipeline_us=10381.493164
+TIME rep=1 config=popc4 pipeline_us=10381.707031
+TIME rep=1 config=current_q4_T64_A16 pipeline_us=7020.810547
+TIME rep=2 config=current_q4_T64_A16 pipeline_us=7010.357422
+TIME rep=2 config=popc4 pipeline_us=10376.288086
+TIME rep=3 config=popc4 pipeline_us=10380.927734
+TIME rep=3 config=current_q4_T64_A16 pipeline_us=7035.701172
+TIME rep=4 config=current_q4_T64_A16 pipeline_us=7013.642578
+TIME rep=4 config=popc4 pipeline_us=10383.978516
+PASS

@@ -1,0 +1,178 @@
+META tokens=64 n=2048 k=512 experts=16 seed=3911 pattern=0 sm=56
+CHECK aw_t64_m64_sk2 outputs=2097152 samples=256 bad=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK q4_r0_w4_n64 outputs=2097152 samples=256 bad=0 nonfinite=0 rel_l2=6.05315192e-08 maxabs=2.288818359e-05
+CHECK q4_r1_w4_n64 outputs=2097152 samples=256 bad=0 nonfinite=0 rel_l2=0.0008299200936 maxabs=0.04773139954
+CHECK q4_r2_w4_n64 outputs=2097152 samples=256 bad=0 nonfinite=0 rel_l2=0.0006013245766 maxabs=0.04017353058
+CHECK q4_r4_w4_n64 outputs=2097152 samples=256 bad=0 nonfinite=0 rel_l2=0.0004412290712 maxabs=0.02244186401
+CHECK q4_r8_w4_n64 outputs=2097152 samples=256 bad=0 nonfinite=0 rel_l2=0.0003293620645 maxabs=0.01600646973
+CHECK q4_r0_w8_n64 outputs=2097152 samples=256 bad=0 nonfinite=0 rel_l2=6.05315192e-08 maxabs=2.288818359e-05
+CHECK q4_r1_w8_n64 outputs=2097152 samples=256 bad=0 nonfinite=0 rel_l2=0.0008299200936 maxabs=0.04773139954
+CHECK q4_r2_w8_n64 outputs=2097152 samples=256 bad=0 nonfinite=0 rel_l2=0.0006013245766 maxabs=0.04017353058
+CHECK q4_r4_w8_n64 outputs=2097152 samples=256 bad=0 nonfinite=0 rel_l2=0.0004412290712 maxabs=0.02244186401
+CHECK q4_r8_w8_n64 outputs=2097152 samples=256 bad=0 nonfinite=0 rel_l2=0.0003293620645 maxabs=0.01600646973
+CHECK q4_r0_w8_n128 outputs=2097152 samples=256 bad=0 nonfinite=0 rel_l2=6.05315192e-08 maxabs=2.288818359e-05
+CHECK q4_r1_w8_n128 outputs=2097152 samples=256 bad=0 nonfinite=0 rel_l2=0.0008299200936 maxabs=0.04773139954
+CHECK q4_r2_w8_n128 outputs=2097152 samples=256 bad=0 nonfinite=0 rel_l2=0.0006013245766 maxabs=0.04017353058
+CHECK q4_r4_w8_n128 outputs=2097152 samples=256 bad=0 nonfinite=0 rel_l2=0.0004412290712 maxabs=0.02244186401
+CHECK q4_r8_w8_n128 outputs=2097152 samples=256 bad=0 nonfinite=0 rel_l2=0.0003293620645 maxabs=0.01600646973
+TIME aw_t64_m64_sk2 prep=0 rep=0 us=512.627991
+TIME aw_t64_m64_sk2 prep=1 rep=0 us=511.636017
+TIME q4_r0_w4_n64 prep=0 rep=0 us=802.567993
+TIME q4_r0_w4_n64 prep=1 rep=0 us=806.432007
+TIME q4_r1_w4_n64 prep=0 rep=0 us=430.723999
+TIME q4_r1_w4_n64 prep=1 rep=0 us=436.576019
+TIME q4_r2_w4_n64 prep=0 rep=0 us=462.723999
+TIME q4_r2_w4_n64 prep=1 rep=0 us=468.540009
+TIME q4_r4_w4_n64 prep=0 rep=0 us=469.731995
+TIME q4_r4_w4_n64 prep=1 rep=0 us=476.044006
+TIME q4_r8_w4_n64 prep=0 rep=0 us=547.532043
+TIME q4_r8_w4_n64 prep=1 rep=0 us=555.528015
+TIME q4_r0_w8_n64 prep=0 rep=0 us=662.743958
+TIME q4_r0_w8_n64 prep=1 rep=0 us=666.708008
+TIME q4_r1_w8_n64 prep=0 rep=0 us=371.615997
+TIME q4_r1_w8_n64 prep=1 rep=0 us=379.456024
+TIME q4_r2_w8_n64 prep=0 rep=0 us=376.015991
+TIME q4_r2_w8_n64 prep=1 rep=0 us=383.511993
+TIME q4_r4_w8_n64 prep=0 rep=0 us=401.928009
+TIME q4_r4_w8_n64 prep=1 rep=0 us=407.843994
+TIME q4_r8_w8_n64 prep=0 rep=0 us=761.81604
+TIME q4_r8_w8_n64 prep=1 rep=0 us=775.268005
+TIME q4_r0_w8_n128 prep=0 rep=0 us=609.676025
+TIME q4_r0_w8_n128 prep=1 rep=0 us=615.975952
+TIME q4_r1_w8_n128 prep=0 rep=0 us=412.391998
+TIME q4_r1_w8_n128 prep=1 rep=0 us=417.019989
+TIME q4_r2_w8_n128 prep=0 rep=0 us=437.276001
+TIME q4_r2_w8_n128 prep=1 rep=0 us=443.40802
+TIME q4_r4_w8_n128 prep=0 rep=0 us=571.135986
+TIME q4_r4_w8_n128 prep=1 rep=0 us=576.679993
+TIME q4_r8_w8_n128 prep=0 rep=0 us=624.235962
+TIME q4_r8_w8_n128 prep=1 rep=0 us=587.235962
+TIME q4_r0_w4_n64 prep=0 rep=1 us=736.31604
+TIME q4_r0_w4_n64 prep=1 rep=1 us=751.204041
+TIME q4_r1_w4_n64 prep=0 rep=1 us=400.283997
+TIME q4_r1_w4_n64 prep=1 rep=1 us=405.068024
+TIME q4_r2_w4_n64 prep=0 rep=1 us=429.119995
+TIME q4_r2_w4_n64 prep=1 rep=1 us=435.227997
+TIME q4_r4_w4_n64 prep=0 rep=1 us=434.935974
+TIME q4_r4_w4_n64 prep=1 rep=1 us=442.660004
+TIME q4_r8_w4_n64 prep=0 rep=1 us=508.360016
+TIME q4_r8_w4_n64 prep=1 rep=1 us=514.76001
+TIME q4_r0_w8_n64 prep=0 rep=1 us=611.075989
+TIME q4_r0_w8_n64 prep=1 rep=1 us=615.783997
+TIME q4_r1_w8_n64 prep=0 rep=1 us=347.73999
+TIME q4_r1_w8_n64 prep=1 rep=1 us=353.656006
+TIME q4_r2_w8_n64 prep=0 rep=1 us=354.888
+TIME q4_r2_w8_n64 prep=1 rep=1 us=359.712006
+TIME q4_r4_w8_n64 prep=0 rep=1 us=372.059998
+TIME q4_r4_w8_n64 prep=1 rep=1 us=376.536011
+TIME q4_r8_w8_n64 prep=0 rep=1 us=706.488037
+TIME q4_r8_w8_n64 prep=1 rep=1 us=715.05603
+TIME q4_r0_w8_n128 prep=0 rep=1 us=561.97998
+TIME q4_r0_w8_n128 prep=1 rep=1 us=570.420044
+TIME q4_r1_w8_n128 prep=0 rep=1 us=380.127991
+TIME q4_r1_w8_n128 prep=1 rep=1 us=386.575989
+TIME q4_r2_w8_n128 prep=0 rep=1 us=403.587982
+TIME q4_r2_w8_n128 prep=1 rep=1 us=402.70401
+TIME q4_r4_w8_n128 prep=0 rep=1 us=519.16803
+TIME q4_r4_w8_n128 prep=1 rep=1 us=524.756042
+TIME q4_r8_w8_n128 prep=0 rep=1 us=566.003967
+TIME q4_r8_w8_n128 prep=1 rep=1 us=571.096008
+TIME aw_t64_m64_sk2 prep=0 rep=1 us=471.984009
+TIME aw_t64_m64_sk2 prep=1 rep=1 us=471.143982
+TIME q4_r1_w4_n64 prep=0 rep=2 us=394.468018
+TIME q4_r1_w4_n64 prep=1 rep=2 us=399.076019
+TIME q4_r2_w4_n64 prep=0 rep=2 us=421.888
+TIME q4_r2_w4_n64 prep=1 rep=2 us=428.256012
+TIME q4_r4_w4_n64 prep=0 rep=2 us=428.552002
+TIME q4_r4_w4_n64 prep=1 rep=2 us=433.664001
+TIME q4_r8_w4_n64 prep=0 rep=2 us=501.76001
+TIME q4_r8_w4_n64 prep=1 rep=2 us=504.440002
+TIME q4_r0_w8_n64 prep=0 rep=2 us=599.852051
+TIME q4_r0_w8_n64 prep=1 rep=2 us=607.460022
+TIME q4_r1_w8_n64 prep=0 rep=2 us=343.872009
+TIME q4_r1_w8_n64 prep=1 rep=2 us=349.599976
+TIME q4_r2_w8_n64 prep=0 rep=2 us=350.47998
+TIME q4_r2_w8_n64 prep=1 rep=2 us=356.64801
+TIME q4_r4_w8_n64 prep=0 rep=2 us=367.603973
+TIME q4_r4_w8_n64 prep=1 rep=2 us=371.432007
+TIME q4_r8_w8_n64 prep=0 rep=2 us=698.752014
+TIME q4_r8_w8_n64 prep=1 rep=2 us=710.156006
+TIME q4_r0_w8_n128 prep=0 rep=2 us=559.279968
+TIME q4_r0_w8_n128 prep=1 rep=2 us=563.788025
+TIME q4_r1_w8_n128 prep=0 rep=2 us=375.391998
+TIME q4_r1_w8_n128 prep=1 rep=2 us=382.884003
+TIME q4_r2_w8_n128 prep=0 rep=2 us=400.640015
+TIME q4_r2_w8_n128 prep=1 rep=2 us=406.179993
+TIME q4_r4_w8_n128 prep=0 rep=2 us=521.328003
+TIME q4_r4_w8_n128 prep=1 rep=2 us=526.911987
+TIME q4_r8_w8_n128 prep=0 rep=2 us=569.039978
+TIME q4_r8_w8_n128 prep=1 rep=2 us=574.796021
+TIME aw_t64_m64_sk2 prep=0 rep=2 us=476.680023
+TIME aw_t64_m64_sk2 prep=1 rep=2 us=478.395996
+TIME q4_r0_w4_n64 prep=0 rep=2 us=729.559998
+TIME q4_r0_w4_n64 prep=1 rep=2 us=742.968018
+TIME q4_r2_w4_n64 prep=0 rep=3 us=424.859985
+TIME q4_r2_w4_n64 prep=1 rep=3 us=431.416016
+TIME q4_r4_w4_n64 prep=0 rep=3 us=431.496002
+TIME q4_r4_w4_n64 prep=1 rep=3 us=436.26001
+TIME q4_r8_w4_n64 prep=0 rep=3 us=500.424042
+TIME q4_r8_w4_n64 prep=1 rep=3 us=503.231995
+TIME q4_r0_w8_n64 prep=0 rep=3 us=599.320007
+TIME q4_r0_w8_n64 prep=1 rep=3 us=603.768005
+TIME q4_r1_w8_n64 prep=0 rep=3 us=340.543976
+TIME q4_r1_w8_n64 prep=1 rep=3 us=346.835999
+TIME q4_r2_w8_n64 prep=0 rep=3 us=346.576019
+TIME q4_r2_w8_n64 prep=1 rep=3 us=352.18399
+TIME q4_r4_w8_n64 prep=0 rep=3 us=365.791992
+TIME q4_r4_w8_n64 prep=1 rep=3 us=370.896027
+TIME q4_r8_w8_n64 prep=0 rep=3 us=693.716003
+TIME q4_r8_w8_n64 prep=1 rep=3 us=702.971985
+TIME q4_r0_w8_n128 prep=0 rep=3 us=557.048035
+TIME q4_r0_w8_n128 prep=1 rep=3 us=561.124023
+TIME q4_r1_w8_n128 prep=0 rep=3 us=372.832001
+TIME q4_r1_w8_n128 prep=1 rep=3 us=378.791992
+TIME q4_r2_w8_n128 prep=0 rep=3 us=397.455994
+TIME q4_r2_w8_n128 prep=1 rep=3 us=402.236023
+TIME q4_r4_w8_n128 prep=0 rep=3 us=517.268005
+TIME q4_r4_w8_n128 prep=1 rep=3 us=523.555969
+TIME q4_r8_w8_n128 prep=0 rep=3 us=564.039978
+TIME q4_r8_w8_n128 prep=1 rep=3 us=569.35199
+TIME aw_t64_m64_sk2 prep=0 rep=3 us=466.540009
+TIME aw_t64_m64_sk2 prep=1 rep=3 us=467.195984
+TIME q4_r0_w4_n64 prep=0 rep=3 us=723.415955
+TIME q4_r0_w4_n64 prep=1 rep=3 us=730.040039
+TIME q4_r1_w4_n64 prep=0 rep=3 us=392.019989
+TIME q4_r1_w4_n64 prep=1 rep=3 us=398.056
+TIME q4_r4_w4_n64 prep=0 rep=4 us=426.923981
+TIME q4_r4_w4_n64 prep=1 rep=4 us=432.167999
+TIME q4_r8_w4_n64 prep=0 rep=4 us=496.888
+TIME q4_r8_w4_n64 prep=1 rep=4 us=504.643982
+TIME q4_r0_w8_n64 prep=0 rep=4 us=599.731995
+TIME q4_r0_w8_n64 prep=1 rep=4 us=604.635986
+TIME q4_r1_w8_n64 prep=0 rep=4 us=339.52002
+TIME q4_r1_w8_n64 prep=1 rep=4 us=346.244019
+TIME q4_r2_w8_n64 prep=0 rep=4 us=345.85199
+TIME q4_r2_w8_n64 prep=1 rep=4 us=352.53598
+TIME q4_r4_w8_n64 prep=0 rep=4 us=364.783997
+TIME q4_r4_w8_n64 prep=1 rep=4 us=370.860016
+TIME q4_r8_w8_n64 prep=0 rep=4 us=693.599976
+TIME q4_r8_w8_n64 prep=1 rep=4 us=702.911987
+TIME q4_r0_w8_n128 prep=0 rep=4 us=553.708008
+TIME q4_r0_w8_n128 prep=1 rep=4 us=557.619995
+TIME q4_r1_w8_n128 prep=0 rep=4 us=372.76001
+TIME q4_r1_w8_n128 prep=1 rep=4 us=378.18399
+TIME q4_r2_w8_n128 prep=0 rep=4 us=394.343994
+TIME q4_r2_w8_n128 prep=1 rep=4 us=402.772003
+TIME q4_r4_w8_n128 prep=0 rep=4 us=517.195984
+TIME q4_r4_w8_n128 prep=1 rep=4 us=523.403992
+TIME q4_r8_w8_n128 prep=0 rep=4 us=564.276001
+TIME q4_r8_w8_n128 prep=1 rep=4 us=569.208008
+TIME aw_t64_m64_sk2 prep=0 rep=4 us=470.631989
+TIME aw_t64_m64_sk2 prep=1 rep=4 us=470.440002
+TIME q4_r0_w4_n64 prep=0 rep=4 us=723.276001
+TIME q4_r0_w4_n64 prep=1 rep=4 us=729.564026
+TIME q4_r1_w4_n64 prep=0 rep=4 us=392.507996
+TIME q4_r1_w4_n64 prep=1 rep=4 us=398.388
+TIME q4_r2_w4_n64 prep=0 rep=4 us=421.743988
+TIME q4_r2_w4_n64 prep=1 rep=4 us=426.003998
+PASS

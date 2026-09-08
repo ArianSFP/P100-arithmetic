@@ -1,0 +1,9 @@
+{
+  "token": "w4a16-long-prefill-20260908-gpu3-r5",
+  "health": {
+    "gpu": "GPU-4868830a-c1cf-90bd-8018-2360c55293b8, Tesla P100-PCIE-16GB, 5, 0, 29, 405, 0",
+    "apps": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1121899, /usr/bin/gnome-text-editor\n"
+  },
+  "ended": 1788905706.638406,
+  "stopped": true
+}

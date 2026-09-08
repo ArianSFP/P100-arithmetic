@@ -1,0 +1,11 @@
+{
+  "token": "w4a16-delivery-leads-20260908-gpu01",
+  "health": {
+    "gpus": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, Tesla P100-PCIE-16GB, 23, 0, 29, 405, 0\nGPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, Tesla P100-PCIE-16GB, 5, 0, 32, 405, 0",
+    "apps": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1121899, /usr/bin/gnome-text-editor\nGPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 1252262, /home/arian/llama.cpp-qwen38-dense-aw/build-prefill150/bin/llama-server\nGPU-4868830a-c1cf-90bd-8018-2360c55293b8, 1252262, /home/arian/llama.cpp-qwen38-dense-aw/build-prefill150/bin/llama-server\n",
+    "selected": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+    "desktop_exception": "GPU0 existing PID1121899 only"
+  },
+  "ended": 1788897831.528725,
+  "stopped": false
+}

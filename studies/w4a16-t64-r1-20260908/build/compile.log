@@ -1,0 +1,187 @@
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi4ELi8ELi128ELi7EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi4ELi8ELi128ELi7EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 177 registers, used 1 barriers, 25088 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 78.251 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi1ELi8ELi128ELi7EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi1ELi8ELi128ELi7EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 121 registers, used 1 barriers, 25088 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 56.563 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi2ELi8ELi128ELi15EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi2ELi8ELi128ELi15EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 128 registers, used 1 barriers, 25088 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 60.493 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi2ELi8ELi128ELi7EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi2ELi8ELi128ELi7EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 128 registers, used 1 barriers, 25088 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 60.350 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi2ELi8ELi128ELi3EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi2ELi8ELi128ELi3EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 128 registers, used 1 barriers, 25088 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 62.677 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi4ELi4ELi128ELi7EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi4ELi4ELi128ELi7EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 161 registers, used 1 barriers, 20992 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 85.144 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi1ELi4ELi128ELi7EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi1ELi4ELi128ELi7EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 125 registers, used 1 barriers, 20992 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 63.933 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi2ELi4ELi128ELi15EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi2ELi4ELi128ELi15EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 149 registers, used 1 barriers, 20992 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 70.817 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi2ELi4ELi128ELi7EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi2ELi4ELi128ELi7EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 149 registers, used 1 barriers, 20992 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 71.834 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi2ELi4ELi128ELi3EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi2ELi4ELi128ELi3EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 158 registers, used 1 barriers, 20992 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 76.036 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi4ELi8ELi64ELi7EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi4ELi8ELi64ELi7EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 124 registers, used 1 barriers, 16640 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 41.462 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi1ELi8ELi64ELi7EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi1ELi8ELi64ELi7EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 80 registers, used 1 barriers, 16640 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 35.628 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi2ELi8ELi64ELi15EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi2ELi8ELi64ELi15EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 93 registers, used 1 barriers, 16640 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 37.313 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi2ELi8ELi64ELi7EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi2ELi8ELi64ELi7EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 93 registers, used 1 barriers, 16640 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 37.887 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi2ELi8ELi64ELi3EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi2ELi8ELi64ELi3EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 93 registers, used 1 barriers, 16640 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 38.072 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi4ELi4ELi64ELi7EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi4ELi4ELi64ELi7EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 96 registers, used 1 barriers, 12544 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 50.812 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi1ELi4ELi64ELi7EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi1ELi4ELi64ELi7EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 91 registers, used 1 barriers, 12544 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 38.836 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi2ELi4ELi64ELi15EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi2ELi4ELi64ELi15EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 96 registers, used 1 barriers, 12544 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 41.371 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi2ELi4ELi64ELi7EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi2ELi4ELi64ELi7EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 96 registers, used 1 barriers, 12544 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 41.404 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi2ELi4ELi64ELi3EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi2ELi4ELi64ELi3EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 96 registers, used 1 barriers, 12544 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 46.803 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi8ELi8ELi128ELi0EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi8ELi8ELi128ELi0EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 231 registers, used 1 barriers, 41472 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 170.287 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi4ELi8ELi128ELi0EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi4ELi8ELi128ELi0EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 187 registers, used 1 barriers, 41472 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 126.473 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi2ELi8ELi128ELi0EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi2ELi8ELi128ELi0EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 143 registers, used 1 barriers, 41472 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 110.991 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi1ELi8ELi128ELi0EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi1ELi8ELi128ELi0EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 120 registers, used 1 barriers, 41472 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 99.641 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi0ELi8ELi128ELi0EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi0ELi8ELi128ELi0EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 132 registers, used 1 barriers, 41472 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 117.387 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi8ELi8ELi64ELi0EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi8ELi8ELi64ELi0EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 141 registers, used 1 barriers, 24832 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 87.897 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi4ELi8ELi64ELi0EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi4ELi8ELi64ELi0EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 118 registers, used 1 barriers, 24832 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 73.881 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi2ELi8ELi64ELi0EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi2ELi8ELi64ELi0EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 102 registers, used 1 barriers, 24832 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 66.380 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi1ELi8ELi64ELi0EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi1ELi8ELi64ELi0EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 94 registers, used 1 barriers, 24832 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 62.311 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi0ELi8ELi64ELi0EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi0ELi8ELi64ELi0EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 95 registers, used 1 barriers, 24832 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 72.036 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi8ELi4ELi64ELi0EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi8ELi4ELi64ELi0EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 150 registers, used 1 barriers, 20736 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 92.290 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi4ELi4ELi64ELi0EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi4ELi4ELi64ELi0EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 124 registers, used 1 barriers, 20736 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 80.561 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi2ELi4ELi64ELi0EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi2ELi4ELi64ELi0EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 109 registers, used 1 barriers, 20736 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 72.717 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi1ELi4ELi64ELi0EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi1ELi4ELi64ELi0EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 95 registers, used 1 barriers, 20736 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 67.553 ms
+ptxas info    : Compiling entry function '_Z14q4_token_pairsILi0ELi4ELi64ELi0EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z14q4_token_pairsILi0ELi4ELi64ELi0EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 96 registers, used 1 barriers, 20736 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 77.683 ms
+ptxas info    : Compiling entry function '_Z17aw_q8_service_m64ILb0ELb1ELb0ELi2ELb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z17aw_q8_service_m64ILb0ELb1ELb0ELi2ELb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 93 registers, used 1 barriers, 32768 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 53.500 ms
+ptxas info    : Compiling entry function '_Z11prepare_a16PKfP6__halfm' for 'sm_60'
+ptxas info    : Function properties for _Z11prepare_a16PKfP6__halfm
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 10 registers, used 0 barriers, 344 bytes cmem[0]
+ptxas info    : Compile time = 1.504 ms

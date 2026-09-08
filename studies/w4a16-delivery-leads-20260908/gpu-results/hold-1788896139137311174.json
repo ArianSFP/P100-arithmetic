@@ -1,0 +1,11 @@
+{
+  "token": "w4a16-delivery-leads-20260908-gpu01",
+  "health": {
+    "gpus": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, Tesla P100-PCIE-16GB, 23, 0, 29, 405, 0\nGPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, Tesla P100-PCIE-16GB, 5, 0, 28, 405, 0",
+    "apps": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1121899, /usr/bin/gnome-text-editor\n",
+    "selected": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+    "desktop_exception": "GPU0 existing PID1121899 only"
+  },
+  "pid": 1231373,
+  "started": 1788896139.1373222
+}

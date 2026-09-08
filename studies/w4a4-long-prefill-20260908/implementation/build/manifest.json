@@ -1,0 +1,28 @@
+{
+  "hashes": {
+    "/home/arian/P100-arithmetic/studies/qwen35-q4-t64-20260908/affinity-wave.cu": "fee528c1270b053d37d56a88018c185a71f9e418a1fa572a1b086a669c574a47",
+    "/home/arian/P100-arithmetic/studies/w4a4-long-prefill-20260908/implementation/build.py": "035ed0d4ce72d14de4315b6531672f8e4d02c02c00909f4b71ffc9cc02067882",
+    "/home/arian/P100-arithmetic/studies/w4a4-long-prefill-20260908/implementation/worker.cu": "a7fbe7b68b2d1a913076956c6a6b03f6b123b1beaa3382882de237e51307c783",
+    "/home/arian/P100-arithmetic/studies/w4a4-long-prefill-20260908/implementation/kernels.cuh": "b554a40f04ae3abb39e8e825c7bb7777165d6cecb2a8f0eef0239d9d706b8c88",
+    "/home/arian/P100-arithmetic/studies/w4a4-long-prefill-20260908/implementation/supervise.py": "00d8c765785d22b2c400edc8a61bd0a2e1f27cd732f48b73d03f6e9f552d72af",
+    "/home/arian/P100-arithmetic/studies/w4a16-t64-r1-20260908/supervise.py": "35b6d6e4c4a1611ddcdb9e1db92a831a88ae5d133828bbf269b084a08911e02c",
+    "/home/arian/P100-arithmetic/studies/w4a4-long-prefill-20260908/implementation/build/current.inc": "119a4b51c6ab0a96f297b61089f2553e76b51d60194bdc6067477cbc95c52b31",
+    "/home/arian/P100-arithmetic/studies/w4a4-long-prefill-20260908/implementation/build/worker": "aa7ea66963e2e977e5f19cd9e57f7306ad24f34cc9a33c20d8e3dbd2334e040e"
+  },
+  "command": [
+    "/usr/local/cuda-12.8/bin/nvcc",
+    "-ccbin",
+    "/usr/bin/g++-14",
+    "-O3",
+    "-std=c++17",
+    "-arch=sm_60",
+    "-lineinfo",
+    "-Xptxas=-v",
+    "-I/home/arian/P100-arithmetic/studies/w4a4-long-prefill-20260908/implementation/build",
+    "/home/arian/P100-arithmetic/studies/w4a4-long-prefill-20260908/implementation/worker.cu",
+    "-o",
+    "/home/arian/P100-arithmetic/studies/w4a4-long-prefill-20260908/implementation/build/worker"
+  ],
+  "compiled": true,
+  "gpu_tested": false
+}

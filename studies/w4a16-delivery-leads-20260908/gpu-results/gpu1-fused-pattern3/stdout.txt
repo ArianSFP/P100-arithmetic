@@ -1,0 +1,20 @@
+VECTOR_PREP 0 GRID 0
+SCRATCH tiled_half_bytes=524288 tiled_float_bytes=1048576 weight_layout_bytes=294912
+META tokens=33 n=128 k=2048 experts=2 seed=3911 pattern=3 sm=56 candidate_grid=2 warmup_ms=0 f32_only=1
+CHECK aw_t64_f32 outputs=8448 samples=8448 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_t64_a16 outputs=8448 samples=8448 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_q4_a16 outputs=8448 samples=8448 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK q4_m64n64b128s1d1u8r outputs=8448 samples=8448 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK delivery_fused_u32 outputs=8448 samples=8448 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+WARMUP_COMPLETE
+TIME aw_t64_f32 prep=0 rep=0 us=212.608002
+TIME aw_t64_f32 prep=1 rep=0 us=211.584
+TIME aw_t64_a16 prep=0 rep=0 us=211.584
+TIME aw_t64_a16 prep=1 rep=0 us=215.488007
+TIME aw_q4_a16 prep=0 rep=0 us=224.544006
+TIME aw_q4_a16 prep=1 rep=0 us=228.863998
+TIME q4_m64n64b128s1d1u8r prep=0 rep=0 us=204.703995
+TIME q4_m64n64b128s1d1u8r prep=1 rep=0 us=207.647995
+TIME delivery_fused_u32 prep=0 rep=0 us=135.360001
+TIME delivery_fused_u32 prep=1 rep=0 us=134.81601
+PASS

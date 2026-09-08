@@ -1,0 +1,80 @@
+VECTOR_PREP 0 GRID 0
+SCRATCH tiled_half_bytes=1048576 tiled_float_bytes=2097152 weight_layout_bytes=9437184
+META tokens=64 n=2048 k=512 experts=16 seed=3911 pattern=0 sm=56 candidate_grid=3 warmup_ms=2000 f32_only=1
+CHECK aw_t64_f32 outputs=2097152 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_t64_a16 outputs=2097152 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_q4_a16 outputs=2097152 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK q4_m64n64b128s1d1u8r outputs=2097152 samples=256 bad=0 changed=198674 nonfinite=0 rel_l2=1.338672014e-07 maxabs=3.433227539e-05
+CHECK delivery_fused_u32 outputs=2097152 samples=256 bad=0 changed=198674 nonfinite=0 rel_l2=1.338672014e-07 maxabs=3.433227539e-05
+WARMUP_COMPLETE
+TIME aw_t64_f32 prep=0 rep=0 us=470.576019
+TIME aw_t64_f32 prep=1 rep=0 us=467.509369
+TIME aw_t64_a16 prep=0 rep=0 us=467.031982
+TIME aw_t64_a16 prep=1 rep=0 us=475.975983
+TIME aw_q4_a16 prep=0 rep=0 us=488.458649
+TIME aw_q4_a16 prep=1 rep=0 us=491.797333
+TIME q4_m64n64b128s1d1u8r prep=0 rep=0 us=373.194672
+TIME q4_m64n64b128s1d1u8r prep=1 rep=0 us=381.962646
+TIME delivery_fused_u32 prep=0 rep=0 us=378.922638
+TIME delivery_fused_u32 prep=1 rep=0 us=380.138672
+TIME aw_t64_a16 prep=1 rep=1 us=488.776001
+TIME aw_t64_a16 prep=0 rep=1 us=469.637329
+TIME aw_q4_a16 prep=1 rep=1 us=493.762665
+TIME aw_q4_a16 prep=0 rep=1 us=483.128021
+TIME q4_m64n64b128s1d1u8r prep=1 rep=1 us=381.517334
+TIME q4_m64n64b128s1d1u8r prep=0 rep=1 us=370.839996
+TIME delivery_fused_u32 prep=1 rep=1 us=378.328003
+TIME delivery_fused_u32 prep=0 rep=1 us=378.858673
+TIME aw_t64_f32 prep=1 rep=1 us=467.880005
+TIME aw_t64_f32 prep=0 rep=1 us=467.65332
+TIME aw_q4_a16 prep=0 rep=2 us=491.130646
+TIME aw_q4_a16 prep=1 rep=2 us=494.573334
+TIME q4_m64n64b128s1d1u8r prep=0 rep=2 us=371.322662
+TIME q4_m64n64b128s1d1u8r prep=1 rep=2 us=381.328003
+TIME delivery_fused_u32 prep=0 rep=2 us=378.930664
+TIME delivery_fused_u32 prep=1 rep=2 us=378.023956
+TIME aw_t64_f32 prep=0 rep=2 us=464.517334
+TIME aw_t64_f32 prep=1 rep=2 us=468.546661
+TIME aw_t64_a16 prep=0 rep=2 us=466.834686
+TIME aw_t64_a16 prep=1 rep=2 us=477.125336
+TIME q4_m64n64b128s1d1u8r prep=1 rep=3 us=380.226654
+TIME q4_m64n64b128s1d1u8r prep=0 rep=3 us=370.077362
+TIME delivery_fused_u32 prep=1 rep=3 us=380.378693
+TIME delivery_fused_u32 prep=0 rep=3 us=378.23465
+TIME aw_t64_f32 prep=1 rep=3 us=470.503998
+TIME aw_t64_f32 prep=0 rep=3 us=468.349335
+TIME aw_t64_a16 prep=1 rep=3 us=475.714691
+TIME aw_t64_a16 prep=0 rep=3 us=466.546661
+TIME aw_q4_a16 prep=1 rep=3 us=493.109344
+TIME aw_q4_a16 prep=0 rep=3 us=493.325348
+TIME delivery_fused_u32 prep=0 rep=4 us=379.418671
+TIME delivery_fused_u32 prep=1 rep=4 us=378.720001
+TIME aw_t64_f32 prep=0 rep=4 us=468.735992
+TIME aw_t64_f32 prep=1 rep=4 us=465.202637
+TIME aw_t64_a16 prep=0 rep=4 us=464.834625
+TIME aw_t64_a16 prep=1 rep=4 us=468.135986
+TIME aw_q4_a16 prep=0 rep=4 us=491.490692
+TIME aw_q4_a16 prep=1 rep=4 us=494.119995
+TIME q4_m64n64b128s1d1u8r prep=0 rep=4 us=373.213348
+TIME q4_m64n64b128s1d1u8r prep=1 rep=4 us=380.511993
+TIME aw_t64_f32 prep=1 rep=5 us=467.573334
+TIME aw_t64_f32 prep=0 rep=5 us=463.861328
+TIME aw_t64_a16 prep=1 rep=5 us=475.186676
+TIME aw_t64_a16 prep=0 rep=5 us=469.250702
+TIME aw_q4_a16 prep=1 rep=5 us=492.279999
+TIME aw_q4_a16 prep=0 rep=5 us=488.013336
+TIME q4_m64n64b128s1d1u8r prep=1 rep=5 us=379.501343
+TIME q4_m64n64b128s1d1u8r prep=0 rep=5 us=371.106659
+TIME delivery_fused_u32 prep=1 rep=5 us=378.682648
+TIME delivery_fused_u32 prep=0 rep=5 us=378.669342
+TIME aw_t64_a16 prep=0 rep=6 us=466.76535
+TIME aw_t64_a16 prep=1 rep=6 us=483.957306
+TIME aw_q4_a16 prep=0 rep=6 us=493.250641
+TIME aw_q4_a16 prep=1 rep=6 us=496.221344
+TIME q4_m64n64b128s1d1u8r prep=0 rep=6 us=371.133331
+TIME q4_m64n64b128s1d1u8r prep=1 rep=6 us=380.114655
+TIME delivery_fused_u32 prep=0 rep=6 us=378.895996
+TIME delivery_fused_u32 prep=1 rep=6 us=379.65332
+TIME aw_t64_f32 prep=0 rep=6 us=469.458649
+TIME aw_t64_f32 prep=1 rep=6 us=466.18399
+PASS

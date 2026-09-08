@@ -1,0 +1,12 @@
+========= COMPUTE-SANITIZER
+VECTOR_PREP 0 GRID 0
+SCRATCH tiled_half_bytes=262144 tiled_float_bytes=524288 weight_layout_bytes=1179648
+WEIGHT_SCRATCH bytes=4194304 prep1_charged_every_run=1
+META tokens=65 n=2048 k=512 experts=2 seed=3911 pattern=1 sm=56 candidate_grid=4 warmup_ms=0 f32_only=1
+SCALE_STRESS correctness_only=1 half_rounded_weights=1
+OCCUPANCY compact_packed_blocks=5 old_fused_blocks=5
+CHECK aw_current_q4 outputs=266240 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_special_q4 outputs=266240 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK tile256_direct_stage outputs=266240 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+PASS
+========= ERROR SUMMARY: 0 errors

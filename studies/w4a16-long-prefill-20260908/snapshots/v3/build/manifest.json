@@ -1,0 +1,41 @@
+{
+  "hashes": {
+    "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/build.py": "b8b3c05251b577438439da4e034c65ca8ac9f6e1ad352c87ce92a11d2cd40ead",
+    "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/leads.cuh": "4e4bd13ffccaee1d6e093f47e48eb78ea81850569fba5f7fa569738364c7b230",
+    "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/test_offline.py": "df5773131e8290b2d5acc34af6484682826ead3665464078476be3ea4b724758",
+    "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/supervise.py": "dec79802fd2f9b79b026dbfaf01bdcba7fecd2680f029dcba6d8694baefbfc24",
+    "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/build/worker.cu": "5e42d24a0d42613ca598fdf40ee302ae212b7aef7fffa69a440627f7ea3e8ef4",
+    "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/build/worker": "dbb424c4f966e3096a68685aa7f4ce3020bbb1d56cdd191e00419b3e7d1a5820",
+    "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/build/aw_control.inc": "bead04b9f2a7a99b4f24e27960d9bdf517fd7fc14a3133af332717c50c1a1cde",
+    "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/build/aw_q4_control.inc": "84e78b6c42e6e5edb6c604bec172c4051d5894a3a8c0c48a4b24bd3af482db4e",
+    "/home/arian/P100-arithmetic/studies/w4a16-t64-f32-20260908/worker.cu": "ea8cb464673f9218f9e2ca93e7fc603a9e00ebb0b2bed51c74f4b31408721d44",
+    "/home/arian/P100-arithmetic/studies/w4a16-t64-f32-20260908/kernels.cuh": "eb34a0cf4939f8635b5ca7b2dfc2e208b9fd89d880795573a2a94f70310407bc",
+    "/home/arian/P100-arithmetic/studies/w4a16-t64-f32-20260908/supervise.py": "d981fb76875a3e1f2941066b6fe0212eca714c7c9c59d424e5364e5ba5075c47",
+    "/home/arian/P100-arithmetic/studies/w4a16-t64-r1-20260908/supervise.py": "35b6d6e4c4a1611ddcdb9e1db92a831a88ae5d133828bbf269b084a08911e02c",
+    "/home/arian/P100-arithmetic/studies/qwen35-q4-t64-20260908/affinity-wave.cu": "fee528c1270b053d37d56a88018c185a71f9e418a1fa572a1b086a669c574a47",
+    "/home/arian/P100-arithmetic/studies/w4a16-long-prefill-20260908/build.py": "d4023368bb3d13aa76cb8d4f9d2100b5e520fa6eef710e680751315a38a75c0e",
+    "/home/arian/P100-arithmetic/studies/w4a16-long-prefill-20260908/staging.cuh": "54517037e609451dde20624a93c4cd71af8def40b9cf49e381c513424ab9880b",
+    "/home/arian/P100-arithmetic/studies/w4a16-long-prefill-20260908/supervise.py": "35612ac343f67ff7259fc38a485a4fc0b3247c8ba6ef0d8dbd5d1637ebdb3e94",
+    "/home/arian/P100-arithmetic/studies/w4a16-long-prefill-20260908/build/worker.cu": "afd4e1b499bcb94246f23ce509b0e486d0d78a08bd49a47a37b51e3042213a69",
+    "/home/arian/P100-arithmetic/studies/w4a16-long-prefill-20260908/build/current_control.inc": "812f4b1609fdf2551f186caa67da09b39c99f5dc7c316de2785234dd61dd0916",
+    "/home/arian/P100-arithmetic/studies/w4a16-long-prefill-20260908/build/aw_control.inc": "bead04b9f2a7a99b4f24e27960d9bdf517fd7fc14a3133af332717c50c1a1cde",
+    "/home/arian/P100-arithmetic/studies/w4a16-long-prefill-20260908/build/aw_q4_control.inc": "84e78b6c42e6e5edb6c604bec172c4051d5894a3a8c0c48a4b24bd3af482db4e",
+    "/home/arian/P100-arithmetic/studies/w4a16-long-prefill-20260908/build/worker": "08d07acdcfd8e5fd207cd9befa8c4c1a3292c8d7cd711d5b24c8ad3a49b07a65"
+  },
+  "command": [
+    "/usr/local/cuda-12.8/bin/nvcc",
+    "-ccbin",
+    "/usr/bin/g++-14",
+    "-O3",
+    "-std=c++17",
+    "-arch=sm_60",
+    "-lineinfo",
+    "-Xptxas=-v",
+    "-I/home/arian/P100-arithmetic/studies/w4a16-long-prefill-20260908/build",
+    "/home/arian/P100-arithmetic/studies/w4a16-long-prefill-20260908/build/worker.cu",
+    "-o",
+    "/home/arian/P100-arithmetic/studies/w4a16-long-prefill-20260908/build/worker"
+  ],
+  "control_source_sha256": "fee528c1270b053d37d56a88018c185a71f9e418a1fa572a1b086a669c574a47",
+  "scope": "Equal-M screening, not ragged/full-model acceptance"
+}

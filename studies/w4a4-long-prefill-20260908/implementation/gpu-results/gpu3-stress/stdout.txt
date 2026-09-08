@@ -1,0 +1,14 @@
+========= COMPUTE-SANITIZER
+FIXTURE pattern=1 seed=9117 raw_to_half_changed=1888
+PREP_CHECK activation_groups=294 weight_groups=768 bad=0
+CHECK current_q4_T64_A16 cpu_samples=12544 finite_outputs=12544 rel_l2=0 quality_qualified=0
+CHECK popc2 cpu_samples=12544 finite_outputs=12544 rel_l2=0.00019099578 quality_qualified=0
+CHECK popc4 cpu_samples=12544 finite_outputs=12544 rel_l2=0.00019099578 quality_qualified=0
+CHECK matched_A4_F32 cpu_samples=12544 finite_outputs=12544 rel_l2=0.00019099578 quality_qualified=0
+WORKLOAD counts=33,65 N=128 K=96 baseline_grid=112 candidate_grid=280 weight_prep_every_pipeline=1 activation_prep_every_pipeline=1 plane_scratch_bytes=21240
+TIME rep=0 config=current_q4_T64_A16 pipeline_us=1894.463989
+TIME rep=0 config=popc2 pipeline_us=552.992004
+TIME rep=0 config=popc4 pipeline_us=608.255981
+TIME rep=0 config=matched_A4_F32 pipeline_us=643.263977
+PASS
+========= ERROR SUMMARY: 0 errors

@@ -1,0 +1,34 @@
+========= COMPUTE-SANITIZER
+VECTOR_PREP 0 GRID 0
+RAW_WITNESS changed=33792 count=33792 accuracy_only=1
+SCRATCH tiled_half_bytes=131072 tiled_float_bytes=262144 weight_layout_bytes=1179648
+WEIGHT_SCRATCH bytes=4194304 prep1_charged_every_run=1
+META tokens=33 n=2048 k=512 experts=2 seed=3911 pattern=0 sm=56 candidate_grid=2 warmup_ms=0 f32_only=1
+OCCUPANCY compact_packed_blocks=5 old_fused_blocks=5
+CHECK aw_t64_f32 outputs=135168 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_t64_a16 outputs=135168 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_q4_a16 outputs=135168 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_current_q4 outputs=135168 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_special_q4 outputs=135168 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK q4_m64n64b128s1d1u8r outputs=135168 samples=256 bad=0 changed=111190 nonfinite=0 rel_l2=1.921870924e-07 maxabs=1.907348633e-05
+CHECK delivery_fused_u32 outputs=135168 samples=256 bad=0 changed=111190 nonfinite=0 rel_l2=1.921870924e-07 maxabs=1.907348633e-05
+CHECK compact_down_spec outputs=135168 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+WARMUP_COMPLETE
+TIME aw_t64_f32 prep=0 rep=0 us=3215.552
+TIME aw_t64_f32 prep=1 rep=0 us=3161.88794
+TIME aw_t64_a16 prep=0 rep=0 us=3074.23999
+TIME aw_t64_a16 prep=1 rep=0 us=3122.11206
+TIME aw_q4_a16 prep=0 rep=0 us=3358.23999
+TIME aw_q4_a16 prep=1 rep=0 us=3418.68799
+TIME aw_current_q4 prep=0 rep=0 us=8628.0957
+TIME aw_current_q4 prep=1 rep=0 us=8620.54492
+TIME aw_special_q4 prep=0 rep=0 us=8043.61621
+TIME aw_special_q4 prep=1 rep=0 us=7991.68018
+TIME q4_m64n64b128s1d1u8r prep=0 rep=0 us=3394.01611
+TIME q4_m64n64b128s1d1u8r prep=1 rep=0 us=3462.49609
+TIME delivery_fused_u32 prep=0 rep=0 us=4852.76807
+TIME delivery_fused_u32 prep=1 rep=0 us=4844.19189
+TIME compact_down_spec prep=0 rep=0 us=4782.62354
+TIME compact_down_spec prep=1 rep=0 us=4777.63232
+PASS
+========= ERROR SUMMARY: 0 errors

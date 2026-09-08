@@ -1,0 +1,32 @@
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_Z10plane_gemmILi4ELb0EEvPK8PlaneJobPK9PlaneTileiii' for 'sm_60'
+ptxas info    : Function properties for _Z10plane_gemmILi4ELb0EEvPK8PlaneJobPK9PlaneTileiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 255 registers, used 1 barriers, 1920 bytes smem, 348 bytes cmem[0]
+ptxas info    : Compile time = 328.003 ms
+ptxas info    : Compiling entry function '_Z10plane_gemmILi4ELb1EEvPK8PlaneJobPK9PlaneTileiii' for 'sm_60'
+ptxas info    : Function properties for _Z10plane_gemmILi4ELb1EEvPK8PlaneJobPK9PlaneTileiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 90 registers, used 1 barriers, 1920 bytes smem, 348 bytes cmem[0]
+ptxas info    : Compile time = 44.037 ms
+ptxas info    : Compiling entry function '_Z10plane_gemmILi2ELb1EEvPK8PlaneJobPK9PlaneTileiii' for 'sm_60'
+ptxas info    : Function properties for _Z10plane_gemmILi2ELb1EEvPK8PlaneJobPK9PlaneTileiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 64 registers, used 1 barriers, 1600 bytes smem, 348 bytes cmem[0]
+ptxas info    : Compile time = 23.531 ms
+ptxas info    : Compiling entry function '_Z36aw_q8_service_m64_n128_halfpipe_syncILb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z36aw_q8_service_m64_n128_halfpipe_syncILb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 128 registers, used 1 barriers, 32768 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 211.206 ms
+ptxas info    : Compiling entry function '_Z13weight_planesPK8PlaneJobiii' for 'sm_60'
+ptxas info    : Function properties for _Z13weight_planesPK8PlaneJobiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 31 registers, used 0 barriers, 340 bytes cmem[0]
+ptxas info    : Compile time = 5.550 ms
+ptxas info    : Compiling entry function '_Z15quantize_planesPK8PlaneJobii' for 'sm_60'
+ptxas info    : Function properties for _Z15quantize_planesPK8PlaneJobii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 26 registers, used 0 barriers, 336 bytes cmem[0], 16 bytes cmem[2]
+ptxas info    : Compile time = 8.216 ms

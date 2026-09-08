@@ -1,0 +1,223 @@
+{
+  "target": ">=1.5x workload-weighted T64 GEMM pipeline at 2k+ prompts; not achieved",
+  "dimensions": {
+    "M": "routed tokens for this expert/service job",
+    "N": "output channels",
+    "K": "reduction channels"
+  },
+  "projections": [
+    {
+      "name": "gate",
+      "N": 512,
+      "K": 2048
+    },
+    {
+      "name": "up",
+      "N": 512,
+      "K": 2048
+    },
+    {
+      "name": "down",
+      "N": 2048,
+      "K": 512
+    }
+  ],
+  "prompt_suite": [
+    2048,
+    4096,
+    8192
+  ],
+  "illustrative_unpartitioned_means": {
+    "2048": 64.0,
+    "4096": 128.0,
+    "8192": 256.0
+  },
+  "warnings": [
+    "Means are route conservation only, not measured M distributions or dispatch shapes.",
+    "Do not scale the 4096 histogram to synthesize real 2048/8192 routing.",
+    "panel2048 names output N panel width, not 2048 prompt tokens.",
+    "Historical counts lack token order, owner partition and current Q4 routes.",
+    "Useful FLOP shares are prioritization proxies, not measured GPU-time shares.",
+    "GGML_CUDA_MOE_HIST disables T64 eligibility; do not profile it as unchanged AW."
+  ],
+  "sources": [
+    {
+      "source": "/home/arian/llama.cpp-qwen36/results/qwen36-35b-moe-pp-20260721/round3-phase0/hist-code.txt",
+      "sha256": "daab9279fb0aa8f790e8b316fa7c834e87137826364c0e6ebf9f8a01e65ba750",
+      "provenance": "Historical Q8/fallback 4096-token routing; not current Q4/AW dispatch",
+      "layer_microbatch_observations": 2560,
+      "expert_observations": 655360,
+      "bins": [
+        {
+          "lower_exclusive": -1,
+          "upper_inclusive": 0,
+          "expert_observations": 12391,
+          "observation_percent": 1.890716552734375,
+          "routed_rows": 0,
+          "useful_gemm_work_percent": 0.0
+        },
+        {
+          "lower_exclusive": 0,
+          "upper_inclusive": 16,
+          "expert_observations": 116531,
+          "observation_percent": 17.781219482421875,
+          "routed_rows": 923919,
+          "useful_gemm_work_percent": 1.1013972759246826
+        },
+        {
+          "lower_exclusive": 16,
+          "upper_inclusive": 32,
+          "expert_observations": 86725,
+          "observation_percent": 13.233184814453125,
+          "routed_rows": 2097537,
+          "useful_gemm_work_percent": 2.5004589557647705
+        },
+        {
+          "lower_exclusive": 32,
+          "upper_inclusive": 64,
+          "expert_observations": 127301,
+          "observation_percent": 19.424591064453125,
+          "routed_rows": 6041065,
+          "useful_gemm_work_percent": 7.201510667800903
+        },
+        {
+          "lower_exclusive": 64,
+          "upper_inclusive": 128,
+          "expert_observations": 141985,
+          "observation_percent": 21.665191650390625,
+          "routed_rows": 13107167,
+          "useful_gemm_work_percent": 15.624960660934448
+        },
+        {
+          "lower_exclusive": 128,
+          "upper_inclusive": 256,
+          "expert_observations": 98988,
+          "observation_percent": 15.1043701171875,
+          "routed_rows": 17620069,
+          "useful_gemm_work_percent": 21.004759073257446
+        },
+        {
+          "lower_exclusive": 256,
+          "upper_inclusive": 512,
+          "expert_observations": 42779,
+          "observation_percent": 6.527557373046875,
+          "routed_rows": 14949996,
+          "useful_gemm_work_percent": 17.821784019470215
+        },
+        {
+          "lower_exclusive": 512,
+          "upper_inclusive": 1024,
+          "expert_observations": 18199,
+          "observation_percent": 2.776947021484375,
+          "routed_rows": 12933583,
+          "useful_gemm_work_percent": 15.41803240776062
+        },
+        {
+          "lower_exclusive": 1024,
+          "upper_inclusive": 2048,
+          "expert_observations": 8939,
+          "observation_percent": 1.363983154296875,
+          "routed_rows": 12497522,
+          "useful_gemm_work_percent": 14.898207187652588
+        },
+        {
+          "lower_exclusive": 2048,
+          "upper_inclusive": 4096,
+          "expert_observations": 1522,
+          "observation_percent": 0.23223876953125,
+          "routed_rows": 3715222,
+          "useful_gemm_work_percent": 4.428889751434326
+        }
+      ]
+    },
+    {
+      "source": "/home/arian/llama.cpp-qwen36/results/qwen36-35b-moe-pp-20260721/round3-phase0/hist-wiki.txt",
+      "sha256": "de3d272c1ca832a2a7622f176ce1c8bb7a261c826bfef2dc27e5df8c763cdd74",
+      "provenance": "Historical Q8/fallback 4096-token routing; not current Q4/AW dispatch",
+      "layer_microbatch_observations": 2560,
+      "expert_observations": 655360,
+      "bins": [
+        {
+          "lower_exclusive": -1,
+          "upper_inclusive": 0,
+          "expert_observations": 49225,
+          "observation_percent": 7.511138916015625,
+          "routed_rows": 0,
+          "useful_gemm_work_percent": 0.0
+        },
+        {
+          "lower_exclusive": 0,
+          "upper_inclusive": 16,
+          "expert_observations": 160852,
+          "observation_percent": 24.5440673828125,
+          "routed_rows": 1059524,
+          "useful_gemm_work_percent": 1.2630510330200195
+        },
+        {
+          "lower_exclusive": 16,
+          "upper_inclusive": 32,
+          "expert_observations": 73156,
+          "observation_percent": 11.1627197265625,
+          "routed_rows": 1752840,
+          "useful_gemm_work_percent": 2.089548110961914
+        },
+        {
+          "lower_exclusive": 32,
+          "upper_inclusive": 64,
+          "expert_observations": 90273,
+          "observation_percent": 13.774566650390625,
+          "routed_rows": 4245283,
+          "useful_gemm_work_percent": 5.060771703720093
+        },
+        {
+          "lower_exclusive": 64,
+          "upper_inclusive": 128,
+          "expert_observations": 97956,
+          "observation_percent": 14.9468994140625,
+          "routed_rows": 9107680,
+          "useful_gemm_work_percent": 10.857200622558594
+        },
+        {
+          "lower_exclusive": 128,
+          "upper_inclusive": 256,
+          "expert_observations": 95372,
+          "observation_percent": 14.5526123046875,
+          "routed_rows": 17484968,
+          "useful_gemm_work_percent": 20.843706130981445
+        },
+        {
+          "lower_exclusive": 256,
+          "upper_inclusive": 512,
+          "expert_observations": 58364,
+          "observation_percent": 8.9056396484375,
+          "routed_rows": 20459827,
+          "useful_gemm_work_percent": 24.39001441001892
+        },
+        {
+          "lower_exclusive": 512,
+          "upper_inclusive": 1024,
+          "expert_observations": 20714,
+          "observation_percent": 3.16070556640625,
+          "routed_rows": 14412839,
+          "useful_gemm_work_percent": 17.181442975997925
+        },
+        {
+          "lower_exclusive": 1024,
+          "upper_inclusive": 2048,
+          "expert_observations": 7697,
+          "observation_percent": 1.174468994140625,
+          "routed_rows": 10765060,
+          "useful_gemm_work_percent": 12.832951545715332
+        },
+        {
+          "lower_exclusive": 2048,
+          "upper_inclusive": 4096,
+          "expert_observations": 1751,
+          "observation_percent": 0.267181396484375,
+          "routed_rows": 4598059,
+          "useful_gemm_work_percent": 5.481313467025757
+        }
+      ]
+    }
+  ]
+}

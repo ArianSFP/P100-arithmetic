@@ -1,0 +1,86 @@
+{
+  "token": "w4a16-t64-r1-20260908-gpu2",
+  "command": [
+    "/usr/bin/env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_VISIBLE_DEVICES=GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81",
+    "CUDA_DEVICE_ORDER=PCI_BUS_ID",
+    "/usr/bin/taskset",
+    "--cpu-list",
+    "0-11",
+    "/home/arian/P100-arithmetic/studies/w4a16-t64-r1-20260908/build/worker",
+    "--tokens",
+    "64",
+    "--n",
+    "2048",
+    "--k",
+    "512",
+    "--experts",
+    "16",
+    "--reps",
+    "5",
+    "--iters",
+    "8"
+  ],
+  "request": {
+    "tag": "down-v1",
+    "args": [
+      "--tokens",
+      "64",
+      "--n",
+      "2048",
+      "--k",
+      "512",
+      "--experts",
+      "16",
+      "--reps",
+      "5",
+      "--iters",
+      "8"
+    ]
+  },
+  "build": {
+    "control_source": "/home/arian/P100-arithmetic/studies/qwen35-q4-affinitywave-20260908/affinity-wave.original.cu",
+    "control_sha256": "173003f61c4a4c33a37748657633f14a740911ec005e0a5706e9ab0af4bdafcb",
+    "command": [
+      "/usr/local/cuda-12.8/bin/nvcc",
+      "-ccbin",
+      "/usr/bin/g++-14",
+      "-O3",
+      "-std=c++17",
+      "-arch=sm_60",
+      "-lineinfo",
+      "-Xptxas=-v",
+      "-I/home/arian/P100-arithmetic/studies/w4a16-t64-r1-20260908/build",
+      "/home/arian/P100-arithmetic/studies/w4a16-t64-r1-20260908/worker.cu",
+      "-o",
+      "/home/arian/P100-arithmetic/studies/w4a16-t64-r1-20260908/build/worker"
+    ],
+    "hashes": {
+      "worker.cu": "c217587ddc44b4b28ba38f41e4b21314cf93eaaf5c775933d4e2bfed737ff173",
+      "kernels.cuh": "54d050e6493d8cb38106a4b00e90122bce474aaa05338eac8051c616ee0cb1eb",
+      "build.py": "6c6bf2c94fdbd283b5f963c7de214a394034077c7ea15cc78203a6f51bb7c9ed",
+      "build/aw_control.inc": "bead04b9f2a7a99b4f24e27960d9bdf517fd7fc14a3133af332717c50c1a1cde",
+      "build/worker": "c292f3cf4113b151480114e5c6a19868a42e38d61412ddc57e4251489dd7f729"
+    }
+  },
+  "before": {
+    "gpu": "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, Tesla P100-PCIE-16GB, 5, 0, 30, 405, 0",
+    "apps": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1121899, /usr/bin/gnome-text-editor\n"
+  },
+  "supervisor_sha256": "35b6d6e4c4a1611ddcdb9e1db92a831a88ae5d133828bbf269b084a08911e02c",
+  "coordination": {
+    "/home/arian/P100-arithmetic/bench/COORDINATION-20260908.md": "436d81027c5db7cdf8b4e6c5e99a991ab57338772b5e0a16fcb5df7ca36820c5",
+    "/home/arian/llama.cpp-q36-moe/.worktrees/coding-serve-p100-20260906/bench/COORDINATION-20260908.md": "9fab01a8690b5a014cff4e5d132764f5a3150d5fdc869d98a4120f8df954e530"
+  },
+  "started": 1788891590.803194,
+  "returncode": 0,
+  "after": {
+    "gpu": "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, Tesla P100-PCIE-16GB, 5, 12, 32, 1328, 0",
+    "apps": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1121899, /usr/bin/gnome-text-editor\n"
+  },
+  "status": "PASS",
+  "finished": 1788891592.3986378
+}

@@ -1,0 +1,141 @@
+{
+  "token": "w4a16-delivery-leads-20260908-gpu01",
+  "command": [
+    "/usr/bin/env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_VISIBLE_DEVICES=GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+    "CUDA_DEVICE_ORDER=PCI_BUS_ID",
+    "/usr/bin/taskset",
+    "--cpu-list",
+    "0-11",
+    "/usr/local/cuda-12.8/bin/compute-sanitizer",
+    "--tool",
+    "memcheck",
+    "--error-exitcode",
+    "99",
+    "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/build/worker",
+    "--gpu-approved",
+    "1",
+    "--tokens",
+    "33",
+    "--n",
+    "128",
+    "--k",
+    "96",
+    "--experts",
+    "2",
+    "--reps",
+    "1",
+    "--iters",
+    "1",
+    "--warmup-ms",
+    "0"
+  ],
+  "request": {
+    "tag": "gpu1-v2-smoke",
+    "gpu": 1,
+    "args": [
+      "--gpu-approved",
+      "1",
+      "--tokens",
+      "33",
+      "--n",
+      "128",
+      "--k",
+      "96",
+      "--experts",
+      "2",
+      "--reps",
+      "1",
+      "--iters",
+      "1",
+      "--warmup-ms",
+      "0"
+    ],
+    "sanitizer": "memcheck"
+  },
+  "build": {
+    "base_manifest": {
+      "control_source": "/home/arian/P100-arithmetic/studies/qwen35-q4-affinitywave-20260908/affinity-wave.original.cu",
+      "control_sha256": "173003f61c4a4c33a37748657633f14a740911ec005e0a5706e9ab0af4bdafcb",
+      "command": [
+        "/usr/local/cuda-12.8/bin/nvcc",
+        "-ccbin",
+        "/usr/bin/g++-14",
+        "-O3",
+        "-std=c++17",
+        "-arch=sm_60",
+        "-lineinfo",
+        "-Xptxas=-v",
+        "-I/home/arian/P100-arithmetic/studies/w4a16-t64-f32-20260908/build",
+        "/home/arian/P100-arithmetic/studies/w4a16-t64-f32-20260908/worker.cu",
+        "-o",
+        "/home/arian/P100-arithmetic/studies/w4a16-t64-f32-20260908/build/worker"
+      ],
+      "hashes": {
+        "worker.cu": "ea8cb464673f9218f9e2ca93e7fc603a9e00ebb0b2bed51c74f4b31408721d44",
+        "kernels.cuh": "eb34a0cf4939f8635b5ca7b2dfc2e208b9fd89d880795573a2a94f70310407bc",
+        "build.py": "f6ba27eb7819addad37933db2d603012aca78a7b579f3109a0b8f5a940921122",
+        "build/aw_control.inc": "bead04b9f2a7a99b4f24e27960d9bdf517fd7fc14a3133af332717c50c1a1cde",
+        "build/aw_q4_control.inc": "84e78b6c42e6e5edb6c604bec172c4051d5894a3a8c0c48a4b24bd3af482db4e",
+        "build/worker": "dc3e4efb342a03fef6b1c9398f7aeb7acd558d4642a5c7449b0fbaa1a5b65688",
+        "supervise.py": "d981fb76875a3e1f2941066b6fe0212eca714c7c9c59d424e5364e5ba5075c47",
+        "analyze.py": "3bfdd2a154044eaefa31fcae37ae43152be8aec3074e435933d87e83d7385e60",
+        "test_offline.py": "8c809166760795b4c959c998e91540196a90e942f8f1f071519bd633226b1bf4",
+        "/home/arian/P100-arithmetic/studies/w4a16-t64-r1-20260908/supervise.py": "35b6d6e4c4a1611ddcdb9e1db92a831a88ae5d133828bbf269b084a08911e02c"
+      }
+    },
+    "command": [
+      "/usr/local/cuda-12.8/bin/nvcc",
+      "-ccbin",
+      "/usr/bin/g++-14",
+      "-O3",
+      "-std=c++17",
+      "-arch=sm_60",
+      "-lineinfo",
+      "-Xptxas=-v",
+      "-I/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/build",
+      "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/build/worker.cu",
+      "-o",
+      "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/build/worker"
+    ],
+    "hashes": {
+      "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/build.py": "495daf6ffdf90659e843759b472a871f632ae346eba50a7b6c461f2241182604",
+      "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/leads.cuh": "801c329fccb0dce1449c33e35d5a1239644baa1edaeb6aeb17c4a199a9b0365d",
+      "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/test_offline.py": "555a1cb44501807b7b2b5d96246b35b53d292ffc6bf444019c000431a57e3f45",
+      "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/supervise.py": "dec79802fd2f9b79b026dbfaf01bdcba7fecd2680f029dcba6d8694baefbfc24",
+      "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/build/worker.cu": "4650453d999d34e89be09be7ee05b4c87ed79d65ac8f8b7c7e61b03c0507a04b",
+      "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/build/worker": "a0d04102e3faf9c73e46fce9f1332edc03c01f6e017d6bfd3fd4d9f16023bc1a",
+      "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/build/aw_control.inc": "bead04b9f2a7a99b4f24e27960d9bdf517fd7fc14a3133af332717c50c1a1cde",
+      "/home/arian/P100-arithmetic/studies/w4a16-delivery-leads-20260908/build/aw_q4_control.inc": "84e78b6c42e6e5edb6c604bec172c4051d5894a3a8c0c48a4b24bd3af482db4e",
+      "/home/arian/P100-arithmetic/studies/w4a16-t64-f32-20260908/worker.cu": "ea8cb464673f9218f9e2ca93e7fc603a9e00ebb0b2bed51c74f4b31408721d44",
+      "/home/arian/P100-arithmetic/studies/w4a16-t64-f32-20260908/kernels.cuh": "eb34a0cf4939f8635b5ca7b2dfc2e208b9fd89d880795573a2a94f70310407bc",
+      "/home/arian/P100-arithmetic/studies/w4a16-t64-f32-20260908/supervise.py": "d981fb76875a3e1f2941066b6fe0212eca714c7c9c59d424e5364e5ba5075c47",
+      "/home/arian/P100-arithmetic/studies/w4a16-t64-r1-20260908/supervise.py": "35b6d6e4c4a1611ddcdb9e1db92a831a88ae5d133828bbf269b084a08911e02c"
+    },
+    "gpu_executed": false
+  },
+  "before": {
+    "gpus": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, Tesla P100-PCIE-16GB, 23, 0, 29, 405, 0\nGPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, Tesla P100-PCIE-16GB, 5, 0, 28, 405, 0",
+    "apps": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1121899, /usr/bin/gnome-text-editor\nGPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 1233691, /home/arian/llama.cpp-qwen38-dense-aw/build-dense-aw/bin/llama-server\nGPU-4868830a-c1cf-90bd-8018-2360c55293b8, 1233691, /home/arian/llama.cpp-qwen38-dense-aw/build-dense-aw/bin/llama-server\n",
+    "selected": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+    "desktop_exception": "GPU0 existing PID1121899 only"
+  },
+  "supervisor_sha256": "35b6d6e4c4a1611ddcdb9e1db92a831a88ae5d133828bbf269b084a08911e02c",
+  "coordination": {
+    "/home/arian/P100-arithmetic/bench/COORDINATION-20260908.md": "23738c2ca4a515ae12307e06fca04b33eab7fc5ed180f625b5bf7278b49a6ccf",
+    "/home/arian/llama.cpp-q36-moe/.worktrees/coding-serve-p100-20260906/bench/COORDINATION-20260908.md": "5b401cd908060a3b1a90fac94f62df527946b2acf6db3701d7759d329365255c"
+  },
+  "started": 1788896400.5757418,
+  "returncode": 0,
+  "after": {
+    "gpus": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, Tesla P100-PCIE-16GB, 23, 0, 29, 405, 0\nGPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, Tesla P100-PCIE-16GB, 5, 65, 29, 1316, 0",
+    "apps": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1121899, /usr/bin/gnome-text-editor\nGPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 1233691, /home/arian/llama.cpp-qwen38-dense-aw/build-dense-aw/bin/llama-server\nGPU-4868830a-c1cf-90bd-8018-2360c55293b8, 1233691, /home/arian/llama.cpp-qwen38-dense-aw/build-dense-aw/bin/llama-server\n",
+    "selected": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+    "desktop_exception": "GPU0 existing PID1121899 only"
+  },
+  "status": "PASS",
+  "finished": 1788896401.5008013
+}

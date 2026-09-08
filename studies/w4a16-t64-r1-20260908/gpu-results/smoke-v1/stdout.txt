@@ -1,0 +1,50 @@
+META tokens=33 n=128 k=96 experts=2 seed=3911 pattern=0 sm=56
+CHECK aw_t64_m64_sk2 outputs=8448 samples=256 bad=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK q4_r0_w4_n64 outputs=8448 samples=256 bad=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK q4_r1_w4_n64 outputs=8448 samples=256 bad=0 nonfinite=0 rel_l2=0.0008177515179 maxabs=0.01989459991
+CHECK q4_r2_w4_n64 outputs=8448 samples=256 bad=0 nonfinite=0 rel_l2=0.0005961937719 maxabs=0.01732826233
+CHECK q4_r4_w4_n64 outputs=8448 samples=256 bad=0 nonfinite=0 rel_l2=0.00043751316 maxabs=0.01075267792
+CHECK q4_r8_w4_n64 outputs=8448 samples=256 bad=0 nonfinite=0 rel_l2=0.000329321167 maxabs=0.005983352661
+CHECK q4_r0_w8_n64 outputs=8448 samples=256 bad=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK q4_r1_w8_n64 outputs=8448 samples=256 bad=0 nonfinite=0 rel_l2=0.0008177515179 maxabs=0.01989459991
+CHECK q4_r2_w8_n64 outputs=8448 samples=256 bad=0 nonfinite=0 rel_l2=0.0005961937719 maxabs=0.01732826233
+CHECK q4_r4_w8_n64 outputs=8448 samples=256 bad=0 nonfinite=0 rel_l2=0.00043751316 maxabs=0.01075267792
+CHECK q4_r8_w8_n64 outputs=8448 samples=256 bad=0 nonfinite=0 rel_l2=0.000329321167 maxabs=0.005983352661
+CHECK q4_r0_w8_n128 outputs=8448 samples=256 bad=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK q4_r1_w8_n128 outputs=8448 samples=256 bad=0 nonfinite=0 rel_l2=0.0008177515179 maxabs=0.01989459991
+CHECK q4_r2_w8_n128 outputs=8448 samples=256 bad=0 nonfinite=0 rel_l2=0.0005961937719 maxabs=0.01732826233
+CHECK q4_r4_w8_n128 outputs=8448 samples=256 bad=0 nonfinite=0 rel_l2=0.00043751316 maxabs=0.01075267792
+CHECK q4_r8_w8_n128 outputs=8448 samples=256 bad=0 nonfinite=0 rel_l2=0.000329321167 maxabs=0.005983352661
+TIME aw_t64_m64_sk2 prep=0 rep=0 us=25.7280006
+TIME aw_t64_m64_sk2 prep=1 rep=0 us=19.8719997
+TIME q4_r0_w4_n64 prep=0 rep=0 us=27.3600006
+TIME q4_r0_w4_n64 prep=1 rep=0 us=26.0160007
+TIME q4_r1_w4_n64 prep=0 rep=0 us=18.9759998
+TIME q4_r1_w4_n64 prep=1 rep=0 us=18.3360004
+TIME q4_r2_w4_n64 prep=0 rep=0 us=18.9120007
+TIME q4_r2_w4_n64 prep=1 rep=0 us=19.3600006
+TIME q4_r4_w4_n64 prep=0 rep=0 us=19.2639999
+TIME q4_r4_w4_n64 prep=1 rep=0 us=19.0079994
+TIME q4_r8_w4_n64 prep=0 rep=0 us=21.0880013
+TIME q4_r8_w4_n64 prep=1 rep=0 us=20.1280003
+TIME q4_r0_w8_n64 prep=0 rep=0 us=28.8959999
+TIME q4_r0_w8_n64 prep=1 rep=0 us=26.5599995
+TIME q4_r1_w8_n64 prep=0 rep=0 us=19.9679985
+TIME q4_r1_w8_n64 prep=1 rep=0 us=19.9360008
+TIME q4_r2_w8_n64 prep=0 rep=0 us=20.9920006
+TIME q4_r2_w8_n64 prep=1 rep=0 us=20.3520012
+TIME q4_r4_w8_n64 prep=0 rep=0 us=21.5039997
+TIME q4_r4_w8_n64 prep=1 rep=0 us=21.8880005
+TIME q4_r8_w8_n64 prep=0 rep=0 us=22.4639988
+TIME q4_r8_w8_n64 prep=1 rep=0 us=21.7919998
+TIME q4_r0_w8_n128 prep=0 rep=0 us=43.7120018
+TIME q4_r0_w8_n128 prep=1 rep=0 us=37.4080009
+TIME q4_r1_w8_n128 prep=0 rep=0 us=30.3999996
+TIME q4_r1_w8_n128 prep=1 rep=0 us=28.3840008
+TIME q4_r2_w8_n128 prep=0 rep=0 us=31.6159992
+TIME q4_r2_w8_n128 prep=1 rep=0 us=29.3439999
+TIME q4_r4_w8_n128 prep=0 rep=0 us=33.4720001
+TIME q4_r4_w8_n128 prep=1 rep=0 us=29.8560009
+TIME q4_r8_w8_n128 prep=0 rep=0 us=36.8320007
+TIME q4_r8_w8_n128 prep=1 rep=0 us=33.1839981
+PASS

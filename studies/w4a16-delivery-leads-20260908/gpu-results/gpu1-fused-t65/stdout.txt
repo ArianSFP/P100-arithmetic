@@ -1,0 +1,80 @@
+VECTOR_PREP 0 GRID 0
+SCRATCH tiled_half_bytes=8388608 tiled_float_bytes=16777216 weight_layout_bytes=9437184
+META tokens=65 n=512 k=2048 experts=16 seed=3911 pattern=0 sm=56 candidate_grid=5 warmup_ms=2000 f32_only=1
+CHECK aw_t64_f32 outputs=532480 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_t64_a16 outputs=532480 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_q4_a16 outputs=532480 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK q4_m64n64b128s1d1u8r outputs=532480 samples=256 bad=0 changed=363727 nonfinite=0 rel_l2=4.940504015e-07 maxabs=0.0001602172852
+CHECK delivery_fused_u32 outputs=532480 samples=256 bad=0 changed=363727 nonfinite=0 rel_l2=4.940504015e-07 maxabs=0.0001602172852
+WARMUP_COMPLETE
+TIME aw_t64_f32 prep=0 rep=0 us=831.794678
+TIME aw_t64_f32 prep=1 rep=0 us=831.778625
+TIME aw_t64_a16 prep=0 rep=0 us=833.397278
+TIME aw_t64_a16 prep=1 rep=0 us=859.333313
+TIME aw_q4_a16 prep=0 rep=0 us=881.205322
+TIME aw_q4_a16 prep=1 rep=0 us=907.373352
+TIME q4_m64n64b128s1d1u8r prep=0 rep=0 us=699.986755
+TIME q4_m64n64b128s1d1u8r prep=1 rep=0 us=726.81073
+TIME delivery_fused_u32 prep=0 rep=0 us=508.440033
+TIME delivery_fused_u32 prep=1 rep=0 us=508.791992
+TIME aw_t64_a16 prep=1 rep=1 us=859.343994
+TIME aw_t64_a16 prep=0 rep=1 us=833.357361
+TIME aw_q4_a16 prep=1 rep=1 us=908.306641
+TIME aw_q4_a16 prep=0 rep=1 us=881.65332
+TIME q4_m64n64b128s1d1u8r prep=1 rep=1 us=726.898682
+TIME q4_m64n64b128s1d1u8r prep=0 rep=1 us=700.280029
+TIME delivery_fused_u32 prep=1 rep=1 us=507.488007
+TIME delivery_fused_u32 prep=0 rep=1 us=507.698639
+TIME aw_t64_f32 prep=1 rep=1 us=831.770691
+TIME aw_t64_f32 prep=0 rep=1 us=831.890625
+TIME aw_q4_a16 prep=0 rep=2 us=881.359924
+TIME aw_q4_a16 prep=1 rep=2 us=906.642639
+TIME q4_m64n64b128s1d1u8r prep=0 rep=2 us=700.106689
+TIME q4_m64n64b128s1d1u8r prep=1 rep=2 us=726.600037
+TIME delivery_fused_u32 prep=0 rep=2 us=506.669312
+TIME delivery_fused_u32 prep=1 rep=2 us=507.941315
+TIME aw_t64_f32 prep=0 rep=2 us=831.618713
+TIME aw_t64_f32 prep=1 rep=2 us=832.632019
+TIME aw_t64_a16 prep=0 rep=2 us=836.133301
+TIME aw_t64_a16 prep=1 rep=2 us=862.701355
+TIME q4_m64n64b128s1d1u8r prep=1 rep=3 us=744.493347
+TIME q4_m64n64b128s1d1u8r prep=0 rep=3 us=700.797302
+TIME delivery_fused_u32 prep=1 rep=3 us=509.021332
+TIME delivery_fused_u32 prep=0 rep=3 us=509.978638
+TIME aw_t64_f32 prep=1 rep=3 us=832.704041
+TIME aw_t64_f32 prep=0 rep=3 us=833.40802
+TIME aw_t64_a16 prep=1 rep=3 us=862.320007
+TIME aw_t64_a16 prep=0 rep=3 us=833.952087
+TIME aw_q4_a16 prep=1 rep=3 us=909.405273
+TIME aw_q4_a16 prep=0 rep=3 us=881.688049
+TIME delivery_fused_u32 prep=0 rep=4 us=507.698639
+TIME delivery_fused_u32 prep=1 rep=4 us=506.773346
+TIME aw_t64_f32 prep=0 rep=4 us=831.565247
+TIME aw_t64_f32 prep=1 rep=4 us=831.730713
+TIME aw_t64_a16 prep=0 rep=4 us=833.528015
+TIME aw_t64_a16 prep=1 rep=4 us=858.850647
+TIME aw_q4_a16 prep=0 rep=4 us=881.661316
+TIME aw_q4_a16 prep=1 rep=4 us=907.46405
+TIME q4_m64n64b128s1d1u8r prep=0 rep=4 us=716.552002
+TIME q4_m64n64b128s1d1u8r prep=1 rep=4 us=727.218567
+TIME aw_t64_f32 prep=1 rep=5 us=833.250671
+TIME aw_t64_f32 prep=0 rep=5 us=831.773376
+TIME aw_t64_a16 prep=1 rep=5 us=859.285339
+TIME aw_t64_a16 prep=0 rep=5 us=834.407959
+TIME aw_q4_a16 prep=1 rep=5 us=908
+TIME aw_q4_a16 prep=0 rep=5 us=881.570618
+TIME q4_m64n64b128s1d1u8r prep=1 rep=5 us=727.210693
+TIME q4_m64n64b128s1d1u8r prep=0 rep=5 us=700.405334
+TIME delivery_fused_u32 prep=1 rep=5 us=507.114655
+TIME delivery_fused_u32 prep=0 rep=5 us=507.991974
+TIME aw_t64_a16 prep=0 rep=6 us=833.378662
+TIME aw_t64_a16 prep=1 rep=6 us=859.922607
+TIME aw_q4_a16 prep=0 rep=6 us=881.632019
+TIME aw_q4_a16 prep=1 rep=6 us=907.919983
+TIME q4_m64n64b128s1d1u8r prep=0 rep=6 us=716.65332
+TIME q4_m64n64b128s1d1u8r prep=1 rep=6 us=727.072021
+TIME delivery_fused_u32 prep=0 rep=6 us=507.674652
+TIME delivery_fused_u32 prep=1 rep=6 us=507.005341
+TIME aw_t64_f32 prep=0 rep=6 us=830.885315
+TIME aw_t64_f32 prep=1 rep=6 us=831.706726
+PASS

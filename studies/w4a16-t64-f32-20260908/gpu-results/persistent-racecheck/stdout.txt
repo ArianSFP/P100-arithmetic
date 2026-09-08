@@ -1,0 +1,17 @@
+========= COMPUTE-SANITIZER
+META tokens=33 n=128 k=96 experts=64 seed=3911 pattern=0 sm=56 candidate_grid=2 warmup_ms=0 f32_only=1
+CHECK aw_t64_f32 outputs=270336 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_t64_a16 outputs=270336 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_q4_a16 outputs=270336 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK q4_m64n64b128s1d1u8r outputs=270336 samples=256 bad=0 changed=71 nonfinite=0 rel_l2=8.900425966e-09 maxabs=6.675720215e-06
+WARMUP_COMPLETE
+TIME aw_t64_f32 prep=0 rep=0 us=226539.203
+TIME aw_t64_f32 prep=1 rep=0 us=222217.922
+TIME aw_t64_a16 prep=0 rep=0 us=221684.031
+TIME aw_t64_a16 prep=1 rep=0 us=242884.469
+TIME aw_q4_a16 prep=0 rep=0 us=257368.953
+TIME aw_q4_a16 prep=1 rep=0 us=231621.438
+TIME q4_m64n64b128s1d1u8r prep=0 rep=0 us=199095.078
+TIME q4_m64n64b128s1d1u8r prep=1 rep=0 us=235132.359
+PASS
+========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)

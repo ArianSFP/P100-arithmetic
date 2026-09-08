@@ -1,0 +1,15 @@
+META tokens=33 n=128 k=2048 experts=2 seed=3911 pattern=2 sm=56 candidate_grid=2 warmup_ms=0 f32_only=1
+CHECK aw_t64_f32 outputs=8448 samples=8448 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_t64_a16 outputs=8448 samples=8448 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_q4_a16 outputs=8448 samples=8448 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK q4_m64n64b128s1d1u8r outputs=8448 samples=8448 bad=0 changed=4616 nonfinite=0 rel_l2=4.50390919e-07 maxabs=0.000114440918
+WARMUP_COMPLETE
+TIME aw_t64_f32 prep=0 rep=0 us=210.783997
+TIME aw_t64_f32 prep=1 rep=0 us=207.296005
+TIME aw_t64_a16 prep=0 rep=0 us=208.895996
+TIME aw_t64_a16 prep=1 rep=0 us=213.727997
+TIME aw_q4_a16 prep=0 rep=0 us=222.304001
+TIME aw_q4_a16 prep=1 rep=0 us=225.18399
+TIME q4_m64n64b128s1d1u8r prep=0 rep=0 us=200.992004
+TIME q4_m64n64b128s1d1u8r prep=1 rep=0 us=205.856003
+PASS

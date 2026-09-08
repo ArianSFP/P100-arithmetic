@@ -1,0 +1,127 @@
+VECTOR_PREP 0 GRID 0
+SCRATCH tiled_half_bytes=16777216 tiled_float_bytes=33554432 weight_layout_bytes=37748736
+WEIGHT_SCRATCH bytes=134217728 prep1_charged_every_run=1
+META tokens=256 n=2048 k=512 experts=64 seed=3911 pattern=0 sm=56 candidate_grid=2 warmup_ms=2000 f32_only=1
+OCCUPANCY compact_packed_blocks=5 old_fused_blocks=5
+CHECK aw_t64_f32 outputs=33554432 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_t64_a16 outputs=33554432 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_q4_a16 outputs=33554432 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_current_q4 outputs=33554432 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_special_q4 outputs=33554432 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK q4_m64n64b128s1d1u8r outputs=33554432 samples=256 bad=0 changed=3175584 nonfinite=0 rel_l2=1.341054758e-07 maxabs=5.722045898e-05
+CHECK delivery_fused_u32 outputs=33554432 samples=256 bad=0 changed=3175584 nonfinite=0 rel_l2=1.341054758e-07 maxabs=5.722045898e-05
+CHECK tile512_one_rail outputs=33554432 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+WARMUP_COMPLETE
+TIME aw_t64_f32 prep=0 rep=0 us=6280.5918
+TIME aw_t64_f32 prep=1 rep=0 us=6274.01611
+TIME aw_t64_a16 prep=0 rep=0 us=6277.18799
+TIME aw_t64_a16 prep=1 rep=0 us=6381.66016
+TIME aw_q4_a16 prep=0 rep=0 us=6592.50391
+TIME aw_q4_a16 prep=1 rep=0 us=6699.31592
+TIME aw_current_q4 prep=0 rep=0 us=6887.34375
+TIME aw_current_q4 prep=1 rep=0 us=6819.75586
+TIME aw_special_q4 prep=0 rep=0 us=5871.31982
+TIME aw_special_q4 prep=1 rep=0 us=5876.82373
+TIME q4_m64n64b128s1d1u8r prep=0 rep=0 us=5518.73193
+TIME q4_m64n64b128s1d1u8r prep=1 rep=0 us=5625.51221
+TIME delivery_fused_u32 prep=0 rep=0 us=6139.40381
+TIME delivery_fused_u32 prep=1 rep=0 us=6147.43164
+TIME tile512_one_rail prep=0 rep=0 us=6396.31982
+TIME tile512_one_rail prep=1 rep=0 us=6397.7041
+TIME aw_t64_a16 prep=1 rep=1 us=6364.97998
+TIME aw_t64_a16 prep=0 rep=1 us=6283.62402
+TIME aw_q4_a16 prep=1 rep=1 us=6686.48828
+TIME aw_q4_a16 prep=0 rep=1 us=6604.06396
+TIME aw_current_q4 prep=1 rep=1 us=6832.12402
+TIME aw_current_q4 prep=0 rep=1 us=6789.46777
+TIME aw_special_q4 prep=1 rep=1 us=5850.396
+TIME aw_special_q4 prep=0 rep=1 us=5851.54395
+TIME q4_m64n64b128s1d1u8r prep=1 rep=1 us=5621.95605
+TIME q4_m64n64b128s1d1u8r prep=0 rep=1 us=5517.81201
+TIME delivery_fused_u32 prep=1 rep=1 us=6143.08398
+TIME delivery_fused_u32 prep=0 rep=1 us=6142.104
+TIME tile512_one_rail prep=1 rep=1 us=6394.9043
+TIME tile512_one_rail prep=0 rep=1 us=6400.40039
+TIME aw_t64_f32 prep=1 rep=1 us=6302.37598
+TIME aw_t64_f32 prep=0 rep=1 us=6277.74365
+TIME aw_q4_a16 prep=0 rep=2 us=6601.07178
+TIME aw_q4_a16 prep=1 rep=2 us=6696.20801
+TIME aw_current_q4 prep=0 rep=2 us=6748.56006
+TIME aw_current_q4 prep=1 rep=2 us=6839.19629
+TIME aw_special_q4 prep=0 rep=2 us=5863.31152
+TIME aw_special_q4 prep=1 rep=2 us=5853.29199
+TIME q4_m64n64b128s1d1u8r prep=0 rep=2 us=5527.17578
+TIME q4_m64n64b128s1d1u8r prep=1 rep=2 us=5620.02783
+TIME delivery_fused_u32 prep=0 rep=2 us=6202.13623
+TIME delivery_fused_u32 prep=1 rep=2 us=6201.54395
+TIME tile512_one_rail prep=0 rep=2 us=6408.896
+TIME tile512_one_rail prep=1 rep=2 us=6403.22021
+TIME aw_t64_f32 prep=0 rep=2 us=6274.09229
+TIME aw_t64_f32 prep=1 rep=2 us=6274.25635
+TIME aw_t64_a16 prep=0 rep=2 us=6274.896
+TIME aw_t64_a16 prep=1 rep=2 us=6375.82422
+TIME aw_current_q4 prep=1 rep=3 us=6821.97998
+TIME aw_current_q4 prep=0 rep=3 us=6772.42432
+TIME aw_special_q4 prep=1 rep=3 us=5854.92822
+TIME aw_special_q4 prep=0 rep=3 us=5869.49219
+TIME q4_m64n64b128s1d1u8r prep=1 rep=3 us=5620.85986
+TIME q4_m64n64b128s1d1u8r prep=0 rep=3 us=5523.23193
+TIME delivery_fused_u32 prep=1 rep=3 us=6146.28418
+TIME delivery_fused_u32 prep=0 rep=3 us=6136.00781
+TIME tile512_one_rail prep=1 rep=3 us=6401.82422
+TIME tile512_one_rail prep=0 rep=3 us=6400.21631
+TIME aw_t64_f32 prep=1 rep=3 us=6286.52393
+TIME aw_t64_f32 prep=0 rep=3 us=6271.7998
+TIME aw_t64_a16 prep=1 rep=3 us=6389.78369
+TIME aw_t64_a16 prep=0 rep=3 us=6289.52002
+TIME aw_q4_a16 prep=1 rep=3 us=6697.70801
+TIME aw_q4_a16 prep=0 rep=3 us=6589.03223
+TIME aw_special_q4 prep=0 rep=4 us=5866.82812
+TIME aw_special_q4 prep=1 rep=4 us=5868.84033
+TIME q4_m64n64b128s1d1u8r prep=0 rep=4 us=5532.84424
+TIME q4_m64n64b128s1d1u8r prep=1 rep=4 us=5628.67578
+TIME delivery_fused_u32 prep=0 rep=4 us=6141.61182
+TIME delivery_fused_u32 prep=1 rep=4 us=6139.06006
+TIME tile512_one_rail prep=0 rep=4 us=6399.37598
+TIME tile512_one_rail prep=1 rep=4 us=6398.06006
+TIME aw_t64_f32 prep=0 rep=4 us=6289.0083
+TIME aw_t64_f32 prep=1 rep=4 us=6288.63623
+TIME aw_t64_a16 prep=0 rep=4 us=6269.02002
+TIME aw_t64_a16 prep=1 rep=4 us=6365.99609
+TIME aw_q4_a16 prep=0 rep=4 us=6589.94385
+TIME aw_q4_a16 prep=1 rep=4 us=6710.02832
+TIME aw_current_q4 prep=0 rep=4 us=6823.2041
+TIME aw_current_q4 prep=1 rep=4 us=6793.84424
+TIME q4_m64n64b128s1d1u8r prep=1 rep=5 us=5622.85986
+TIME q4_m64n64b128s1d1u8r prep=0 rep=5 us=5523.96387
+TIME delivery_fused_u32 prep=1 rep=5 us=6145.75195
+TIME delivery_fused_u32 prep=0 rep=5 us=6143.8042
+TIME tile512_one_rail prep=1 rep=5 us=6403.27979
+TIME tile512_one_rail prep=0 rep=5 us=6397.2959
+TIME aw_t64_f32 prep=1 rep=5 us=6267.63574
+TIME aw_t64_f32 prep=0 rep=5 us=6282.28809
+TIME aw_t64_a16 prep=1 rep=5 us=6381.18408
+TIME aw_t64_a16 prep=0 rep=5 us=6283.50391
+TIME aw_q4_a16 prep=1 rep=5 us=6689.95166
+TIME aw_q4_a16 prep=0 rep=5 us=6587.08008
+TIME aw_current_q4 prep=1 rep=5 us=6862.39209
+TIME aw_current_q4 prep=0 rep=5 us=6820.43604
+TIME aw_special_q4 prep=1 rep=5 us=5862.31592
+TIME aw_special_q4 prep=0 rep=5 us=5856.71191
+TIME delivery_fused_u32 prep=0 rep=6 us=6141.33984
+TIME delivery_fused_u32 prep=1 rep=6 us=6136.84814
+TIME tile512_one_rail prep=0 rep=6 us=6397.85205
+TIME tile512_one_rail prep=1 rep=6 us=6400.41211
+TIME aw_t64_f32 prep=0 rep=6 us=6286.93994
+TIME aw_t64_f32 prep=1 rep=6 us=6291.75635
+TIME aw_t64_a16 prep=0 rep=6 us=6281.72412
+TIME aw_t64_a16 prep=1 rep=6 us=6375.37988
+TIME aw_q4_a16 prep=0 rep=6 us=6595.87207
+TIME aw_q4_a16 prep=1 rep=6 us=6699.61572
+TIME aw_current_q4 prep=0 rep=6 us=6858.27197
+TIME aw_current_q4 prep=1 rep=6 us=6804.15576
+TIME aw_special_q4 prep=0 rep=6 us=5857.74414
+TIME aw_special_q4 prep=1 rep=6 us=5867.54785
+TIME q4_m64n64b128s1d1u8r prep=0 rep=6 us=5529.73584
+TIME q4_m64n64b128s1d1u8r prep=1 rep=6 us=5627.396
+PASS

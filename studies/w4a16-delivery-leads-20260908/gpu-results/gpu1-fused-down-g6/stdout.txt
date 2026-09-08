@@ -1,0 +1,80 @@
+VECTOR_PREP 0 GRID 0
+SCRATCH tiled_half_bytes=1048576 tiled_float_bytes=2097152 weight_layout_bytes=9437184
+META tokens=64 n=2048 k=512 experts=16 seed=3911 pattern=0 sm=56 candidate_grid=6 warmup_ms=2000 f32_only=1
+CHECK aw_t64_f32 outputs=2097152 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_t64_a16 outputs=2097152 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_q4_a16 outputs=2097152 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK q4_m64n64b128s1d1u8r outputs=2097152 samples=256 bad=0 changed=198674 nonfinite=0 rel_l2=1.338672014e-07 maxabs=3.433227539e-05
+CHECK delivery_fused_u32 outputs=2097152 samples=256 bad=0 changed=198674 nonfinite=0 rel_l2=1.338672014e-07 maxabs=3.433227539e-05
+WARMUP_COMPLETE
+TIME aw_t64_f32 prep=0 rep=0 us=469.927979
+TIME aw_t64_f32 prep=1 rep=0 us=470.002655
+TIME aw_t64_a16 prep=0 rep=0 us=468.685333
+TIME aw_t64_a16 prep=1 rep=0 us=477.76535
+TIME aw_q4_a16 prep=0 rep=0 us=489.496002
+TIME aw_q4_a16 prep=1 rep=0 us=491.626678
+TIME q4_m64n64b128s1d1u8r prep=0 rep=0 us=347.349335
+TIME q4_m64n64b128s1d1u8r prep=1 rep=0 us=357.983978
+TIME delivery_fused_u32 prep=0 rep=0 us=418.661346
+TIME delivery_fused_u32 prep=1 rep=0 us=423.957367
+TIME aw_t64_a16 prep=1 rep=1 us=478.789337
+TIME aw_t64_a16 prep=0 rep=1 us=469.082672
+TIME aw_q4_a16 prep=1 rep=1 us=492.749359
+TIME aw_q4_a16 prep=0 rep=1 us=490.311981
+TIME q4_m64n64b128s1d1u8r prep=1 rep=1 us=358.456024
+TIME q4_m64n64b128s1d1u8r prep=0 rep=1 us=349.621338
+TIME delivery_fused_u32 prep=1 rep=1 us=427.791992
+TIME delivery_fused_u32 prep=0 rep=1 us=423.754639
+TIME aw_t64_f32 prep=1 rep=1 us=468
+TIME aw_t64_f32 prep=0 rep=1 us=466.634674
+TIME aw_q4_a16 prep=0 rep=2 us=485.567993
+TIME aw_q4_a16 prep=1 rep=2 us=492.951996
+TIME q4_m64n64b128s1d1u8r prep=0 rep=2 us=350.191986
+TIME q4_m64n64b128s1d1u8r prep=1 rep=2 us=359.048004
+TIME delivery_fused_u32 prep=0 rep=2 us=417.328003
+TIME delivery_fused_u32 prep=1 rep=2 us=421.501312
+TIME aw_t64_f32 prep=0 rep=2 us=468.303986
+TIME aw_t64_f32 prep=1 rep=2 us=469.978638
+TIME aw_t64_a16 prep=0 rep=2 us=469.160004
+TIME aw_t64_a16 prep=1 rep=2 us=482.522705
+TIME q4_m64n64b128s1d1u8r prep=1 rep=3 us=359.154663
+TIME q4_m64n64b128s1d1u8r prep=0 rep=3 us=349.386627
+TIME delivery_fused_u32 prep=1 rep=3 us=429.727997
+TIME delivery_fused_u32 prep=0 rep=3 us=416.040009
+TIME aw_t64_f32 prep=1 rep=3 us=473.418671
+TIME aw_t64_f32 prep=0 rep=3 us=470.301361
+TIME aw_t64_a16 prep=1 rep=3 us=482.631989
+TIME aw_t64_a16 prep=0 rep=3 us=466.312012
+TIME aw_q4_a16 prep=1 rep=3 us=493.554688
+TIME aw_q4_a16 prep=0 rep=3 us=489.957306
+TIME delivery_fused_u32 prep=0 rep=4 us=429.888031
+TIME delivery_fused_u32 prep=1 rep=4 us=428.322662
+TIME aw_t64_f32 prep=0 rep=4 us=470.146637
+TIME aw_t64_f32 prep=1 rep=4 us=464.975983
+TIME aw_t64_a16 prep=0 rep=4 us=470.783966
+TIME aw_t64_a16 prep=1 rep=4 us=474.119995
+TIME aw_q4_a16 prep=0 rep=4 us=489.29068
+TIME aw_q4_a16 prep=1 rep=4 us=493.81601
+TIME q4_m64n64b128s1d1u8r prep=0 rep=4 us=350.40799
+TIME q4_m64n64b128s1d1u8r prep=1 rep=4 us=358.562653
+TIME aw_t64_f32 prep=1 rep=5 us=469.450684
+TIME aw_t64_f32 prep=0 rep=5 us=469.309326
+TIME aw_t64_a16 prep=1 rep=5 us=477.602661
+TIME aw_t64_a16 prep=0 rep=5 us=472.445312
+TIME aw_q4_a16 prep=1 rep=5 us=493.930664
+TIME aw_q4_a16 prep=0 rep=5 us=483.800018
+TIME q4_m64n64b128s1d1u8r prep=1 rep=5 us=357.802643
+TIME q4_m64n64b128s1d1u8r prep=0 rep=5 us=349.661346
+TIME delivery_fused_u32 prep=1 rep=5 us=417.959991
+TIME delivery_fused_u32 prep=0 rep=5 us=424.362671
+TIME aw_t64_a16 prep=0 rep=6 us=469.373322
+TIME aw_t64_a16 prep=1 rep=6 us=484.906647
+TIME aw_q4_a16 prep=0 rep=6 us=492.864014
+TIME aw_q4_a16 prep=1 rep=6 us=493.079987
+TIME q4_m64n64b128s1d1u8r prep=0 rep=6 us=347.029327
+TIME q4_m64n64b128s1d1u8r prep=1 rep=6 us=358.157318
+TIME delivery_fused_u32 prep=0 rep=6 us=418.658661
+TIME delivery_fused_u32 prep=1 rep=6 us=419.480011
+TIME aw_t64_f32 prep=0 rep=6 us=471.994659
+TIME aw_t64_f32 prep=1 rep=6 us=471.493317
+PASS

@@ -1,0 +1,10 @@
+{
+  "token": "w4a16-long-prefill-20260908-gpu0",
+  "health": {
+    "gpu": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, Tesla P100-PCIE-16GB, 23, 0, 29, 405, 0",
+    "apps": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1121899, /usr/bin/gnome-text-editor\n",
+    "existing_editor_retained": true
+  },
+  "pid": 1267785,
+  "started": 1788899034.6220539
+}

@@ -1,0 +1,93 @@
+========= COMPUTE-SANITIZER
+SCRATCH tiled_half_bytes=24576 tiled_float_bytes=49152 weight_layout_bytes=13824
+META tokens=33 n=128 k=96 experts=2 seed=3911 pattern=0 sm=56 candidate_grid=2 warmup_ms=0 f32_only=1
+CHECK aw_t64_f32 outputs=8448 samples=8448 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_t64_a16 outputs=8448 samples=8448 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_q4_a16 outputs=8448 samples=8448 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK q4_m64n64b128s1d1u8r outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK q4_m64n64b128s1d1u8c outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a0b0u8 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a0b0u16 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a0b0u32 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a0b1u8 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a0b1u16 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a0b1u32 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a1b0u8 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a1b0u16 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a1b0u32 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a1b1u8 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a1b1u16 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a1b1u32 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a2b0u8 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a2b0u16 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a2b0u32 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a2b1u8 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a2b1u16 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a2b1u32 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a3b0u8 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a3b0u16 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a3b0u32 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a3b1u8 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a3b1u16 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+CHECK delivery_a3b1u32 outputs=8448 samples=8448 bad=0 changed=3 nonfinite=0 rel_l2=6.496336082e-09 maxabs=1.907348633e-06
+WARMUP_COMPLETE
+TIME aw_t64_f32 prep=0 rep=0 us=728.160034
+TIME aw_t64_f32 prep=1 rep=0 us=716.480042
+TIME aw_t64_a16 prep=0 rep=0 us=701.152039
+TIME aw_t64_a16 prep=1 rep=0 us=747.64801
+TIME aw_q4_a16 prep=0 rep=0 us=781.536011
+TIME aw_q4_a16 prep=1 rep=0 us=829.05603
+TIME q4_m64n64b128s1d1u8r prep=0 rep=0 us=787.007996
+TIME q4_m64n64b128s1d1u8r prep=1 rep=0 us=843.263977
+TIME q4_m64n64b128s1d1u8c prep=0 rep=0 us=792.096008
+TIME q4_m64n64b128s1d1u8c prep=1 rep=0 us=847.199951
+TIME delivery_a0b0u8 prep=0 rep=0 us=790.015991
+TIME delivery_a0b0u8 prep=1 rep=0 us=850.112
+TIME delivery_a0b0u16 prep=0 rep=0 us=783.936035
+TIME delivery_a0b0u16 prep=1 rep=0 us=843.135986
+TIME delivery_a0b0u32 prep=0 rep=0 us=783.359985
+TIME delivery_a0b0u32 prep=1 rep=0 us=835.488037
+TIME delivery_a0b1u8 prep=0 rep=0 us=785.920044
+TIME delivery_a0b1u8 prep=1 rep=0 us=836.864014
+TIME delivery_a0b1u16 prep=0 rep=0 us=781.343994
+TIME delivery_a0b1u16 prep=1 rep=0 us=844
+TIME delivery_a0b1u32 prep=0 rep=0 us=787.743958
+TIME delivery_a0b1u32 prep=1 rep=0 us=834.976013
+TIME delivery_a1b0u8 prep=0 rep=0 us=747.872009
+TIME delivery_a1b0u8 prep=1 rep=0 us=827.64801
+TIME delivery_a1b0u16 prep=0 rep=0 us=752.960022
+TIME delivery_a1b0u16 prep=1 rep=0 us=826.559998
+TIME delivery_a1b0u32 prep=0 rep=0 us=752.384033
+TIME delivery_a1b0u32 prep=1 rep=0 us=831.776001
+TIME delivery_a1b1u8 prep=0 rep=0 us=751.359985
+TIME delivery_a1b1u8 prep=1 rep=0 us=826.048035
+TIME delivery_a1b1u16 prep=0 rep=0 us=756.608032
+TIME delivery_a1b1u16 prep=1 rep=0 us=835.328003
+TIME delivery_a1b1u32 prep=0 rep=0 us=754.271973
+TIME delivery_a1b1u32 prep=1 rep=0 us=839.839966
+TIME delivery_a2b0u8 prep=0 rep=0 us=762.080017
+TIME delivery_a2b0u8 prep=1 rep=0 us=844.640015
+TIME delivery_a2b0u16 prep=0 rep=0 us=759.42395
+TIME delivery_a2b0u16 prep=1 rep=0 us=837.791992
+TIME delivery_a2b0u32 prep=0 rep=0 us=774.656006
+TIME delivery_a2b0u32 prep=1 rep=0 us=851.616028
+TIME delivery_a2b1u8 prep=0 rep=0 us=765.151978
+TIME delivery_a2b1u8 prep=1 rep=0 us=841.088013
+TIME delivery_a2b1u16 prep=0 rep=0 us=761.856018
+TIME delivery_a2b1u16 prep=1 rep=0 us=838.432007
+TIME delivery_a2b1u32 prep=0 rep=0 us=766.304016
+TIME delivery_a2b1u32 prep=1 rep=0 us=834.944031
+TIME delivery_a3b0u8 prep=0 rep=0 us=780.640015
+TIME delivery_a3b0u8 prep=1 rep=0 us=869.823975
+TIME delivery_a3b0u16 prep=0 rep=0 us=789.919983
+TIME delivery_a3b0u16 prep=1 rep=0 us=867.519958
+TIME delivery_a3b0u32 prep=0 rep=0 us=794.272034
+TIME delivery_a3b0u32 prep=1 rep=0 us=872.544006
+TIME delivery_a3b1u8 prep=0 rep=0 us=788.031982
+TIME delivery_a3b1u8 prep=1 rep=0 us=875.072021
+TIME delivery_a3b1u16 prep=0 rep=0 us=789.312012
+TIME delivery_a3b1u16 prep=1 rep=0 us=863.488037
+TIME delivery_a3b1u32 prep=0 rep=0 us=795.711975
+TIME delivery_a3b1u32 prep=1 rep=0 us=871.872009
+PASS
+========= ERROR SUMMARY: 0 errors

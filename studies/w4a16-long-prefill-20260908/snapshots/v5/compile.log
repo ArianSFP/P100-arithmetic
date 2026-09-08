@@ -1,0 +1,362 @@
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_Z13prepare_tiledILb1EEvPKfPviii' for 'sm_60'
+ptxas info    : Function properties for _Z13prepare_tiledILb1EEvPKfPviii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 38 registers, used 1 barriers, 4224 bytes smem, 348 bytes cmem[0]
+ptxas info    : Compile time = 23.256 ms
+ptxas info    : Compiling entry function '_Z13prepare_tiledILb0EEvPKfPviii' for 'sm_60'
+ptxas info    : Function properties for _Z13prepare_tiledILb0EEvPKfPviii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 38 registers, used 1 barriers, 4224 bytes smem, 348 bytes cmem[0]
+ptxas info    : Compile time = 21.263 ms
+ptxas info    : Compiling entry function '_Z11q4_f32_tileILi64ELi64ELi128ELi1ELi1ELi8ELi0EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z11q4_f32_tileILi64ELi64ELi128ELi1ELi1ELi8ELi0EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 106 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 112.090 ms
+ptxas info    : Compiling entry function '_Z11q4_f32_tileILi64ELi64ELi128ELi1ELi1ELi8ELi1EEvPK6__halfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z11q4_f32_tileILi64ELi64ELi128ELi1ELi1ELi8ELi1EEvPK6__halfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 106 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 97.017 ms
+ptxas info    : Compiling entry function '_Z17aw_q4_service_m64ILb1ELb1ELb0ELi2ELb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z17aw_q4_service_m64ILb1ELb1ELb0ELi2ELb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 96 registers, used 1 barriers, 32768 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 87.733 ms
+ptxas info    : Compiling entry function '_Z17aw_q8_service_m64ILb1ELb1ELb0ELi2ELb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z17aw_q8_service_m64ILb1ELb1ELb0ELi2ELb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 96 registers, used 1 barriers, 32768 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 79.922 ms
+ptxas info    : Compiling entry function '_Z17aw_q8_service_m64ILb0ELb1ELb0ELi2ELb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z17aw_q8_service_m64ILb0ELb1ELb0ELi2ELb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 93 registers, used 1 barriers, 32768 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 78.869 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi4ELi1ELi32ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi4ELi1ELi32ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 115 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 165.059 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi4ELi1ELi16ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi4ELi1ELi16ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 114 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 104.181 ms
+ptxas info    : Compiling entry function '_Z10staged_f32ILi32EEvPKfPK6__halfPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z10staged_f32ILi32EEvPKfPK6__halfPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 83 registers, used 1 barriers, 12288 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 70.415 ms
+ptxas info    : Compiling entry function '_Z10staged_f32ILi16EEvPKfPK6__halfPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z10staged_f32ILi16EEvPKfPK6__halfPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 82 registers, used 1 barriers, 12288 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 49.136 ms
+ptxas info    : Compiling entry function '_Z7wide_q4ILi32ELb0ELb1EEvPKfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z7wide_q4ILi32ELb0ELb1EEvPKfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 253 registers, used 1 barriers, 24576 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 358.296 ms
+ptxas info    : Compiling entry function '_Z7wide_q4ILi32ELb1ELb1EEvPKfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z7wide_q4ILi32ELb1ELb1EEvPKfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 253 registers, used 1 barriers, 24576 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 350.102 ms
+ptxas info    : Compiling entry function '_Z7wide_q4ILi32ELb1ELb0EEvPKfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z7wide_q4ILi32ELb1ELb0EEvPKfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 187 registers, used 1 barriers, 24576 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 268.495 ms
+ptxas info    : Compiling entry function '_Z7wide_q4ILi16ELb1ELb0EEvPKfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z7wide_q4ILi16ELb1ELb0EEvPKfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 199 registers, used 1 barriers, 24576 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 160.401 ms
+ptxas info    : Compiling entry function '_Z7wide_q4ILi8ELb1ELb0EEvPKfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z7wide_q4ILi8ELb1ELb0EEvPKfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 199 registers, used 1 barriers, 24576 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 118.333 ms
+ptxas info    : Compiling entry function '_Z7wide_q4ILi32ELb0ELb0EEvPKfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z7wide_q4ILi32ELb0ELb0EEvPKfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 187 registers, used 1 barriers, 24576 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 240.036 ms
+ptxas info    : Compiling entry function '_Z7wide_q4ILi16ELb0ELb0EEvPKfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z7wide_q4ILi16ELb0ELb0EEvPKfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 194 registers, used 1 barriers, 24576 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 149.464 ms
+ptxas info    : Compiling entry function '_Z7wide_q4ILi8ELb0ELb0EEvPKfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z7wide_q4ILi8ELb0ELb0EEvPKfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 202 registers, used 1 barriers, 24576 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 110.747 ms
+ptxas info    : Compiling entry function '_Z10compact_q4ILi32ELb0EEvPKfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z10compact_q4ILi32ELb0EEvPKfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 103 registers, used 1 barriers, 12288 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 68.584 ms
+ptxas info    : Compiling entry function '_Z10compact_q4ILi32ELb1EEvPKfPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z10compact_q4ILi32ELb1EEvPKfPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 103 registers, used 1 barriers, 12288 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 64.477 ms
+ptxas info    : Compiling entry function '_Z13aw_special_q4ILb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z13aw_special_q4ILb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 121 registers, used 1 barriers, 32768 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 105.012 ms
+ptxas info    : Compiling entry function '_Z36aw_q8_service_m64_n128_halfpipe_syncILb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z36aw_q8_service_m64_n128_halfpipe_syncILb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 128 registers, used 1 barriers, 32768 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 212.193 ms
+ptxas info    : Compiling entry function '_Z16stage_q4_weightsPKhP6__halfm' for 'sm_60'
+ptxas info    : Function properties for _Z16stage_q4_weightsPKhP6__halfm
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 14 registers, used 0 barriers, 344 bytes cmem[0]
+ptxas info    : Compile time = 2.298 ms
+ptxas info    : Compiling entry function '_Z19decode_check_kernelPj' for 'sm_60'
+ptxas info    : Function properties for _Z19decode_check_kernelPj
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 6 registers, used 0 barriers, 328 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 0.956 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi4ELi1ELi32ELi2EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi4ELi1ELi32ELi2EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 88 registers, used 1 barriers, 12288 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 59.772 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi4ELi1ELi16ELi2EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi4ELi1ELi16ELi2EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 91 registers, used 1 barriers, 12288 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 43.914 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi0ELi1ELi32ELi3EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi0ELi1ELi32ELi3EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 78 registers, used 1 barriers, 10240 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 43.916 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi0ELi1ELi16ELi3EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi0ELi1ELi16ELi3EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 79 registers, used 1 barriers, 10240 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 36.540 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi0ELi1ELi8ELi3EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi0ELi1ELi8ELi3EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 78 registers, used 1 barriers, 10240 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 34.556 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi0ELi1ELi32ELi2EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi0ELi1ELi32ELi2EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 86 registers, used 1 barriers, 12288 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 54.909 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi0ELi1ELi16ELi2EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi0ELi1ELi16ELi2EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 86 registers, used 1 barriers, 12288 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 39.959 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi0ELi1ELi8ELi2EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi0ELi1ELi8ELi2EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 88 registers, used 1 barriers, 12288 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 32.388 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi0ELi1ELi4ELi2EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi0ELi1ELi4ELi2EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 88 registers, used 1 barriers, 12288 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 28.793 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi3ELi1ELi8ELi1EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi3ELi1ELi8ELi1EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 105 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 43.722 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi3ELi1ELi4ELi1EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi3ELi1ELi4ELi1EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 104 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 36.828 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi2ELi1ELi8ELi1EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi2ELi1ELi8ELi1EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 112 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 44.290 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi2ELi1ELi4ELi1EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi2ELi1ELi4ELi1EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 112 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 35.275 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi1ELi1ELi8ELi1EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi1ELi1ELi8ELi1EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 105 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 44.047 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi1ELi1ELi4ELi1EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi1ELi1ELi4ELi1EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 104 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 42.170 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi0ELi1ELi8ELi1EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi0ELi1ELi8ELi1EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 110 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 52.812 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi0ELi1ELi4ELi1EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi0ELi1ELi4ELi1EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 110 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 39.768 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi3ELi1ELi4ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi3ELi1ELi4ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 104 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 40.967 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi2ELi1ELi4ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi2ELi1ELi4ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 112 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 41.136 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi1ELi1ELi4ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi1ELi1ELi4ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 104 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 40.771 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi0ELi1ELi4ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi0ELi1ELi4ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 110 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 46.918 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi3ELi1ELi32ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi3ELi1ELi32ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 102 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 104.367 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi3ELi1ELi16ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi3ELi1ELi16ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 102 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 66.480 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi3ELi1ELi8ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi3ELi1ELi8ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 104 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 50.944 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi3ELi0ELi32ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi3ELi0ELi32ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 100 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 100.199 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi3ELi0ELi16ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi3ELi0ELi16ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 100 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 65.466 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi3ELi0ELi8ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi3ELi0ELi8ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 102 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 48.048 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi2ELi1ELi32ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi2ELi1ELi32ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 109 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 102.053 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi2ELi1ELi16ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi2ELi1ELi16ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 109 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 65.907 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi2ELi1ELi8ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi2ELi1ELi8ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 112 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 48.715 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi2ELi0ELi32ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi2ELi0ELi32ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 108 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 101.282 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi2ELi0ELi16ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi2ELi0ELi16ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 108 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 66.291 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi2ELi0ELi8ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi2ELi0ELi8ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 111 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 48.332 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi1ELi1ELi32ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi1ELi1ELi32ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 102 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 98.802 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi1ELi1ELi16ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi1ELi1ELi16ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 102 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 65.234 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi1ELi1ELi8ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi1ELi1ELi8ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 104 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 49.496 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi1ELi0ELi32ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi1ELi0ELi32ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 100 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 99.543 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi1ELi0ELi16ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi1ELi0ELi16ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 100 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 66.668 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi1ELi0ELi8ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi1ELi0ELi8ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 102 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 48.983 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi0ELi1ELi32ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi0ELi1ELi32ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 110 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 105.197 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi0ELi1ELi16ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi0ELi1ELi16ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 107 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 69.460 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi0ELi1ELi8ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi0ELi1ELi8ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 110 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 51.708 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi0ELi0ELi32ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi0ELi0ELi32ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 104 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 100.922 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi0ELi0ELi16ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi0ELi0ELi16ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 103 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 68.182 ms
+ptxas info    : Compiling entry function '_Z13delivery_leadILi0ELi0ELi8ELi0EEvPKvPKhPfiiii' for 'sm_60'
+ptxas info    : Function properties for _Z13delivery_leadILi0ELi0ELi8ELi0EEvPKvPKhPfiiii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 106 registers, used 1 barriers, 16384 bytes smem, 360 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 52.666 ms
+ptxas info    : Compiling entry function '_Z18prepare_a16_vectorPKfP6__halfm' for 'sm_60'
+ptxas info    : Function properties for _Z18prepare_a16_vectorPKfP6__halfm
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, used 0 barriers, 344 bytes cmem[0]
+ptxas info    : Compile time = 1.920 ms
+ptxas info    : Compiling entry function '_Z11prepare_a16PKfP6__halfm' for 'sm_60'
+ptxas info    : Function properties for _Z11prepare_a16PKfP6__halfm
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 10 registers, used 0 barriers, 344 bytes cmem[0]
+ptxas info    : Compile time = 1.416 ms

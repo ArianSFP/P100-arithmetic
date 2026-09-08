@@ -1,0 +1,22 @@
+========= COMPUTE-SANITIZER
+VECTOR_PREP 0 GRID 0
+SCRATCH tiled_half_bytes=1572864 tiled_float_bytes=3145728 weight_layout_bytes=442368
+META tokens=65 n=128 k=96 experts=64 seed=3911 pattern=0 sm=56 candidate_grid=2 warmup_ms=0 f32_only=1
+CHECK aw_t64_f32 outputs=532480 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_t64_a16 outputs=532480 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK aw_q4_a16 outputs=532480 samples=256 bad=0 changed=0 nonfinite=0 rel_l2=0 maxabs=0
+CHECK q4_m64n64b128s1d1u8r outputs=532480 samples=256 bad=0 changed=131 nonfinite=0 rel_l2=9.406154553e-09 maxabs=7.629394531e-06
+CHECK delivery_fused_u32 outputs=532480 samples=256 bad=0 changed=131 nonfinite=0 rel_l2=9.406154553e-09 maxabs=7.629394531e-06
+WARMUP_COMPLETE
+TIME aw_t64_f32 prep=0 rep=0 us=522.432007
+TIME aw_t64_f32 prep=1 rep=0 us=516.384033
+TIME aw_t64_a16 prep=0 rep=0 us=511.551971
+TIME aw_t64_a16 prep=1 rep=0 us=711.296021
+TIME aw_q4_a16 prep=0 rep=0 us=512.416016
+TIME aw_q4_a16 prep=1 rep=0 us=711.583984
+TIME q4_m64n64b128s1d1u8r prep=0 rep=0 us=525.216003
+TIME q4_m64n64b128s1d1u8r prep=1 rep=0 us=730.880005
+TIME delivery_fused_u32 prep=0 rep=0 us=659.968018
+TIME delivery_fused_u32 prep=1 rep=0 us=664.127991
+PASS
+========= ERROR SUMMARY: 0 errors
