@@ -1,3 +1,4 @@
 # Keep archived bytes exact, including text logs used by SHA-256 inventories.
 archive/** -text
+studies/w4a16-r3-20260908/** -text
 *.cubin binary

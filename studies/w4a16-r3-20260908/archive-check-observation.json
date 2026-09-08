@@ -1,0 +1,10 @@
+{
+  "interim_strict_verifier_status": "FAIL_EXTRA_FILES",
+  "interim_extras": [
+    "scripts/__pycache__/elf_inspect.cpython-314.pyc",
+    "scripts/__pycache__/oracle.cpython-314.pyc"
+  ],
+  "manifest_entries_hash_verified": 1152,
+  "final_audit_extras": [],
+  "note": "The extra cache files were present during an interim check and absent during the final audit. This study did not create, delete, or otherwise edit these files. Concurrent study work was left untouched."
+}

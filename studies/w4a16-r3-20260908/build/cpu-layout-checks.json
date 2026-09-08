@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "fused_mapping_cases": 12,
+  "packed_half_pairs": 65536,
+  "reduction_order_unchanged": true,
+  "max_dynamic_shared_bytes": 32768
+}

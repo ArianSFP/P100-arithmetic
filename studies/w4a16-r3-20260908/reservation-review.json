@@ -1,0 +1,10 @@
+{
+  "stage": "after full validation, before sanitizers",
+  "status": "reviewed; GPU2 claim unchanged",
+  "old_local_sha256": "a183fe98e308ba1a99171d6f63d7984ca4caf1e40e8681e46995ba12e92ce47e",
+  "new_local_sha256": "26eed3dfc6965e13524e194266df5a076a1b345953300da26a12ebd823af4c50",
+  "shared_sha256": "d0a735a561fd9b26deae1433235bdea54b08621bc37ae7e1fe3e36ced5d4cdf4",
+  "change": "Other session appended CPU/compiler-only W4A4 work; explicitly respects GPU2 W4A16 reservation. GPU3 permission pending there.",
+  "guard_outcome": "Stopped before querying GPU or launching sanitizer; no worker ran.",
+  "decision": "Resume with the explicitly reviewed new log hash; no guard bypass or automatic retry."
+}

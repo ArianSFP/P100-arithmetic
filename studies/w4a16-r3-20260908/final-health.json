@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "gpu": 2,
+  "token": "w4a16-r3-20260908-1459-gpu2",
+  "reservation_held": true,
+  "health": {
+    "device": {
+      "argv": [
+        "/usr/bin/nvidia-smi",
+        "-i",
+        "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81",
+        "--query-gpu=timestamp,uuid,name,driver_version,memory.used,utilization.gpu,temperature.gpu,clocks.sm,ecc.errors.uncorrected.volatile.total",
+        "--format=csv,noheader,nounits"
+      ],
+      "returncode": 0,
+      "stdout": "2026/09/08 15:19:12.948, GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, Tesla P100-PCIE-16GB, 580.173.02, 5, 0, 29, 405, 0\n",
+      "stderr": ""
+    },
+    "processes": {
+      "argv": [
+        "/usr/bin/nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid,process_name",
+        "--format=csv,noheader"
+      ],
+      "returncode": 0,
+      "stdout": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1121899, /usr/bin/gnome-text-editor\n",
+      "stderr": ""
+    }
+  },
+  "desktop_bytes": 22835,
+  "free_bytes": 16689631232
+}

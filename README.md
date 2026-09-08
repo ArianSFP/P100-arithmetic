@@ -5,6 +5,15 @@ layouts, and W4A16 kernels. Measurements were recorded on 2026-09-08 using CUDA
 12.8, GCC 14, and P100-PCIE-16GB GPUs. This is a research archive, not a llama.cpp
 patch or a ready-to-deploy inference backend.
 
+## Latest W4A16 follow-up: round 3
+
+[Round 3](studies/w4a16-r3-20260908/RESULTS.md) reduces single-vector latency
+another **4.2-7.2%** versus the live round-2 winners by keeping the exact-order
+reduction inside a CTA. FP16 inputs and FP32 arithmetic order are unchanged;
+900 pipeline checks passed. The four-vector improvement is only 1.8% and remains
+provisional. These are synthetic kernel results, not model-inference gains.
+The round-2 baseline and broader arithmetic archive are described below.
+
 ## Main finding: faster W4A16 without reducing activation precision
 
 The latest kernels preserve the original FP16 activation bits, use FP32

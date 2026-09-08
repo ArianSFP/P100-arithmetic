@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "gpu": 2,
+  "gpu_uuid": "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81",
+  "token": "w4a16-r3-20260908-1459-gpu2",
+  "argv": [
+    "/usr/bin/env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_DEVICE_ORDER=PCI_BUS_ID",
+    "CUDA_VISIBLE_DEVICES=GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81",
+    "/usr/bin/taskset",
+    "--cpu-list",
+    "0-11",
+    "/home/arian/P100-arithmetic/studies/w4a16-r3-20260908/build/worker",
+    "/home/arian/P100-arithmetic/studies/w4a16-r3-20260908/build/kernels.cubin",
+    "/home/arian/P100-arithmetic/archive/w4a16-r2-20260908/build/kernels.cubin",
+    "/home/arian/P100-arithmetic/archive/w4a16-20260908/build/kernels.cubin",
+    "sweep",
+    "--m",
+    "5120",
+    "--k",
+    "5120",
+    "--n",
+    "4"
+  ],
+  "hashes": {
+    "common.hpp": "b0384c0a1ee4515e1f98a70ed98f83718383ddc5e7c4e6fd13a34b745ebff5dc",
+    "cpu_tests.cpp": "4d4d2ec0e7b1abd3a68a3b9c0d2700829568e21e78208844b72a95b649b4969d",
+    "kernels.cu": "5e2c62cab687d03b33291de2aca2a15a5d70425405761a337caa4a1c675d53c8",
+    "worker.cpp": "2372a01a08344b9946071c4db6ae0d9757464608d2c78b80c8f91ec11b539b32",
+    "build/kernels.cubin": "09b125f359d982e9870205427da7d602844090f0c018e856e6397fd49bde233c",
+    "build/worker": "290cede0d7bec5fe9e1a94fc1b24f4316d66300d595e313cbcb7be124f51b404",
+    "../../archive/w4a16-20260908/build/kernels.cubin": "21e86e715086128e8929111fc57bb419dbe4e6c490a940c1234bfb8558020b2e",
+    "../../archive/w4a16-r2-20260908/build/kernels.cubin": "64fdbef07437dc6918821a6209577000cfe7f61a818fb973fd13b1c643d84d94"
+  },
+  "supervisor_sha256": "70d62f0832a243d0a594cdedb87674215a9a56c40fb2ddf965a5ac5b7d00b207",
+  "coordination_sha256": "26eed3dfc6965e13524e194266df5a076a1b345953300da26a12ebd823af4c50",
+  "shared_sha256": "d0a735a561fd9b26deae1433235bdea54b08621bc37ae7e1fe3e36ced5d4cdf4",
+  "sanitizer": null,
+  "hypothesis": "Exact-order W4A16: paired sharing, CTA sizing, local reduction; live sealed R2 controls",
+  "before": {
+    "device": {
+      "argv": [
+        "/usr/bin/nvidia-smi",
+        "-i",
+        "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81",
+        "--query-gpu=timestamp,uuid,name,driver_version,memory.used,utilization.gpu,temperature.gpu,clocks.sm,ecc.errors.uncorrected.volatile.total",
+        "--format=csv,noheader,nounits"
+      ],
+      "returncode": 0,
+      "stdout": "2026/09/08 15:10:41.305, GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, Tesla P100-PCIE-16GB, 580.173.02, 5, 0, 30, 1328, 0\n",
+      "stderr": ""
+    },
+    "processes": {
+      "argv": [
+        "/usr/bin/nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid,process_name",
+        "--format=csv,noheader"
+      ],
+      "returncode": 0,
+      "stdout": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1121899, /usr/bin/gnome-text-editor\n",
+      "stderr": ""
+    }
+  },
+  "pid": 1154880,
+  "returncode": 0,
+  "after": {
+    "device": {
+      "argv": [
+        "/usr/bin/nvidia-smi",
+        "-i",
+        "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81",
+        "--query-gpu=timestamp,uuid,name,driver_version,memory.used,utilization.gpu,temperature.gpu,clocks.sm,ecc.errors.uncorrected.volatile.total",
+        "--format=csv,noheader,nounits"
+      ],
+      "returncode": 0,
+      "stdout": "2026/09/08 15:10:42.914, GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, Tesla P100-PCIE-16GB, 580.173.02, 5, 27, 31, 1328, 0\n",
+      "stderr": ""
+    },
+    "processes": {
+      "argv": [
+        "/usr/bin/nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid,process_name",
+        "--format=csv,noheader"
+      ],
+      "returncode": 0,
+      "stdout": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1121899, /usr/bin/gnome-text-editor\n",
+      "stderr": ""
+    }
+  }
+}

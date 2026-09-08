@@ -1,0 +1,8 @@
+{
+  "stage": "final health check, after all GPU workers and artifact audit",
+  "status": "reviewed; GPU2 claim still held",
+  "local_sha256": "5aea3eda38113cb60470e2f57d90a57ff15baf4378f77dc6fbc54eccff776213",
+  "shared_sha256": "1e7d21069f0c82c31b960108c2402debcabf2584fe637d5d2dda30f0d925c3f7",
+  "change": "Other session recorded an explicitly authorized GPU3 W4A4 reservation. GPU1 and GPU2 claims are explicitly respected.",
+  "decision": "GPU2 final health query only, then release this study's token. Do not query/use/reset other devices."
+}
