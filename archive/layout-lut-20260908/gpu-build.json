@@ -1,0 +1,37 @@
+{
+  "argv": [
+    "/usr/bin/g++-14",
+    "-O3",
+    "-std=c++17",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "-Wno-unknown-pragmas",
+    "-I/usr/local/cuda-12.8/include",
+    "/home/arian/hfma2-gp100-probe/layout-lut-20260908/gpu_worker.cpp",
+    "-o",
+    "/home/arian/hfma2-gp100-probe/layout-lut-20260908/gpu-worker",
+    "-L/usr/local/cuda-12.8/lib64/stubs",
+    "-lcuda"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "",
+  "source_sha256": "b8d943ee9b6bb15df7af8de5e962ca32dc1fecffc61cee795ece1a1c92a85abb",
+  "baseline_argv": [
+    "/usr/local/cuda-12.8/bin/nvcc",
+    "-ccbin",
+    "/usr/bin/g++-14",
+    "-std=c++17",
+    "-O3",
+    "-arch=sm_60",
+    "-lineinfo",
+    "-cubin",
+    "/home/arian/hfma2-gp100-probe/endpoint-sad-20260908/endpoint_sad.cu",
+    "-o",
+    "/home/arian/hfma2-gp100-probe/layout-lut-20260908/gpu-baseline.cubin"
+  ],
+  "baseline_source_sha256": "d1c88b28b7b088366a1182c8e996ec1b708676de8bd37c2066c5e23f5b68ddfc",
+  "baseline_cubin_sha256": "d420b8e3e18c0bca3fe02c6f4922a53ab6569d285c88364bfc23a8af46dd6711",
+  "worker_sha256": "378b2a008a1cea1a7eb756cd476d58a658d973377d428a9e1898bcb6d4bde08a"
+}

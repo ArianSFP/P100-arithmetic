@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "reservation_token": "w4a16-20260908-1227-gpu1",
+  "reservation_held_during_check": true,
+  "queries": [
+    {
+      "chunk_id": "8415ca",
+      "wall_time_seconds": 0.000009427,
+      "exit_code": 0,
+      "original_token_count": 30,
+      "output": "2026/09/08 12:51:34.913, GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, Tesla P100-PCIE-16GB, 580.173.02, 5, 0, 27, 405, 0\n"
+    },
+    {
+      "chunk_id": "2bb36c",
+      "wall_time_seconds": 0.000005413,
+      "exit_code": 0,
+      "original_token_count": 20,
+      "output": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1087731, /usr/bin/gnome-text-editor\n"
+    }
+  ],
+  "artifact_audit": {
+    "source_and_binary_hashes": "PASS",
+    "full_validation_cases": 1560,
+    "memcheck": "0 errors",
+    "synccheck": "0 errors",
+    "frozen_workers": 12,
+    "configuration_checks": 204,
+    "retained_event_samples": 1632,
+    "no_overlapping_model_server_in_frozen_snapshots": true
+  },
+  "no_reset": true
+}

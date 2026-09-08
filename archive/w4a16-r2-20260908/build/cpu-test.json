@@ -1,0 +1,8 @@
+{
+  "argv": [
+    "/home/arian/hfma2-gp100-probe/w4a16-r2-20260908/build/cpu-tests"
+  ],
+  "returncode": 0,
+  "stdout": "CPU_PASS finite_half=63488 exact_W4_products=1015808 random_lossless_blocks=65536 layouts=2 address_bijections=3 vector_alignment=1 index_bound=1\n",
+  "stderr": ""
+}

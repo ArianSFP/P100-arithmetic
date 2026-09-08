@@ -1,0 +1,6 @@
+========= COMPUTE-SANITIZER
+DEVICE Tesla P100-PCIE-16GB SM=6.0 sms=56
+PACK W=2 M=33 K=96 F=3 old=0 cpu_us=16.7 payload_bytes=1536 scale_bytes=768
+PACK W=4 M=33 K=96 F=3 old=0 cpu_us=29.2 payload_bytes=3072 scale_bytes=768
+SMOKE_PASS
+========= ERROR SUMMARY: 0 errors

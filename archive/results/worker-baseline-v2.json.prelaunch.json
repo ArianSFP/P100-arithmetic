@@ -1,0 +1,9 @@
+{
+  "candidate": "build/probe.cubin",
+  "candidate_sha256": "f7c3facfb840256df55752e0ac2a339165cfa2932867990b1dada862eede7e8e",
+  "worker": "build/hfma2-worker",
+  "worker_sha256": "cce75aebedae5f0755245d4ca92daa6129de60f5c52519098c2003d6f241ca52",
+  "cuda_visible_devices": "0",
+  "timeout_seconds": 10.0,
+  "launch_unix_ns": 1788825181190787785
+}

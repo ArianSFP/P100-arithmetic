@@ -1,0 +1,20 @@
+{
+  "input": "build/merge_probe.cubin",
+  "output": "results/merge-dest-r11-mrg-h0.cubin",
+  "input_sha256": "990006f495cac99084dbabec93449b7ef3c11c53c381af92341eff3ecb0c6b66",
+  "output_sha256": "7b5efdbfdff9373898b9349828bdb9b58ba81791b249bd9c9b11f05bb2a44359",
+  "section": ".text.merge_probe",
+  "section_relative_offset": 296,
+  "file_offset": 1576,
+  "baseline_word": "0x5d0004800067040e",
+  "candidate_word": "0x5d0404800067040b",
+  "changed_byte_offsets": [
+    1576,
+    1582
+  ],
+  "selectors": {
+    "dest": 2,
+    "raw_mask": "0x00000000000000ff",
+    "raw_value": "0x000000000000000b"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "candidate": "results/merge-dest-r11.cubin",
+  "candidate_sha256": "84f02265bea3779239811f20601be8b01ab30bedea8c6ffa859934216fb29415",
+  "worker": "build/merge-worker",
+  "worker_sha256": "70dd4c363ad562b00d36bebfc1cd89deb646dee093d36533309e9747b743b8d2",
+  "cuda_visible_devices": "0",
+  "timeout_seconds": 10.0,
+  "launch_unix_ns": 1788825642665892233,
+  "status": "completed",
+  "returncode": 0,
+  "stdout": "status=ready device_compute=6.0 cubin=results/merge-dest-r11.cubin\nstatus=ok vectors=3\nvector=lane_distinguish a=0x40003c00 b=0x45004200 c=0x49804700 seed=0x5a405640 observed_side=0x4d404900\nvector=signed_lane_distinguish a=0x4000bc00 b=0xc5004200 c=0xc9804700 seed=0x5dc0d640 observed_side=0xcd404400\nvector=independent_seed a=0x3c003c00 b=0x40004000 c=0x44004400 seed=0x5c005800 observed_side=0x46004600\n",
+  "stderr": "",
+  "elapsed_seconds": 0.5460749630001374
+}

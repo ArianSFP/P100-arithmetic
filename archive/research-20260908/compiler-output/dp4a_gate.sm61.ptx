@@ -1,0 +1,15 @@
+.version 8.7
+.target sm_61
+.address_size 64
+.visible .entry dp4a_gate(.param .u64 input, .param .u64 output) {
+    .reg .u64 p, q;
+    .reg .b32 a, b, c, d;
+    ld.param.u64 p, [input];
+    ld.param.u64 q, [output];
+    ld.global.u32 a, [p];
+    ld.global.u32 b, [p+4];
+    ld.global.u32 c, [p+8];
+    dp4a.s32.s32 d, a, b, c;
+    st.global.u32 [q], d;
+    ret;
+}

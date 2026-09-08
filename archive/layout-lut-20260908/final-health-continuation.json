@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-09-08 12:05:39 UTC",
+  "scope": "Read-only host nvidia-smi checks after authorized continuation",
+  "reservation_token": "lowbit-20260908-1200-gpu1",
+  "completed_worker": "layout-1788869038900603625",
+  "device_query": "uuid,name,driver_version,memory.used,utilization.gpu,temperature.gpu,clocks.sm,ecc.errors.uncorrected.volatile.total",
+  "device_stdout": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, Tesla P100-PCIE-16GB, 580.173.02, 5, 0, 28, 405, 0\n",
+  "compute_query": "gpu_uuid,pid,process_name",
+  "compute_stdout": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1021860, /usr/bin/gnome-text-editor\n",
+  "both_query_returncodes": 0,
+  "target_compute_processes": 0,
+  "other_processes_touched": false,
+  "reset_performed": false
+}

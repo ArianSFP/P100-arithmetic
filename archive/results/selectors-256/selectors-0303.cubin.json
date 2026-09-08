@@ -1,0 +1,21 @@
+{
+  "input": "build/probe.cubin",
+  "output": "results/selectors-256/selectors-0303.cubin",
+  "input_sha256": "f7c3facfb840256df55752e0ac2a339165cfa2932867990b1dada862eede7e8e",
+  "output_sha256": "d40d9b580d551d5eef87a19185baf5b991bfc7e7690a056d5aabe36170347fe9",
+  "section": ".text.probe",
+  "section_relative_offset": 240,
+  "file_offset": 1424,
+  "baseline_word": "0x5d0003800047020a",
+  "candidate_word": "0x5d0603803047020a",
+  "changed_byte_offsets": [
+    1427,
+    1430
+  ],
+  "selectors": {
+    "a": 0,
+    "b": 3,
+    "c": 0,
+    "dest": 3
+  }
+}

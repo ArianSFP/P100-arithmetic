@@ -1,0 +1,8 @@
+{
+  "argv": [
+    "/home/arian/hfma2-gp100-probe/layout-lut-20260908/results/cpu-tests"
+  ],
+  "returncode": 0,
+  "stdout": "PASS W=2 groups=65536 formats=4 group_size=32 ordinary_LUT_SAD=exact seed=0x60ba9802\nPASS W=4 groups=65536 formats=4 group_size=32 ordinary_LUT_SAD=exact seed=0x60ba9804\nPASS warp_reuse_and_tail_lane_cases=12800 rows_per_warp=32,64,128\nPASS all 256 bit/shift basis cases and shared host/device weight+scale address functions including tails\nFP32_WITNESS W=2 weights=-1,1,-2,1 a=0x1.ap-6,0x1p-10,0x1p+13,0x1.8p-1 lut=-0x1.fffa32p+13 direct=-0x1.fffa3p+13 exact=-0x1.fffa32p+13\nNUMERICS W=2 finite_FP32_quartets=32768 regrouped_differs=117 max_abs_error_lut=0.0078125 direct=0.0078125 NOT_a_quality_gate\nFP32_WITNESS W=4 weights=5,-4,5,0 a=-0x1.bp+13,0x1.8cp-4,-0x1.98p+5,0x1.cp+14 lut=-0x1.0eff62p+16 direct=-0x1.0eff64p+16 exact=-0x1.0eff63p+16\nNUMERICS W=4 finite_FP32_quartets=32768 regrouped_differs=886 max_abs_error_lut=0.0390625 direct=0.0517578 NOT_a_quality_gate\n",
+  "stderr": ""
+}

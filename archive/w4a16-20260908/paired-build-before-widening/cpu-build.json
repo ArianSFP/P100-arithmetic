@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/usr/bin/g++-14",
+    "-O3",
+    "-std=c++17",
+    "-ffp-contract=off",
+    "-Wall",
+    "-Wextra",
+    "cpu_tests.cpp",
+    "-o",
+    "/home/arian/hfma2-gp100-probe/w4a16-20260908/build/cpu-tests"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": ""
+}

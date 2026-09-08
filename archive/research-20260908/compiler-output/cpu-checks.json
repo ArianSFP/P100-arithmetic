@@ -1,0 +1,24 @@
+{
+  "w2a8_sad_identity": {
+    "cases": 8192,
+    "result": "PASS_CPU_ONLY"
+  },
+  "w4a8_sad_identity": {
+    "cases": 20480,
+    "result": "PASS_CPU_ONLY"
+  },
+  "w8a8_sad_identity": {
+    "cases": 266240,
+    "result": "PASS_CPU_ONLY"
+  },
+  "replicated_16_entry_lut_bank_mapping": {
+    "cases": 4096,
+    "result": "PASS_ADDRESS_MODEL_ONLY"
+  },
+  "existing_hfma_oracle_audit": {
+    "input": "0x3800 (0.5)",
+    "returned_type": "float",
+    "issue": "float returned despite Fraction annotation; not a general exact oracle",
+    "reproduced_exception": "'float' object has no attribute 'numerator'"
+  }
+}

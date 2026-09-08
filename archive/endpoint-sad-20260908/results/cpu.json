@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "/home/arian/hfma2-gp100-probe/endpoint-sad-20260908/endpoint-sad",
+    "--cpu"
+  ],
+  "returncode": 0,
+  "stdout": "CPU PASS bits=2 signed_and_unsigned=1 cases=559104 seed=0x60e0d002\nCPU PASS bits=4 signed_and_unsigned=1 cases=565248 seed=0x60e0d002\nCPU PASS common-scale-group boundary negative control\nCPU PASS packed W=2 groups=65536 methods=9 group_size=32\nCPU PASS packed W=4 groups=65536 methods=9 group_size=32\nCPU PASS Q2_K-style affine algebra superblocks=4096 G_weight=16 G_activation=32 integer_scale_numerators=1\n",
+  "stderr": ""
+}

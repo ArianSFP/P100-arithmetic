@@ -1,0 +1,234 @@
+{
+  "status": "PASS_CPU_ADDRESS_MODEL_ONLY",
+  "seed": "0x60ba9832",
+  "bank_cases": 262144,
+  "compact_shared_bytes_per_warp": 64,
+  "replicated_shared_bytes_per_warp": 2048,
+  "compact_bank_distinct_words_max": 1,
+  "replicated_bank_distinct_words_max": 1,
+  "negative_control_bank_distinct_words_max": 32,
+  "weight_load_32byte_sectors": {
+    "W2_row_parallel_True_tiled_False": 32,
+    "W2_row_parallel_True_tiled_True": 4,
+    "W2_row_parallel_False_tiled_False": 4,
+    "W2_row_parallel_False_tiled_True": 32,
+    "W4_row_parallel_True_tiled_False": 32,
+    "W4_row_parallel_True_tiled_True": 4,
+    "W4_row_parallel_False_tiled_False": 4,
+    "W4_row_parallel_False_tiled_True": 32
+  },
+  "grid_model": [
+    {
+      "rows": 5120,
+      "rows_per_warp": 32,
+      "split_k": 1,
+      "ctas": 40,
+      "partial_bytes_per_batch": 0
+    },
+    {
+      "rows": 5120,
+      "rows_per_warp": 32,
+      "split_k": 2,
+      "ctas": 80,
+      "partial_bytes_per_batch": 40960
+    },
+    {
+      "rows": 5120,
+      "rows_per_warp": 32,
+      "split_k": 4,
+      "ctas": 160,
+      "partial_bytes_per_batch": 81920
+    },
+    {
+      "rows": 5120,
+      "rows_per_warp": 32,
+      "split_k": 8,
+      "ctas": 320,
+      "partial_bytes_per_batch": 163840
+    },
+    {
+      "rows": 5120,
+      "rows_per_warp": 32,
+      "split_k": 16,
+      "ctas": 640,
+      "partial_bytes_per_batch": 327680
+    },
+    {
+      "rows": 5120,
+      "rows_per_warp": 64,
+      "split_k": 1,
+      "ctas": 20,
+      "partial_bytes_per_batch": 0
+    },
+    {
+      "rows": 5120,
+      "rows_per_warp": 64,
+      "split_k": 2,
+      "ctas": 40,
+      "partial_bytes_per_batch": 40960
+    },
+    {
+      "rows": 5120,
+      "rows_per_warp": 64,
+      "split_k": 4,
+      "ctas": 80,
+      "partial_bytes_per_batch": 81920
+    },
+    {
+      "rows": 5120,
+      "rows_per_warp": 64,
+      "split_k": 8,
+      "ctas": 160,
+      "partial_bytes_per_batch": 163840
+    },
+    {
+      "rows": 5120,
+      "rows_per_warp": 64,
+      "split_k": 16,
+      "ctas": 320,
+      "partial_bytes_per_batch": 327680
+    },
+    {
+      "rows": 5120,
+      "rows_per_warp": 128,
+      "split_k": 1,
+      "ctas": 10,
+      "partial_bytes_per_batch": 0
+    },
+    {
+      "rows": 5120,
+      "rows_per_warp": 128,
+      "split_k": 2,
+      "ctas": 20,
+      "partial_bytes_per_batch": 40960
+    },
+    {
+      "rows": 5120,
+      "rows_per_warp": 128,
+      "split_k": 4,
+      "ctas": 40,
+      "partial_bytes_per_batch": 81920
+    },
+    {
+      "rows": 5120,
+      "rows_per_warp": 128,
+      "split_k": 8,
+      "ctas": 80,
+      "partial_bytes_per_batch": 163840
+    },
+    {
+      "rows": 5120,
+      "rows_per_warp": 128,
+      "split_k": 16,
+      "ctas": 160,
+      "partial_bytes_per_batch": 327680
+    },
+    {
+      "rows": 17408,
+      "rows_per_warp": 32,
+      "split_k": 1,
+      "ctas": 136,
+      "partial_bytes_per_batch": 0
+    },
+    {
+      "rows": 17408,
+      "rows_per_warp": 32,
+      "split_k": 2,
+      "ctas": 272,
+      "partial_bytes_per_batch": 139264
+    },
+    {
+      "rows": 17408,
+      "rows_per_warp": 32,
+      "split_k": 4,
+      "ctas": 544,
+      "partial_bytes_per_batch": 278528
+    },
+    {
+      "rows": 17408,
+      "rows_per_warp": 32,
+      "split_k": 8,
+      "ctas": 1088,
+      "partial_bytes_per_batch": 557056
+    },
+    {
+      "rows": 17408,
+      "rows_per_warp": 32,
+      "split_k": 16,
+      "ctas": 2176,
+      "partial_bytes_per_batch": 1114112
+    },
+    {
+      "rows": 17408,
+      "rows_per_warp": 64,
+      "split_k": 1,
+      "ctas": 68,
+      "partial_bytes_per_batch": 0
+    },
+    {
+      "rows": 17408,
+      "rows_per_warp": 64,
+      "split_k": 2,
+      "ctas": 136,
+      "partial_bytes_per_batch": 139264
+    },
+    {
+      "rows": 17408,
+      "rows_per_warp": 64,
+      "split_k": 4,
+      "ctas": 272,
+      "partial_bytes_per_batch": 278528
+    },
+    {
+      "rows": 17408,
+      "rows_per_warp": 64,
+      "split_k": 8,
+      "ctas": 544,
+      "partial_bytes_per_batch": 557056
+    },
+    {
+      "rows": 17408,
+      "rows_per_warp": 64,
+      "split_k": 16,
+      "ctas": 1088,
+      "partial_bytes_per_batch": 1114112
+    },
+    {
+      "rows": 17408,
+      "rows_per_warp": 128,
+      "split_k": 1,
+      "ctas": 34,
+      "partial_bytes_per_batch": 0
+    },
+    {
+      "rows": 17408,
+      "rows_per_warp": 128,
+      "split_k": 2,
+      "ctas": 68,
+      "partial_bytes_per_batch": 139264
+    },
+    {
+      "rows": 17408,
+      "rows_per_warp": 128,
+      "split_k": 4,
+      "ctas": 136,
+      "partial_bytes_per_batch": 278528
+    },
+    {
+      "rows": 17408,
+      "rows_per_warp": 128,
+      "split_k": 8,
+      "ctas": 272,
+      "partial_bytes_per_batch": 557056
+    },
+    {
+      "rows": 17408,
+      "rows_per_warp": 128,
+      "split_k": 16,
+      "ctas": 544,
+      "partial_bytes_per_batch": 1114112
+    }
+  ],
+  "split_k_group_ownership": "PASS",
+  "caveat": "Per-instruction aligned full-warp sector model; not measured bandwidth or latency"
+}

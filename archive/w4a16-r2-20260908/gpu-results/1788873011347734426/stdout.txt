@@ -1,0 +1,86 @@
+========= COMPUTE-SANITIZER
+CONVERSION_PASS patterns=65536 finite_and_infinity_bitexact=1 NaN_classification=1
+DATA M=33 K=96 N=1 family=0 activation=FP16 activation_bytes=192 native_weight_bytes=1782 seed_formula=0x4166b000_xor_shape_family
+PACK F=0 old=0 cpu_us=17.7 bytes=3456 includes_host_roundtrip_check=1
+CHECK method=2 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=2 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=10 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=10 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=10 R=6 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=10 R=8 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=11 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=11 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=11 R=6 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=11 R=8 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=12 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=12 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=12 R=6 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=12 R=8 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=13 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=13 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=13 R=6 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=13 R=8 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=14 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=14 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=14 R=6 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=14 R=8 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=15 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=15 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=15 R=6 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=15 R=8 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+PACK F=2 old=0 cpu_us=17.7 bytes=3456 includes_host_roundtrip_check=1
+CHECK method=16 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=16 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=16 R=6 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=16 R=8 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=17 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=17 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=17 R=6 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=17 R=8 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=18 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=18 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=18 R=6 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=18 R=8 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=19 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=19 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=19 R=6 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=19 R=8 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=20 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=20 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=20 R=6 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=20 R=8 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=21 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=21 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=21 R=6 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=21 R=8 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=22 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=22 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=22 R=6 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=22 R=8 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=23 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=23 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=23 R=6 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=23 R=8 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=30 R=1 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=30 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=30 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=31 R=1 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=31 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=31 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=32 R=1 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=32 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=32 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=33 R=1 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=33 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=33 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=34 R=1 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=34 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=34 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=35 R=1 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=35 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=35 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=36 R=1 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=36 R=2 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+CHECK method=36 R=4 S=32 M=33 K=96 N=1 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=33 max_abs=6.006360054e-04 max_L1_relative=4.939079745e-08 relative_L2=6.510161404e-08
+SMOKE_PASS
+========= ERROR SUMMARY: 0 errors

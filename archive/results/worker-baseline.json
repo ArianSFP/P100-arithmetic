@@ -1,0 +1,14 @@
+{
+  "candidate": "build/probe.cubin",
+  "candidate_sha256": "f7c3facfb840256df55752e0ac2a339165cfa2932867990b1dada862eede7e8e",
+  "worker": "build/hfma2-worker",
+  "worker_sha256": "b9b86e81fe052a9b745a2e4e64244b39b9c60398261dd0fcd572ad705f47b7ce",
+  "cuda_visible_devices": "0",
+  "timeout_seconds": 10.0,
+  "launch_unix_ns": 1788825056186579739,
+  "status": "completed",
+  "returncode": 0,
+  "stdout": "status=ready device_compute=6.0 cubin=build/probe.cubin\nstatus=ok vectors=4\nvector=lane_distinguish a=0x40003c00 b=0x45004200 c=0x49804700 out=0x4d404900\nvector=signed_lane_distinguish a=0x4000bc00 b=0xc5004200 c=0xc9804700 out=0xcd404400\nvector=fused_rounding a=0x3c013c01 b=0x5bfe5bfe c=0xdc00dc00 out=0x8c008c00\nvector=zeros a=0x00000000 b=0x00000000 c=0x00000000 out=0x00000000\n",
+  "stderr": "",
+  "elapsed_seconds": 0.3493076800077688
+}

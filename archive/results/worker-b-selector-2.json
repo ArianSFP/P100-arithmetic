@@ -1,0 +1,14 @@
+{
+  "candidate": "results/b-selector-2.cubin",
+  "candidate_sha256": "77985a69cb7643a8278e913f4a91687afbf25a34ec8ad1f287e9028ff65ccac5",
+  "worker": "build/hfma2-worker",
+  "worker_sha256": "b9b86e81fe052a9b745a2e4e64244b39b9c60398261dd0fcd572ad705f47b7ce",
+  "cuda_visible_devices": "0",
+  "timeout_seconds": 10.0,
+  "launch_unix_ns": 1788825081689159277,
+  "status": "completed",
+  "returncode": 0,
+  "stdout": "status=ready device_compute=6.0 cubin=results/b-selector-2.cubin\nstatus=ok vectors=4\nvector=lane_distinguish a=0x40003c00 b=0x45004200 c=0x49804700 out=0x4c404900\nvector=signed_lane_distinguish a=0x4000bc00 b=0xc5004200 c=0xc9804700 out=0xc5004400\nvector=fused_rounding a=0x3c013c01 b=0x5bfe5bfe c=0xdc00dc00 out=0x8c008c00\nvector=zeros a=0x00000000 b=0x00000000 c=0x00000000 out=0x00000000\n",
+  "stderr": "",
+  "elapsed_seconds": 0.3639413930068258
+}

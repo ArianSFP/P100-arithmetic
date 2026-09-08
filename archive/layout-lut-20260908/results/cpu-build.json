@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/usr/bin/g++-14",
+    "-O3",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-Wno-unknown-pragmas",
+    "/home/arian/hfma2-gp100-probe/layout-lut-20260908/cpu_tests.cpp",
+    "-o",
+    "/home/arian/hfma2-gp100-probe/layout-lut-20260908/results/cpu-tests"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": ""
+}

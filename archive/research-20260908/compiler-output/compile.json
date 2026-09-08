@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/usr/local/cuda-12.8/bin/nvcc",
+    "-ccbin",
+    "/usr/bin/g++-14",
+    "-O3",
+    "-arch=sm_60",
+    "-cubin",
+    "/home/arian/hfma2-gp100-probe/research-20260908/compiler_probes.cu",
+    "-o",
+    "/home/arian/hfma2-gp100-probe/research-20260908/compiler-output/compiler_probes.sm60.cubin"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).\n"
+}

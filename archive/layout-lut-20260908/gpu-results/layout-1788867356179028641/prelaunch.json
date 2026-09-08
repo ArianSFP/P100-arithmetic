@@ -1,0 +1,48 @@
+{
+  "argv": [
+    "/usr/bin/env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_DEVICE_ORDER=PCI_BUS_ID",
+    "CUDA_VISIBLE_DEVICES=GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+    "/usr/bin/taskset",
+    "--cpu-list",
+    "0-11",
+    "/usr/local/cuda-12.8/bin/compute-sanitizer",
+    "--tool",
+    "memcheck",
+    "--error-exitcode",
+    "9",
+    "/home/arian/hfma2-gp100-probe/layout-lut-20260908/gpu-worker",
+    "/home/arian/hfma2-gp100-probe/layout-lut-20260908/results/kernels.cubin",
+    "smoke"
+  ],
+  "gpu_uuid": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+  "token": "lowbit-20260908-1126-gpu1",
+  "coordination_sha256": "8080098307e60ff0f85e1d0cd5a2158ad348ecbead89fb0e9f3e70c922be35d7",
+  "hashes": {
+    "common.hpp": "41415166ccdf4129bb432ce7af321cf86dd6d53df643ab74826e2ff196fdd88c",
+    "kernels.cu": "c5ff54495e22a6c55a18b1d501af8374ab306674c264566f489ffe3e5c3a80f8",
+    "cpu_tests.cpp": "c9841fdbfaea8cbc997ca7227f46687447597a8c26c54dde6efe8359ba71f73b",
+    "kernels.cubin": "16b3db152d032e75f5e8921e888b2058bf16d501d538dd2130eb02eecf1ede9a",
+    "worker": "a81a1ba9ad8943181f20b3e4a403365785d2b39d5425e9e43e67f902c9f0cbb6",
+    "worker_source": "9f0a0dae77b8c2e264bc5c0dc19bcabc508a2dd2ca7ae457e07c758a71a82825"
+  },
+  "supervisor_sha256": "262c628f97282a4b88c31055ae7e8ba7f653bff7ce7a47ef44173f5472f9e935",
+  "hypothesis": "Exact low-bit formulations; compare complete synthetic G32 pipelines",
+  "status": "prelaunch",
+  "sanitizer": "memcheck",
+  "before": {
+    "device": {
+      "returncode": 0,
+      "stdout": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, Tesla P100-PCIE-16GB, 580.173.02, 5, 0, 28, 405, 0\n",
+      "stderr": ""
+    },
+    "processes": {
+      "returncode": 0,
+      "stdout": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1021860, /usr/bin/gnome-text-editor\n",
+      "stderr": ""
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "candidate": "results/b-selector-3.cubin",
+  "candidate_sha256": "753fe48037772e83e2d652dda9254435613b9bc44f63ed1ef71c57346a3be55a",
+  "worker": "build/hfma2-worker",
+  "worker_sha256": "cce75aebedae5f0755245d4ca92daa6129de60f5c52519098c2003d6f241ca52",
+  "cuda_visible_devices": "0",
+  "timeout_seconds": 10.0,
+  "launch_unix_ns": 1788825182353706022
+}

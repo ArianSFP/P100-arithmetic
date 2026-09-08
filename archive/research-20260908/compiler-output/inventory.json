@@ -1,0 +1,2195 @@
+{
+  "scope": "Compiler-only; NOT execution, throughput, or numerical validation.",
+  "source_sha256": "0145dc072e0bbe5162c49fe59dd1b36d9fedecaa77662b31da654606fa901763",
+  "cubin_sha256": "ac27bcb5a97f3d2af47835a3157aa3bdf6b61e9b5996d5b45baa4e5edab11914",
+  "nvcc": {
+    "argv": [
+      "/usr/local/cuda-12.8/bin/nvcc",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Jan_15_19:20:09_PST_2025\nCuda compilation tools, release 12.8, V12.8.61\nBuild cuda_12.8.r12.8/compiler.35404655_0\n",
+    "stderr": ""
+  },
+  "kernels": {
+    "ternary_sad_masked": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "STG": 4,
+        "LOP": 1,
+        "VABSDIFF4": 1,
+        "NOP": 2,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "LOP.AND R0, R7, R6"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "VABSDIFF4.U8.U8.ACC R10, R0, RZ, R9"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "BRA 0xb8"
+        }
+      ]
+    },
+    "lop3_select": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "STG": 4,
+        "LOP3": 1,
+        "NOP": 3,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "LOP3.LUT R10, R6, R7, R9, 0xca"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "BRA 0xb0"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "NOP"
+        }
+      ]
+    },
+    "bitplane_and_popc": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "STG": 4,
+        "LOP": 1,
+        "POPC": 1,
+        "IADD": 1,
+        "NOP": 7,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "LOP.AND R0, R7, R6"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "POPC R0, R0"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "IADD R10, R9, R0"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00c8",
+          "sass": "BRA 0xc0"
+        },
+        {
+          "offset": "0x00d0",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00d8",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00e8",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00f0",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00f8",
+          "sass": "NOP"
+        }
+      ]
+    },
+    "hfma2_low_mov_ptx": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "STG": 4,
+        "HFMA2": 1,
+        "NOP": 3,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "HFMA2 R10, R6, R7.H0_H0, R9"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "BRA 0xb0"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "NOP"
+        }
+      ]
+    },
+    "hfma2_low_highlevel": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "STG": 4,
+        "HFMA2": 1,
+        "NOP": 3,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "HFMA2 R10, R6, R7.H0_H0, R9"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "BRA 0xb0"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "NOP"
+        }
+      ]
+    },
+    "hfma2_plain": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "STG": 4,
+        "HFMA2": 1,
+        "NOP": 3,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "HFMA2 R10, R6, R7, R9"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "BRA 0xb0"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "NOP"
+        }
+      ]
+    },
+    "hfma2_low_broadcast": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "PRMT": 1,
+        "STG": 4,
+        "HFMA2": 1,
+        "NOP": 2,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "PRMT R0, R7, 0x1010, RZ"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "HFMA2 R10, R6, R0, R9"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "BRA 0xb8"
+        }
+      ]
+    },
+    "f32_pair_to_f16x2": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "F2F": 2,
+        "STG": 4,
+        "XMAD": 1,
+        "NOP": 7,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "F2F.F16.F32 R0, R6"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "F2F.F16.F32 R10, R7"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "XMAD.PSL.CLO R10, R10, 0x1, R0"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00c8",
+          "sass": "BRA 0xc0"
+        },
+        {
+          "offset": "0x00d0",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00d8",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00e8",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00f0",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00f8",
+          "sass": "NOP"
+        }
+      ]
+    },
+    "f16_to_f32": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "HADD2": 1,
+        "STG": 4,
+        "NOP": 3,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "HADD2.F32 R10, R6.H0_H0, -RZ.H0_H0"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "BRA 0xb0"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "NOP"
+        }
+      ]
+    },
+    "i8_to_f16": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "I2F": 1,
+        "STG": 4,
+        "F2F": 1,
+        "NOP": 2,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "I2F.F32.S8 R10, R6.B2"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "F2F.F16.F32 R10, R10"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "BRA 0xb8"
+        }
+      ]
+    },
+    "i8_to_f32_bfe_ptx": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "I2F": 1,
+        "STG": 4,
+        "NOP": 3,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "I2F.F32.S8 R10, R6.B2"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "BRA 0xb0"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "NOP"
+        }
+      ]
+    },
+    "i8_to_f32_mov_ptx": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "XMAD": 1,
+        "STG": 4,
+        "I2F": 1,
+        "NOP": 2,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "XMAD.PSL.CHI R0, R0.H1, 0x1, R6"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "I2F.F32.S8 R10, R0"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "BRA 0xb8"
+        }
+      ]
+    },
+    "i8_to_f32": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "SHR": 1,
+        "STG": 4,
+        "I2F": 1,
+        "NOP": 2,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "SHR.U32 R0, R6, 0x10"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "I2F.F32.S8 R10, R0"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "BRA 0xb8"
+        }
+      ]
+    },
+    "prmt_byte_signs": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "STG": 4,
+        "PRMT": 1,
+        "NOP": 3,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "PRMT R10, R6, 0xba98, R7"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "BRA 0xb0"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "NOP"
+        }
+      ]
+    },
+    "absdiff4_u8": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "STG": 4,
+        "VABSDIFF4": 1,
+        "NOP": 3,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "VABSDIFF4.U8.U8 R10, R6, R7, R9"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "BRA 0xb0"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "NOP"
+        }
+      ]
+    },
+    "sad4_s8": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "DEPBAR": 1,
+        "PRMT": 10,
+        "BFE": 8,
+        "IADD": 4,
+        "I2I": 4,
+        "IADD3": 2,
+        "STG": 4,
+        "EXIT": 1,
+        "BRA": 1,
+        "NOP": 5
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R4, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R5, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R0, [R4]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R2, [R4+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R3, [R4+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "DEPBAR.LE SB5, 0x1"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "PRMT R6, R0.reuse, 0x3210, R2.reuse"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "PRMT R7, R0, 0x7654, R2"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "PRMT R8, R6.reuse, 0x7650, RZ"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "PRMT R11, R7, 0x7650, RZ"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "PRMT R9, R6, 0x7651, RZ"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "PRMT R12, R7.reuse, 0x7651, RZ"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "PRMT R4, R7, 0x7653, RZ"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "BFE R10, R8, 0x800"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "PRMT R8, R6.reuse, 0x7652, RZ"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "BFE R11, R11, 0x800"
+        },
+        {
+          "offset": "0x00c8",
+          "sass": "PRMT R6, R6, 0x7653, RZ"
+        },
+        {
+          "offset": "0x00d0",
+          "sass": "BFE R9, R9, 0x800"
+        },
+        {
+          "offset": "0x00d8",
+          "sass": "PRMT R7, R7, 0x7652, RZ"
+        },
+        {
+          "offset": "0x00e8",
+          "sass": "BFE R12, R12, 0x800"
+        },
+        {
+          "offset": "0x00f0",
+          "sass": "BFE R8, R8, 0x800"
+        },
+        {
+          "offset": "0x00f8",
+          "sass": "IADD R10, R10, -R11"
+        },
+        {
+          "offset": "0x0108",
+          "sass": "BFE R6, R6, 0x800"
+        },
+        {
+          "offset": "0x0110",
+          "sass": "I2I.S32.S32 R10, |R10|"
+        },
+        {
+          "offset": "0x0118",
+          "sass": "BFE R4, R4, 0x800"
+        },
+        {
+          "offset": "0x0128",
+          "sass": "IADD R9, R9, -R12"
+        },
+        {
+          "offset": "0x0130",
+          "sass": "BFE R7, R7, 0x800"
+        },
+        {
+          "offset": "0x0138",
+          "sass": "I2I.S32.S32 R9, |R9|"
+        },
+        {
+          "offset": "0x0148",
+          "sass": "IADD R6, R6, -R4"
+        },
+        {
+          "offset": "0x0150",
+          "sass": "IADD R7, R8, -R7"
+        },
+        {
+          "offset": "0x0158",
+          "sass": "I2I.S32.S32 R6, |R6|"
+        },
+        {
+          "offset": "0x0168",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0170",
+          "sass": "I2I.S32.S32 R7, |R7|"
+        },
+        {
+          "offset": "0x0178",
+          "sass": "IADD3 R8, R9, R3, R10"
+        },
+        {
+          "offset": "0x0188",
+          "sass": "STG.E [R4+0x4], R0"
+        },
+        {
+          "offset": "0x0190",
+          "sass": "IADD3 R11, R6, R8, R7"
+        },
+        {
+          "offset": "0x0198",
+          "sass": "STG.E [R4+0x8], R2"
+        },
+        {
+          "offset": "0x01a8",
+          "sass": "STG.E [R4+0xc], R3"
+        },
+        {
+          "offset": "0x01b0",
+          "sass": "STG.E [R4], R11"
+        },
+        {
+          "offset": "0x01b8",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x01c8",
+          "sass": "BRA 0x1c0"
+        },
+        {
+          "offset": "0x01d0",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x01d8",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x01e8",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x01f0",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x01f8",
+          "sass": "NOP"
+        }
+      ]
+    },
+    "sad4_u8": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "STG": 4,
+        "VABSDIFF4": 1,
+        "NOP": 3,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "VABSDIFF4.U8.U8.ACC R10, R6, R7, R9"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "BRA 0xb0"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "NOP"
+        }
+      ]
+    },
+    "vadd4_packed": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "DEPBAR": 1,
+        "LOP32I": 2,
+        "LOP3": 1,
+        "IADD": 1,
+        "STG": 4,
+        "LOP": 1,
+        "NOP": 4,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "DEPBAR.LE SB5, 0x1"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "LOP32I.AND R0, R6.reuse, 0x7f7f7f7f"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "LOP32I.AND R5, R7, 0x7f7f7f7f"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "LOP3.LUT R8, R6, c[0x2][0x0], R7, 0x48"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "IADD R10, R0, R5"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "LOP.XOR R10, R10, R8"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x00c8",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00d0",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00d8",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00e8",
+          "sass": "BRA 0xe0"
+        },
+        {
+          "offset": "0x00f0",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00f8",
+          "sass": "NOP"
+        }
+      ]
+    },
+    "vadd_byte_merge": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "VADD": 1,
+        "STG": 4,
+        "PRMT": 1,
+        "NOP": 2,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "VADD.UD.U8.U8.MRG_8B0 R0, R6, R7.B2, RZ"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "PRMT R10, R9, 0x3240, R0"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "BRA 0xb8"
+        }
+      ]
+    },
+    "vmad_u16": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "STG": 4,
+        "VMAD": 1,
+        "NOP": 3,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "VMAD.U16.U16 R10, R6, R7.H1, R9"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "BRA 0xb0"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "NOP"
+        }
+      ]
+    },
+    "dot4_vmad": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "VMAD": 4,
+        "STG": 4,
+        "NOP": 6,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R6, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R7, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R9, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R4, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R5, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "VMAD.S8.S8 R0, R6.reuse, R7.reuse, R9"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "STG.E [R4+0x4], R6"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "VMAD.S8.S8 R0, R6.B1.reuse, R7.B1.reuse, R0"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "STG.E [R4+0x8], R7"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "VMAD.S8.S8 R0, R6.B2.reuse, R7.B2.reuse, R0"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "STG.E [R4+0xc], R9"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "VMAD.S8.S8 R10, R6.B3, R7.B3, R0"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "STG.E [R4], R10"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x00c8",
+          "sass": "BRA 0xc0"
+        },
+        {
+          "offset": "0x00d0",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00d8",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00e8",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00f0",
+          "sass": "NOP"
+        },
+        {
+          "offset": "0x00f8",
+          "sass": "NOP"
+        }
+      ]
+    },
+    "dot4_cpp": {
+      "counts_including_setup": {
+        "MOV": 5,
+        "LDG": 3,
+        "BFE": 8,
+        "STG": 4,
+        "SHR": 4,
+        "XMAD": 4,
+        "EXIT": 1,
+        "BRA": 1
+      },
+      "instructions": [
+        {
+          "offset": "0x0008",
+          "sass": "MOV R1, c[0x0][0x20]"
+        },
+        {
+          "offset": "0x0010",
+          "sass": "MOV R2, c[0x0][0x140]"
+        },
+        {
+          "offset": "0x0018",
+          "sass": "MOV R3, c[0x0][0x144]"
+        },
+        {
+          "offset": "0x0028",
+          "sass": "LDG.E R0, [R2]"
+        },
+        {
+          "offset": "0x0030",
+          "sass": "LDG.E R4, [R2+0x4]"
+        },
+        {
+          "offset": "0x0038",
+          "sass": "LDG.E R5, [R2+0x8]"
+        },
+        {
+          "offset": "0x0048",
+          "sass": "MOV R2, c[0x0][0x148]"
+        },
+        {
+          "offset": "0x0050",
+          "sass": "MOV R3, c[0x0][0x14c]"
+        },
+        {
+          "offset": "0x0058",
+          "sass": "BFE R6, R0.reuse, 0x800"
+        },
+        {
+          "offset": "0x0068",
+          "sass": "STG.E [R2+0x4], R0"
+        },
+        {
+          "offset": "0x0070",
+          "sass": "SHR.U32 R8, R0.reuse, 0x8"
+        },
+        {
+          "offset": "0x0078",
+          "sass": "STG.E [R2+0x8], R4"
+        },
+        {
+          "offset": "0x0088",
+          "sass": "BFE R7, R4.reuse, 0x800"
+        },
+        {
+          "offset": "0x0090",
+          "sass": "STG.E [R2+0xc], R5"
+        },
+        {
+          "offset": "0x0098",
+          "sass": "SHR.U32 R9, R4, 0x8"
+        },
+        {
+          "offset": "0x00a8",
+          "sass": "SHR.U32 R10, R0, 0x10"
+        },
+        {
+          "offset": "0x00b0",
+          "sass": "SHR.U32 R11, R4, 0x10"
+        },
+        {
+          "offset": "0x00b8",
+          "sass": "XMAD.S16.S16 R6, R6, R7, R5"
+        },
+        {
+          "offset": "0x00c8",
+          "sass": "BFE R8, R8, 0x800"
+        },
+        {
+          "offset": "0x00d0",
+          "sass": "BFE R9, R9, 0x800"
+        },
+        {
+          "offset": "0x00d8",
+          "sass": "BFE R7, R10, 0x800"
+        },
+        {
+          "offset": "0x00e8",
+          "sass": "BFE R12, R11, 0x800"
+        },
+        {
+          "offset": "0x00f0",
+          "sass": "XMAD.S16.S16 R6, R8, R9, R6"
+        },
+        {
+          "offset": "0x00f8",
+          "sass": "BFE R8, R0, 0x818"
+        },
+        {
+          "offset": "0x0108",
+          "sass": "BFE R9, R4, 0x818"
+        },
+        {
+          "offset": "0x0110",
+          "sass": "XMAD.S16.S16 R6, R7, R12, R6"
+        },
+        {
+          "offset": "0x0118",
+          "sass": "XMAD.S16.S16 R8, R8, R9, R6"
+        },
+        {
+          "offset": "0x0128",
+          "sass": "STG.E [R2], R8"
+        },
+        {
+          "offset": "0x0130",
+          "sass": "EXIT"
+        },
+        {
+          "offset": "0x0138",
+          "sass": "BRA 0x138"
+        }
+      ]
+    }
+  },
+  "dp4a_ptx_gates": {
+    "60": {
+      "argv": [
+        "/usr/local/cuda-12.8/bin/ptxas",
+        "-arch=sm_60",
+        "/home/arian/hfma2-gp100-probe/research-20260908/compiler-output/dp4a_gate.sm60.ptx",
+        "-o",
+        "/home/arian/hfma2-gp100-probe/research-20260908/compiler-output/dp4a_gate.sm60.cubin"
+      ],
+      "returncode": 255,
+      "stdout": "",
+      "stderr": "ptxas /home/arian/hfma2-gp100-probe/research-20260908/compiler-output/dp4a_gate.sm60.ptx, line 12; error   : Instruction 'dp4a' requires .target sm_61 or higher\nptxas fatal   : Ptx assembly aborted due to errors\n"
+    },
+    "61": {
+      "argv": [
+        "/usr/local/cuda-12.8/bin/ptxas",
+        "-arch=sm_61",
+        "/home/arian/hfma2-gp100-probe/research-20260908/compiler-output/dp4a_gate.sm61.ptx",
+        "-o",
+        "/home/arian/hfma2-gp100-probe/research-20260908/compiler-output/dp4a_gate.sm61.cubin"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  }
+}

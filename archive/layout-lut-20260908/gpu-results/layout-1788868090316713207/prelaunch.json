@@ -1,0 +1,58 @@
+{
+  "argv": [
+    "/usr/bin/env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_DEVICE_ORDER=PCI_BUS_ID",
+    "CUDA_VISIBLE_DEVICES=GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+    "/usr/bin/taskset",
+    "--cpu-list",
+    "0-11",
+    "/home/arian/hfma2-gp100-probe/layout-lut-20260908/gpu-worker",
+    "/home/arian/hfma2-gp100-probe/layout-lut-20260908/results/kernels.cubin",
+    "bench",
+    "--bits",
+    "4",
+    "--m",
+    "5120",
+    "--k",
+    "5120",
+    "--n",
+    "4",
+    "--configs",
+    "/home/arian/hfma2-gp100-probe/layout-lut-20260908/frozen-configs.txt",
+    "--baseline",
+    "/home/arian/hfma2-gp100-probe/layout-lut-20260908/gpu-baseline.cubin"
+  ],
+  "gpu_uuid": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+  "token": "lowbit-20260908-1126-gpu1",
+  "coordination_sha256": "e88f1c20be9f1fa95f2ea6275fd680bd293a109f530128dcd80d0978a70b22d4",
+  "hashes": {
+    "common.hpp": "41415166ccdf4129bb432ce7af321cf86dd6d53df643ab74826e2ff196fdd88c",
+    "kernels.cu": "c5ff54495e22a6c55a18b1d501af8374ab306674c264566f489ffe3e5c3a80f8",
+    "cpu_tests.cpp": "c9841fdbfaea8cbc997ca7227f46687447597a8c26c54dde6efe8359ba71f73b",
+    "kernels.cubin": "16b3db152d032e75f5e8921e888b2058bf16d501d538dd2130eb02eecf1ede9a",
+    "worker": "378b2a008a1cea1a7eb756cd476d58a658d973377d428a9e1898bcb6d4bde08a",
+    "worker_source": "b8d943ee9b6bb15df7af8de5e962ca32dc1fecffc61cee795ece1a1c92a85abb",
+    "baseline_cubin": "d420b8e3e18c0bca3fe02c6f4922a53ab6569d285c88364bfc23a8af46dd6711",
+    "baseline_source": "d1c88b28b7b088366a1182c8e996ec1b708676de8bd37c2066c5e23f5b68ddfc",
+    "config_file": "924ffbd92e29e180b1e9d2439cda0fdadae921266e3c817c5d76a3a2b94e9eb4"
+  },
+  "supervisor_sha256": "5efd1c6854c7c52239e77d27c34c89b49ebad44e74ea2b8ab9afdac7ebda0e5b",
+  "hypothesis": "Exact low-bit formulations; compare complete synthetic G32 pipelines",
+  "status": "prelaunch",
+  "sanitizer": null,
+  "before": {
+    "device": {
+      "returncode": 0,
+      "stdout": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, Tesla P100-PCIE-16GB, 580.173.02, 5, 0, 31, 1328, 0\n",
+      "stderr": ""
+    },
+    "processes": {
+      "returncode": 0,
+      "stdout": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1021860, /usr/bin/gnome-text-editor\n",
+      "stderr": ""
+    }
+  }
+}

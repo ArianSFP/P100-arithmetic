@@ -1,0 +1,14 @@
+{
+  "candidate": "results/c-selector-3.cubin",
+  "candidate_sha256": "35cb9b12773304784ccc498677f0fd20fee9ce76a182bacadf028fb5b3f1b095",
+  "worker": "build/hfma2-worker",
+  "worker_sha256": "cce75aebedae5f0755245d4ca92daa6129de60f5c52519098c2003d6f241ca52",
+  "cuda_visible_devices": "0",
+  "timeout_seconds": 10.0,
+  "launch_unix_ns": 1788825184693239872,
+  "status": "completed",
+  "returncode": 0,
+  "stdout": "status=ready device_compute=6.0 cubin=results/c-selector-3.cubin\nstatus=ok vectors=7\nvector=lane_distinguish a=0x40003c00 b=0x45004200 c=0x49804700 out=0x4d404b00\nvector=signed_lane_distinguish a=0x4000bc00 b=0xc5004200 c=0xc9804700 out=0xcd40cb00\nvector=a_f32_scalar a=0x3fc00000 b=0x45004200 c=0x49804700 out=0x4d2c4980\nvector=b_f32_scalar a=0x40003c00 b=0x3fc00000 c=0x49804700 out=0x4b704980\nvector=c_f32_scalar a=0x40003c00 b=0x45004200 c=0x3fc00000 out=0x49f844f0\nvector=fused_rounding a=0x3c013c01 b=0x5bfe5bfe c=0xdc00dc00 out=0x8c008c00\nvector=zeros a=0x00000000 b=0x00000000 c=0x00000000 out=0x00000000\n",
+  "stderr": "",
+  "elapsed_seconds": 0.28780571099196095
+}

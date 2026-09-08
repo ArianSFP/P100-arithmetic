@@ -1,0 +1,125 @@
+DATA M=5120 K=5120 N=4 family=0 activation=FP16 activation_bytes=40960 native_weight_bytes=14745600 seed_formula=0x4166b000_xor_shape_family
+PACK F=0 old=0 cpu_us=106402.5 bytes=14745600 includes_host_roundtrip_check=1
+CHECK method=2 R=2 S=32 M=5120 K=5120 N=4 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=20480 max_abs=9.921371631e-03 max_L1_relative=3.529814674e-08 relative_L2=1.013475131e-07
+CHECK method=2 R=4 S=32 M=5120 K=5120 N=4 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=20480 max_abs=9.921371631e-03 max_L1_relative=3.529814674e-08 relative_L2=1.013475131e-07
+CHECK method=10 R=4 S=32 M=5120 K=5120 N=4 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=20480 max_abs=9.921371631e-03 max_L1_relative=3.529814674e-08 relative_L2=1.013475131e-07
+CHECK method=11 R=4 S=32 M=5120 K=5120 N=4 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=20480 max_abs=9.921371631e-03 max_L1_relative=3.529814674e-08 relative_L2=1.013475131e-07
+CHECK method=12 R=4 S=32 M=5120 K=5120 N=4 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=20480 max_abs=9.921371631e-03 max_L1_relative=3.529814674e-08 relative_L2=1.013475131e-07
+CHECK method=13 R=8 S=32 M=5120 K=5120 N=4 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=20480 max_abs=9.921371631e-03 max_L1_relative=3.529814674e-08 relative_L2=1.013475131e-07
+CHECK method=14 R=2 S=32 M=5120 K=5120 N=4 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=20480 max_abs=9.921371631e-03 max_L1_relative=3.529814674e-08 relative_L2=1.013475131e-07
+CHECK method=14 R=4 S=32 M=5120 K=5120 N=4 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=20480 max_abs=9.921371631e-03 max_L1_relative=3.529814674e-08 relative_L2=1.013475131e-07
+PACK F=2 old=0 cpu_us=104620.8 bytes=14745600 includes_host_roundtrip_check=1
+CHECK method=17 R=4 S=32 M=5120 K=5120 N=4 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=20480 max_abs=9.921371631e-03 max_L1_relative=3.529814674e-08 relative_L2=1.013475131e-07
+CHECK method=30 R=4 S=32 M=5120 K=5120 N=4 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=20480 max_abs=9.921371631e-03 max_L1_relative=3.529814674e-08 relative_L2=1.013475131e-07
+CHECK method=31 R=4 S=32 M=5120 K=5120 N=4 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=20480 max_abs=9.921371631e-03 max_L1_relative=3.529814674e-08 relative_L2=1.013475131e-07
+CHECK method=36 R=2 S=32 M=5120 K=5120 N=4 family=0 operation_order_bitexact=1 baseline_changed=0 outputs=20480 max_abs=9.921371631e-03 max_L1_relative=3.529814674e-08 relative_L2=1.013475131e-07
+WARMUP seconds=0.2 launches=1416
+TIME M=5120 K=5120 N=4 method=2 R=2 S=32 round=0 pipeline_us=201.14134
+TIME M=5120 K=5120 N=4 method=2 R=4 S=32 round=0 pipeline_us=143.06133
+TIME M=5120 K=5120 N=4 method=10 R=4 S=32 round=0 pipeline_us=168.44798
+TIME M=5120 K=5120 N=4 method=11 R=4 S=32 round=0 pipeline_us=136.38400
+TIME M=5120 K=5120 N=4 method=12 R=4 S=32 round=0 pipeline_us=133.20534
+TIME M=5120 K=5120 N=4 method=13 R=8 S=32 round=0 pipeline_us=181.98401
+TIME M=5120 K=5120 N=4 method=14 R=2 S=32 round=0 pipeline_us=127.42400
+TIME M=5120 K=5120 N=4 method=14 R=4 S=32 round=0 pipeline_us=126.94400
+TIME M=5120 K=5120 N=4 method=17 R=4 S=32 round=0 pipeline_us=125.98400
+TIME M=5120 K=5120 N=4 method=30 R=4 S=32 round=0 pipeline_us=104.27734
+TIME M=5120 K=5120 N=4 method=31 R=4 S=32 round=0 pipeline_us=106.14400
+TIME M=5120 K=5120 N=4 method=36 R=2 S=32 round=0 pipeline_us=73.26933
+TIME M=5120 K=5120 N=4 method=2 R=4 S=32 round=1 pipeline_us=142.79466
+TIME M=5120 K=5120 N=4 method=10 R=4 S=32 round=1 pipeline_us=167.84001
+TIME M=5120 K=5120 N=4 method=11 R=4 S=32 round=1 pipeline_us=135.97867
+TIME M=5120 K=5120 N=4 method=12 R=4 S=32 round=1 pipeline_us=133.47200
+TIME M=5120 K=5120 N=4 method=13 R=8 S=32 round=1 pipeline_us=182.43199
+TIME M=5120 K=5120 N=4 method=14 R=2 S=32 round=1 pipeline_us=127.88267
+TIME M=5120 K=5120 N=4 method=14 R=4 S=32 round=1 pipeline_us=127.41333
+TIME M=5120 K=5120 N=4 method=17 R=4 S=32 round=1 pipeline_us=125.55733
+TIME M=5120 K=5120 N=4 method=30 R=4 S=32 round=1 pipeline_us=107.62667
+TIME M=5120 K=5120 N=4 method=31 R=4 S=32 round=1 pipeline_us=105.88800
+TIME M=5120 K=5120 N=4 method=36 R=2 S=32 round=1 pipeline_us=72.58666
+TIME M=5120 K=5120 N=4 method=2 R=2 S=32 round=1 pipeline_us=200.38399
+TIME M=5120 K=5120 N=4 method=10 R=4 S=32 round=2 pipeline_us=167.92534
+TIME M=5120 K=5120 N=4 method=11 R=4 S=32 round=2 pipeline_us=135.74400
+TIME M=5120 K=5120 N=4 method=12 R=4 S=32 round=2 pipeline_us=132.80000
+TIME M=5120 K=5120 N=4 method=13 R=8 S=32 round=2 pipeline_us=186.45335
+TIME M=5120 K=5120 N=4 method=14 R=2 S=32 round=2 pipeline_us=126.54934
+TIME M=5120 K=5120 N=4 method=14 R=4 S=32 round=2 pipeline_us=127.72266
+TIME M=5120 K=5120 N=4 method=17 R=4 S=32 round=2 pipeline_us=124.54401
+TIME M=5120 K=5120 N=4 method=30 R=4 S=32 round=2 pipeline_us=103.96801
+TIME M=5120 K=5120 N=4 method=31 R=4 S=32 round=2 pipeline_us=106.44267
+TIME M=5120 K=5120 N=4 method=36 R=2 S=32 round=2 pipeline_us=72.25600
+TIME M=5120 K=5120 N=4 method=2 R=2 S=32 round=2 pipeline_us=200.94934
+TIME M=5120 K=5120 N=4 method=2 R=4 S=32 round=2 pipeline_us=142.93333
+TIME M=5120 K=5120 N=4 method=11 R=4 S=32 round=3 pipeline_us=135.26399
+TIME M=5120 K=5120 N=4 method=12 R=4 S=32 round=3 pipeline_us=133.68533
+TIME M=5120 K=5120 N=4 method=13 R=8 S=32 round=3 pipeline_us=183.92534
+TIME M=5120 K=5120 N=4 method=14 R=2 S=32 round=3 pipeline_us=127.38134
+TIME M=5120 K=5120 N=4 method=14 R=4 S=32 round=3 pipeline_us=126.95466
+TIME M=5120 K=5120 N=4 method=17 R=4 S=32 round=3 pipeline_us=125.85600
+TIME M=5120 K=5120 N=4 method=30 R=4 S=32 round=3 pipeline_us=102.91199
+TIME M=5120 K=5120 N=4 method=31 R=4 S=32 round=3 pipeline_us=107.34933
+TIME M=5120 K=5120 N=4 method=36 R=2 S=32 round=3 pipeline_us=72.18134
+TIME M=5120 K=5120 N=4 method=2 R=2 S=32 round=3 pipeline_us=200.52266
+TIME M=5120 K=5120 N=4 method=2 R=4 S=32 round=3 pipeline_us=143.18933
+TIME M=5120 K=5120 N=4 method=10 R=4 S=32 round=3 pipeline_us=166.49600
+TIME M=5120 K=5120 N=4 method=12 R=4 S=32 round=4 pipeline_us=131.54134
+TIME M=5120 K=5120 N=4 method=13 R=8 S=32 round=4 pipeline_us=170.94398
+TIME M=5120 K=5120 N=4 method=14 R=2 S=32 round=4 pipeline_us=116.92800
+TIME M=5120 K=5120 N=4 method=14 R=4 S=32 round=4 pipeline_us=117.63200
+TIME M=5120 K=5120 N=4 method=17 R=4 S=32 round=4 pipeline_us=114.26133
+TIME M=5120 K=5120 N=4 method=30 R=4 S=32 round=4 pipeline_us=96.07467
+TIME M=5120 K=5120 N=4 method=31 R=4 S=32 round=4 pipeline_us=103.34933
+TIME M=5120 K=5120 N=4 method=36 R=2 S=32 round=4 pipeline_us=66.97601
+TIME M=5120 K=5120 N=4 method=2 R=2 S=32 round=4 pipeline_us=191.36000
+TIME M=5120 K=5120 N=4 method=2 R=4 S=32 round=4 pipeline_us=136.73599
+TIME M=5120 K=5120 N=4 method=10 R=4 S=32 round=4 pipeline_us=155.71199
+TIME M=5120 K=5120 N=4 method=11 R=4 S=32 round=4 pipeline_us=125.86667
+TIME M=5120 K=5120 N=4 method=13 R=8 S=32 round=5 pipeline_us=173.63200
+TIME M=5120 K=5120 N=4 method=14 R=2 S=32 round=5 pipeline_us=117.95200
+TIME M=5120 K=5120 N=4 method=14 R=4 S=32 round=5 pipeline_us=117.35468
+TIME M=5120 K=5120 N=4 method=17 R=4 S=32 round=5 pipeline_us=115.57333
+TIME M=5120 K=5120 N=4 method=30 R=4 S=32 round=5 pipeline_us=96.09600
+TIME M=5120 K=5120 N=4 method=31 R=4 S=32 round=5 pipeline_us=98.04800
+TIME M=5120 K=5120 N=4 method=36 R=2 S=32 round=5 pipeline_us=66.84800
+TIME M=5120 K=5120 N=4 method=2 R=2 S=32 round=5 pipeline_us=191.70134
+TIME M=5120 K=5120 N=4 method=2 R=4 S=32 round=5 pipeline_us=135.65868
+TIME M=5120 K=5120 N=4 method=10 R=4 S=32 round=5 pipeline_us=156.53334
+TIME M=5120 K=5120 N=4 method=11 R=4 S=32 round=5 pipeline_us=125.86667
+TIME M=5120 K=5120 N=4 method=12 R=4 S=32 round=5 pipeline_us=122.54934
+TIME M=5120 K=5120 N=4 method=14 R=2 S=32 round=6 pipeline_us=116.81067
+TIME M=5120 K=5120 N=4 method=14 R=4 S=32 round=6 pipeline_us=116.66132
+TIME M=5120 K=5120 N=4 method=17 R=4 S=32 round=6 pipeline_us=116.10667
+TIME M=5120 K=5120 N=4 method=30 R=4 S=32 round=6 pipeline_us=97.00266
+TIME M=5120 K=5120 N=4 method=31 R=4 S=32 round=6 pipeline_us=98.50668
+TIME M=5120 K=5120 N=4 method=36 R=2 S=32 round=6 pipeline_us=68.90667
+TIME M=5120 K=5120 N=4 method=2 R=2 S=32 round=6 pipeline_us=191.90401
+TIME M=5120 K=5120 N=4 method=2 R=4 S=32 round=6 pipeline_us=136.59734
+TIME M=5120 K=5120 N=4 method=10 R=4 S=32 round=6 pipeline_us=156.77867
+TIME M=5120 K=5120 N=4 method=11 R=4 S=32 round=6 pipeline_us=125.53600
+TIME M=5120 K=5120 N=4 method=12 R=4 S=32 round=6 pipeline_us=123.55200
+TIME M=5120 K=5120 N=4 method=13 R=8 S=32 round=6 pipeline_us=169.15199
+TIME M=5120 K=5120 N=4 method=14 R=4 S=32 round=7 pipeline_us=117.18400
+TIME M=5120 K=5120 N=4 method=17 R=4 S=32 round=7 pipeline_us=116.35200
+TIME M=5120 K=5120 N=4 method=30 R=4 S=32 round=7 pipeline_us=97.12000
+TIME M=5120 K=5120 N=4 method=31 R=4 S=32 round=7 pipeline_us=99.02933
+TIME M=5120 K=5120 N=4 method=36 R=2 S=32 round=7 pipeline_us=68.43733
+TIME M=5120 K=5120 N=4 method=2 R=2 S=32 round=7 pipeline_us=191.46667
+TIME M=5120 K=5120 N=4 method=2 R=4 S=32 round=7 pipeline_us=137.96266
+TIME M=5120 K=5120 N=4 method=10 R=4 S=32 round=7 pipeline_us=154.70934
+TIME M=5120 K=5120 N=4 method=11 R=4 S=32 round=7 pipeline_us=125.53600
+TIME M=5120 K=5120 N=4 method=12 R=4 S=32 round=7 pipeline_us=123.27467
+TIME M=5120 K=5120 N=4 method=13 R=8 S=32 round=7 pipeline_us=172.97066
+TIME M=5120 K=5120 N=4 method=14 R=2 S=32 round=7 pipeline_us=117.88800
+TIME M=5120 K=5120 N=4 method=17 R=4 S=32 round=8 pipeline_us=115.02934
+TIME M=5120 K=5120 N=4 method=30 R=4 S=32 round=8 pipeline_us=97.31200
+TIME M=5120 K=5120 N=4 method=31 R=4 S=32 round=8 pipeline_us=99.48800
+TIME M=5120 K=5120 N=4 method=36 R=2 S=32 round=8 pipeline_us=68.28800
+TIME M=5120 K=5120 N=4 method=2 R=2 S=32 round=8 pipeline_us=192.36267
+TIME M=5120 K=5120 N=4 method=2 R=4 S=32 round=8 pipeline_us=136.50133
+TIME M=5120 K=5120 N=4 method=10 R=4 S=32 round=8 pipeline_us=155.87199
+TIME M=5120 K=5120 N=4 method=11 R=4 S=32 round=8 pipeline_us=125.00266
+TIME M=5120 K=5120 N=4 method=12 R=4 S=32 round=8 pipeline_us=122.00533
+TIME M=5120 K=5120 N=4 method=13 R=8 S=32 round=8 pipeline_us=174.94402
+TIME M=5120 K=5120 N=4 method=14 R=2 S=32 round=8 pipeline_us=117.33334
+TIME M=5120 K=5120 N=4 method=14 R=4 S=32 round=8 pipeline_us=117.10932
+BENCH_PASS

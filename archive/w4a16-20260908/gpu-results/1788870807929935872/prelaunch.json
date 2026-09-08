@@ -1,0 +1,50 @@
+{
+  "argv": [
+    "/usr/bin/env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_DEVICE_ORDER=PCI_BUS_ID",
+    "CUDA_VISIBLE_DEVICES=GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+    "/usr/bin/taskset",
+    "--cpu-list",
+    "0-11",
+    "/home/arian/hfma2-gp100-probe/w4a16-20260908/build/worker",
+    "/home/arian/hfma2-gp100-probe/w4a16-20260908/build/kernels.cubin",
+    "sweep",
+    "--m",
+    "5120",
+    "--k",
+    "5120",
+    "--n",
+    "1"
+  ],
+  "token": "w4a16-20260908-1227-gpu1",
+  "gpu_uuid": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+  "hashes": {
+    "common.hpp": "b0384c0a1ee4515e1f98a70ed98f83718383ddc5e7c4e6fd13a34b745ebff5dc",
+    "cpu_tests.cpp": "a741966a7bc84d8a307ad5aeb5645c963826838733ec96bb83af3cabc2317138",
+    "kernels.cu": "35596572c8730360077bf6520e5d38638e6701e7fe0942a4004b4469f6db4260",
+    "worker.cpp": "88800a6319e9b155fdca83b1bce609e397ee3c1a4ce9ecefa61bc91f5ac89c86",
+    "build/kernels.cubin": "322a7a7050fc21affe1c53507ac9e461b18d0f4607cf9fc98389bdef92526b89",
+    "build/worker": "1595c9c232c89528a76d49d7e83d29787ef1a93570c4233ec37c57fb1bd3054f"
+  },
+  "coordination_sha256": "8376aa05fd75f2288cc6492d682282f1e361d0d8242eb5c9b7475a7fd78ce813",
+  "supervisor_sha256": "efabf0a56f3117d29f080d023121aedd27ca8800a2eb70133855504854abb0a8",
+  "health_helper_sha256": "5a0a44ebf22a6f8c1eaa89e94ca32eac1091b9284dc250ea1d8281ed96cb12e1",
+  "sanitizer": null,
+  "hypothesis": "Q4_0 FP16 inputs; no A8 quantization; FP32 arithmetic and exact-order controls",
+  "status": "prelaunch",
+  "before": {
+    "device": {
+      "returncode": 0,
+      "stdout": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, Tesla P100-PCIE-16GB, 580.173.02, 5, 0, 28, 405, 0\n",
+      "stderr": ""
+    },
+    "processes": {
+      "returncode": 0,
+      "stdout": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1087731, /usr/bin/gnome-text-editor\nGPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1104861, /home/arian/llama.cpp-qwen38-p100/build-p100-nccl-qwen38/bin/llama-server\nGPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 1104861, /home/arian/llama.cpp-qwen38-p100/build-p100-nccl-qwen38/bin/llama-server\nGPU-4868830a-c1cf-90bd-8018-2360c55293b8, 1104861, /home/arian/llama.cpp-qwen38-p100/build-p100-nccl-qwen38/bin/llama-server\n",
+      "stderr": ""
+    }
+  }
+}

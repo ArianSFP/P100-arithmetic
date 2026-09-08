@@ -1,0 +1,3 @@
+# Keep archived bytes exact, including text logs used by SHA-256 inventories.
+archive/** -text
+*.cubin binary

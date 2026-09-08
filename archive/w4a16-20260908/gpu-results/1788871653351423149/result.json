@@ -1,0 +1,67 @@
+{
+  "argv": [
+    "/usr/bin/env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_DEVICE_ORDER=PCI_BUS_ID",
+    "CUDA_VISIBLE_DEVICES=GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+    "/usr/bin/taskset",
+    "--cpu-list",
+    "0-11",
+    "/home/arian/hfma2-gp100-probe/w4a16-20260908/build/worker",
+    "/home/arian/hfma2-gp100-probe/w4a16-20260908/build/kernels.cubin",
+    "bench",
+    "--m",
+    "17408",
+    "--k",
+    "5120",
+    "--n",
+    "1",
+    "--configs",
+    "/home/arian/hfma2-gp100-probe/w4a16-20260908/frozen-configs.txt"
+  ],
+  "token": "w4a16-20260908-1227-gpu1",
+  "gpu_uuid": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+  "hashes": {
+    "common.hpp": "b0384c0a1ee4515e1f98a70ed98f83718383ddc5e7c4e6fd13a34b745ebff5dc",
+    "cpu_tests.cpp": "a741966a7bc84d8a307ad5aeb5645c963826838733ec96bb83af3cabc2317138",
+    "kernels.cu": "e9f8ce30e89ef956ebafa890f9b44ae185e90a3a82a1cd1376cae646a999a8a9",
+    "worker.cpp": "ef862e8dbd99f3e0d4b7c80520ef76b89ee64458008468351c3678a83b0c253f",
+    "build/kernels.cubin": "21e86e715086128e8929111fc57bb419dbe4e6c490a940c1234bfb8558020b2e",
+    "build/worker": "0d7610a83a73b5089a51f6b1bf12b6de8630adbfe6b621adadd651de07a62e8f",
+    "config_file": "e41fdcd777429c2ad1aae7460e2660b995da93fdb9e9056c31853238361cb5fb"
+  },
+  "coordination_sha256": "643c3cb30f110c45cb38b6ef7d143bfd0c10aae11edc165989a16762c7329c93",
+  "supervisor_sha256": "efabf0a56f3117d29f080d023121aedd27ca8800a2eb70133855504854abb0a8",
+  "health_helper_sha256": "5a0a44ebf22a6f8c1eaa89e94ca32eac1091b9284dc250ea1d8281ed96cb12e1",
+  "sanitizer": null,
+  "hypothesis": "Q4_0 FP16 inputs; no A8 quantization; FP32 arithmetic and exact-order controls",
+  "status": "PASS",
+  "before": {
+    "device": {
+      "returncode": 0,
+      "stdout": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, Tesla P100-PCIE-16GB, 580.173.02, 5, 0, 30, 1328, 0\n",
+      "stderr": ""
+    },
+    "processes": {
+      "returncode": 0,
+      "stdout": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1087731, /usr/bin/gnome-text-editor\n",
+      "stderr": ""
+    }
+  },
+  "pid": 1112392,
+  "returncode": 0,
+  "after": {
+    "device": {
+      "returncode": 0,
+      "stdout": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, Tesla P100-PCIE-16GB, 580.173.02, 5, 48, 30, 1328, 0\n",
+      "stderr": ""
+    },
+    "processes": {
+      "returncode": 0,
+      "stdout": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1087731, /usr/bin/gnome-text-editor\n",
+      "stderr": ""
+    }
+  }
+}

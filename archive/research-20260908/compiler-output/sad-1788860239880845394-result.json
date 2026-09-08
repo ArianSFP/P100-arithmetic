@@ -1,0 +1,70 @@
+{
+  "id": "1788860239880845394",
+  "hypothesis": "SM60 unsigned SAD plus masks implements exact W2A8 arithmetic",
+  "scope": "Documented PTX, compiler-generated unmodified binary; no model evaluation.",
+  "gpu_uuid": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706",
+  "cases": 262144,
+  "input_seed": "0x60a8c002",
+  "source_sha256": "a578fcc3d290d359191beb4531586733cbb140c9e3ba821f655526b7ca666efe",
+  "worker_sha256": "59771b2a0f266d8755ca21286d17d8aedf4ba4d14f6fca9ad00ff1464317037b",
+  "health_before": {
+    "argv": [
+      "/usr/bin/nvidia-smi",
+      "--query-gpu=index,uuid,name,driver_version,memory.used,utilization.gpu,temperature.gpu,clocks.sm",
+      "--format=csv,noheader"
+    ],
+    "returncode": 0,
+    "stdout": "0, GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, Tesla P100-PCIE-16GB, 580.173.02, 5 MiB, 0 %, 29, 405 MHz\n1, GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, Tesla P100-PCIE-16GB, 580.173.02, 5 MiB, 0 %, 28, 405 MHz\n2, GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, Tesla P100-PCIE-16GB, 580.173.02, 5 MiB, 0 %, 30, 405 MHz\n3, GPU-4868830a-c1cf-90bd-8018-2360c55293b8, Tesla P100-PCIE-16GB, 580.173.02, 5 MiB, 0 %, 29, 405 MHz\n",
+    "stderr": ""
+  },
+  "processes_before": {
+    "argv": [
+      "/usr/bin/nvidia-smi",
+      "--query-compute-apps=gpu_uuid,pid,process_name",
+      "--format=csv,noheader"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "argv": [
+    "/usr/bin/env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_DEVICE_ORDER=PCI_BUS_ID",
+    "CUDA_VISIBLE_DEVICES=GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706",
+    "/usr/bin/taskset",
+    "--cpu-list",
+    "0-11",
+    "/home/arian/hfma2-gp100-probe/research-20260908/compiler-output/sad-probe"
+  ],
+  "worker": {
+    "argv": [
+      "/usr/bin/env",
+      "-i",
+      "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+      "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+      "CUDA_DEVICE_ORDER=PCI_BUS_ID",
+      "CUDA_VISIBLE_DEVICES=GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706",
+      "/usr/bin/taskset",
+      "--cpu-list",
+      "0-11",
+      "/home/arian/hfma2-gp100-probe/research-20260908/compiler-output/sad-probe"
+    ],
+    "returncode": 0,
+    "stdout": "device=Tesla P100-PCIE-16GB sm=6.0 sms=56\ncorrectness=PASS cases=262144 seed=0x60a8c002 operations=sad4,masked_sum,w2a8\nwitness i=0 a=00000000 b=00000000 c=6dbf3696 sad=6dbf3696 selected=6dbf3696 w2a8=0\nwitness i=255 a=ffffffff b=00000000 c=6feee42d sad=6feee829 selected=6feee42d w2a8=0\nwitness i=65535 a=ffffffff b=ffffffff c=221ca091 sad=221ca091 selected=221ca48d w2a8=4\nwitness i=65536 a=77d5a956 b=9d1e0d09 c=cb5f6996 sad=cb5f6b5c selected=cb5f69ec w2a8=260\nwitness i=262143 a=e29a1ffc b=8ddc268e c=28b1a308 sad=28b1a414 selected=28b1a327 w2a8=37\nlatency chain_length=256 lane0_cycles=2829\nlatency chain_length=512 lane0_cycles=3683\nlatency chain_length=1024 lane0_cycles=6637\nthroughput chains=1 sample=0 ms=0.138048 thread_Ginst_s=1701.445\nthroughput chains=1 sample=1 ms=0.121504 thread_Ginst_s=1933.113\nthroughput chains=1 sample=2 ms=0.120928 thread_Ginst_s=1942.321\nthroughput chains=1 sample=3 ms=0.119328 thread_Ginst_s=1968.365\nthroughput chains=1 sample=4 ms=0.125728 thread_Ginst_s=1868.168\nthroughput chains=4 sample=0 ms=0.499872 thread_Ginst_s=1879.529\nthroughput chains=4 sample=1 ms=0.483136 thread_Ginst_s=1944.637\nthroughput chains=4 sample=2 ms=0.482016 thread_Ginst_s=1949.155\nthroughput chains=4 sample=3 ms=0.482336 thread_Ginst_s=1947.862\nthroughput chains=4 sample=4 ms=0.481152 thread_Ginst_s=1952.656\n",
+    "stderr": ""
+  },
+  "status": "completed",
+  "health_after": {
+    "argv": [
+      "/usr/bin/nvidia-smi",
+      "--query-gpu=index,uuid,name,driver_version,memory.used,utilization.gpu,temperature.gpu,clocks.sm",
+      "--format=csv,noheader"
+    ],
+    "returncode": 0,
+    "stdout": "0, GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, Tesla P100-PCIE-16GB, 580.173.02, 5 MiB, 10 %, 29, 1189 MHz\n1, GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, Tesla P100-PCIE-16GB, 580.173.02, 5 MiB, 0 %, 28, 405 MHz\n2, GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, Tesla P100-PCIE-16GB, 580.173.02, 5 MiB, 0 %, 30, 405 MHz\n3, GPU-4868830a-c1cf-90bd-8018-2360c55293b8, Tesla P100-PCIE-16GB, 580.173.02, 5 MiB, 0 %, 29, 405 MHz\n",
+    "stderr": ""
+  }
+}

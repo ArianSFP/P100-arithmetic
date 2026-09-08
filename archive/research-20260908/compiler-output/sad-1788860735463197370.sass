@@ -1,0 +1,1018 @@
+
+Fatbin elf code:
+================
+arch = sm_60
+code version = [1,7]
+host = linux
+compile_size = 64bit
+identifier = /home/arian/hfma2-gp100-probe/research-20260908/sad_probe.cu 
+
+	code for sm_60
+
+Fatbin elf code:
+================
+arch = sm_60
+code version = [1,7]
+host = linux
+compile_size = 64bit
+identifier = /home/arian/hfma2-gp100-probe/research-20260908/sad_probe.cu
+
+	code for sm_60
+		Function : _Z10throughputILi1EEvPjjji
+	.headerflags	@"EF_CUDA_TEXMODE_UNIFIED EF_CUDA_64BIT_ADDRESS EF_CUDA_SM60 EF_CUDA_VIRTUAL_SM(EF_CUDA_SM60)"
+                                                                                       /* 0x001c5800fe0007f6 */
+        /*0008*/                   MOV R1, c[0x0][0x20] ;                              /* 0x4c98078000870001 */
+        /*0010*/                   MOV R4, c[0x0][0x150] ;                             /* 0x4c98078005470004 */
+        /*0018*/                   S2R R0, SR_CTAID.X ;                                /* 0xf0c8000002570000 */
+                                                                                       /* 0x083fc400e62007f0 */
+        /*0028*/                   ISETP.GE.AND P0, PT, R4, 0x1, PT ;                  /* 0x366d038000170407 */
+        /*0030*/                   S2R R2, SR_TID.X ;                                  /* 0xf0c8000002170002 */
+        /*0038*/                   XMAD.MRG R3, R0.reuse, c[0x0] [0x8].H1, RZ ;        /* 0x4f107f8000270003 */
+                                                                                       /* 0x001fc000fec217f6 */
+        /*0048*/                   XMAD R2, R0.reuse, c[0x0] [0x8], R2 ;               /* 0x4e00010000270002 */
+        /*0050*/                   XMAD.PSL.CBCC R0, R0.H1, R3.H1, R2 ;                /* 0x5b30011800370000 */
+        /*0058*/                   MOV R5, R0 ;                                        /* 0x5c98078000070005 */
+                                                                                       /* 0x001fd440fe2007fd */
+        /*0068*/              @!P0 BRA 0x7d0 ;                                         /* 0xe24000007608000f */
+        /*0070*/                   IADD32I R2, R4.reuse, -0x1 ;                        /* 0x1c0ffffffff70402 */
+        /*0078*/                   LOP.AND.NZ P0, RZ, R4, 0x3 ;                        /* 0x38403000003704ff */
+                                                                                       /* 0x001ff400fe0007ed */
+        /*0088*/                   ISETP.GE.U32.AND P1, PT, R2, 0x3, PT ;              /* 0x366c03800037020f */
+        /*0090*/                   LOP32I.AND R2, R4, 0x3 ;                            /* 0x0400000000370402 */
+        /*0098*/              @!P1 BRA 0x638 ;                                         /* 0xe24000005989000f */
+                                                                                       /* 0x001fd800fc2007f6 */
+        /*00a8*/                   IADD R6, -R2, c[0x0][0x150] ;                       /* 0x4c12000005470206 */
+        /*00b0*/                   MOV R3, c[0x0][0x148] ;                             /* 0x4c98078005270003 */
+        /*00b8*/                   MOV R4, c[0x0][0x14c] ;                             /* 0x4c98078005370004 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*00c8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*00d0*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*00d8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd800fcc607f6 */
+        /*00e8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*00f0*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*00f8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0108*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0110*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0118*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x001f9800ffa607f6 */
+        /*0128*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0130*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*0138*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0148*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0150*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0158*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x001f98c0fec607f6 */
+        /*0168*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0170*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0178*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0188*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0190*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0198*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd800ffa607f6 */
+        /*01a8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*01b0*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*01b8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec007e6 */
+        /*01c8*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*01d0*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*01d8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*01e8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*01f0*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*01f8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec007e6 */
+        /*0208*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*0210*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0218*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd800ffa607f6 */
+        /*0228*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0230*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*0238*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd800fcc607f6 */
+        /*0248*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0250*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*0258*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0268*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0270*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0278*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd800fcc607f6 */
+        /*0288*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0290*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*0298*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd800ffa607f6 */
+        /*02a8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*02b0*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*02b8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x001f98c0fec607f6 */
+        /*02c8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*02d0*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*02d8*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*02e8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*02f0*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*02f8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x001f98c0fec607f6 */
+        /*0308*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0310*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0318*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+                                                                                       /* 0x181fd800ffa607f6 */
+        /*0328*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0330*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*0338*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0348*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0350*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0358*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec007e6 */
+        /*0368*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*0370*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0378*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0388*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0390*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0398*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd800ffa007e6 */
+        /*03a8*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*03b0*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*03b8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*03c8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*03d0*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*03d8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd800fcc607f6 */
+        /*03e8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*03f0*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*03f8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0408*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0410*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0418*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x001f9800ffa607f6 */
+        /*0428*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0430*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*0438*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0448*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0450*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0458*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x001f98c0fec607f6 */
+        /*0468*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0470*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0478*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0488*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0490*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0498*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd800ffa607f6 */
+        /*04a8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*04b0*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*04b8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec007e6 */
+        /*04c8*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*04d0*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*04d8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*04e8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*04f0*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*04f8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec007e6 */
+        /*0508*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*0510*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0518*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd800ffa607f6 */
+        /*0528*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0530*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*0538*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd800fcc607f6 */
+        /*0548*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0550*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*0558*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0568*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0570*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0578*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd800fcc607f6 */
+        /*0588*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0590*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*0598*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd800ffa607f6 */
+        /*05a8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*05b0*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*05b8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x001f84c0fec607f6 */
+        /*05c8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*05d0*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*05d8*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+                                                                                       /* 0x181fc4c0fec007f5 */
+        /*05e8*/                   IADD32I R6, R6, -0x4 ;                              /* 0x1c0fffffffc70606 */
+        /*05f0*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*05f8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x001f98c0fec007f5 */
+        /*0608*/                   ISETP.NE.AND P1, PT, R6, RZ, PT ;                   /* 0x5b6b03800ff7060f */
+        /*0610*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0618*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+                                                                                       /* 0x001ff400ffa007f0 */
+        /*0628*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*0630*/               @P1 BRA 0xb0 ;                                          /* 0xe2400fffa781000f */
+        /*0638*/              @!P0 BRA 0x7d0 ;                                         /* 0xe24000001908000f */
+                                                                                       /* 0x181fd800fec007e1 */
+        /*0648*/                   MOV R3, c[0x0][0x148] ;                             /* 0x4c98078005270003 */
+        /*0650*/                   MOV R4, c[0x0][0x14c] ;                             /* 0x4c98078005370004 */
+        /*0658*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0668*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0670*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0678*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec007e6 */
+        /*0688*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*0690*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0698*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*06a8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*06b0*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*06b8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd800fcc007fd */
+        /*06c8*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*06d0*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*06d8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*06e8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*06f0*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*06f8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd800fcc607f6 */
+        /*0708*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0710*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*0718*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0728*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0730*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0738*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+                                                                                       /* 0x001f98c0fec007fd */
+        /*0748*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*0750*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0758*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+                                                                                       /* 0x001fd400fc2607f6 */
+        /*0768*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0770*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*0778*/                   IADD32I R2, R2, -0x1 ;                              /* 0x1c0ffffffff70202 */
+                                                                                       /* 0x001fd4c0fe2607f6 */
+        /*0788*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0790*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*0798*/                   ISETP.NE.AND P0, PT, R2, RZ, PT ;                   /* 0x5b6b03800ff70207 */
+                                                                                       /* 0x001fc000fcc607f6 */
+        /*07a8*/                   VABSDIFF4.U8.U8.ACC R5, R3.reuse, R4.reuse, R5 ;    /* 0x503802b440470305 */
+        /*07b0*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+        /*07b8*/                   VABSDIFF4.U8.U8.ACC R5, R3, R4, R5 ;                /* 0x503802b440470305 */
+                                                                                       /* 0x001f9840fe2007fd */
+        /*07c8*/               @P0 BRA 0x640 ;                                         /* 0xe2400fffe700000f */
+        /*07d0*/                   SHR.U32 R3, R0.reuse, 0x1e ;                        /* 0x3828000001e70003 */
+        /*07d8*/                   ISCADD R2.CC, R0, c[0x0][0x140], 0x2 ;              /* 0x4c18810005070002 */
+                                                                                       /* 0x001f8c00fea007e2 */
+        /*07e8*/                   IADD.X R3, R3, c[0x0][0x144] ;                      /* 0x4c10080005170303 */
+        /*07f0*/                   STG.E [R2], R5 ;                                    /* 0xeedc200000070205 */
+        /*07f8*/                   NOP ;                                               /* 0x50b0000000070f00 */
+                                                                                       /* 0x001f8000ffe007ff */
+        /*0808*/                   EXIT ;                                              /* 0xe30000000007000f */
+        /*0810*/                   BRA 0x810 ;                                         /* 0xe2400fffff87000f */
+        /*0818*/                   NOP;                                                /* 0x50b0000000070f00 */
+                                                                                       /* 0x001f8000fc0007e0 */
+        /*0828*/                   NOP;                                                /* 0x50b0000000070f00 */
+        /*0830*/                   NOP;                                                /* 0x50b0000000070f00 */
+        /*0838*/                   NOP;                                                /* 0x50b0000000070f00 */
+		..........
+
+
+		Function : _Z10throughputILi4EEvPjjji
+	.headerflags	@"EF_CUDA_TEXMODE_UNIFIED EF_CUDA_64BIT_ADDRESS EF_CUDA_SM60 EF_CUDA_VIRTUAL_SM(EF_CUDA_SM60)"
+                                                                                       /* 0x001c5800fe0007f6 */
+        /*0008*/                   MOV R1, c[0x0][0x20] ;                              /* 0x4c98078000870001 */
+        /*0010*/                   MOV R4, c[0x0][0x150] ;                             /* 0x4c98078005470004 */
+        /*0018*/                   S2R R0, SR_CTAID.X ;                                /* 0xf0c8000002570000 */
+                                                                                       /* 0x083fc400e62007f0 */
+        /*0028*/                   ISETP.GE.AND P0, PT, R4, 0x1, PT ;                  /* 0x366d038000170407 */
+        /*0030*/                   S2R R2, SR_TID.X ;                                  /* 0xf0c8000002170002 */
+        /*0038*/                   XMAD.MRG R3, R0.reuse, c[0x0] [0x8].H1, RZ ;        /* 0x4f107f8000270003 */
+                                                                                       /* 0x001f8400fec217f6 */
+        /*0048*/                   XMAD R2, R0.reuse, c[0x0] [0x8], R2 ;               /* 0x4e00010000270002 */
+        /*0050*/                   XMAD.PSL.CBCC R0, R0.H1, R3.H1, R2 ;                /* 0x5b30011800370000 */
+        /*0058*/                   SHR.U32 R3, R0, 0x1e ;                              /* 0x3828000001e70003 */
+                                                                                       /* 0x081fc440fe2207f1 */
+        /*0068*/                   IADD32I R7, R0.reuse, 0x1 ;                         /* 0x1c00000000170007 */
+        /*0070*/                   ISCADD R2.CC, R0.reuse, c[0x0][0x140], 0x2 ;        /* 0x4c18810005070002 */
+        /*0078*/                   IADD32I R4, R0.reuse, 0x2 ;                         /* 0x1c00000000270004 */
+                                                                                       /* 0x001fc000fe6007f1 */
+        /*0088*/                   IADD32I R10, R0, 0x3 ;                              /* 0x1c0000000037000a */
+        /*0090*/                   MOV R6, R0 ;                                        /* 0x5c98078000070006 */
+        /*0098*/                   IADD.X R3, R3, c[0x0][0x144] ;                      /* 0x4c10080005170303 */
+                                                                                       /* 0x001f8400fec007f6 */
+        /*00a8*/              @!P0 BRA 0x640 ;                                         /* 0xe24000005908000f */
+        /*00b0*/                   MOV R8, RZ ;                                        /* 0x5c9807800ff70008 */
+        /*00b8*/                   MOV R0, c[0x0][0x148] ;                             /* 0x4c98078005270000 */
+                                                                                       /* 0x181fc4c0fe2007f6 */
+        /*00c8*/                   MOV R5, c[0x0][0x14c] ;                             /* 0x4c98078005370005 */
+        /*00d0*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*00d8*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+                                                                                       /* 0x001f84c0fe6607f1 */
+        /*00e8*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R4 ;   /* 0x503802344057000b */
+        /*00f0*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*00f8*/                   VABSDIFF4.U8.U8.ACC R6, R0, R5, R6 ;                /* 0x5038033440570006 */
+                                                                                       /* 0x181fccc0fe2607f1 */
+        /*0108*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*0110*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*0118*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+                                                                                       /* 0x001f84c0fe2607f1 */
+        /*0128*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*0130*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*0138*/                   VABSDIFF4.U8.U8.ACC R11, R0, R5, R11 ;              /* 0x503805b44057000b */
+                                                                                       /* 0x181fc4c0fe2607f3 */
+        /*0148*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*0150*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*0158*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+                                                                                       /* 0x001f84c0fe6607f1 */
+        /*0168*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*0170*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*0178*/                   VABSDIFF4.U8.U8.ACC R6, R0, R5, R6 ;                /* 0x5038033440570006 */
+                                                                                       /* 0x181fccc0fe2607f1 */
+        /*0188*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*0190*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*0198*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+                                                                                       /* 0x001f84c0fe2607f1 */
+        /*01a8*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*01b0*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*01b8*/                   VABSDIFF4.U8.U8.ACC R11, R0, R5, R11 ;              /* 0x503805b44057000b */
+                                                                                       /* 0x181fc4c0fe2607f3 */
+        /*01c8*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*01d0*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*01d8*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+                                                                                       /* 0x001f84c0fe6607f1 */
+        /*01e8*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*01f0*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*01f8*/                   VABSDIFF4.U8.U8.ACC R6, R0, R5, R6 ;                /* 0x5038033440570006 */
+                                                                                       /* 0x181fccc0fe2607f1 */
+        /*0208*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*0210*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*0218*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+                                                                                       /* 0x001f84c0fe2607f1 */
+        /*0228*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*0230*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*0238*/                   VABSDIFF4.U8.U8.ACC R11, R0, R5, R11 ;              /* 0x503805b44057000b */
+                                                                                       /* 0x181fc4c0fe2607f3 */
+        /*0248*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*0250*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*0258*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+                                                                                       /* 0x001f84c0fe6607f1 */
+        /*0268*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*0270*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*0278*/                   VABSDIFF4.U8.U8.ACC R6, R0, R5, R6 ;                /* 0x5038033440570006 */
+                                                                                       /* 0x181fccc0fe2607f1 */
+        /*0288*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*0290*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*0298*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+                                                                                       /* 0x001f84c0fe2607f1 */
+        /*02a8*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*02b0*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*02b8*/                   VABSDIFF4.U8.U8.ACC R11, R0, R5, R11 ;              /* 0x503805b44057000b */
+                                                                                       /* 0x181fc4c0fe2607f3 */
+        /*02c8*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*02d0*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*02d8*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+                                                                                       /* 0x001f84c0fe6607f1 */
+        /*02e8*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*02f0*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*02f8*/                   VABSDIFF4.U8.U8.ACC R6, R0, R5, R6 ;                /* 0x5038033440570006 */
+                                                                                       /* 0x181fccc0fe2607f1 */
+        /*0308*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*0310*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*0318*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+                                                                                       /* 0x001f84c0fe2607f1 */
+        /*0328*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*0330*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*0338*/                   VABSDIFF4.U8.U8.ACC R11, R0, R5, R11 ;              /* 0x503805b44057000b */
+                                                                                       /* 0x181fc4c0fe2607f3 */
+        /*0348*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*0350*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*0358*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+                                                                                       /* 0x001f84c0fe6607f1 */
+        /*0368*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*0370*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*0378*/                   VABSDIFF4.U8.U8.ACC R6, R0, R5, R6 ;                /* 0x5038033440570006 */
+                                                                                       /* 0x181fccc0fe2607f1 */
+        /*0388*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*0390*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*0398*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+                                                                                       /* 0x001f84c0fe2607f1 */
+        /*03a8*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*03b0*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*03b8*/                   VABSDIFF4.U8.U8.ACC R11, R0, R5, R11 ;              /* 0x503805b44057000b */
+                                                                                       /* 0x181fc4c0fe2607f3 */
+        /*03c8*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*03d0*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*03d8*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+                                                                                       /* 0x001f84c0fe6607f1 */
+        /*03e8*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*03f0*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*03f8*/                   VABSDIFF4.U8.U8.ACC R6, R0, R5, R6 ;                /* 0x5038033440570006 */
+                                                                                       /* 0x181fccc0fe2607f1 */
+        /*0408*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*0410*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*0418*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+                                                                                       /* 0x001f84c0fe2607f1 */
+        /*0428*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*0430*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*0438*/                   VABSDIFF4.U8.U8.ACC R11, R0, R5, R11 ;              /* 0x503805b44057000b */
+                                                                                       /* 0x181fc4c0fe2607f3 */
+        /*0448*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*0450*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*0458*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+                                                                                       /* 0x001f84c0fe6607f1 */
+        /*0468*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*0470*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*0478*/                   VABSDIFF4.U8.U8.ACC R6, R0, R5, R6 ;                /* 0x5038033440570006 */
+                                                                                       /* 0x181fccc0fe2607f1 */
+        /*0488*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*0490*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*0498*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+                                                                                       /* 0x001f84c0fe2607f1 */
+        /*04a8*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*04b0*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*04b8*/                   VABSDIFF4.U8.U8.ACC R11, R0, R5, R11 ;              /* 0x503805b44057000b */
+                                                                                       /* 0x181fc4c0fe2607f3 */
+        /*04c8*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*04d0*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*04d8*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+                                                                                       /* 0x001f84c0fe6607f1 */
+        /*04e8*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*04f0*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*04f8*/                   VABSDIFF4.U8.U8.ACC R6, R0, R5, R6 ;                /* 0x5038033440570006 */
+                                                                                       /* 0x181fccc0fe2607f1 */
+        /*0508*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*0510*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*0518*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+                                                                                       /* 0x001f84c0fe2607f1 */
+        /*0528*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*0530*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*0538*/                   VABSDIFF4.U8.U8.ACC R11, R0, R5, R11 ;              /* 0x503805b44057000b */
+                                                                                       /* 0x181fc4c0fe2607f3 */
+        /*0548*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*0550*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*0558*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+                                                                                       /* 0x001fc800fc2607f1 */
+        /*0568*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*0570*/                   VABSDIFF4.U8.U8.ACC R10, R0, R5, R10 ;              /* 0x503805344057000a */
+        /*0578*/                   IADD32I R8, R8, 0x1 ;                               /* 0x1c00000000170808 */
+                                                                                       /* 0x181fc4c0fe2607f1 */
+        /*0588*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*0590*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*0598*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+                                                                                       /* 0x181fc400fc4007f1 */
+        /*05a8*/                   VABSDIFF4.U8.U8.ACC R10, R0, R5, R10 ;              /* 0x503805344057000a */
+        /*05b0*/                   ISETP.GE.AND P0, PT, R8, c[0x0][0x150], PT ;        /* 0x4b6d038005470807 */
+        /*05b8*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+                                                                                       /* 0x181fccc0fe2607f1 */
+        /*05c8*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+        /*05d0*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+        /*05d8*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+                                                                                       /* 0x181fc400fc2607f1 */
+        /*05e8*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*05f0*/                   VABSDIFF4.U8.U8.ACC R7, R0, R5, R7 ;                /* 0x503803b440570007 */
+        /*05f8*/                   VABSDIFF4.U8.U8.ACC R11, R0.reuse, R5.reuse, R11 ;  /* 0x503805b44057000b */
+                                                                                       /* 0x181fc4c0fe2607f3 */
+        /*0608*/                   VABSDIFF4.U8.U8.ACC R10, R0.reuse, R5.reuse, R10 ;  /* 0x503805344057000a */
+        /*0610*/                   VABSDIFF4.U8.U8.ACC R6, R0.reuse, R5.reuse, R6 ;    /* 0x5038033440570006 */
+        /*0618*/                   VABSDIFF4.U8.U8.ACC R7, R0.reuse, R5.reuse, R7 ;    /* 0x503803b440570007 */
+                                                                                       /* 0x001ff400fe0607f1 */
+        /*0628*/                   VABSDIFF4.U8.U8.ACC R4, R0.reuse, R5.reuse, R11 ;   /* 0x503805b440570004 */
+        /*0630*/                   VABSDIFF4.U8.U8.ACC R10, R0, R5, R10 ;              /* 0x503805344057000a */
+        /*0638*/              @!P0 BRA 0xb8 ;                                          /* 0xe2400fffa788000f */
+                                                                                       /* 0x001fc400fc4007e6 */
+        /*0648*/                   IADD3 R4, R4, R7, R6 ;                              /* 0x5cc0030000770404 */
+        /*0650*/                   IADD R4, R4, R10 ;                                  /* 0x5c10000000a70404 */
+        /*0658*/                   STG.E [R2], R4 ;                                    /* 0xeedc200000070204 */
+                                                                                       /* 0x001f8000ffe007ff */
+        /*0668*/                   EXIT ;                                              /* 0xe30000000007000f */
+        /*0670*/                   BRA 0x670 ;                                         /* 0xe2400fffff87000f */
+        /*0678*/                   NOP;                                                /* 0x50b0000000070f00 */
+		..........
+
+
+		Function : _Z7latencyPmPjjji
+	.headerflags	@"EF_CUDA_TEXMODE_UNIFIED EF_CUDA_64BIT_ADDRESS EF_CUDA_SM60 EF_CUDA_VIRTUAL_SM(EF_CUDA_SM60)"
+                                                                                       /* 0x001c5800fe0007f6 */
+        /*0008*/                   MOV R1, c[0x0][0x20] ;                              /* 0x4c98078000870001 */
+        /*0010*/                   MOV R4, RZ ;                                        /* 0x5c9807800ff70004 */
+        /*0018*/                   S2R R11, SR_TID.X ;                                 /* 0xf0c800000217000b */
+                                                                                       /* 0x001fc400fcc007f1 */
+        /*0028*/                   CS2R RZ, SR_CLOCKHI ;                               /* 0x50c80000051700ff */
+        /*0030*/                   CS2R R3, SR_CLOCKHI ;                               /* 0x50c8000005170003 */
+        /*0038*/                   CS2R RZ, SR_CLOCKLO ;                               /* 0x50c80000050700ff */
+                                                                                       /* 0x001f9800fe2007e6 */
+        /*0048*/                   CS2R R2, SR_CLOCKLO ;                               /* 0x50c8000005070002 */
+        /*0050*/                   CS2R RZ, SR_CLOCKHI ;                               /* 0x50c80000051700ff */
+        /*0058*/                   CS2R R0, SR_CLOCKHI ;                               /* 0x50c8000005170000 */
+                                                                                       /* 0x001fd800ffa007ed */
+        /*0068*/                   ISETP.NE.U32.AND P0, PT, R3, R0, PT ;               /* 0x5b6a038000070307 */
+        /*0070*/              @!P0 BRA 0x98 ;                                          /* 0xe24000000208000f */
+        /*0078*/                   IADD32I R4, R4, 0x1 ;                               /* 0x1c00000000170404 */
+                                                                                       /* 0x001fd800ffa007ed */
+        /*0088*/                   ISETP.GE.U32.AND P0, PT, R4, c[0x0][0x10c], PT ;    /* 0x4b6c038004370407 */
+        /*0090*/              @!P0 BRA 0x20 ;                                          /* 0xe2400ffff888000f */
+        /*0098*/                   MOV R3, c[0x0][0x158] ;                             /* 0x4c98078005670003 */
+                                                                                       /* 0x081fc400ffa007ed */
+        /*00a8*/                   ISETP.GE.AND P0, PT, R3, 0x1, PT ;                  /* 0x366d038000170307 */
+        /*00b0*/              @!P0 BRA 0x818 ;                                         /* 0xe24000007608000f */
+        /*00b8*/                   IADD32I R4, R3.reuse, -0x1 ;                        /* 0x1c0ffffffff70304 */
+                                                                                       /* 0x001fb400fe8207f1 */
+        /*00c8*/                   LOP.AND.NZ P0, RZ, R3.reuse, 0x3 ;                  /* 0x38403000003703ff */
+        /*00d0*/                   LOP32I.AND R3, R3, 0x3 ;                            /* 0x0400000000370303 */
+        /*00d8*/                   ISETP.GE.U32.AND P1, PT, R4, 0x3, PT ;              /* 0x366c03800037040f */
+                                                                                       /* 0x001f8400fec007fd */
+        /*00e8*/              @!P1 BRA 0x680 ;                                         /* 0xe24000005909000f */
+        /*00f0*/                   IADD R6, -R3, c[0x0][0x158] ;                       /* 0x4c12000005670306 */
+        /*00f8*/                   MOV R4, c[0x0][0x150] ;                             /* 0x4c98078005470004 */
+                                                                                       /* 0x181fd8c1fec007f6 */
+        /*0108*/                   MOV R5, c[0x0][0x154] ;                             /* 0x4c98078005570005 */
+        /*0110*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0118*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x001f98c0fec607f6 */
+        /*0128*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0130*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0138*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0148*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0150*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0158*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x001ff4c0fec607f6 */
+        /*0168*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0170*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0178*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec007e6 */
+        /*0188*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*0190*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0198*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*01a8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*01b0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*01b8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec007e6 */
+        /*01c8*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*01d0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*01d8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x001ff4c0fec607f6 */
+        /*01e8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*01f0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*01f8*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x181fd800fcc607f6 */
+        /*0208*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0210*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*0218*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0228*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0230*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0238*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x181fd800fcc607f6 */
+        /*0248*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0250*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*0258*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x001ff4c0fec607f6 */
+        /*0268*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0270*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0278*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x001f98c0fec607f6 */
+        /*0288*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0290*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0298*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*02a8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*02b0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*02b8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x001f98c0fec607f6 */
+        /*02c8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*02d0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*02d8*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x001ff4c0fec607f6 */
+        /*02e8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*02f0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*02f8*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0308*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0310*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0318*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec007e6 */
+        /*0328*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*0330*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0338*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0348*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0350*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0358*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x001ff4c0fec007e6 */
+        /*0368*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*0370*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0378*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0388*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0390*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0398*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x181fd800fcc607f6 */
+        /*03a8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*03b0*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*03b8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*03c8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*03d0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*03d8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x001ff400fcc607f6 */
+        /*03e8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*03f0*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*03f8*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0408*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0410*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0418*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x001f98c0fec607f6 */
+        /*0428*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0430*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0438*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0448*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0450*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0458*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x001ff4c0fec607f6 */
+        /*0468*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0470*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0478*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec007e6 */
+        /*0488*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*0490*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0498*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*04a8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*04b0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*04b8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec007e6 */
+        /*04c8*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*04d0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*04d8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x001ff4c0fec607f6 */
+        /*04e8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*04f0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*04f8*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x181fd800fcc607f6 */
+        /*0508*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0510*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*0518*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0528*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0530*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0538*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x181fd800fcc607f6 */
+        /*0548*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0550*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*0558*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x001ff4c0fec607f6 */
+        /*0568*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0570*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0578*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x001f98c0fec607f6 */
+        /*0588*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0590*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0598*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*05a8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*05b0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*05b8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x001f98c0fec607f6 */
+        /*05c8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*05d0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*05d8*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x001ff4c0fec607f6 */
+        /*05e8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*05f0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*05f8*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0608*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0610*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0618*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x181fd800fea007e1 */
+        /*0628*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*0630*/                   IADD32I R6, R6, -0x4 ;                              /* 0x1c0fffffffc70606 */
+        /*0638*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x181fd800fea607f1 */
+        /*0648*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0650*/                   ISETP.NE.AND P1, PT, R6, RZ, PT ;                   /* 0x5b6b03800ff7060f */
+        /*0658*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x001ff400fe0007e6 */
+        /*0668*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*0670*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*0678*/               @P1 BRA 0xf8 ;                                          /* 0xe2400fffa781000f */
+                                                                                       /* 0x001fd800fc2007fd */
+        /*0688*/              @!P0 BRA 0x818 ;                                         /* 0xe24000001888000f */
+        /*0690*/                   MOV R4, c[0x0][0x150] ;                             /* 0x4c98078005470004 */
+        /*0698*/                   MOV R5, c[0x0][0x154] ;                             /* 0x4c98078005570005 */
+                                                                                       /* 0x181fd8c0fec60ff6 */
+        /*06a8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*06b0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*06b8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x181fd800fcc607f6 */
+        /*06c8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*06d0*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*06d8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*06e8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*06f0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*06f8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x001f9800ffa607f6 */
+        /*0708*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0710*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*0718*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0728*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0730*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0738*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x001f98c0fec607f6 */
+        /*0748*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0750*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0758*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x181fd8c0fec607f6 */
+        /*0768*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0770*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0778*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x181fd800ffa607f6 */
+        /*0788*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*0790*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*0798*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x001f84c0fec007e6 */
+        /*07a8*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*07b0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*07b8*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x181fc4c0fec007f5 */
+        /*07c8*/                   IADD32I R3, R3, -0x1 ;                              /* 0x1c0ffffffff70303 */
+        /*07d0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*07d8*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+                                                                                       /* 0x001f98c0fec007f5 */
+        /*07e8*/                   ISETP.NE.AND P0, PT, R3, RZ, PT ;                   /* 0x5b6b03800ff70307 */
+        /*07f0*/                   VABSDIFF4.U8.U8.ACC R11, R4.reuse, R5.reuse, R11 ;  /* 0x503805b44057040b */
+        /*07f8*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+                                                                                       /* 0x001fc000ffa007f0 */
+        /*0808*/                   VABSDIFF4.U8.U8.ACC R11, R4, R5, R11 ;              /* 0x503805b44057040b */
+        /*0810*/               @P0 BRA 0x690 ;                                         /* 0xe2400fffe780000f */
+        /*0818*/                   MOV R7, RZ ;                                        /* 0x5c9807800ff70007 */
+                                                                                       /* 0x001f9800fe200736 */
+        /*0828*/                   S2R R6, SR_TID.X ;                                  /* 0xf0c8000002170006 */
+        /*0830*/                   CS2R RZ, SR_CLOCKHI ;                               /* 0x50c80000051700ff */
+        /*0838*/                   CS2R R3, SR_CLOCKHI ;                               /* 0x50c8000005170003 */
+                                                                                       /* 0x001fc400fcc007f1 */
+        /*0848*/                   CS2R RZ, SR_CLOCKLO ;                               /* 0x50c80000050700ff */
+        /*0850*/                   CS2R R4, SR_CLOCKLO ;                               /* 0x50c8000005070004 */
+        /*0858*/                   CS2R RZ, SR_CLOCKHI ;                               /* 0x50c80000051700ff */
+                                                                                       /* 0x001ff400fda007e6 */
+        /*0868*/                   CS2R R5, SR_CLOCKHI ;                               /* 0x50c8000005170005 */
+        /*0870*/                   ISETP.NE.U32.AND P0, PT, R3, R5, PT ;               /* 0x5b6a038000570307 */
+        /*0878*/              @!P0 BRA 0x8a0 ;                                         /* 0xe24000000208000f */
+                                                                                       /* 0x001ff400fda007f6 */
+        /*0888*/                   IADD32I R7, R7, 0x1 ;                               /* 0x1c00000000170707 */
+        /*0890*/                   ISETP.GE.U32.AND P0, PT, R7, c[0x0][0x10c], PT ;    /* 0x4b6c038004370707 */
+        /*0898*/              @!P0 BRA 0x830 ;                                         /* 0xe2400ffff908000f */
+                                                                                       /* 0x001fc402fca007f1 */
+        /*08a8*/                   IADD R2.CC, -R2, R4 ;                               /* 0x5c12800000470202 */
+        /*08b0*/                   SHR.U32 R7, R6, 0x1d ;                              /* 0x3828000001d70607 */
+        /*08b8*/                   IADD.X R3, -R0, R5 ;                                /* 0x5c12080000570003 */
+                                                                                       /* 0x001fc800fca207f1 */
+        /*08c8*/                   ISCADD R4.CC, R6.reuse, c[0x0][0x140], 0x3 ;        /* 0x4c18818005070604 */
+        /*08d0*/                   SHR.U32 R0, R6, 0x1e ;                              /* 0x3828000001e70600 */
+        /*08d8*/                   IADD.X R5, R7, c[0x0][0x144] ;                      /* 0x4c10080005170705 */
+                                                                                       /* 0x001f8800fec007f0 */
+        /*08e8*/                   ISCADD R6.CC, R6, c[0x0][0x148], 0x2 ;              /* 0x4c18810005270606 */
+        /*08f0*/                   STG.E.64 [R4], R2 ;                                 /* 0xeedd200000070402 */
+        /*08f8*/                   IADD.X R7, R0, c[0x0][0x14c] ;                      /* 0x4c10080005370007 */
+                                                                                       /* 0x001ffc00ffe00ff5 */
+        /*0908*/                   STG.E [R6], R11 ;                                   /* 0xeedc20000007060b */
+        /*0910*/                   EXIT ;                                              /* 0xe30000000007000f */
+        /*0918*/                   BRA 0x918 ;                                         /* 0xe2400fffff87000f */
+                                                                                       /* 0x001f8000fc0007e0 */
+        /*0928*/                   NOP;                                                /* 0x50b0000000070f00 */
+        /*0930*/                   NOP;                                                /* 0x50b0000000070f00 */
+        /*0938*/                   NOP;                                                /* 0x50b0000000070f00 */
+		..........
+
+
+		Function : _Z11correctnessPK5InputP6Outputj
+	.headerflags	@"EF_CUDA_TEXMODE_UNIFIED EF_CUDA_64BIT_ADDRESS EF_CUDA_SM60 EF_CUDA_VIRTUAL_SM(EF_CUDA_SM60)"
+                                                                                       /* 0x001cfc00e22007f6 */
+        /*0008*/                   MOV R1, c[0x0][0x20] ;                              /* 0x4c98078000870001 */
+        /*0010*/                   S2R R5, SR_CTAID.X ;                                /* 0xf0c8000002570005 */
+        /*0018*/                   S2R R0, SR_TID.X ;                                  /* 0xf0c8000002170000 */
+                                                                                       /* 0x001fd842fec20ff1 */
+        /*0028*/                   XMAD.MRG R2, R5.reuse, c[0x0] [0x8].H1, RZ ;        /* 0x4f107f8000270502 */
+        /*0030*/                   XMAD R0, R5.reuse, c[0x0] [0x8], R0 ;               /* 0x4e00000000270500 */
+        /*0038*/                   XMAD.PSL.CBCC R5, R5.H1, R2.H1, R0 ;                /* 0x5b30001800270505 */
+                                                                                       /* 0x001ff400fd4007ed */
+        /*0048*/                   ISETP.GE.U32.AND P0, PT, R5, c[0x0][0x150], PT ;    /* 0x4b6c038005470507 */
+        /*0050*/                   NOP ;                                               /* 0x50b0000000070f00 */
+        /*0058*/               @P0 EXIT ;                                              /* 0xe30000000000000f */
+                                                                                       /* 0x001f8400fc2007e6 */
+        /*0068*/                   MOV32I R0, 0xc ;                                    /* 0x0100000000c7f000 */
+        /*0070*/                   XMAD R6, R5, R0, RZ ;                               /* 0x5b007f8000070506 */
+        /*0078*/                   XMAD R2, R5, R0, RZ ;                               /* 0x5b007f8000070502 */
+                                                                                       /* 0x001f8400fc6007e1 */
+        /*0088*/                   XMAD.MRG R3, R5, R0.H1, RZ ;                        /* 0x5b007fa800070503 */
+        /*0090*/                   XMAD R4, R5, R0.H1, RZ ;                            /* 0x5b007f8800070504 */
+        /*0098*/                   XMAD.CHI R7, R5.H1, R0, R6 ;                        /* 0x5b28030000070507 */
+                                                                                       /* 0x001f8400fea007e1 */
+        /*00a8*/                   XMAD R6, R5.H1, R0.H1, RZ ;                         /* 0x5b207f8800070506 */
+        /*00b0*/                   XMAD.PSL.CBCC R2, R5.H1, R3.H1, R2 ;                /* 0x5b30011800370502 */
+        /*00b8*/                   IADD3.RS R4, R7, R4, R6 ;                           /* 0x5cc0032000470704 */
+                                                                                       /* 0x001ec400fc4007e6 */
+        /*00c8*/                   IADD R8.CC, R2, c[0x0][0x140] ;                     /* 0x4c10800005070208 */
+        /*00d0*/                   IADD.X R9, R4, c[0x0][0x144] ;                      /* 0x4c10080005170409 */
+        /*00d8*/                   LDG.E R0, [R8+0x4] ;                                /* 0xeed4200000470800 */
+                                                                                       /* 0x001f9800162007b1 */
+        /*00e8*/                   LDG.E R2, [R8] ;                                    /* 0xeed4200000070802 */
+        /*00f0*/                   LDG.E R3, [R8+0x8] ;                                /* 0xeed4200000870803 */
+        /*00f8*/                   MOV32I R6, 0x14 ;                                   /* 0x010000000147f006 */
+                                                                                       /* 0x001f9000fc2007e1 */
+        /*0108*/                   XMAD R4, R5, R6, RZ ;                               /* 0x5b007f8000670504 */
+        /*0110*/                   XMAD R15, R5, R6.H1, RZ ;                           /* 0x5b007f880067050f */
+        /*0118*/                   XMAD R16, R5.H1, R6.H1, RZ ;                        /* 0x5b207f8800670510 */
+                                                                                       /* 0x001fcc00fc2007fd */
+        /*0128*/                   XMAD.CHI R17, R5.H1, R6, R4 ;                       /* 0x5b28020000670511 */
+        /*0130*/                   IADD3.RS R4, R17, R15, R16 ;                        /* 0x5cc0082000f71104 */
+        /*0138*/                   DEPBAR.LE SB5, 0x2 ;                                /* 0xf0f0000034270000 */
+                                                                                       /* 0x001f8400fc2207f1 */
+        /*0148*/                   SHR.U32 R11, R0.reuse, 0x4 ;                        /* 0x382800000047000b */
+        /*0150*/                   SHR.U32 R10, R0, 0x2 ;                              /* 0x382800000027000a */
+        /*0158*/                   LOP32I.AND R13, R0, 0x7 ;                           /* 0x040000000077000d */
+                                                                                       /* 0x003f8400fc4007e1 */
+        /*0168*/                   LOP32I.AND R14, R0, 0x8 ;                           /* 0x040000000087000e */
+        /*0170*/                   LOP32I.AND R12, R0, 0x1 ;                           /* 0x040000000017000c */
+        /*0178*/                   LOP32I.AND R8, R11, 0x8 ;                           /* 0x0400000000870b08 */
+                                                                                       /* 0x001fcc00fe2007e1 */
+        /*0188*/                   LOP32I.AND R7, R0, 0x2 ;                            /* 0x0400000000270007 */
+        /*0190*/                   LOP32I.AND R9, R10, 0x2 ;                           /* 0x0400000000270a09 */
+        /*0198*/                   SHR.U32 R15, R0, 0x8 ;                              /* 0x382800000087000f */
+                                                                                       /* 0x001fc400fe2007e1 */
+        /*01a8*/                   IADD3 R16, -R8, R13, -R14 ;                         /* 0x5cca070000d70810 */
+        /*01b0*/                   LOP32I.AND R14, R11, 0x2 ;                          /* 0x0400000000270b0e */
+        /*01b8*/                   IADD3 R8, -R9, R12, -R7 ;                           /* 0x5cca038000c70908 */
+                                                                                       /* 0x081fc400fe2007e1 */
+        /*01c8*/                   BFE.U32 R13, R0, 0x102 ;                            /* 0x380000001027000d */
+        /*01d0*/                   LOP32I.AND R18, R15, 0x8 ;                          /* 0x0400000000870f12 */
+        /*01d8*/                   SHR.U32 R7, R0.reuse, 0x6 ;                         /* 0x3828000000670007 */
+                                                                                       /* 0x001f8400fe2207f3 */
+        /*01e8*/                   BFE.U32 R9, R0.reuse, 0x304 ;                       /* 0x3800000030470009 */
+        /*01f0*/                   IADD3 R8, -R14, R8, R13 ;                           /* 0x5cc8068000870e08 */
+        /*01f8*/                   BFE.U32 R14, R0, 0x101 ;                            /* 0x380000001017000e */
+                                                                                       /* 0x001fc440fe2007f1 */
+        /*0208*/                   LOP32I.AND R17, R7, 0x2 ;                           /* 0x0400000000270711 */
+        /*0210*/                   BFE.U32 R15, R0.reuse, 0x104 ;                      /* 0x380000001047000f */
+        /*0218*/                   IADD3 R9, -R18, R16, R9 ;                           /* 0x5cc8048001071209 */
+                                                                                       /* 0x001fc400fe2007e2 */
+        /*0228*/                   BFE.U32 R16, R0, 0x107 ;                            /* 0x3800000010770010 */
+        /*0230*/                   IADD R19, -R14, RZ ;                                /* 0x5c1200000ff70e13 */
+        /*0238*/                   BFE.U32 R10, R10, 0x101 ;                           /* 0x3800000010170a0a */
+                                                                                       /* 0x001fc400fc2007f1 */
+        /*0248*/                   BFE.U32 R14, R0, 0x105 ;                            /* 0x380000001057000e */
+        /*0250*/                   IADD3 R8, -R17, R8, R15 ;                           /* 0x5cc8078000871108 */
+        /*0258*/                   IADD R20, -R16, RZ ;                                /* 0x5c1200000ff71014 */
+                                                                                       /* 0x001f8400fc2007e2 */
+        /*0268*/                   BFE.U32 R17, R0, 0x103 ;                            /* 0x3800000010370011 */
+        /*0270*/                   IADD R18, -R10, RZ ;                                /* 0x5c1200000ff70a12 */
+        /*0278*/                   LOP32I.AND R16, R19, 0xff ;                         /* 0x040000000ff71310 */
+                                                                                       /* 0x001f8400fc2007f1 */
+        /*0288*/                   IADD R14, -R14, RZ ;                                /* 0x5c1200000ff70e0e */
+        /*0290*/                   BFE.U32 R10, R0, 0x106 ;                            /* 0x380000001067000a */
+        /*0298*/                   LOP32I.AND R20, R20, 0xff00 ;                       /* 0x0400000ff0071414 */
+                                                                                       /* 0x001f8400fc2007e2 */
+        /*02a8*/                   IADD R22, -R17, RZ ;                                /* 0x5c1200000ff71116 */
+        /*02b0*/                   LOP3.LUT R17, R16, 0xff00, R18, 0xf8 ;              /* 0x3cf8090ff0071011 */
+        /*02b8*/                   LOP3.LUT R16, R16, 0xff00, R14, 0xf8 ;              /* 0x3cf8070ff0071010 */
+                                                                                       /* 0x001f8400fe2007e1 */
+        /*02c8*/                   IADD R14, -R10, RZ ;                                /* 0x5c1200000ff70a0e */
+        /*02d0*/                   IADD R21, -R12, RZ ;                                /* 0x5c1200000ff70c15 */
+        /*02d8*/                   BFE.U32 R11, R11, 0x101 ;                           /* 0x3800000010170b0b */
+                                                                                       /* 0x001f8400fe2007e1 */
+        /*02e8*/                   LOP3.LUT R12, R20, 0xff, R22, 0xf8 ;                /* 0x3cf80b000ff7140c */
+        /*02f0*/                   IADD R20, -R13, RZ ;                                /* 0x5c1200000ff70d14 */
+        /*02f8*/                   BFE.U32 R22, R0, 0x109 ;                            /* 0x3800000010970016 */
+                                                                                       /* 0x001f8400fe2007e1 */
+        /*0308*/                   LOP32I.AND R13, R14, 0xff00 ;                       /* 0x0400000ff0070e0d */
+        /*0310*/                   LOP32I.AND R21, R21, 0xff ;                         /* 0x040000000ff71515 */
+        /*0318*/                   BFE.U32 R19, R0, 0x108 ;                            /* 0x3800000010870013 */
+                                                                                       /* 0x001f8400fc2007e1 */
+        /*0328*/                   IADD R15, -R15, RZ ;                                /* 0x5c1200000ff70f0f */
+        /*0330*/                   IADD R11, -R11, RZ ;                                /* 0x5c1200000ff70b0b */
+        /*0338*/                   IADD R25, -R22, RZ ;                                /* 0x5c1200000ff71619 */
+                                                                                       /* 0x001f8400fc2007e1 */
+        /*0348*/                   LOP3.LUT R13, R13, 0xff, R20, 0xf8 ;                /* 0x3cf80a000ff70d0d */
+        /*0350*/                   LOP3.LUT R20, R21, 0xff00, R20, 0xf8 ;              /* 0x3cf80a0ff0071514 */
+        /*0358*/                   IADD R23, -R19, RZ ;                                /* 0x5c1200000ff71317 */
+                                                                                       /* 0x001fc400fc2007f1 */
+        /*0368*/                   LOP3.LUT R21, R21, 0xff00, R15, 0xf8 ;              /* 0x3cf8078ff0071515 */
+        /*0370*/                   BFE.U32 R22, R0, 0x10a ;                            /* 0x3800000010a70016 */
+        /*0378*/                   LOP3.LUT R11, R17, c[0x2][0x0], R11, 0xf8 ;         /* 0x02f805880007110b */
+                                                                                       /* 0x001f8440fe2207f1 */
+        /*0388*/                   BFE.U32 R18, R0.reuse, 0x10c ;                      /* 0x3800000010c70012 */
+        /*0390*/                   BFE.U32 R17, R0.reuse, 0x10b ;                      /* 0x3800000010b70011 */
+        /*0398*/                   BFE.U32 R19, R0, 0x10d ;                            /* 0x3800000010d70013 */
+                                                                                       /* 0x001f8400fc2007e1 */
+        /*03a8*/                   LOP3.LUT R21, R21, c[0x2][0x0], R23, 0xf8 ;         /* 0x02f80b8800071515 */
+        /*03b0*/                   LOP3.LUT R16, R16, c[0x2][0x0], R25, 0xf8 ;         /* 0x02f80c8800071010 */
+        /*03b8*/                   IADD R22, -R22, RZ ;                                /* 0x5c1200000ff71616 */
+                                                                                       /* 0x001f8400fe2007e1 */
+        /*03c8*/                   IADD R23, -R18, RZ ;                                /* 0x5c1200000ff71217 */
+        /*03d0*/                   IADD R25, -R17, RZ ;                                /* 0x5c1200000ff71119 */
+        /*03d8*/                   BFE.U32 R18, R0, 0x10e ;                            /* 0x3800000010e70012 */
+                                                                                       /* 0x001f8800fc2007e1 */
+        /*03e8*/                   LOP3.LUT R20, R20, c[0x2][0x0], R15, 0xf8 ;         /* 0x02f8078800071414 */
+        /*03f0*/                   IADD R19, -R19, RZ ;                                /* 0x5c1200000ff71313 */
+        /*03f8*/                   LOP3.LUT R17, R13, c[0x2][0x0], R22, 0xf8 ;         /* 0x02f80b0800070d11 */
+                                                                                       /* 0x001f8400fc2007e1 */
+        /*0408*/                   LOP3.LUT R13, R12, c[0x2][0x0], R25, 0xf8 ;         /* 0x02f80c8800070c0d */
+        /*0410*/                   IADD R18, -R18, RZ ;                                /* 0x5c1200000ff71212 */
+        /*0418*/                   LOP3.LUT R12, R20, c[0x2][0x4], R14, 0xf8 ;         /* 0x02f807080017140c */
+                                                                                       /* 0x001f8800fe2007e1 */
+        /*0428*/                   LOP3.LUT R21, R21, c[0x2][0x4], R23, 0xf8 ;         /* 0x02f80b8800171515 */
+        /*0430*/                   LOP3.LUT R16, R16, c[0x2][0x4], R19, 0xf8 ;         /* 0x02f8098800171010 */
+        /*0438*/                   BFE.U32 R14, R0, 0x10f ;                            /* 0x3800000010f7000e */
+                                                                                       /* 0x001fcc00fe0007f1 */
+        /*0448*/                   LOP3.LUT R17, R17, c[0x2][0x4], R18, 0xf8 ;         /* 0x02f8090800171111 */
+        /*0450*/                   BFE.U32 R7, R7, 0x101 ;                             /* 0x3800000010170707 */
+        /*0458*/                   DEPBAR.LE SB5, 0x1 ;                                /* 0xf0f0000034170000 */
+                                                                                       /* 0x001fc400fc2007e1 */
+        /*0468*/                   LOP3.LUT R21, R21, c[0x2][0x8], R2, 0x60 ;          /* 0x0260010800271515 */
+        /*0470*/                   LOP3.LUT R16, R16, c[0x2][0x8], R2, 0x60 ;          /* 0x0260010800271010 */
+        /*0478*/                   IADD R18, -R14, RZ ;                                /* 0x5c1200000ff70e12 */
+                                                                                       /* 0x001fc400fc2007e1 */
+        /*0488*/                   SHR.U32 R15, R0, 0xc ;                              /* 0x3828000000c7000f */
+        /*0490*/                   XMAD R19, R5, R6, RZ ;                              /* 0x5b007f8000670513 */
+        /*0498*/                   XMAD.MRG R20, R5, R6.H1, RZ ;                       /* 0x5b007fa800670514 */
+                                                                                       /* 0x001f8400fe2007e1 */
+        /*04a8*/                   VABSDIFF4.U8.U8.ACC R21, R21, RZ, RZ ;              /* 0x50387fb44ff71515 */
+        /*04b0*/                   LOP3.LUT R17, R17, c[0x2][0x8], R2, 0x60 ;          /* 0x0260010800271111 */
+        /*04b8*/                   VABSDIFF4.U8.U8.ACC R16, R16, RZ, RZ ;              /* 0x50387fb44ff71010 */
+                                                                                       /* 0x001f8400fe2007e1 */
+        /*04c8*/                   IADD R14, -R7, RZ ;                                 /* 0x5c1200000ff7070e */
+        /*04d0*/                   LOP3.LUT R13, R13, c[0x2][0x4], R18, 0xf8 ;         /* 0x02f8090800170d0d */
+        /*04d8*/                   BFE.U32 R6, R0, 0x308 ;                             /* 0x3800000030870006 */
+                                                                                       /* 0x001f8400fe2007e1 */
+        /*04e8*/                   LOP32I.AND R15, R15, 0x8 ;                          /* 0x0400000000870f0f */
+        /*04f0*/                   XMAD.PSL.CBCC R19, R5.H1, R20.H1, R19 ;             /* 0x5b30099801470513 */
+        /*04f8*/                   ISCADD R16, R16, R21, 0x1 ;                         /* 0x5c18008001571010 */
+                                                                                       /* 0x001f8400fc2007f1 */
+        /*0508*/                   LOP3.LUT R5, R12, c[0x2][0x8], R2, 0x60 ;           /* 0x0260010800270c05 */
+        /*0510*/                   VABSDIFF4.U8.U8.ACC R17, R17, RZ, RZ ;              /* 0x50387fb44ff71111 */
+        /*0518*/                   LOP3.LUT R11, R11, c[0x2][0x4], R14, 0xf8 ;         /* 0x02f8070800170b0b */
+                                                                                       /* 0x001fc400fc2007f1 */
+        /*0528*/                   LOP3.LUT R13, R13, c[0x2][0x8], R2, 0x60 ;          /* 0x0260010800270d0d */
+        /*0530*/                   IADD3 R9, -R15, R9, R6 ;                            /* 0x5cc8030000970f09 */
+        /*0538*/                   IADD R8, R10, R8 ;                                  /* 0x5c10000000870a08 */
+                                                                                       /* 0x001fc400fc2007f1 */
+        /*0548*/                   BFE.U32 R10, R0, 0x30c ;                            /* 0x3800000030c7000a */
+        /*0550*/                   ISCADD R16, R17, R16, 0x2 ;                         /* 0x5c18010001071110 */
+        /*0558*/                   LOP3.LUT R11, R11, c[0x2][0x8], R2, 0x60 ;          /* 0x0260010800270b0b */
+                                                                                       /* 0x001c4420fe0007f1 */
+        /*0568*/                   VABSDIFF4.U8.U8.ACC R5, R5, RZ, RZ ;                /* 0x50387fb44ff70505 */
+        /*0570*/                   VABSDIFF4.U8.U8.ACC R15, R2, R0, R3 ;               /* 0x503801b44007020f */
+        /*0578*/                   I2F.F32.S8 R0, R2.B2 ;                              /* 0x5cb8040000272200 */
+                                                                                       /* 0x001fc800fc2007e1 */
+        /*0588*/                   VABSDIFF4.U8.U8.ACC R13, R13, RZ, RZ ;              /* 0x50387fb44ff70d0d */
+        /*0590*/                   IADD R6.CC, R19, c[0x0][0x148] ;                    /* 0x4c10800005271306 */
+        /*0598*/                   LOP.AND R12, R12, R2 ;                              /* 0x5c47000000270c0c */
+                                                                                       /* 0x001fc400fe2007e1 */
+        /*05a8*/                   ISCADD R5, -R8, R5, 0x7 ;                           /* 0x5c1a038000570805 */
+        /*05b0*/                   IADD R9, R10, R9 ;                                  /* 0x5c10000000970a09 */
+        /*05b8*/                   VABSDIFF4.U8.U8.ACC R11, R11, RZ, RZ ;              /* 0x50387fb44ff70b0b */
+                                                                                       /* 0x001fc000fe4007e1 */
+        /*05c8*/                   ISCADD R16, -R13, R16, 0x3 ;                        /* 0x5c1a018001070d10 */
+        /*05d0*/                   IADD.X R7, R4, c[0x0][0x14c] ;                      /* 0x4c10080005370407 */
+        /*05d8*/                   VABSDIFF4.U8.U8.ACC R12, R12, RZ, R3 ;              /* 0x503801b44ff70c0c */
+                                                                                       /* 0x003fc400fe0007f2 */
+        /*05e8*/                   STG.E [R6], R15 ;                                   /* 0xeedc20000007060f */
+        /*05f0*/                   ISCADD R5, -R11, R5, 0x1 ;                          /* 0x5c1a008000570b05 */
+        /*05f8*/                   STG.E [R6+0x10], R0 ;                               /* 0xeedc200001070600 */
+                                                                                       /* 0x001fc400fe2007f0 */
+        /*0608*/                   ISCADD R9, -R9, R16, 0x7 ;                          /* 0x5c1a038001070909 */
+        /*0610*/                   STG.E [R6+0x4], R12 ;                               /* 0xeedc20000047060c */
+        /*0618*/                   STG.E [R6+0x8], R5 ;                                /* 0xeedc200000870605 */
+                                                                                       /* 0x001ffc00ffe007f1 */
+        /*0628*/                   STG.E [R6+0xc], R9 ;                                /* 0xeedc200000c70609 */
+        /*0630*/                   EXIT ;                                              /* 0xe30000000007000f */
+        /*0638*/                   BRA 0x638 ;                                         /* 0xe2400fffff87000f */
+		..........
+
+
+
+Fatbin ptx code:
+================
+arch = sm_60
+code version = [8,7]
+host = linux
+compile_size = 64bit
+compressed
+identifier = /home/arian/hfma2-gp100-probe/research-20260908/sad_probe.cu
+ptxasOptions = -v  --generate-line-info 

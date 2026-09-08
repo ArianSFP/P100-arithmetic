@@ -1,0 +1,9 @@
+{
+  "candidate": "results/merge-dest-r11.cubin",
+  "candidate_sha256": "84f02265bea3779239811f20601be8b01ab30bedea8c6ffa859934216fb29415",
+  "worker": "build/merge-worker",
+  "worker_sha256": "70dd4c363ad562b00d36bebfc1cd89deb646dee093d36533309e9747b743b8d2",
+  "cuda_visible_devices": "0",
+  "timeout_seconds": 10.0,
+  "launch_unix_ns": 1788825642665892233
+}

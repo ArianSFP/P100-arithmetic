@@ -1,0 +1,52 @@
+{
+  "argv": [
+    "/usr/bin/env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_DEVICE_ORDER=PCI_BUS_ID",
+    "CUDA_VISIBLE_DEVICES=GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+    "/usr/bin/taskset",
+    "--cpu-list",
+    "0-11",
+    "/home/arian/hfma2-gp100-probe/endpoint-sad-20260908/endpoint-sad",
+    "--gpu"
+  ],
+  "gpu_uuid": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+  "token": "lowbit-20260908-1126-gpu1",
+  "coordination_sha256": "8080098307e60ff0f85e1d0cd5a2158ad348ecbead89fb0e9f3e70c922be35d7",
+  "hashes": {
+    "worker": "fa7c256bb63864a29515e514106fcbc5668ff295cc5006a72bb5682a6a208d39",
+    "source": "d1c88b28b7b088366a1182c8e996ec1b708676de8bd37c2066c5e23f5b68ddfc"
+  },
+  "supervisor_sha256": "9a2dea20bba83ca5097c379c4e52b296c12a930f568d8b94109550601a8a9e72",
+  "hypothesis": "Exact low-bit formulations; compare complete synthetic G32 pipelines",
+  "status": "STOP: Target device not idle/healthy",
+  "sanitizer": null,
+  "before": {
+    "device": {
+      "returncode": 0,
+      "stdout": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, Tesla P100-PCIE-16GB, 580.173.02, 5, 0, 28, 405, 0\n",
+      "stderr": ""
+    },
+    "processes": {
+      "returncode": 0,
+      "stdout": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1021860, /usr/bin/gnome-text-editor\n",
+      "stderr": ""
+    }
+  },
+  "pid": 1064630,
+  "returncode": 0,
+  "after": {
+    "device": {
+      "returncode": 0,
+      "stdout": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, Tesla P100-PCIE-16GB, 580.173.02, 5, 65, 29, 1316, 0\n",
+      "stderr": ""
+    },
+    "processes": {
+      "returncode": 0,
+      "stdout": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1021860, /usr/bin/gnome-text-editor\n",
+      "stderr": ""
+    }
+  }
+}
