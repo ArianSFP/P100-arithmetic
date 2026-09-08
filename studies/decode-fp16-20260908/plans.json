@@ -1,0 +1,248 @@
+[
+  {
+    "shape": [
+      5120,
+      4352,
+      1
+    ],
+    "screen": "run-1788903589380228722/v4-down-n1",
+    "fp32": "r3r1",
+    "fp16_group": "m4r1b1w8s8",
+    "fp16_local": "m5r1b1w8s8",
+    "matched_group_fp32": "m3r1b1w8s8",
+    "matched_local_fp32": "m3r1b1w8s8",
+    "configs": [
+      "r3r1",
+      "r3r2",
+      "r3b4",
+      "m4r1b1w8s8",
+      "m5r1b1w8s8",
+      "m3r1b1w8s8"
+    ],
+    "accuracy": "EXPERIMENTAL: PPL/KLD gate not passed; not production dispatch"
+  },
+  {
+    "shape": [
+      5120,
+      4352,
+      4
+    ],
+    "screen": "run-1788903589380228722/v4-down-n4",
+    "fp32": "r3b4",
+    "fp16_group": "g4r1b4w4s32",
+    "fp16_local": "m5r2b4w8s16",
+    "matched_group_fp32": "g3r1b4w4s32",
+    "matched_local_fp32": "m3r2b4w8s16",
+    "configs": [
+      "r3r1",
+      "r3r2",
+      "r3b4",
+      "g4r1b4w4s32",
+      "m5r2b4w8s16",
+      "g3r1b4w4s32",
+      "m3r2b4w8s16"
+    ],
+    "accuracy": "EXPERIMENTAL: PPL/KLD gate not passed; not production dispatch"
+  },
+  {
+    "shape": [
+      5120,
+      4352,
+      8
+    ],
+    "screen": "run-1788903589380228722/v4-down-n8",
+    "fp32": "r3b4",
+    "fp16_group": "m4r2b4w8s16",
+    "fp16_local": "m5r2b4w8s16",
+    "matched_group_fp32": "m3r2b4w8s16",
+    "matched_local_fp32": "m3r2b4w8s16",
+    "configs": [
+      "r3b8",
+      "r3r1",
+      "r3r2",
+      "r3b4",
+      "m4r2b4w8s16",
+      "m5r2b4w8s16",
+      "m3r2b4w8s16"
+    ],
+    "accuracy": "EXPERIMENTAL: PPL/KLD gate not passed; not production dispatch"
+  },
+  {
+    "shape": [
+      5120,
+      17408,
+      1
+    ],
+    "screen": "run-1788903589380228722/v4-longk-n1",
+    "fp32": "r3r1",
+    "fp16_group": "m4r1b1w8s16",
+    "fp16_local": "m5r1b1w8s16",
+    "matched_group_fp32": "m3r1b1w8s16",
+    "matched_local_fp32": "m3r1b1w8s16",
+    "configs": [
+      "r3r1",
+      "r3r2",
+      "r3b4",
+      "m4r1b1w8s16",
+      "m5r1b1w8s16",
+      "m3r1b1w8s16"
+    ],
+    "accuracy": "EXPERIMENTAL: PPL/KLD gate not passed; not production dispatch"
+  },
+  {
+    "shape": [
+      5120,
+      5120,
+      1
+    ],
+    "screen": "run-1788903589380228722/v4-square-n1",
+    "fp32": "r3r1",
+    "fp16_group": "m4r1b1w8s8",
+    "fp16_local": "m5r1b1w8s8",
+    "matched_group_fp32": "m3r1b1w8s8",
+    "matched_local_fp32": "m3r1b1w8s8",
+    "configs": [
+      "r3r1",
+      "r3r2",
+      "r3b4",
+      "m4r1b1w8s8",
+      "m5r1b1w8s8",
+      "m3r1b1w8s8"
+    ],
+    "accuracy": "EXPERIMENTAL: PPL/KLD gate not passed; not production dispatch"
+  },
+  {
+    "shape": [
+      5120,
+      5120,
+      4
+    ],
+    "screen": "run-1788903589380228722/v4-square-n4",
+    "fp32": "r3b4",
+    "fp16_group": "g4r1b4w4s32",
+    "fp16_local": "g5r1b4w4s32",
+    "matched_group_fp32": "g3r1b4w4s32",
+    "matched_local_fp32": "g3r1b4w4s32",
+    "configs": [
+      "r3r1",
+      "r3r2",
+      "r3b4",
+      "g4r1b4w4s32",
+      "g5r1b4w4s32",
+      "g3r1b4w4s32"
+    ],
+    "accuracy": "EXPERIMENTAL: PPL/KLD gate not passed; not production dispatch"
+  },
+  {
+    "shape": [
+      5120,
+      5120,
+      8
+    ],
+    "screen": "run-1788903589380228722/v4-square-n8",
+    "fp32": "r3b4",
+    "fp16_group": "m4r2b4w8s16",
+    "fp16_local": "m5r2b4w8s16",
+    "matched_group_fp32": "m3r2b4w8s16",
+    "matched_local_fp32": "m3r2b4w8s16",
+    "configs": [
+      "r3b8",
+      "r3r1",
+      "r3r2",
+      "r3b4",
+      "m4r2b4w8s16",
+      "m5r2b4w8s16",
+      "m3r2b4w8s16"
+    ],
+    "accuracy": "EXPERIMENTAL: PPL/KLD gate not passed; not production dispatch"
+  },
+  {
+    "shape": [
+      17408,
+      5120,
+      1
+    ],
+    "screen": "run-1788903589380228722/v4-tall-n1",
+    "fp32": "r3r2",
+    "fp16_group": "m4r2b1w8s32",
+    "fp16_local": "m5r2b1w8s32",
+    "matched_group_fp32": "m3r2b1w8s32",
+    "matched_local_fp32": "m3r2b1w8s32",
+    "configs": [
+      "r3r1",
+      "r3r2",
+      "r3b4",
+      "m4r2b1w8s32",
+      "m5r2b1w8s32",
+      "m3r2b1w8s32"
+    ],
+    "accuracy": "EXPERIMENTAL: PPL/KLD gate not passed; not production dispatch"
+  },
+  {
+    "shape": [
+      4352,
+      5120,
+      1
+    ],
+    "screen": "run-1788903589380228722/v4-up-n1",
+    "fp32": "r3r1",
+    "fp16_group": "m4r1b1w8s8",
+    "fp16_local": "m5r1b1w8s8",
+    "matched_group_fp32": "m3r1b1w8s8",
+    "matched_local_fp32": "m3r1b1w8s8",
+    "configs": [
+      "r3r1",
+      "r3r2",
+      "r3b4",
+      "m4r1b1w8s8",
+      "m5r1b1w8s8",
+      "m3r1b1w8s8"
+    ],
+    "accuracy": "EXPERIMENTAL: PPL/KLD gate not passed; not production dispatch"
+  },
+  {
+    "shape": [
+      4352,
+      5120,
+      4
+    ],
+    "screen": "run-1788903589380228722/v4-up-n4",
+    "fp32": "r3b4",
+    "fp16_group": "g4r1b4w4s32",
+    "fp16_local": "g5r1b4w4s32",
+    "matched_group_fp32": "g3r1b4w4s32",
+    "matched_local_fp32": "g3r1b4w4s32",
+    "configs": [
+      "r3r1",
+      "r3r2",
+      "r3b4",
+      "g4r1b4w4s32",
+      "g5r1b4w4s32",
+      "g3r1b4w4s32"
+    ],
+    "accuracy": "EXPERIMENTAL: PPL/KLD gate not passed; not production dispatch"
+  },
+  {
+    "shape": [
+      4352,
+      5120,
+      8
+    ],
+    "screen": "run-1788903589380228722/v4-up-n8",
+    "fp32": "r3b4",
+    "fp16_group": "m4r2b4w8s16",
+    "fp16_local": "m5r2b4w8s16",
+    "matched_group_fp32": "m3r2b4w8s16",
+    "matched_local_fp32": "m3r2b4w8s16",
+    "configs": [
+      "r3b8",
+      "r3r1",
+      "r3r2",
+      "r3b4",
+      "m4r2b4w8s16",
+      "m5r2b4w8s16",
+      "m3r2b4w8s16"
+    ],
+    "accuracy": "EXPERIMENTAL: PPL/KLD gate not passed; not production dispatch"
+  }
+]

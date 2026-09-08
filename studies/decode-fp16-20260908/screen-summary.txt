@@ -1,0 +1,491 @@
+run-1788903589380228722/confirm-17408-5120-1-r0 [17408, 5120, 1] prep True family 0
+  mode -1: r3r2                 109.451us vs best F32 1.000x, L2 0
+  mode 0: m3r2b1w8s32          125.456us vs best F32 0.872x, L2 1.38884e-08
+  mode 1: m4r2b1w8s32          104.896us vs best F32 1.043x, L2 0.000593023
+  mode 2: m5r2b1w8s32          104.307us vs best F32 1.049x, L2 0.000692629
+run-1788903589380228722/confirm-17408-5120-1-r1 [17408, 5120, 1] prep True family 0
+  mode -1: r3r2                 108.632us vs best F32 1.000x, L2 0
+  mode 0: m3r2b1w8s32          124.920us vs best F32 0.870x, L2 1.31422e-08
+  mode 1: m4r2b1w8s32          104.435us vs best F32 1.040x, L2 0.000594621
+  mode 2: m5r2b1w8s32          103.904us vs best F32 1.046x, L2 0.000691367
+run-1788903589380228722/confirm-17408-5120-1-r2 [17408, 5120, 1] prep True family 0
+  mode -1: r3r2                 108.976us vs best F32 1.000x, L2 0
+  mode 0: m3r2b1w8s32          125.101us vs best F32 0.871x, L2 1.43441e-08
+  mode 1: m4r2b1w8s32          104.477us vs best F32 1.043x, L2 0.000595195
+  mode 2: m5r2b1w8s32          103.947us vs best F32 1.048x, L2 0.000696391
+run-1788903589380228722/confirm-4352-5120-1-r0 [4352, 5120, 1] prep True family 0
+  mode -1: r3r1                  39.165us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            48.141us vs best F32 0.814x, L2 1.14922e-07
+  mode 1: m4r1b1w8s8            36.379us vs best F32 1.077x, L2 0.000585846
+  mode 2: m5r1b1w8s8            35.749us vs best F32 1.096x, L2 0.000888555
+run-1788903589380228722/confirm-4352-5120-1-r1 [4352, 5120, 1] prep True family 0
+  mode -1: r3r1                  39.005us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            48.048us vs best F32 0.812x, L2 1.19944e-07
+  mode 1: m4r1b1w8s8            36.197us vs best F32 1.078x, L2 0.000584233
+  mode 2: m5r1b1w8s8            35.613us vs best F32 1.095x, L2 0.000874692
+run-1788903589380228722/confirm-4352-5120-1-r2 [4352, 5120, 1] prep True family 0
+  mode -1: r3r1                  39.005us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            47.949us vs best F32 0.813x, L2 1.19843e-07
+  mode 1: m4r1b1w8s8            36.296us vs best F32 1.075x, L2 0.00059715
+  mode 2: m5r1b1w8s8            35.621us vs best F32 1.095x, L2 0.000887649
+run-1788903589380228722/confirm-4352-5120-4-r0 [4352, 5120, 4] prep True family 0
+  mode -1: r3b4                  63.064us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32           88.877us vs best F32 0.710x, L2 1.2673e-08
+  mode 1: g4r1b4w4s32           60.195us vs best F32 1.048x, L2 0.000589307
+  mode 2: g5r1b4w4s32           59.541us vs best F32 1.059x, L2 0.000687817
+run-1788903589380228722/confirm-4352-5120-4-r1 [4352, 5120, 4] prep True family 0
+  mode -1: r3b4                  63.088us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32           88.917us vs best F32 0.710x, L2 1.20621e-08
+  mode 1: g4r1b4w4s32           60.064us vs best F32 1.050x, L2 0.000598571
+  mode 2: g5r1b4w4s32           59.416us vs best F32 1.062x, L2 0.000701429
+run-1788903589380228722/confirm-4352-5120-4-r2 [4352, 5120, 4] prep True family 0
+  mode -1: r3b4                  63.288us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32           89.000us vs best F32 0.711x, L2 1.45237e-08
+  mode 1: g4r1b4w4s32           60.141us vs best F32 1.052x, L2 0.000594734
+  mode 2: g5r1b4w4s32           59.491us vs best F32 1.064x, L2 0.000694387
+run-1788903589380228722/confirm-4352-5120-8-r0 [4352, 5120, 8] prep True family 0
+  mode -1: r3b4                 111.211us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          138.067us vs best F32 0.805x, L2 1.02868e-07
+  mode 1: m4r2b4w8s16           89.248us vs best F32 1.246x, L2 0.00059404
+  mode 2: m5r2b4w8s16           85.152us vs best F32 1.306x, L2 0.000764123
+run-1788903589380228722/confirm-4352-5120-8-r1 [4352, 5120, 8] prep True family 0
+  mode -1: r3b4                 111.387us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          138.011us vs best F32 0.807x, L2 1.03667e-07
+  mode 1: m4r2b4w8s16           90.245us vs best F32 1.234x, L2 0.000597988
+  mode 2: m5r2b4w8s16           86.267us vs best F32 1.291x, L2 0.000769478
+run-1788903589380228722/confirm-4352-5120-8-r2 [4352, 5120, 8] prep True family 0
+  mode -1: r3b4                 110.859us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          138.291us vs best F32 0.802x, L2 1.0255e-07
+  mode 1: m4r2b4w8s16           89.683us vs best F32 1.236x, L2 0.00059284
+  mode 2: m5r2b4w8s16           85.587us vs best F32 1.295x, L2 0.000763576
+run-1788903589380228722/confirm-5120-17408-1-r0 [5120, 17408, 1] prep True family 0
+  mode -1: r3r1                 109.907us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s16          137.152us vs best F32 0.801x, L2 1.43999e-07
+  mode 1: m4r1b1w8s16          106.704us vs best F32 1.030x, L2 0.000586801
+  mode 2: m5r1b1w8s16          105.592us vs best F32 1.041x, L2 0.00102361
+run-1788903589380228722/confirm-5120-17408-1-r1 [5120, 17408, 1] prep True family 0
+  mode -1: r3r1                 110.011us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s16          137.336us vs best F32 0.801x, L2 1.40866e-07
+  mode 1: m4r1b1w8s16          106.808us vs best F32 1.030x, L2 0.000591048
+  mode 2: m5r1b1w8s16          105.717us vs best F32 1.041x, L2 0.00106334
+run-1788903589380228722/confirm-5120-17408-1-r2 [5120, 17408, 1] prep True family 0
+  mode -1: r3r1                 109.795us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s16          136.979us vs best F32 0.802x, L2 1.42686e-07
+  mode 1: m4r1b1w8s16          106.792us vs best F32 1.028x, L2 0.000596229
+  mode 2: m5r1b1w8s16          105.515us vs best F32 1.041x, L2 0.00107735
+run-1788903589380228722/confirm-5120-4352-1-r0 [5120, 4352, 1] prep True family 0
+  mode -1: r3r1                  34.315us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            42.544us vs best F32 0.807x, L2 1.13718e-07
+  mode 1: m4r1b1w8s8            33.056us vs best F32 1.038x, L2 0.000588765
+  mode 2: m5r1b1w8s8            32.539us vs best F32 1.055x, L2 0.000858747
+run-1788903589380228722/confirm-5120-4352-1-r1 [5120, 4352, 1] prep True family 0
+  mode -1: r3r1                  34.139us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            42.176us vs best F32 0.809x, L2 1.13014e-07
+  mode 1: m4r1b1w8s8            32.987us vs best F32 1.035x, L2 0.000601922
+  mode 2: m5r1b1w8s8            32.421us vs best F32 1.053x, L2 0.000881251
+run-1788903589380228722/confirm-5120-4352-1-r2 [5120, 4352, 1] prep True family 0
+  mode -1: r3r1                  34.893us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            42.997us vs best F32 0.812x, L2 1.13792e-07
+  mode 1: m4r1b1w8s8            33.613us vs best F32 1.038x, L2 0.000594076
+  mode 2: m5r1b1w8s8            33.051us vs best F32 1.056x, L2 0.000852358
+run-1788903589380228722/confirm-5120-4352-4-r0 [5120, 4352, 4] prep True family 0
+  mode -1: r3b4                  62.459us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32           88.885us vs best F32 0.703x, L2 1.30019e-08
+  mode 1: g4r1b4w4s32           60.312us vs best F32 1.036x, L2 0.000593745
+  mode 2: m5r2b4w8s16           58.757us vs best F32 1.063x, L2 0.000749136
+run-1788903589380228722/confirm-5120-4352-4-r1 [5120, 4352, 4] prep True family 0
+  mode -1: r3b4                  61.968us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32           87.875us vs best F32 0.705x, L2 1.15391e-08
+  mode 1: g4r1b4w4s32           59.851us vs best F32 1.035x, L2 0.000602592
+  mode 2: m5r2b4w8s16           57.523us vs best F32 1.077x, L2 0.000753966
+run-1788903589380228722/confirm-5120-4352-4-r2 [5120, 4352, 4] prep True family 0
+  mode -1: r3b4                  62.205us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32           88.480us vs best F32 0.703x, L2 1.36686e-08
+  mode 1: g4r1b4w4s32           60.011us vs best F32 1.037x, L2 0.000592978
+  mode 2: m5r2b4w8s16           58.224us vs best F32 1.068x, L2 0.000746466
+run-1788903589380228722/confirm-5120-4352-8-r0 [5120, 4352, 8] prep True family 0
+  mode -1: r3b4                 107.461us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          123.603us vs best F32 0.869x, L2 9.94833e-08
+  mode 1: m4r2b4w8s16           80.467us vs best F32 1.335x, L2 0.000595367
+  mode 2: m5r2b4w8s16           76.627us vs best F32 1.402x, L2 0.000746005
+run-1788903589380228722/confirm-5120-4352-8-r1 [5120, 4352, 8] prep True family 0
+  mode -1: r3b4                 108.237us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          124.075us vs best F32 0.872x, L2 9.9055e-08
+  mode 1: m4r2b4w8s16           79.923us vs best F32 1.354x, L2 0.000594999
+  mode 2: m5r2b4w8s16           76.205us vs best F32 1.420x, L2 0.000743984
+run-1788903589380228722/confirm-5120-4352-8-r2 [5120, 4352, 8] prep True family 0
+  mode -1: r3b4                 107.379us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          124.195us vs best F32 0.865x, L2 9.96073e-08
+  mode 1: m4r2b4w8s16           80.424us vs best F32 1.335x, L2 0.000596355
+  mode 2: m5r2b4w8s16           76.672us vs best F32 1.400x, L2 0.00075074
+run-1788903589380228722/confirm-5120-5120-1-r0 [5120, 5120, 1] prep True family 0
+  mode -1: r3r1                  38.829us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            48.424us vs best F32 0.802x, L2 1.14192e-07
+  mode 1: m4r1b1w8s8            37.312us vs best F32 1.041x, L2 0.000578388
+  mode 2: m5r1b1w8s8            36.768us vs best F32 1.056x, L2 0.000880723
+run-1788903589380228722/confirm-5120-5120-1-r1 [5120, 5120, 1] prep True family 0
+  mode -1: r3r1                  39.091us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            48.691us vs best F32 0.803x, L2 1.20277e-07
+  mode 1: m4r1b1w8s8            37.496us vs best F32 1.043x, L2 0.000589785
+  mode 2: m5r1b1w8s8            36.955us vs best F32 1.058x, L2 0.000883272
+run-1788903589380228722/confirm-5120-5120-1-r2 [5120, 5120, 1] prep True family 0
+  mode -1: r3r1                  38.861us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            48.435us vs best F32 0.802x, L2 1.19394e-07
+  mode 1: m4r1b1w8s8            37.237us vs best F32 1.044x, L2 0.000597514
+  mode 2: m5r1b1w8s8            36.645us vs best F32 1.060x, L2 0.000889365
+run-1788903589380228722/confirm-5120-5120-4-r0 [5120, 5120, 4] prep True family 0
+  mode -1: r3b4                  65.925us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32          101.821us vs best F32 0.647x, L2 1.28576e-08
+  mode 1: g4r1b4w4s32           68.280us vs best F32 0.966x, L2 0.000590589
+  mode 2: g5r1b4w4s32           66.765us vs best F32 0.987x, L2 0.00068946
+run-1788903589380228722/confirm-5120-5120-4-r1 [5120, 5120, 4] prep True family 0
+  mode -1: r3b4                  66.003us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32          101.933us vs best F32 0.648x, L2 1.21862e-08
+  mode 1: g4r1b4w4s32           68.400us vs best F32 0.965x, L2 0.000596894
+  mode 2: g5r1b4w4s32           66.947us vs best F32 0.986x, L2 0.000698983
+run-1788903589380228722/confirm-5120-5120-4-r2 [5120, 5120, 4] prep True family 0
+  mode -1: r3b4                  66.669us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32          102.408us vs best F32 0.651x, L2 1.4571e-08
+  mode 1: g4r1b4w4s32           68.525us vs best F32 0.973x, L2 0.000589944
+  mode 2: g5r1b4w4s32           67.000us vs best F32 0.995x, L2 0.000691576
+run-1788903589380228722/confirm-5120-5120-8-r0 [5120, 5120, 8] prep True family 0
+  mode -1: r3b4                 122.784us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          139.840us vs best F32 0.878x, L2 1.02533e-07
+  mode 1: m4r2b4w8s16           91.253us vs best F32 1.346x, L2 0.00059266
+  mode 2: m5r2b4w8s16           87.067us vs best F32 1.410x, L2 0.000764472
+run-1788903589380228722/confirm-5120-5120-8-r1 [5120, 5120, 8] prep True family 0
+  mode -1: r3b4                 122.317us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          140.253us vs best F32 0.872x, L2 1.03446e-07
+  mode 1: m4r2b4w8s16           92.024us vs best F32 1.329x, L2 0.000596433
+  mode 2: m5r2b4w8s16           88.013us vs best F32 1.390x, L2 0.000767526
+run-1788903589380228722/confirm-5120-5120-8-r2 [5120, 5120, 8] prep True family 0
+  mode -1: r3b4                 123.395us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          140.056us vs best F32 0.881x, L2 1.02464e-07
+  mode 1: m4r2b4w8s16           92.229us vs best F32 1.338x, L2 0.000593662
+  mode 2: m5r2b4w8s16           88.293us vs best F32 1.398x, L2 0.000765228
+run-1788903589380228722/final-17408-5120-1-r0 [17408, 5120, 1] prep True family 0
+  mode -1: r3r2                 108.864us vs best F32 1.000x, L2 0
+  mode 0: m3r2b1w8s32          125.075us vs best F32 0.870x, L2 1.38884e-08
+  mode 1: m4r2b1w8s32          104.675us vs best F32 1.040x, L2 0.000593023
+  mode 2: m5r2b1w8s32          103.821us vs best F32 1.049x, L2 0.000692629
+run-1788903589380228722/final-17408-5120-1-r1 [17408, 5120, 1] prep True family 0
+  mode -1: r3r2                 109.221us vs best F32 1.000x, L2 0
+  mode 0: m3r2b1w8s32          125.264us vs best F32 0.872x, L2 1.31422e-08
+  mode 1: m4r2b1w8s32          104.832us vs best F32 1.042x, L2 0.000594621
+  mode 2: m5r2b1w8s32          104.272us vs best F32 1.047x, L2 0.000691367
+run-1788903589380228722/final-17408-5120-1-r2 [17408, 5120, 1] prep True family 0
+  mode -1: r3r2                 109.824us vs best F32 1.000x, L2 0
+  mode 0: m3r2b1w8s32          124.835us vs best F32 0.880x, L2 1.43441e-08
+  mode 1: m4r2b1w8s32          104.437us vs best F32 1.052x, L2 0.000595195
+  mode 2: m5r2b1w8s32          103.757us vs best F32 1.058x, L2 0.000696391
+run-1788903589380228722/final-4352-5120-1-r0 [4352, 5120, 1] prep True family 0
+  mode -1: r3r1                  39.099us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            48.195us vs best F32 0.811x, L2 1.14922e-07
+  mode 1: m4r1b1w8s8            36.411us vs best F32 1.074x, L2 0.000585846
+  mode 2: m5r1b1w8s8            35.875us vs best F32 1.090x, L2 0.000888555
+run-1788903589380228722/final-4352-5120-1-r1 [4352, 5120, 1] prep True family 0
+  mode -1: r3r1                  39.128us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            48.339us vs best F32 0.809x, L2 1.19944e-07
+  mode 1: m4r1b1w8s8            36.392us vs best F32 1.075x, L2 0.000584233
+  mode 2: m5r1b1w8s8            35.835us vs best F32 1.092x, L2 0.000874692
+run-1788903589380228722/final-4352-5120-1-r2 [4352, 5120, 1] prep True family 0
+  mode -1: r3r1                  38.979us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            47.965us vs best F32 0.813x, L2 1.19843e-07
+  mode 1: m4r1b1w8s8            36.304us vs best F32 1.074x, L2 0.00059715
+  mode 2: m5r1b1w8s8            35.653us vs best F32 1.093x, L2 0.000887649
+run-1788903589380228722/final-4352-5120-4-r0 [4352, 5120, 4] prep True family 0
+  mode -1: r3b4                  63.075us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32           88.875us vs best F32 0.710x, L2 1.2673e-08
+  mode 1: g4r1b4w4s32           60.061us vs best F32 1.050x, L2 0.000589307
+  mode 2: g5r1b4w4s32           59.304us vs best F32 1.064x, L2 0.000687817
+run-1788903589380228722/final-4352-5120-4-r1 [4352, 5120, 4] prep True family 0
+  mode -1: r3b4                  63.040us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32           88.933us vs best F32 0.709x, L2 1.20621e-08
+  mode 1: g4r1b4w4s32           60.125us vs best F32 1.048x, L2 0.000598571
+  mode 2: g5r1b4w4s32           59.304us vs best F32 1.063x, L2 0.000701429
+run-1788903589380228722/final-4352-5120-4-r2 [4352, 5120, 4] prep True family 0
+  mode -1: r3b4                  62.947us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32           88.701us vs best F32 0.710x, L2 1.45237e-08
+  mode 1: g4r1b4w4s32           59.952us vs best F32 1.050x, L2 0.000594734
+  mode 2: g5r1b4w4s32           59.197us vs best F32 1.063x, L2 0.000694387
+run-1788903589380228722/final-4352-5120-8-r0 [4352, 5120, 8] prep True family 0
+  mode -1: r3b4                 110.915us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          138.192us vs best F32 0.803x, L2 1.02868e-07
+  mode 1: m4r2b4w8s16           89.653us vs best F32 1.237x, L2 0.00059404
+  mode 2: m5r2b4w8s16           85.480us vs best F32 1.298x, L2 0.000764123
+run-1788903589380228722/final-4352-5120-8-r1 [4352, 5120, 8] prep True family 0
+  mode -1: r3b4                 110.603us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          138.432us vs best F32 0.799x, L2 1.03667e-07
+  mode 1: m4r2b4w8s16           90.323us vs best F32 1.225x, L2 0.000597988
+  mode 2: m5r2b4w8s16           86.704us vs best F32 1.276x, L2 0.000769478
+run-1788903589380228722/final-4352-5120-8-r2 [4352, 5120, 8] prep True family 0
+  mode -1: r3b4                 110.477us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          138.296us vs best F32 0.799x, L2 1.0255e-07
+  mode 1: m4r2b4w8s16           90.363us vs best F32 1.223x, L2 0.00059284
+  mode 2: m5r2b4w8s16           86.429us vs best F32 1.278x, L2 0.000763576
+run-1788903589380228722/final-5120-17408-1-r0 [5120, 17408, 1] prep True family 0
+  mode -1: r3r1                 109.565us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s16          137.104us vs best F32 0.799x, L2 1.43999e-07
+  mode 1: m4r1b1w8s16          106.656us vs best F32 1.027x, L2 0.000586801
+  mode 2: m5r1b1w8s16          105.525us vs best F32 1.038x, L2 0.00102361
+run-1788903589380228722/final-5120-17408-1-r1 [5120, 17408, 1] prep True family 0
+  mode -1: r3r1                 109.995us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s16          137.224us vs best F32 0.802x, L2 1.40866e-07
+  mode 1: m4r1b1w8s16          106.875us vs best F32 1.029x, L2 0.000591048
+  mode 2: m5r1b1w8s16          105.728us vs best F32 1.040x, L2 0.00106334
+run-1788903589380228722/final-5120-17408-1-r2 [5120, 17408, 1] prep True family 0
+  mode -1: r3r1                 109.952us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s16          137.171us vs best F32 0.802x, L2 1.42686e-07
+  mode 1: m4r1b1w8s16          106.712us vs best F32 1.030x, L2 0.000596229
+  mode 2: m5r1b1w8s16          105.475us vs best F32 1.042x, L2 0.00107735
+run-1788903589380228722/final-5120-4352-1-r0 [5120, 4352, 1] prep True family 0
+  mode -1: r3r1                  34.475us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            42.557us vs best F32 0.810x, L2 1.13718e-07
+  mode 1: m4r1b1w8s8            33.019us vs best F32 1.044x, L2 0.000588765
+  mode 2: m5r1b1w8s8            32.504us vs best F32 1.061x, L2 0.000858747
+run-1788903589380228722/final-5120-4352-1-r1 [5120, 4352, 1] prep True family 0
+  mode -1: r3r1                  34.045us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            42.211us vs best F32 0.807x, L2 1.13014e-07
+  mode 1: m4r1b1w8s8            32.891us vs best F32 1.035x, L2 0.000601922
+  mode 2: m5r1b1w8s8            32.392us vs best F32 1.051x, L2 0.000881251
+run-1788903589380228722/final-5120-4352-1-r2 [5120, 4352, 1] prep True family 0
+  mode -1: r3r1                  34.251us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            42.357us vs best F32 0.809x, L2 1.13792e-07
+  mode 1: m4r1b1w8s8            33.125us vs best F32 1.034x, L2 0.000594076
+  mode 2: m5r1b1w8s8            32.653us vs best F32 1.049x, L2 0.000852358
+run-1788903589380228722/final-5120-4352-4-r0 [5120, 4352, 4] prep True family 0
+  mode -1: r3b4                  62.363us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32           88.987us vs best F32 0.701x, L2 1.30019e-08
+  mode 1: g4r1b4w4s32           60.149us vs best F32 1.037x, L2 0.000593745
+  mode 2: m5r2b4w8s16           58.701us vs best F32 1.062x, L2 0.000749136
+run-1788903589380228722/final-5120-4352-4-r1 [5120, 4352, 4] prep True family 0
+  mode -1: r3b4                  62.157us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32           88.360us vs best F32 0.703x, L2 1.15391e-08
+  mode 1: g4r1b4w4s32           59.939us vs best F32 1.037x, L2 0.000602592
+  mode 2: m5r2b4w8s16           58.461us vs best F32 1.063x, L2 0.000753966
+run-1788903589380228722/final-5120-4352-4-r2 [5120, 4352, 4] prep True family 0
+  mode -1: r3b4                  62.315us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32           88.672us vs best F32 0.703x, L2 1.36686e-08
+  mode 1: g4r1b4w4s32           60.168us vs best F32 1.036x, L2 0.000592978
+  mode 2: m5r2b4w8s16           58.480us vs best F32 1.066x, L2 0.000746466
+run-1788903589380228722/final-5120-4352-8-r0 [5120, 4352, 8] prep True family 0
+  mode -1: r3b4                 107.472us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          123.435us vs best F32 0.871x, L2 9.94833e-08
+  mode 1: m4r2b4w8s16           80.312us vs best F32 1.338x, L2 0.000595367
+  mode 2: m5r2b4w8s16           76.304us vs best F32 1.408x, L2 0.000746005
+run-1788903589380228722/final-5120-4352-8-r1 [5120, 4352, 8] prep True family 0
+  mode -1: r3b4                 107.539us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          124.016us vs best F32 0.867x, L2 9.9055e-08
+  mode 1: m4r2b4w8s16           80.395us vs best F32 1.338x, L2 0.000594999
+  mode 2: m5r2b4w8s16           76.613us vs best F32 1.404x, L2 0.000743984
+run-1788903589380228722/final-5120-4352-8-r2 [5120, 4352, 8] prep True family 0
+  mode -1: r3b4                 107.267us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          124.083us vs best F32 0.864x, L2 9.96073e-08
+  mode 1: m4r2b4w8s16           80.371us vs best F32 1.335x, L2 0.000596355
+  mode 2: m5r2b4w8s16           76.715us vs best F32 1.398x, L2 0.00075074
+run-1788903589380228722/final-5120-5120-1-r0 [5120, 5120, 1] prep True family 0
+  mode -1: r3r1                  38.792us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            48.352us vs best F32 0.802x, L2 1.14192e-07
+  mode 1: m4r1b1w8s8            37.264us vs best F32 1.041x, L2 0.000578388
+  mode 2: m5r1b1w8s8            36.648us vs best F32 1.059x, L2 0.000880723
+run-1788903589380228722/final-5120-5120-1-r1 [5120, 5120, 1] prep True family 0
+  mode -1: r3r1                  38.960us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            48.533us vs best F32 0.803x, L2 1.20277e-07
+  mode 1: m4r1b1w8s8            37.325us vs best F32 1.044x, L2 0.000589785
+  mode 2: m5r1b1w8s8            36.869us vs best F32 1.057x, L2 0.000883272
+run-1788903589380228722/final-5120-5120-1-r2 [5120, 5120, 1] prep True family 0
+  mode -1: r3r1                  38.819us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w8s8            48.403us vs best F32 0.802x, L2 1.19394e-07
+  mode 1: m4r1b1w8s8            37.277us vs best F32 1.041x, L2 0.000597514
+  mode 2: m5r1b1w8s8            36.661us vs best F32 1.059x, L2 0.000889365
+run-1788903589380228722/final-5120-5120-4-r0 [5120, 5120, 4] prep True family 0
+  mode -1: r3b4                  66.965us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32          102.128us vs best F32 0.656x, L2 1.28576e-08
+  mode 1: g4r1b4w4s32           68.592us vs best F32 0.976x, L2 0.000590589
+  mode 2: g5r1b4w4s32           67.037us vs best F32 0.999x, L2 0.00068946
+run-1788903589380228722/final-5120-5120-4-r1 [5120, 5120, 4] prep True family 0
+  mode -1: r3b4                  66.365us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32          101.320us vs best F32 0.655x, L2 1.21862e-08
+  mode 1: g4r1b4w4s32           68.504us vs best F32 0.969x, L2 0.000596894
+  mode 2: g5r1b4w4s32           66.915us vs best F32 0.992x, L2 0.000698983
+run-1788903589380228722/final-5120-5120-4-r2 [5120, 5120, 4] prep True family 0
+  mode -1: r3b4                  66.264us vs best F32 1.000x, L2 0
+  mode 0: g3r1b4w4s32          101.949us vs best F32 0.650x, L2 1.4571e-08
+  mode 1: g4r1b4w4s32           68.501us vs best F32 0.967x, L2 0.000589944
+  mode 2: g5r1b4w4s32           66.912us vs best F32 0.990x, L2 0.000691576
+run-1788903589380228722/final-5120-5120-8-r0 [5120, 5120, 8] prep True family 0
+  mode -1: r3b4                 122.541us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          140.093us vs best F32 0.875x, L2 1.02533e-07
+  mode 1: m4r2b4w8s16           91.987us vs best F32 1.332x, L2 0.00059266
+  mode 2: m5r2b4w8s16           87.976us vs best F32 1.393x, L2 0.000764472
+run-1788903589380228722/final-5120-5120-8-r1 [5120, 5120, 8] prep True family 0
+  mode -1: r3b4                 122.269us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          140.123us vs best F32 0.873x, L2 1.03446e-07
+  mode 1: m4r2b4w8s16           92.027us vs best F32 1.329x, L2 0.000596433
+  mode 2: m5r2b4w8s16           88.085us vs best F32 1.388x, L2 0.000767526
+run-1788903589380228722/final-5120-5120-8-r2 [5120, 5120, 8] prep True family 0
+  mode -1: r3b4                 122.573us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          139.856us vs best F32 0.876x, L2 1.02464e-07
+  mode 1: m4r2b4w8s16           92.099us vs best F32 1.331x, L2 0.000593662
+  mode 2: m5r2b4w8s16           87.939us vs best F32 1.394x, L2 0.000765228
+run-1788903589380228722/isolated-4352-5120-1-fp16local-r0 [4352, 5120, 1] prep True family 0
+  mode 2: m5r1b1w8s8            35.523us vs best F32 no paired F32 arm, L2 0.000879031
+run-1788903589380228722/isolated-4352-5120-1-fp16local-r1 [4352, 5120, 1] prep True family 0
+  mode 2: m5r1b1w8s8            35.515us vs best F32 no paired F32 arm, L2 0.000893368
+run-1788903589380228722/isolated-4352-5120-1-fp32-r0 [4352, 5120, 1] prep True family 0
+  mode -1: r3r1                  38.877us vs best F32 1.000x, L2 0
+run-1788903589380228722/isolated-4352-5120-1-fp32-r1 [4352, 5120, 1] prep True family 0
+  mode -1: r3r1                  39.091us vs best F32 1.000x, L2 0
+run-1788903589380228722/isolated-4352-5120-8-fp16local-r0 [4352, 5120, 8] prep True family 0
+  mode 2: m5r2b4w8s16           85.765us vs best F32 no paired F32 arm, L2 0.000780111
+run-1788903589380228722/isolated-4352-5120-8-fp16local-r1 [4352, 5120, 8] prep True family 0
+  mode 2: m5r2b4w8s16           86.389us vs best F32 no paired F32 arm, L2 0.000764008
+run-1788903589380228722/isolated-4352-5120-8-fp32-r0 [4352, 5120, 8] prep True family 0
+  mode -1: r3b4                 110.933us vs best F32 1.000x, L2 0
+run-1788903589380228722/isolated-4352-5120-8-fp32-r1 [4352, 5120, 8] prep True family 0
+  mode -1: r3b4                 110.971us vs best F32 1.000x, L2 0
+run-1788903589380228722/isolated-5120-4352-1-fp16local-r0 [5120, 4352, 1] prep True family 0
+  mode 2: m5r1b1w8s8            32.568us vs best F32 no paired F32 arm, L2 0.000867958
+run-1788903589380228722/isolated-5120-4352-1-fp16local-r1 [5120, 4352, 1] prep True family 0
+  mode 2: m5r1b1w8s8            32.533us vs best F32 no paired F32 arm, L2 0.00086463
+run-1788903589380228722/isolated-5120-4352-1-fp32-r0 [5120, 4352, 1] prep True family 0
+  mode -1: r3r1                  34.387us vs best F32 1.000x, L2 0
+run-1788903589380228722/isolated-5120-4352-1-fp32-r1 [5120, 4352, 1] prep True family 0
+  mode -1: r3r1                  34.307us vs best F32 1.000x, L2 0
+run-1788903589380228722/isolated-5120-4352-8-fp16local-r0 [5120, 4352, 8] prep True family 0
+  mode 2: m5r2b4w8s16           77.053us vs best F32 no paired F32 arm, L2 0.000754372
+run-1788903589380228722/isolated-5120-4352-8-fp16local-r1 [5120, 4352, 8] prep True family 0
+  mode 2: m5r2b4w8s16           76.597us vs best F32 no paired F32 arm, L2 0.000750578
+run-1788903589380228722/isolated-5120-4352-8-fp32-r0 [5120, 4352, 8] prep True family 0
+  mode -1: r3b4                 107.488us vs best F32 1.000x, L2 0
+run-1788903589380228722/isolated-5120-4352-8-fp32-r1 [5120, 4352, 8] prep True family 0
+  mode -1: r3b4                 107.725us vs best F32 1.000x, L2 0
+run-1788903589380228722/kernelonly-4352-5120-1-fp16local [4352, 5120, 1] prep False family 0
+  mode 2: m5r1b1w8s8            33.059us vs best F32 no paired F32 arm, L2 0.000879031
+run-1788903589380228722/kernelonly-4352-5120-1-fp32 [4352, 5120, 1] prep False family 0
+  mode -1: r3r1                  36.560us vs best F32 1.000x, L2 0
+run-1788903589380228722/kernelonly-4352-5120-8-fp16local [4352, 5120, 8] prep False family 0
+  mode 2: m5r2b4w8s16           83.693us vs best F32 no paired F32 arm, L2 0.000780111
+run-1788903589380228722/kernelonly-4352-5120-8-fp32 [4352, 5120, 8] prep False family 0
+  mode -1: r3b4                 108.072us vs best F32 1.000x, L2 0
+run-1788903589380228722/kernelonly-5120-4352-1-fp16local [5120, 4352, 1] prep False family 0
+  mode 2: m5r1b1w8s8            30.027us vs best F32 no paired F32 arm, L2 0.000867958
+run-1788903589380228722/kernelonly-5120-4352-1-fp32 [5120, 4352, 1] prep False family 0
+  mode -1: r3r1                  31.960us vs best F32 1.000x, L2 0
+run-1788903589380228722/kernelonly-5120-4352-8-fp16local [5120, 4352, 8] prep False family 0
+  mode 2: m5r2b4w8s16           73.520us vs best F32 no paired F32 arm, L2 0.000754372
+run-1788903589380228722/kernelonly-5120-4352-8-fp32 [5120, 4352, 8] prep False family 0
+  mode -1: r3b4                 104.904us vs best F32 1.000x, L2 0
+run-1788903589380228722/screen-square-n1 [5120, 5120, 1] prep True family 0
+  mode -1: r3r1                  39.272us vs best F32 1.000x, L2 0
+  mode 0: m0r1b1w16s32          66.788us vs best F32 0.588x, L2 0
+  mode 1: m1r1b1w16s32          55.148us vs best F32 0.712x, L2 0.000601077
+  mode 2: m2r1b1w16s32          54.176us vs best F32 0.725x, L2 0.000703455
+run-1788903589380228722/screen-square-n4 [5120, 5120, 4] prep True family 0
+  mode -1: r3b4                  66.845us vs best F32 1.000x, L2 0
+  mode 0: m0r1b4w8s8           132.084us vs best F32 0.506x, L2 1.17853e-07
+  mode 1: m1r1b4w16s32          94.755us vs best F32 0.705x, L2 0.000596721
+  mode 2: m2r1b4w16s32          92.615us vs best F32 0.722x, L2 0.000697839
+run-1788903589380228722/screen-square-n8 [5120, 5120, 8] prep True family 0
+  mode -1: r3b4                 122.463us vs best F32 1.000x, L2 0
+  mode 0: m0r2b4w8s16          206.451us vs best F32 0.593x, L2 1.03431e-07
+  mode 1: m1r2b8w8s8           139.392us vs best F32 0.879x, L2 0.000601583
+  mode 2: m2r2b8w8s8           133.569us vs best F32 0.917x, L2 0.000902915
+run-1788903589380228722/stress-family1 [129, 544, 5] prep True family 1
+  mode -1: r3r1                   7.448us vs best F32 0.858x, L2 0
+  mode 0: p6l2b1s8               6.387us vs best F32 1.000x, L2 8.00849e-08
+run-1788903589380228722/stress-family2 [129, 544, 5] prep True family 2
+  mode -1: r3r1                   7.453us vs best F32 0.857x, L2 0
+  mode 0: p6l2b1s8               6.389us vs best F32 1.000x, L2 8.99844e-08
+  mode 1: m4r1b1w8s8             6.405us vs best F32 0.998x, L2 0.000583444
+  mode 2: p8l4b1s8               6.269us vs best F32 1.019x, L2 0.000417874
+run-1788903589380228722/stress-family3 [129, 544, 5] prep True family 3
+  mode -1: r3r1                   7.525us vs best F32 0.857x, L2 0
+  mode 0: p6l2b1s8               6.448us vs best F32 1.000x, L2 8.548e-08
+  mode 1: m4r1b1w8s8             6.533us vs best F32 0.987x, L2 0.000585918
+  mode 2: p8l4b1s8               6.307us vs best F32 1.022x, L2 0.00523224
+run-1788903589380228722/v2-square-n1 [5120, 5120, 1] prep True family 0
+  mode -1: r3r1                  39.303us vs best F32 1.000x, L2 0
+  mode 0: m3r1b1w16s32          48.229us vs best F32 0.815x, L2 9.89966e-09
+  mode 1: m4r1b1w8s8            37.572us vs best F32 1.046x, L2 0.000598914
+  mode 2: m5r1b1w8s8            37.136us vs best F32 1.058x, L2 0.000905068
+run-1788903589380228722/v2-square-n4 [5120, 5120, 4] prep True family 0
+  mode -1: r3b4                  66.779us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          105.551us vs best F32 0.633x, L2 1.02169e-07
+  mode 1: m4r2b4w8s16           70.952us vs best F32 0.941x, L2 0.000594254
+  mode 2: m5r2b4w8s16           67.769us vs best F32 0.985x, L2 0.000765857
+run-1788903589380228722/v2-square-n8 [5120, 5120, 8] prep True family 0
+  mode -1: r3b4                 121.837us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          140.420us vs best F32 0.868x, L2 1.03529e-07
+  mode 1: m4r2b4w8s16           92.216us vs best F32 1.321x, L2 0.000598776
+  mode 2: m5r2b4w8s16           88.273us vs best F32 1.380x, L2 0.000774808
+run-1788903589380228722/v3-square-n1 [5120, 5120, 1] prep True family 0
+  mode -1: r3r1                  39.424us vs best F32 1.000x, L2 0
+  mode 0: g3r2b1w8s32           47.152us vs best F32 0.836x, L2 9.89966e-09
+  mode 1: m4r1b1w8s8            37.373us vs best F32 1.055x, L2 0.000598914
+  mode 2: m5r1b1w8s8            36.769us vs best F32 1.072x, L2 0.000905068
+run-1788903589380228722/v3-square-n4 [5120, 5120, 4] prep True family 0
+  mode -1: r3b4                  66.079us vs best F32 1.000x, L2 0
+  mode 0: g3r2b4w4s32           85.507us vs best F32 0.773x, L2 1.08127e-08
+  mode 1: g4r1b4w4s32           68.557us vs best F32 0.964x, L2 0.000594254
+  mode 2: m5r2b4w8s16           67.261us vs best F32 0.982x, L2 0.000765857
+run-1788903589380228722/v3-square-n8 [5120, 5120, 8] prep True family 0
+  mode -1: r3b4                 122.324us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          140.723us vs best F32 0.869x, L2 1.03529e-07
+  mode 1: m4r2b4w8s16           92.164us vs best F32 1.327x, L2 0.000598776
+  mode 2: m5r2b4w8s16           88.396us vs best F32 1.384x, L2 0.000774808
+run-1788903589380228722/v4-down-n1 [5120, 4352, 1] prep True family 0
+  mode -1: r3r1                  34.568us vs best F32 1.000x, L2 0
+  mode 0: g3r2b1w8s32           41.509us vs best F32 0.833x, L2 1.15927e-08
+  mode 1: m4r1b1w8s8            33.123us vs best F32 1.044x, L2 0.000597436
+  mode 2: m5r1b1w8s8            32.848us vs best F32 1.052x, L2 0.00084712
+run-1788903589380228722/v4-down-n4 [5120, 4352, 4] prep True family 0
+  mode -1: r3b4                  62.619us vs best F32 1.000x, L2 0
+  mode 0: g3r2b4w4s32           74.580us vs best F32 0.840x, L2 1.14525e-08
+  mode 1: g4r1b4w4s32           60.144us vs best F32 1.041x, L2 0.000595516
+  mode 2: m5r2b4w8s16           58.885us vs best F32 1.063x, L2 0.000746355
+run-1788903589380228722/v4-down-n8 [5120, 4352, 8] prep True family 0
+  mode -1: r3b4                 107.500us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          124.516us vs best F32 0.863x, L2 9.96825e-08
+  mode 1: m4r2b4w8s16           80.759us vs best F32 1.331x, L2 0.000594751
+  mode 2: m5r2b4w8s16           76.863us vs best F32 1.399x, L2 0.000750358
+run-1788903589380228722/v4-longk-n1 [5120, 17408, 1] prep True family 0
+  mode -1: r3r1                 110.240us vs best F32 1.000x, L2 0
+  mode 0: g3r2b1w8s32          130.452us vs best F32 0.845x, L2 1.43377e-08
+  mode 1: m4r1b1w8s16          106.887us vs best F32 1.031x, L2 0.000596673
+  mode 2: m5r1b1w8s16          105.817us vs best F32 1.042x, L2 0.00106563
+run-1788903589380228722/v4-square-n1 [5120, 5120, 1] prep True family 0
+  mode -1: r3r1                  39.508us vs best F32 1.000x, L2 0
+  mode 0: g3r2b1w8s32           47.292us vs best F32 0.835x, L2 9.89966e-09
+  mode 1: m4r1b1w8s8            37.572us vs best F32 1.052x, L2 0.000598914
+  mode 2: m5r1b1w8s8            37.092us vs best F32 1.065x, L2 0.000905068
+run-1788903589380228722/v4-square-n4 [5120, 5120, 4] prep True family 0
+  mode -1: r3b4                  66.508us vs best F32 1.000x, L2 0
+  mode 0: g3r2b4w8s32           84.923us vs best F32 0.783x, L2 1.08127e-08
+  mode 1: g4r1b4w4s32           68.641us vs best F32 0.969x, L2 0.000594254
+  mode 2: g5r1b4w4s32           67.179us vs best F32 0.990x, L2 0.000691975
+run-1788903589380228722/v4-square-n8 [5120, 5120, 8] prep True family 0
+  mode -1: r3b4                 122.903us vs best F32 1.000x, L2 0
+  mode 0: m3r2b4w8s16          140.564us vs best F32 0.874x, L2 1.03529e-07
+  mode 1: m4r2b4w8s16           92.428us vs best F32 1.330x, L2 0.000598776
+  mode 2: m5r2b4w8s16           88.343us vs best F32 1.391x, L2 0.000774808
+run-1788903589380228722/v4-tall-n1 [17408, 5120, 1] prep True family 0
+  mode -1: r3r2                 109.160us vs best F32 1.000x, L2 0
+  mode 0: m3r2b1w32s32         123.523us vs best F32 0.884x, L2 1.12444e-08
+  mode 1: m4r2b1w8s32          104.711us vs best F32 1.042x, L2 0.000600133
+  mode 2: m5r2b1w8s32          104.280us vs best F32 1.047x, L2 0.000702684
+run-1788903589380228722/v4-up-n1 [4352, 5120, 1] prep True family 0
+  mode -1: r3r1                  39.205us vs best F32 1.000x, L2 0
+  mode 0: g3r2b1w4s32           42.159us vs best F32 0.930x, L2 9.85352e-09
+  mode 1: m4r1b1w8s8            36.287us vs best F32 1.080x, L2 0.000604616
+  mode 2: m5r1b1w8s8            35.728us vs best F32 1.097x, L2 0.000912539
+run-1788903589380228722/v4-up-n4 [4352, 5120, 4] prep True family 0
+  mode -1: r3b4                  63.428us vs best F32 1.000x, L2 0
+  mode 0: g3r2b4w4s32           77.029us vs best F32 0.823x, L2 1.10296e-08
+  mode 1: g4r1b4w4s32           60.309us vs best F32 1.052x, L2 0.000596681
+  mode 2: g5r1b4w4s32           59.441us vs best F32 1.067x, L2 0.000693908
+run-1788903589380228722/v4-up-n8 [4352, 5120, 8] prep True family 0
+  mode -1: r3b4                 110.548us vs best F32 1.000x, L2 0
+  mode 0: g3r2b4w4s32          134.081us vs best F32 0.824x, L2 1.13594e-08
+  mode 1: m4r2b4w8s16           90.672us vs best F32 1.219x, L2 0.00059671
+  mode 2: m5r2b4w8s16           86.381us vs best F32 1.280x, L2 0.000772953

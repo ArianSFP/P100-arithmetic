@@ -1,0 +1,15 @@
+{"type":"preparation","included":true}
+{"type":"data","M":5120,"K":4352,"N":4,"seed":620908,"family":0,"weight_bytes":12533760,"activation_bytes":34816}
+{"type":"geometry","name":"f17r4s32p4","grid_ctas":160,"sms":56,"threads":256,"shared_bytes":16384,"max_ctas_per_sm":3,"anchor_bitidentical":true}
+{"type":"check","name":"f17r4s32p4","mode":17,"split":32,"different":20480,"outputs":20480,"nonfinite":0,"finite_relL2":0.000681274829,"max_abs":0.00464487076,"oracle_checks":64,"registers":80,"local_bytes":0}
+{"type":"timing","round":0,"retained":false,"name":"f17r4s32p4","us":41.312000}
+{"type":"timing","round":1,"retained":true,"name":"f17r4s32p4","us":41.306667}
+{"type":"timing","round":2,"retained":true,"name":"f17r4s32p4","us":41.125332}
+{"type":"timing","round":3,"retained":true,"name":"f17r4s32p4","us":40.682667}
+{"type":"timing","round":4,"retained":true,"name":"f17r4s32p4","us":41.189335}
+{"type":"timing","round":5,"retained":true,"name":"f17r4s32p4","us":41.354664}
+{"type":"timing","round":6,"retained":true,"name":"f17r4s32p4","us":41.104000}
+{"type":"timing","round":7,"retained":true,"name":"f17r4s32p4","us":41.050667}
+{"type":"timing","round":8,"retained":true,"name":"f17r4s32p4","us":41.271999}
+{"type":"timing","round":9,"retained":true,"name":"f17r4s32p4","us":41.285336}
+{"type":"done","status":"PASS"}

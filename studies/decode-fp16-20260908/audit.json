@@ -1,0 +1,1101 @@
+{
+  "status": "PASS",
+  "workers": 119,
+  "config_checks": 2763,
+  "compared_outputs": 47092489,
+  "independent_cpu_dots": 459913,
+  "sanitizers": [
+    "run-1788903589380228722/smoke-memcheck",
+    "run-1788903589380228722/v2-memcheck",
+    "run-1788903589380228722/v3-memcheck",
+    "run-1788903589380228722/v4-memcheck",
+    "run-1788903589380228722/v4-racecheck",
+    "run-1788903589380228722/v4-synccheck"
+  ],
+  "final_workers": 33,
+  "missing_final_workers": [],
+  "nonfinite_diagnostics": [
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p7l2b1s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p8l2b1s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p7l2b1s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p8l2b1s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p7l4b1s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p8l4b1s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p7l4b1s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p8l4b1s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p7l2b4s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p8l2b4s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p7l2b4s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p8l2b4s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p7l4b4s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p8l4b4s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p7l4b4s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p8l4b4s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p7l2b8s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p8l2b8s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p7l2b8s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p8l2b8s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p7l4b8s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p8l4b8s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p7l4b8s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "p8l4b8s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g4r1b1w4s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g5r1b1w4s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g4r1b1w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g5r1b1w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g4r2b1w4s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g5r2b1w4s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g4r2b1w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g5r2b1w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g4r1b4w4s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g5r1b4w4s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g4r1b4w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g5r1b4w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g4r2b4w4s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g5r2b4w4s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g4r2b4w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g5r2b4w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g4r1b8w4s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g5r1b8w4s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g4r1b8w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g5r1b8w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g4r2b8w4s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g5r2b8w4s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g4r2b8w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "g5r2b8w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r1b1w4s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r1b1w4s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r1b1w8s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r1b1w8s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r1b1w8s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r1b1w8s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r1b1w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r1b1w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r1b1w16s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r1b1w16s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r2b1w8s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r2b1w8s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r2b1w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r2b1w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r2b1w16s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r2b1w16s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r2b1w32s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r2b1w32s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r1b4w4s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r1b4w4s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r1b4w8s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r1b4w8s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r1b4w8s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r1b4w8s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r1b4w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r1b4w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r1b4w16s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r1b4w16s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r2b4w8s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r2b4w8s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r2b4w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r2b4w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r1b8w4s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r1b8w4s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r1b8w8s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r1b8w8s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r1b8w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r1b8w8s32",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r2b8w8s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r2b8w8s8",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m4r2b8w8s16",
+      "nonfinite": 645,
+      "outputs": 645
+    },
+    {
+      "path": "run-1788903589380228722/stress-family1",
+      "shape": [
+        129,
+        544,
+        5
+      ],
+      "family": 1,
+      "name": "m5r2b8w8s16",
+      "nonfinite": 645,
+      "outputs": 645
+    }
+  ],
+  "all_source_and_binary_hashes_retained": true,
+  "final_health_present": true
+}

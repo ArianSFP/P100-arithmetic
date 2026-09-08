@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/usr/bin/taskset",
+    "--cpu-list",
+    "0-11",
+    "/usr/local/cuda-12.8/bin/nvcc",
+    "-ccbin",
+    "/usr/bin/g++-14",
+    "-std=c++17",
+    "-O3",
+    "-arch=sm_60",
+    "--ftz=false",
+    "-lineinfo",
+    "-Xptxas=-v",
+    "-Xcompiler=-ffp-contract=off",
+    "/home/arian/P100-arithmetic/studies/decode-n4-20260908/worker.cu",
+    "-o",
+    "/home/arian/P100-arithmetic/studies/decode-n4-20260908/worker"
+  ],
+  "returncode": 0
+}

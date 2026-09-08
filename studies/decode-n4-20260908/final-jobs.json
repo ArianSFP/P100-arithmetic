@@ -1,0 +1,119 @@
+[
+  {
+    "tag": "final-5120-4352-4-r0",
+    "binary": "worker",
+    "args": [
+      "5120",
+      "4352",
+      "4",
+      "610908",
+      "0",
+      "r3b4,f21r6s32p4,f16r4s32p4,f17r4s32p4,m4r2b4w8s16,m5r2b4w8s16,g4r1b4w4s32,g5r1b4w4s32",
+      "9"
+    ]
+  },
+  {
+    "tag": "final-5120-5120-4-r0",
+    "binary": "worker",
+    "args": [
+      "5120",
+      "5120",
+      "4",
+      "610908",
+      "0",
+      "r3b4,f21r6s32p4,f16r4s32p4,f17r4s32p4,m4r2b4w8s16,m5r2b4w8s16,g4r1b4w4s32,g5r1b4w4s32",
+      "9"
+    ]
+  },
+  {
+    "tag": "final-4352-5120-4-r0",
+    "binary": "worker",
+    "args": [
+      "4352",
+      "5120",
+      "4",
+      "610908",
+      "0",
+      "r3b4,f21r2s32p4,f16r4s32p8,f17r4s32p8,m4r2b4w8s16,m5r2b4w8s16,g4r1b4w4s32,g5r1b4w4s32",
+      "9"
+    ]
+  },
+  {
+    "tag": "final-5120-5120-4-r1",
+    "binary": "worker",
+    "args": [
+      "5120",
+      "5120",
+      "4",
+      "610909",
+      "0",
+      "r3b4,f21r6s32p4,f16r4s32p4,f17r4s32p4,m4r2b4w8s16,m5r2b4w8s16,g4r1b4w4s32,g5r1b4w4s32",
+      "9"
+    ]
+  },
+  {
+    "tag": "final-4352-5120-4-r1",
+    "binary": "worker",
+    "args": [
+      "4352",
+      "5120",
+      "4",
+      "610909",
+      "0",
+      "r3b4,f21r2s32p4,f16r4s32p8,f17r4s32p8,m4r2b4w8s16,m5r2b4w8s16,g4r1b4w4s32,g5r1b4w4s32",
+      "9"
+    ]
+  },
+  {
+    "tag": "final-5120-4352-4-r1",
+    "binary": "worker",
+    "args": [
+      "5120",
+      "4352",
+      "4",
+      "610909",
+      "0",
+      "r3b4,f21r6s32p4,f16r4s32p4,f17r4s32p4,m4r2b4w8s16,m5r2b4w8s16,g4r1b4w4s32,g5r1b4w4s32",
+      "9"
+    ]
+  },
+  {
+    "tag": "final-4352-5120-4-r2",
+    "binary": "worker",
+    "args": [
+      "4352",
+      "5120",
+      "4",
+      "610910",
+      "0",
+      "r3b4,f21r2s32p4,f16r4s32p8,f17r4s32p8,m4r2b4w8s16,m5r2b4w8s16,g4r1b4w4s32,g5r1b4w4s32",
+      "9"
+    ]
+  },
+  {
+    "tag": "final-5120-4352-4-r2",
+    "binary": "worker",
+    "args": [
+      "5120",
+      "4352",
+      "4",
+      "610910",
+      "0",
+      "r3b4,f21r6s32p4,f16r4s32p4,f17r4s32p4,m4r2b4w8s16,m5r2b4w8s16,g4r1b4w4s32,g5r1b4w4s32",
+      "9"
+    ]
+  },
+  {
+    "tag": "final-5120-5120-4-r2",
+    "binary": "worker",
+    "args": [
+      "5120",
+      "5120",
+      "4",
+      "610910",
+      "0",
+      "r3b4,f21r6s32p4,f16r4s32p4,f17r4s32p4,m4r2b4w8s16,m5r2b4w8s16,g4r1b4w4s32,g5r1b4w4s32",
+      "9"
+    ]
+  }
+]

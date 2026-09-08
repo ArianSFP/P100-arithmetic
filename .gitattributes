@@ -3,3 +3,5 @@ archive/** -text
 studies/w4a16-r3-20260908/** -text
 *.cubin binary
 studies/prefill-fp16-ratio-20260908/** -text
+studies/decode-fp16-20260908/** -text
+studies/decode-n4-20260908/** -text

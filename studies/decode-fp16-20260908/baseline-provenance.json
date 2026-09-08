@@ -1,0 +1,10 @@
+{
+  "r3-baseline.cuh": {
+    "source": "studies/w4a16-r3-20260908/kernels.cu",
+    "sha256": "5e2c62cab687d03b33291de2aca2a15a5d70425405761a337caa4a1c675d53c8"
+  },
+  "common.hpp": {
+    "source": "studies/w4a16-r3-20260908/common.hpp",
+    "sha256": "b0384c0a1ee4515e1f98a70ed98f83718383ddc5e7c4e6fd13a34b745ebff5dc"
+  }
+}

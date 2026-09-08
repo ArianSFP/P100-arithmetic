@@ -1,0 +1,14 @@
+{"type":"preparation","included":true}
+{"type":"data","M":5120,"K":4352,"N":1,"seed":710909,"family":0,"weight_bytes":12533760,"activation_bytes":8704}
+{"type":"check","name":"m5r1b1w8s8","mode":5,"split":8,"different":5120,"outputs":5120,"nonfinite":0,"finite_relL2":0.000864630053,"max_abs":0.00581276417,"oracle_checks":64,"registers":28,"local_bytes":0}
+{"type":"timing","round":0,"retained":false,"name":"m5r1b1w8s8","us":32.573330}
+{"type":"timing","round":1,"retained":true,"name":"m5r1b1w8s8","us":32.533333}
+{"type":"timing","round":2,"retained":true,"name":"m5r1b1w8s8","us":32.538670}
+{"type":"timing","round":3,"retained":true,"name":"m5r1b1w8s8","us":32.586666}
+{"type":"timing","round":4,"retained":true,"name":"m5r1b1w8s8","us":32.253330}
+{"type":"timing","round":5,"retained":true,"name":"m5r1b1w8s8","us":32.661335}
+{"type":"timing","round":6,"retained":true,"name":"m5r1b1w8s8","us":32.408001}
+{"type":"timing","round":7,"retained":true,"name":"m5r1b1w8s8","us":32.568001}
+{"type":"timing","round":8,"retained":true,"name":"m5r1b1w8s8","us":32.442669}
+{"type":"timing","round":9,"retained":true,"name":"m5r1b1w8s8","us":32.506668}
+{"type":"done","status":"PASS"}

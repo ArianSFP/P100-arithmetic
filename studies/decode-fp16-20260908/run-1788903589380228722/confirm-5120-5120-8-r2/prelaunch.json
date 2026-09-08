@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/usr/bin/env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_DEVICE_ORDER=PCI_BUS_ID",
+    "CUDA_VISIBLE_DEVICES=GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+    "/usr/bin/taskset",
+    "--cpu-list",
+    "0-11",
+    "/home/arian/P100-arithmetic/studies/decode-fp16-20260908/worker",
+    "5120",
+    "5120",
+    "8",
+    "610910",
+    "0",
+    "r3b8,r3r1,r3r2,r3b4,m4r2b4w8s16,m5r2b4w8s16,m3r2b4w8s16",
+    "9"
+  ],
+  "before": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 5, 47, 1328, 0\n",
+  "binary_sha256": "231c9b679dba44ab99ecc7caadc6bb2729bf52d4187ed09258451b8caec5f048",
+  "source_sha256": "8be347ca56dc901b6dd1ca3d6e1932294dced085a5ce3efcf65800906a83d1f1",
+  "other_sources": {
+    "kernels.cuh": "3dc47bb80aff391bc294709b9b330e288825221db86e65af5bfc446613b0741f",
+    "r3-baseline.cuh": "5e2c62cab687d03b33291de2aca2a15a5d70425405761a337caa4a1c675d53c8",
+    "common.hpp": "b0384c0a1ee4515e1f98a70ed98f83718383ddc5e7c4e6fd13a34b745ebff5dc"
+  },
+  "token": "decode-fp16-1788903338243767657-gpu1"
+}
