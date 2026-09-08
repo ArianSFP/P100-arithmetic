@@ -1,0 +1,9 @@
+{
+  "hashes": {
+    "frozen": "a6fee303ef33f745f1bfb0916175b0d2c80e7f625dc35b8682575f45d1e703dc",
+    "frozen.cu": "5ac6e23d5dfaf1c6c70753402a79e3cf82f3ce2f6c07d91f6be3c9ab525d1e78",
+    "run_frozen.py": "21e284c9a005e7bb050af1e9b150b614ceb75c6ebc8227fe1fcce6623dbfdee4"
+  },
+  "before": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 5, 0, 405, 0\n",
+  "token": "prefill-fp16-ratio-1788898513335091991-gpu1"
+}

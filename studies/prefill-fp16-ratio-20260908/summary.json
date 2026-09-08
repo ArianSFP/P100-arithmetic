@@ -1,0 +1,3482 @@
+[
+  {
+    "file": "run-1788898174758492885/4352-256-5120-0.jsonl",
+    "M": 4352,
+    "N": 256,
+    "K": 5120,
+    "stages": {
+      "weight_us": 231.07841,
+      "activation_us": 18.336,
+      "finish_us": 16.0704
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 1668.831984,
+        "pipeline_us": 1877.546628
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.0033494913,
+        "gemm_us": 845.16263,
+        "pipeline_us": 1111.914635
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.0033494913,
+        "gemm_us": 845.546643,
+        "pipeline_us": 1109.887997
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 1076614,
+        "relL2": 1.16145595e-06,
+        "gemm_us": 1735.434691,
+        "pipeline_us": 1985.472043
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 1076614,
+        "relL2": 1.16145595e-06,
+        "gemm_us": 1410.890738,
+        "pipeline_us": 1658.112049
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 1076614,
+        "relL2": 1.16145595e-06,
+        "gemm_us": 1812.959989,
+        "pipeline_us": 2062.666734
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 1076614,
+        "relL2": 1.16145595e-06,
+        "gemm_us": 1639.722665,
+        "pipeline_us": 1887.039979
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 1076614,
+        "relL2": 1.16145595e-06,
+        "gemm_us": 2130.197366,
+        "pipeline_us": 2377.994696
+      },
+      {
+        "mode": 0,
+        "algo": 7,
+        "different": 1072679,
+        "relL2": 8.92034431e-07,
+        "gemm_us": 1630.325317,
+        "pipeline_us": 1886.538664
+      },
+      {
+        "mode": 0,
+        "algo": 8,
+        "different": 1072679,
+        "relL2": 8.92034431e-07,
+        "gemm_us": 1527.328014,
+        "pipeline_us": 1777.215958
+      },
+      {
+        "mode": 0,
+        "algo": 9,
+        "different": 1072679,
+        "relL2": 8.92034431e-07,
+        "gemm_us": 1858.64528,
+        "pipeline_us": 2117.386659
+      },
+      {
+        "mode": 0,
+        "algo": 10,
+        "different": 1072679,
+        "relL2": 8.92034431e-07,
+        "gemm_us": 1513.34397,
+        "pipeline_us": 1764.949322
+      },
+      {
+        "mode": 0,
+        "algo": 11,
+        "different": 1072679,
+        "relL2": 8.92034431e-07,
+        "gemm_us": 1500.160058,
+        "pipeline_us": 1750.730673
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 1089290,
+        "relL2": 0.0103749932,
+        "gemm_us": 1059.541305,
+        "pipeline_us": 1325.759967
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 1089290,
+        "relL2": 0.0103749932,
+        "gemm_us": 1158.272028,
+        "pipeline_us": 1420.042674
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 1089290,
+        "relL2": 0.0103749932,
+        "gemm_us": 1246.858676,
+        "pipeline_us": 1506.986618
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0.0033494913,
+        "gemm_us": 1272.021294,
+        "pipeline_us": 1536.501408
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0.0033494913,
+        "gemm_us": 846.197367,
+        "pipeline_us": 1113.631964
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0.0033494913,
+        "gemm_us": 873.610655,
+        "pipeline_us": 1137.450695
+      }
+    ]
+  },
+  {
+    "file": "run-1788898174758492885/4352-256-5120-1.jsonl",
+    "M": 4352,
+    "N": 256,
+    "K": 5120,
+    "stages": {
+      "weight_us": 230.931211,
+      "activation_us": 18.2336,
+      "finish_us": 16.0192
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 1668.266614,
+        "pipeline_us": 1875.626723
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.00335217413,
+        "gemm_us": 840.181351,
+        "pipeline_us": 1110.112031
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.00335217413,
+        "gemm_us": 843.264023,
+        "pipeline_us": 1114.325364
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 1076226,
+        "relL2": 1.15962573e-06,
+        "gemm_us": 1735.103925,
+        "pipeline_us": 1981.866678
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 1076226,
+        "relL2": 1.15962573e-06,
+        "gemm_us": 1408.917268,
+        "pipeline_us": 1658.485413
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 1076226,
+        "relL2": 1.15962573e-06,
+        "gemm_us": 1815.968037,
+        "pipeline_us": 2061.642647
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 1076226,
+        "relL2": 1.15962573e-06,
+        "gemm_us": 1639.104048,
+        "pipeline_us": 1886.837324
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 1076226,
+        "relL2": 1.15962573e-06,
+        "gemm_us": 2129.909356,
+        "pipeline_us": 2377.877394
+      },
+      {
+        "mode": 0,
+        "algo": 7,
+        "different": 1072851,
+        "relL2": 8.91805289e-07,
+        "gemm_us": 1633.813381,
+        "pipeline_us": 1885.311921
+      },
+      {
+        "mode": 0,
+        "algo": 8,
+        "different": 1072851,
+        "relL2": 8.91805289e-07,
+        "gemm_us": 1526.26133,
+        "pipeline_us": 1774.912039
+      },
+      {
+        "mode": 0,
+        "algo": 9,
+        "different": 1072851,
+        "relL2": 8.91805289e-07,
+        "gemm_us": 1872.138659,
+        "pipeline_us": 2122.282664
+      },
+      {
+        "mode": 0,
+        "algo": 10,
+        "different": 1072851,
+        "relL2": 8.91805289e-07,
+        "gemm_us": 1513.162613,
+        "pipeline_us": 1761.877378
+      },
+      {
+        "mode": 0,
+        "algo": 11,
+        "different": 1072851,
+        "relL2": 8.91805289e-07,
+        "gemm_us": 1500.181357,
+        "pipeline_us": 1752.074718
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 1089158,
+        "relL2": 0.0103687982,
+        "gemm_us": 1059.477329,
+        "pipeline_us": 1328.138669
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 1089158,
+        "relL2": 0.0103687982,
+        "gemm_us": 1157.749335,
+        "pipeline_us": 1420.063972
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 1089158,
+        "relL2": 0.0103687982,
+        "gemm_us": 1246.698697,
+        "pipeline_us": 1505.631924
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0.00335217413,
+        "gemm_us": 1270.837307,
+        "pipeline_us": 1525.568008
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0.00335217413,
+        "gemm_us": 846.037308,
+        "pipeline_us": 1110.314687
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0.00335217413,
+        "gemm_us": 871.786674,
+        "pipeline_us": 1136.768023
+      }
+    ]
+  },
+  {
+    "file": "run-1788898174758492885/4352-256-5120-2.jsonl",
+    "M": 4352,
+    "N": 256,
+    "K": 5120,
+    "stages": {
+      "weight_us": 231.73759,
+      "activation_us": 18.489601,
+      "finish_us": 16.3008
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 1670.431932,
+        "pipeline_us": 1883.807977
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.00335782345,
+        "gemm_us": 847.669363,
+        "pipeline_us": 1112.106641
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.00335782345,
+        "gemm_us": 848.874648,
+        "pipeline_us": 1113.066673
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 1076258,
+        "relL2": 1.15918313e-06,
+        "gemm_us": 1735.967954,
+        "pipeline_us": 1982.111931
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 1076258,
+        "relL2": 1.15918313e-06,
+        "gemm_us": 1410.367966,
+        "pipeline_us": 1658.090591
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 1076258,
+        "relL2": 1.15918313e-06,
+        "gemm_us": 1816.170692,
+        "pipeline_us": 2062.85874
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 1076258,
+        "relL2": 1.15918313e-06,
+        "gemm_us": 1640.309334,
+        "pipeline_us": 1888.064067
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 1076258,
+        "relL2": 1.15918313e-06,
+        "gemm_us": 2132.522742,
+        "pipeline_us": 2378.666719
+      },
+      {
+        "mode": 0,
+        "algo": 7,
+        "different": 1072735,
+        "relL2": 8.93046894e-07,
+        "gemm_us": 1635.488033,
+        "pipeline_us": 1887.285391
+      },
+      {
+        "mode": 0,
+        "algo": 8,
+        "different": 1072735,
+        "relL2": 8.93046894e-07,
+        "gemm_us": 1529.258728,
+        "pipeline_us": 1776.096026
+      },
+      {
+        "mode": 0,
+        "algo": 9,
+        "different": 1072735,
+        "relL2": 8.93046894e-07,
+        "gemm_us": 1876.586596,
+        "pipeline_us": 2121.247927
+      },
+      {
+        "mode": 0,
+        "algo": 10,
+        "different": 1072735,
+        "relL2": 8.93046894e-07,
+        "gemm_us": 1516.863982,
+        "pipeline_us": 1764.095942
+      },
+      {
+        "mode": 0,
+        "algo": 11,
+        "different": 1072735,
+        "relL2": 8.93046894e-07,
+        "gemm_us": 1503.189405,
+        "pipeline_us": 1751.338641
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 1089431,
+        "relL2": 0.0103865857,
+        "gemm_us": 1059.616009,
+        "pipeline_us": 1323.338668
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 1089431,
+        "relL2": 0.0103865857,
+        "gemm_us": 1158.506632,
+        "pipeline_us": 1420.80005
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 1089431,
+        "relL2": 0.0103865857,
+        "gemm_us": 1247.423967,
+        "pipeline_us": 1507.370631
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0.00335782345,
+        "gemm_us": 1275.487979,
+        "pipeline_us": 1535.861333
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0.00335782345,
+        "gemm_us": 851.039966,
+        "pipeline_us": 1113.952001
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0.00335782345,
+        "gemm_us": 873.471975,
+        "pipeline_us": 1138.389349
+      }
+    ]
+  },
+  {
+    "file": "run-1788898174758492885/5120-256-4352-0.jsonl",
+    "M": 5120,
+    "N": 256,
+    "K": 4352,
+    "stages": {
+      "weight_us": 231.046391,
+      "activation_us": 15.8656,
+      "finish_us": 18.073601
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 1586.549282,
+        "pipeline_us": 1830.015977
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.0095814138,
+        "gemm_us": 885.312001,
+        "pipeline_us": 1145.088037
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.0095814138,
+        "gemm_us": 882.879972,
+        "pipeline_us": 1142.133315
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 1262462,
+        "relL2": 1.06490989e-06,
+        "gemm_us": 1845.376015,
+        "pipeline_us": 2054.954688
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 1262462,
+        "relL2": 1.06490989e-06,
+        "gemm_us": 1440.95993,
+        "pipeline_us": 1686.879953
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 1262462,
+        "relL2": 1.06490989e-06,
+        "gemm_us": 1931.434631,
+        "pipeline_us": 2173.792044
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 1262462,
+        "relL2": 1.06490989e-06,
+        "gemm_us": 1398.826599,
+        "pipeline_us": 1644.725323
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 1262462,
+        "relL2": 1.06490989e-06,
+        "gemm_us": 1815.594673,
+        "pipeline_us": 2060.938676
+      },
+      {
+        "mode": 0,
+        "algo": 7,
+        "different": 1259353,
+        "relL2": 8.25947476e-07,
+        "gemm_us": 1627.189318,
+        "pipeline_us": 1873.237292
+      },
+      {
+        "mode": 0,
+        "algo": 8,
+        "different": 1259353,
+        "relL2": 8.25947476e-07,
+        "gemm_us": 1527.125359,
+        "pipeline_us": 1777.89863
+      },
+      {
+        "mode": 0,
+        "algo": 9,
+        "different": 1259353,
+        "relL2": 8.25947476e-07,
+        "gemm_us": 1852.575938,
+        "pipeline_us": 2106.954734
+      },
+      {
+        "mode": 0,
+        "algo": 10,
+        "different": 1259353,
+        "relL2": 8.25947476e-07,
+        "gemm_us": 1464.735985,
+        "pipeline_us": 1711.978594
+      },
+      {
+        "mode": 0,
+        "algo": 11,
+        "different": 1259353,
+        "relL2": 8.25947476e-07,
+        "gemm_us": 1460.906665,
+        "pipeline_us": 1708.053271
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.0095814138,
+        "gemm_us": 886.005322,
+        "pipeline_us": 1147.360007
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.0095814138,
+        "gemm_us": 1003.722668,
+        "pipeline_us": 1264.895995
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.0095814138,
+        "gemm_us": 1064.256032,
+        "pipeline_us": 1323.477348
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 1278832,
+        "relL2": 0.00329392743,
+        "gemm_us": 1234.687964,
+        "pipeline_us": 1503.882726
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 1278832,
+        "relL2": 0.00329392743,
+        "gemm_us": 820.096016,
+        "pipeline_us": 1089.610656
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 1278832,
+        "relL2": 0.00329392743,
+        "gemm_us": 817.002694,
+        "pipeline_us": 1079.317331
+      }
+    ]
+  },
+  {
+    "file": "run-1788898174758492885/5120-256-4352-1.jsonl",
+    "M": 5120,
+    "N": 256,
+    "K": 4352,
+    "stages": {
+      "weight_us": 231.123209,
+      "activation_us": 15.8528,
+      "finish_us": 17.9904
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 1584.266663,
+        "pipeline_us": 1832.554658
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.0095866597,
+        "gemm_us": 885.173321,
+        "pipeline_us": 1144.437313
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.0095866597,
+        "gemm_us": 885.845343,
+        "pipeline_us": 1145.056009
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 1262391,
+        "relL2": 1.06445457e-06,
+        "gemm_us": 1846.357346,
+        "pipeline_us": 2057.504018
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 1262391,
+        "relL2": 1.06445457e-06,
+        "gemm_us": 1441.258589,
+        "pipeline_us": 1686.399937
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 1262391,
+        "relL2": 1.06445457e-06,
+        "gemm_us": 1932.927926,
+        "pipeline_us": 2175.381343
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 1262391,
+        "relL2": 1.06445457e-06,
+        "gemm_us": 1399.199963,
+        "pipeline_us": 1644.874732
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 1262391,
+        "relL2": 1.06445457e-06,
+        "gemm_us": 1815.360069,
+        "pipeline_us": 2060.778618
+      },
+      {
+        "mode": 0,
+        "algo": 7,
+        "different": 1259016,
+        "relL2": 8.26500074e-07,
+        "gemm_us": 1626.965364,
+        "pipeline_us": 1874.879996
+      },
+      {
+        "mode": 0,
+        "algo": 8,
+        "different": 1259016,
+        "relL2": 8.26500074e-07,
+        "gemm_us": 1525.781314,
+        "pipeline_us": 1774.730682
+      },
+      {
+        "mode": 0,
+        "algo": 9,
+        "different": 1259016,
+        "relL2": 8.26500074e-07,
+        "gemm_us": 1858.21867,
+        "pipeline_us": 2121.674697
+      },
+      {
+        "mode": 0,
+        "algo": 10,
+        "different": 1259016,
+        "relL2": 8.26500074e-07,
+        "gemm_us": 1463.573297,
+        "pipeline_us": 1711.050669
+      },
+      {
+        "mode": 0,
+        "algo": 11,
+        "different": 1259016,
+        "relL2": 8.26500074e-07,
+        "gemm_us": 1460.319996,
+        "pipeline_us": 1709.226608
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.0095866597,
+        "gemm_us": 886.015972,
+        "pipeline_us": 1142.026663
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.0095866597,
+        "gemm_us": 1004.053354,
+        "pipeline_us": 1264.586687
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.0095866597,
+        "gemm_us": 1064.99203,
+        "pipeline_us": 1323.466698
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 1278628,
+        "relL2": 0.00329329366,
+        "gemm_us": 1230.602662,
+        "pipeline_us": 1500.672023
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 1278628,
+        "relL2": 0.00329329366,
+        "gemm_us": 824.106693,
+        "pipeline_us": 1084.949334
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 1278628,
+        "relL2": 0.00329329366,
+        "gemm_us": 815.114657,
+        "pipeline_us": 1078.869343
+      }
+    ]
+  },
+  {
+    "file": "run-1788898174758492885/5120-256-4352-2.jsonl",
+    "M": 5120,
+    "N": 256,
+    "K": 4352,
+    "stages": {
+      "weight_us": 230.873609,
+      "activation_us": 16.0384,
+      "finish_us": 18.24
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 1587.615967,
+        "pipeline_us": 1831.24272
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.00959354122,
+        "gemm_us": 883.615971,
+        "pipeline_us": 1145.674706
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.00959354122,
+        "gemm_us": 880.064011,
+        "pipeline_us": 1143.050671
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 1262840,
+        "relL2": 1.06570317e-06,
+        "gemm_us": 1809.792042,
+        "pipeline_us": 2091.978709
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 1262840,
+        "relL2": 1.06570317e-06,
+        "gemm_us": 1441.482703,
+        "pipeline_us": 1687.605381
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 1262840,
+        "relL2": 1.06570317e-06,
+        "gemm_us": 1925.632,
+        "pipeline_us": 2171.072006
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 1262840,
+        "relL2": 1.06570317e-06,
+        "gemm_us": 1399.050713,
+        "pipeline_us": 1644.245307
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 1262840,
+        "relL2": 1.06570317e-06,
+        "gemm_us": 1814.901352,
+        "pipeline_us": 2060.853322
+      },
+      {
+        "mode": 0,
+        "algo": 7,
+        "different": 1259272,
+        "relL2": 8.26941697e-07,
+        "gemm_us": 1628.224055,
+        "pipeline_us": 1874.656041
+      },
+      {
+        "mode": 0,
+        "algo": 8,
+        "different": 1259272,
+        "relL2": 8.26941697e-07,
+        "gemm_us": 1527.114709,
+        "pipeline_us": 1773.813407
+      },
+      {
+        "mode": 0,
+        "algo": 9,
+        "different": 1259272,
+        "relL2": 8.26941697e-07,
+        "gemm_us": 1857.183933,
+        "pipeline_us": 2098.922729
+      },
+      {
+        "mode": 0,
+        "algo": 10,
+        "different": 1259272,
+        "relL2": 8.26941697e-07,
+        "gemm_us": 1463.328044,
+        "pipeline_us": 1711.797396
+      },
+      {
+        "mode": 0,
+        "algo": 11,
+        "different": 1259272,
+        "relL2": 8.26941697e-07,
+        "gemm_us": 1460.896015,
+        "pipeline_us": 1709.269365
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.00959354122,
+        "gemm_us": 886.88,
+        "pipeline_us": 1144.821326
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.00959354122,
+        "gemm_us": 1003.072023,
+        "pipeline_us": 1265.269359
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.00959354122,
+        "gemm_us": 1064.72532,
+        "pipeline_us": 1323.295991
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 1278846,
+        "relL2": 0.00329856677,
+        "gemm_us": 1232.181311,
+        "pipeline_us": 1503.850619
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 1278846,
+        "relL2": 0.00329856677,
+        "gemm_us": 825.055997,
+        "pipeline_us": 1082.3253
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 1278846,
+        "relL2": 0.00329856677,
+        "gemm_us": 815.893332,
+        "pipeline_us": 1078.143994
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/4352-2048-5120-0.jsonl",
+    "M": 4352,
+    "N": 2048,
+    "K": 5120,
+    "stages": {
+      "weight_us": 231.404805,
+      "activation_us": 122.9056,
+      "finish_us": 105.862403
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 12228.543599,
+        "pipeline_us": 12575.30721
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.01037829,
+        "gemm_us": 6108.277639,
+        "pipeline_us": 6564.629237
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.01037829,
+        "gemm_us": 6106.538773,
+        "pipeline_us": 6563.168208
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 12229.867299,
+        "pipeline_us": 12584.821065
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 11471.605937,
+        "pipeline_us": 11831.039429
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 21921.407064,
+        "pipeline_us": 22361.526489
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 10865.824382,
+        "pipeline_us": 11219.904582
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 10619.498571,
+        "pipeline_us": 10972.896576
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.01037829,
+        "gemm_us": 12805.834452,
+        "pipeline_us": 13109.418233
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.01037829,
+        "gemm_us": 6106.858571,
+        "pipeline_us": 6563.029607
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.01037829,
+        "gemm_us": 6510.986964,
+        "pipeline_us": 6966.773351
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 8713413,
+        "relL2": 0.00334865585,
+        "gemm_us": 11584.074656,
+        "pipeline_us": 12049.599965
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 8713413,
+        "relL2": 0.00334865585,
+        "gemm_us": 5965.877533,
+        "pipeline_us": 6423.893611
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 8713413,
+        "relL2": 0.00334865585,
+        "gemm_us": 5900.437037,
+        "pipeline_us": 6363.381068
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/4352-2048-5120-1.jsonl",
+    "M": 4352,
+    "N": 2048,
+    "K": 5120,
+    "stages": {
+      "weight_us": 231.027198,
+      "activation_us": 122.841597,
+      "finish_us": 106.0992
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 12228.767395,
+        "pipeline_us": 12580.404917
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.0103756274,
+        "gemm_us": 6505.098979,
+        "pipeline_us": 6841.76
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.0103756274,
+        "gemm_us": 6542.645137,
+        "pipeline_us": 7002.005259
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 12350.186666,
+        "pipeline_us": 12687.189738
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 11475.424449,
+        "pipeline_us": 11834.506989
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 21928.660075,
+        "pipeline_us": 22337.333679
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 10863.530477,
+        "pipeline_us": 11219.530741
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 10619.082769,
+        "pipeline_us": 10972.23409
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.0103756274,
+        "gemm_us": 12527.189891,
+        "pipeline_us": 12761.99468
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.0103756274,
+        "gemm_us": 6105.429331,
+        "pipeline_us": 6561.824163
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.0103756274,
+        "gemm_us": 6199.24291,
+        "pipeline_us": 6967.21077
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 8712409,
+        "relL2": 0.0033479228,
+        "gemm_us": 11577.259064,
+        "pipeline_us": 12012.341817
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 8712409,
+        "relL2": 0.0033479228,
+        "gemm_us": 5958.677292,
+        "pipeline_us": 6417.088191
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 8712409,
+        "relL2": 0.0033479228,
+        "gemm_us": 5900.202433,
+        "pipeline_us": 6358.698527
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/4352-2048-5120-2.jsonl",
+    "M": 4352,
+    "N": 2048,
+    "K": 5120,
+    "stages": {
+      "weight_us": 231.302404,
+      "activation_us": 122.828805,
+      "finish_us": 105.747199
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 12165.439606,
+        "pipeline_us": 12701.428731
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.0103780223,
+        "gemm_us": 6380.75765,
+        "pipeline_us": 6839.967728
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.0103780223,
+        "gemm_us": 6219.935735,
+        "pipeline_us": 6633.834839
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 12290.303548,
+        "pipeline_us": 12632.255554
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 11459.370931,
+        "pipeline_us": 11813.557943
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 21951.360067,
+        "pipeline_us": 22321.675618
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 10866.944631,
+        "pipeline_us": 11216.927846
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 10618.837357,
+        "pipeline_us": 10972.522736
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.0103780223,
+        "gemm_us": 12327.392578,
+        "pipeline_us": 13001.098633
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.0103780223,
+        "gemm_us": 6105.834961,
+        "pipeline_us": 6562.634786
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.0103780223,
+        "gemm_us": 6512.35199,
+        "pipeline_us": 6658.901215
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 8713915,
+        "relL2": 0.00335301499,
+        "gemm_us": 11540.245056,
+        "pipeline_us": 12047.77654
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 8713915,
+        "relL2": 0.00335301499,
+        "gemm_us": 5960.533142,
+        "pipeline_us": 6425.994873
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 8713915,
+        "relL2": 0.00335301499,
+        "gemm_us": 5897.984187,
+        "pipeline_us": 6370.506922
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/4352-256-5120-0.jsonl",
+    "M": 4352,
+    "N": 256,
+    "K": 5120,
+    "stages": {
+      "weight_us": 231.091189,
+      "activation_us": 18.1952,
+      "finish_us": 16.147199
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 1672.074636,
+        "pipeline_us": 1874.474684
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.0033494913,
+        "gemm_us": 844.895999,
+        "pipeline_us": 1121.866703
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.0033494913,
+        "gemm_us": 856.544018,
+        "pipeline_us": 1110.304038
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 1076614,
+        "relL2": 1.16145595e-06,
+        "gemm_us": 1735.775948,
+        "pipeline_us": 1984.202703
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 1076614,
+        "relL2": 1.16145595e-06,
+        "gemm_us": 1413.749377,
+        "pipeline_us": 1658.496062
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 1076614,
+        "relL2": 1.16145595e-06,
+        "gemm_us": 1814.954599,
+        "pipeline_us": 2061.525345
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 1076614,
+        "relL2": 1.16145595e-06,
+        "gemm_us": 1639.018695,
+        "pipeline_us": 1887.242635
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 1076614,
+        "relL2": 1.16145595e-06,
+        "gemm_us": 2130.826632,
+        "pipeline_us": 2377.621333
+      },
+      {
+        "mode": 0,
+        "algo": 7,
+        "different": 1072679,
+        "relL2": 8.92034431e-07,
+        "gemm_us": 1638.986588,
+        "pipeline_us": 1894.058704
+      },
+      {
+        "mode": 0,
+        "algo": 8,
+        "different": 1072679,
+        "relL2": 8.92034431e-07,
+        "gemm_us": 1528.426647,
+        "pipeline_us": 1778.538704
+      },
+      {
+        "mode": 0,
+        "algo": 9,
+        "different": 1072679,
+        "relL2": 8.92034431e-07,
+        "gemm_us": 1885.18397,
+        "pipeline_us": 2109.397411
+      },
+      {
+        "mode": 0,
+        "algo": 10,
+        "different": 1072679,
+        "relL2": 8.92034431e-07,
+        "gemm_us": 1515.605291,
+        "pipeline_us": 1765.461286
+      },
+      {
+        "mode": 0,
+        "algo": 11,
+        "different": 1072679,
+        "relL2": 8.92034431e-07,
+        "gemm_us": 1501.98396,
+        "pipeline_us": 1750.549316
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 1089290,
+        "relL2": 0.0103749932,
+        "gemm_us": 1063.370705,
+        "pipeline_us": 1321.045319
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 1089290,
+        "relL2": 0.0103749932,
+        "gemm_us": 1157.642682,
+        "pipeline_us": 1419.253349
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 1089290,
+        "relL2": 0.0103749932,
+        "gemm_us": 1247.562647,
+        "pipeline_us": 1507.104079
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0.0033494913,
+        "gemm_us": 1278.954665,
+        "pipeline_us": 1538.0373
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0.0033494913,
+        "gemm_us": 848.27733,
+        "pipeline_us": 1114.176035
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0.0033494913,
+        "gemm_us": 873.450677,
+        "pipeline_us": 1135.626634
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/4352-256-5120-1.jsonl",
+    "M": 4352,
+    "N": 256,
+    "K": 5120,
+    "stages": {
+      "weight_us": 230.79679,
+      "activation_us": 18.176,
+      "finish_us": 16.0832
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 1630.037308,
+        "pipeline_us": 1878.602664
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.00335217413,
+        "gemm_us": 843.562682,
+        "pipeline_us": 1108.938694
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.00335217413,
+        "gemm_us": 844.490687,
+        "pipeline_us": 1112.010638
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 1076226,
+        "relL2": 1.15962573e-06,
+        "gemm_us": 1733.568033,
+        "pipeline_us": 1981.536071
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 1076226,
+        "relL2": 1.15962573e-06,
+        "gemm_us": 1409.813404,
+        "pipeline_us": 1657.834689
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 1076226,
+        "relL2": 1.15962573e-06,
+        "gemm_us": 1814.805349,
+        "pipeline_us": 2061.696053
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 1076226,
+        "relL2": 1.15962573e-06,
+        "gemm_us": 1638.912042,
+        "pipeline_us": 1887.541294
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 1076226,
+        "relL2": 1.15962573e-06,
+        "gemm_us": 2129.973412,
+        "pipeline_us": 2377.792041
+      },
+      {
+        "mode": 0,
+        "algo": 7,
+        "different": 1072851,
+        "relL2": 8.91805289e-07,
+        "gemm_us": 1631.903966,
+        "pipeline_us": 1886.46396
+      },
+      {
+        "mode": 0,
+        "algo": 8,
+        "different": 1072851,
+        "relL2": 8.91805289e-07,
+        "gemm_us": 1527.146657,
+        "pipeline_us": 1775.551955
+      },
+      {
+        "mode": 0,
+        "algo": 9,
+        "different": 1072851,
+        "relL2": 8.91805289e-07,
+        "gemm_us": 1870.368004,
+        "pipeline_us": 2119.221369
+      },
+      {
+        "mode": 0,
+        "algo": 10,
+        "different": 1072851,
+        "relL2": 8.91805289e-07,
+        "gemm_us": 1511.765321,
+        "pipeline_us": 1763.519923
+      },
+      {
+        "mode": 0,
+        "algo": 11,
+        "different": 1072851,
+        "relL2": 8.91805289e-07,
+        "gemm_us": 1500.117302,
+        "pipeline_us": 1749.759992
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 1089158,
+        "relL2": 0.0103687982,
+        "gemm_us": 1059.103966,
+        "pipeline_us": 1321.087996
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 1089158,
+        "relL2": 0.0103687982,
+        "gemm_us": 1157.610655,
+        "pipeline_us": 1418.517272
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 1089158,
+        "relL2": 0.0103687982,
+        "gemm_us": 1246.52799,
+        "pipeline_us": 1506.687959
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0.00335217413,
+        "gemm_us": 1277.973334,
+        "pipeline_us": 1529.066722
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0.00335217413,
+        "gemm_us": 848.074675,
+        "pipeline_us": 1111.104012
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0.00335217413,
+        "gemm_us": 872.490644,
+        "pipeline_us": 1135.10402
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/4352-256-5120-2.jsonl",
+    "M": 4352,
+    "N": 256,
+    "K": 5120,
+    "stages": {
+      "weight_us": 230.79679,
+      "activation_us": 18.284801,
+      "finish_us": 16.166399
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 1632.287979,
+        "pipeline_us": 1838.101387
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.00335782345,
+        "gemm_us": 844.703992,
+        "pipeline_us": 1124.458631
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.00335782345,
+        "gemm_us": 845.237335,
+        "pipeline_us": 1124.831994
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 1076258,
+        "relL2": 1.15918313e-06,
+        "gemm_us": 1734.368006,
+        "pipeline_us": 1981.354713
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 1076258,
+        "relL2": 1.15918313e-06,
+        "gemm_us": 1409.418742,
+        "pipeline_us": 1657.002608
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 1076258,
+        "relL2": 1.15918313e-06,
+        "gemm_us": 1813.824018,
+        "pipeline_us": 2061.920007
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 1076258,
+        "relL2": 1.15918313e-06,
+        "gemm_us": 1638.751984,
+        "pipeline_us": 1886.826674
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 1076258,
+        "relL2": 1.15918313e-06,
+        "gemm_us": 2130.28272,
+        "pipeline_us": 2377.909342
+      },
+      {
+        "mode": 0,
+        "algo": 7,
+        "different": 1072735,
+        "relL2": 8.93046894e-07,
+        "gemm_us": 1637.695948,
+        "pipeline_us": 1887.434642
+      },
+      {
+        "mode": 0,
+        "algo": 8,
+        "different": 1072735,
+        "relL2": 8.93046894e-07,
+        "gemm_us": 1523.839951,
+        "pipeline_us": 1773.503939
+      },
+      {
+        "mode": 0,
+        "algo": 9,
+        "different": 1072735,
+        "relL2": 8.93046894e-07,
+        "gemm_us": 1881.471952,
+        "pipeline_us": 2123.840014
+      },
+      {
+        "mode": 0,
+        "algo": 10,
+        "different": 1072735,
+        "relL2": 8.93046894e-07,
+        "gemm_us": 1512.159983,
+        "pipeline_us": 1764.490604
+      },
+      {
+        "mode": 0,
+        "algo": 11,
+        "different": 1072735,
+        "relL2": 8.93046894e-07,
+        "gemm_us": 1498.965263,
+        "pipeline_us": 1749.536037
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 1089431,
+        "relL2": 0.0103865857,
+        "gemm_us": 1058.986664,
+        "pipeline_us": 1319.008032
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 1089431,
+        "relL2": 0.0103865857,
+        "gemm_us": 1156.885306,
+        "pipeline_us": 1420.213381
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 1089431,
+        "relL2": 0.0103865857,
+        "gemm_us": 1246.922652,
+        "pipeline_us": 1506.752014
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0.00335782345,
+        "gemm_us": 1279.520035,
+        "pipeline_us": 1534.101327
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0.00335782345,
+        "gemm_us": 845.845302,
+        "pipeline_us": 1112.394651
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0.00335782345,
+        "gemm_us": 874.474684,
+        "pipeline_us": 1134.485324
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/4352-512-5120-0.jsonl",
+    "M": 4352,
+    "N": 512,
+    "K": 5120,
+    "stages": {
+      "weight_us": 230.777597,
+      "activation_us": 33.0432,
+      "finish_us": 28.697601
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3385.375977,
+        "pipeline_us": 3599.253337
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.0103897049,
+        "gemm_us": 1591.95741,
+        "pipeline_us": 1884.341399
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.0103897049,
+        "gemm_us": 1582.207998,
+        "pipeline_us": 1887.445291
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3381.183942,
+        "pipeline_us": 3641.429265
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3347.114563,
+        "pipeline_us": 3611.626625
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3595.477422,
+        "pipeline_us": 3878.879865
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3805.503845,
+        "pipeline_us": 4068.277359
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3245.621363,
+        "pipeline_us": 3509.482702
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.0103897049,
+        "gemm_us": 1581.504027,
+        "pipeline_us": 1889.407953
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.0103897049,
+        "gemm_us": 1683.541298,
+        "pipeline_us": 1975.413322
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.0103897049,
+        "gemm_us": 2178.069274,
+        "pipeline_us": 2467.648029
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 2178760,
+        "relL2": 0.0033515997,
+        "gemm_us": 2765.055974,
+        "pipeline_us": 3203.498522
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 2178760,
+        "relL2": 0.0033515997,
+        "gemm_us": 1606.538614,
+        "pipeline_us": 1896.863937
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 2178760,
+        "relL2": 0.0033515997,
+        "gemm_us": 1576.735973,
+        "pipeline_us": 1869.749387
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/4352-512-5120-1.jsonl",
+    "M": 4352,
+    "N": 512,
+    "K": 5120,
+    "stages": {
+      "weight_us": 231.507206,
+      "activation_us": 32.876799,
+      "finish_us": 28.876799
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3385.653178,
+        "pipeline_us": 3645.74941
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.0103792255,
+        "gemm_us": 1590.293407,
+        "pipeline_us": 1878.922621
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.0103792255,
+        "gemm_us": 1585.653305,
+        "pipeline_us": 1884.138743
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3383.466721,
+        "pipeline_us": 3647.882779
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3350.655874,
+        "pipeline_us": 3614.560127
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3608.928045,
+        "pipeline_us": 3857.119878
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3806.186676,
+        "pipeline_us": 4067.584038
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3246.506691,
+        "pipeline_us": 3507.018725
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.0103792255,
+        "gemm_us": 1577.984015,
+        "pipeline_us": 1880.170663
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.0103792255,
+        "gemm_us": 1682.805379,
+        "pipeline_us": 1974.367936
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.0103792255,
+        "gemm_us": 2179.285367,
+        "pipeline_us": 2468.245347
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 2178503,
+        "relL2": 0.00334844947,
+        "gemm_us": 2769.760132,
+        "pipeline_us": 3186.485291
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 2178503,
+        "relL2": 0.00334844947,
+        "gemm_us": 1602.46404,
+        "pipeline_us": 1893.760045
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 2178503,
+        "relL2": 0.00334844947,
+        "gemm_us": 1578.261375,
+        "pipeline_us": 1869.184017
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/4352-512-5120-2.jsonl",
+    "M": 4352,
+    "N": 512,
+    "K": 5120,
+    "stages": {
+      "weight_us": 231.801605,
+      "activation_us": 33.126399,
+      "finish_us": 28.896001
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3402.538617,
+        "pipeline_us": 3645.866712
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.0103731239,
+        "gemm_us": 1597.727935,
+        "pipeline_us": 1883.072058
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.0103731239,
+        "gemm_us": 1591.157277,
+        "pipeline_us": 1880.981286
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3384.75736,
+        "pipeline_us": 3649.557432
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3357.141177,
+        "pipeline_us": 3615.178744
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3610.27209,
+        "pipeline_us": 3865.824064
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3807.018598,
+        "pipeline_us": 4069.087982
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3246.080081,
+        "pipeline_us": 3509.119987
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.0103731239,
+        "gemm_us": 1593.568007,
+        "pipeline_us": 1882.229328
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.0103731239,
+        "gemm_us": 1683.242639,
+        "pipeline_us": 1973.386606
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.0103731239,
+        "gemm_us": 2180.415948,
+        "pipeline_us": 2468.202591
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 2178554,
+        "relL2": 0.00335515531,
+        "gemm_us": 2793.205261,
+        "pipeline_us": 3175.648053
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 2178554,
+        "relL2": 0.00335515531,
+        "gemm_us": 1603.328069,
+        "pipeline_us": 1896.671931
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 2178554,
+        "relL2": 0.00335515531,
+        "gemm_us": 1578.272025,
+        "pipeline_us": 1870.890617
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/5120-2048-4352-0.jsonl",
+    "M": 5120,
+    "N": 2048,
+    "K": 4352,
+    "stages": {
+      "weight_us": 231.411195,
+      "activation_us": 104.678404,
+      "finish_us": 124.019206
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 12039.296468,
+        "pipeline_us": 12587.231954
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.00956434842,
+        "gemm_us": 5798.858643,
+        "pipeline_us": 6247.157415
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.00956434842,
+        "gemm_us": 5784.255981,
+        "pipeline_us": 6244.106929
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 12231.296539,
+        "pipeline_us": 12553.376516
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 11489.685059,
+        "pipeline_us": 11806.069692
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 22153.910319,
+        "pipeline_us": 22497.194926
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 11102.645874,
+        "pipeline_us": 11436.084747
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 10844.768524,
+        "pipeline_us": 11177.94164
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.00956434842,
+        "gemm_us": 13682.516734,
+        "pipeline_us": 14298.047384
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.00956434842,
+        "gemm_us": 5683.626811,
+        "pipeline_us": 6141.706467
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.00956434842,
+        "gemm_us": 5541.514715,
+        "pipeline_us": 6000.352224
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 10231164,
+        "relL2": 0.00329955957,
+        "gemm_us": 13276.256561,
+        "pipeline_us": 13784.618378
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 10231164,
+        "relL2": 0.00329955957,
+        "gemm_us": 5957.056046,
+        "pipeline_us": 6414.97612
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 10231164,
+        "relL2": 0.00329955957,
+        "gemm_us": 5931.75443,
+        "pipeline_us": 6392.170588
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/5120-2048-4352-1.jsonl",
+    "M": 5120,
+    "N": 2048,
+    "K": 4352,
+    "stages": {
+      "weight_us": 231.091189,
+      "activation_us": 104.7104,
+      "finish_us": 124.371195
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 12082.324982,
+        "pipeline_us": 12648.77828
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.00957964476,
+        "gemm_us": 5838.815689,
+        "pipeline_us": 6300.256093
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.00957964476,
+        "gemm_us": 5836.479823,
+        "pipeline_us": 6285.568237
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 12131.999969,
+        "pipeline_us": 12510.709127
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 11455.28539,
+        "pipeline_us": 11817.94103
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 21979.647319,
+        "pipeline_us": 22422.655741
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 11104.330699,
+        "pipeline_us": 11436.096191
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 10840.746562,
+        "pipeline_us": 11175.008138
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.00957964476,
+        "gemm_us": 13691.776276,
+        "pipeline_us": 14184.91745
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.00957964476,
+        "gemm_us": 5678.527832,
+        "pipeline_us": 6140.20284
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.00957964476,
+        "gemm_us": 5540.629069,
+        "pipeline_us": 5999.242783
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 10231546,
+        "relL2": 0.00329826394,
+        "gemm_us": 13317.77064,
+        "pipeline_us": 13867.48759
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 10231546,
+        "relL2": 0.00329826394,
+        "gemm_us": 5948.810577,
+        "pipeline_us": 6412.917455
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 10231546,
+        "relL2": 0.00329826394,
+        "gemm_us": 5929.002762,
+        "pipeline_us": 6392.725627
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/5120-2048-4352-2.jsonl",
+    "M": 5120,
+    "N": 2048,
+    "K": 4352,
+    "stages": {
+      "weight_us": 231.404805,
+      "activation_us": 104.6592,
+      "finish_us": 124.281597
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 12154.516856,
+        "pipeline_us": 12722.890218
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.00957616523,
+        "gemm_us": 5843.242645,
+        "pipeline_us": 6307.157516
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.00957616523,
+        "gemm_us": 5836.533229,
+        "pipeline_us": 6301.493327
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 12145.834605,
+        "pipeline_us": 12511.627197
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 11469.268799,
+        "pipeline_us": 11873.077393
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 22018.943787,
+        "pipeline_us": 22407.892863
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 11117.909749,
+        "pipeline_us": 11449.141184
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 10843.605042,
+        "pipeline_us": 11176.85318
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.00957616523,
+        "gemm_us": 13736.874898,
+        "pipeline_us": 14187.754313
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.00957616523,
+        "gemm_us": 5679.79749,
+        "pipeline_us": 6144.671758
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.00957616523,
+        "gemm_us": 5541.557312,
+        "pipeline_us": 5999.765396
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 10231767,
+        "relL2": 0.00329650478,
+        "gemm_us": 13315.072378,
+        "pipeline_us": 13760.555267
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 10231767,
+        "relL2": 0.00329650478,
+        "gemm_us": 5945.066452,
+        "pipeline_us": 6400.842667
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 10231767,
+        "relL2": 0.00329650478,
+        "gemm_us": 5932.213465,
+        "pipeline_us": 6392.725627
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/5120-256-4352-0.jsonl",
+    "M": 5120,
+    "N": 256,
+    "K": 4352,
+    "stages": {
+      "weight_us": 231.180811,
+      "activation_us": 15.942401,
+      "finish_us": 18.0672
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 1584.87463,
+        "pipeline_us": 1830.229282
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.0095814138,
+        "gemm_us": 883.594672,
+        "pipeline_us": 1142.282645
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.0095814138,
+        "gemm_us": 884.501298,
+        "pipeline_us": 1145.738681
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 1262462,
+        "relL2": 1.06490989e-06,
+        "gemm_us": 1810.869376,
+        "pipeline_us": 2090.592066
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 1262462,
+        "relL2": 1.06490989e-06,
+        "gemm_us": 1441.269398,
+        "pipeline_us": 1687.008063
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 1262462,
+        "relL2": 1.06490989e-06,
+        "gemm_us": 1919.594606,
+        "pipeline_us": 2155.552069
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 1262462,
+        "relL2": 1.06490989e-06,
+        "gemm_us": 1399.018606,
+        "pipeline_us": 1644.639969
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 1262462,
+        "relL2": 1.06490989e-06,
+        "gemm_us": 1815.050602,
+        "pipeline_us": 2060.554663
+      },
+      {
+        "mode": 0,
+        "algo": 7,
+        "different": 1259353,
+        "relL2": 8.25947476e-07,
+        "gemm_us": 1628.181299,
+        "pipeline_us": 1874.730746
+      },
+      {
+        "mode": 0,
+        "algo": 8,
+        "different": 1259353,
+        "relL2": 8.25947476e-07,
+        "gemm_us": 1527.81868,
+        "pipeline_us": 1774.357319
+      },
+      {
+        "mode": 0,
+        "algo": 9,
+        "different": 1259353,
+        "relL2": 8.25947476e-07,
+        "gemm_us": 1852.25598,
+        "pipeline_us": 2125.717322
+      },
+      {
+        "mode": 0,
+        "algo": 10,
+        "different": 1259353,
+        "relL2": 8.25947476e-07,
+        "gemm_us": 1461.802642,
+        "pipeline_us": 1715.071996
+      },
+      {
+        "mode": 0,
+        "algo": 11,
+        "different": 1259353,
+        "relL2": 8.25947476e-07,
+        "gemm_us": 1461.002668,
+        "pipeline_us": 1709.813277
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.0095814138,
+        "gemm_us": 884.416024,
+        "pipeline_us": 1146.421353
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.0095814138,
+        "gemm_us": 1003.914674,
+        "pipeline_us": 1263.925314
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.0095814138,
+        "gemm_us": 1065.375964,
+        "pipeline_us": 1323.349317
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 1278832,
+        "relL2": 0.00329392743,
+        "gemm_us": 1235.17863,
+        "pipeline_us": 1501.27999
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 1278832,
+        "relL2": 0.00329392743,
+        "gemm_us": 818.346659,
+        "pipeline_us": 1084.533294
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 1278832,
+        "relL2": 0.00329392743,
+        "gemm_us": 814.261357,
+        "pipeline_us": 1077.248017
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/5120-256-4352-1.jsonl",
+    "M": 5120,
+    "N": 256,
+    "K": 4352,
+    "stages": {
+      "weight_us": 230.918407,
+      "activation_us": 15.8912,
+      "finish_us": 18.0608
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 1584.287961,
+        "pipeline_us": 1830.047925
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.0095866597,
+        "gemm_us": 886.933327,
+        "pipeline_us": 1140.415986
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.0095866597,
+        "gemm_us": 883.829355,
+        "pipeline_us": 1143.018643
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 1262391,
+        "relL2": 1.06445457e-06,
+        "gemm_us": 1810.506662,
+        "pipeline_us": 2053.813299
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 1262391,
+        "relL2": 1.06445457e-06,
+        "gemm_us": 1443.328063,
+        "pipeline_us": 1688.650608
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 1262391,
+        "relL2": 1.06445457e-06,
+        "gemm_us": 1918.485324,
+        "pipeline_us": 2176.640034
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 1262391,
+        "relL2": 1.06445457e-06,
+        "gemm_us": 1397.802671,
+        "pipeline_us": 1643.381278
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 1262391,
+        "relL2": 1.06445457e-06,
+        "gemm_us": 1815.146605,
+        "pipeline_us": 2060.512066
+      },
+      {
+        "mode": 0,
+        "algo": 7,
+        "different": 1259016,
+        "relL2": 8.26500074e-07,
+        "gemm_us": 1630.976041,
+        "pipeline_us": 1874.837399
+      },
+      {
+        "mode": 0,
+        "algo": 8,
+        "different": 1259016,
+        "relL2": 8.26500074e-07,
+        "gemm_us": 1528.415998,
+        "pipeline_us": 1778.858662
+      },
+      {
+        "mode": 0,
+        "algo": 9,
+        "different": 1259016,
+        "relL2": 8.26500074e-07,
+        "gemm_us": 1863.125324,
+        "pipeline_us": 2118.07998
+      },
+      {
+        "mode": 0,
+        "algo": 10,
+        "different": 1259016,
+        "relL2": 8.26500074e-07,
+        "gemm_us": 1465.94127,
+        "pipeline_us": 1715.349356
+      },
+      {
+        "mode": 0,
+        "algo": 11,
+        "different": 1259016,
+        "relL2": 8.26500074e-07,
+        "gemm_us": 1461.760044,
+        "pipeline_us": 1710.90126
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.0095866597,
+        "gemm_us": 878.165325,
+        "pipeline_us": 1139.679988
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.0095866597,
+        "gemm_us": 1002.303998,
+        "pipeline_us": 1263.808012
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.0095866597,
+        "gemm_us": 1065.205336,
+        "pipeline_us": 1322.837353
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 1278628,
+        "relL2": 0.00329329366,
+        "gemm_us": 1227.701346,
+        "pipeline_us": 1499.28538
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 1278628,
+        "relL2": 0.00329329366,
+        "gemm_us": 825.994651,
+        "pipeline_us": 1087.050676
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 1278628,
+        "relL2": 0.00329329366,
+        "gemm_us": 813.3653,
+        "pipeline_us": 1082.015991
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/5120-256-4352-2.jsonl",
+    "M": 5120,
+    "N": 256,
+    "K": 4352,
+    "stages": {
+      "weight_us": 231.263995,
+      "activation_us": 15.9936,
+      "finish_us": 18.1888
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 1585.610708,
+        "pipeline_us": 1830.133279
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.00959354122,
+        "gemm_us": 885.002693,
+        "pipeline_us": 1146.965345
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.00959354122,
+        "gemm_us": 883.296013,
+        "pipeline_us": 1145.781358
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 1262840,
+        "relL2": 1.06570317e-06,
+        "gemm_us": 1811.114629,
+        "pipeline_us": 2092.469374
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 1262840,
+        "relL2": 1.06570317e-06,
+        "gemm_us": 1440.853278,
+        "pipeline_us": 1688.106696
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 1262840,
+        "relL2": 1.06570317e-06,
+        "gemm_us": 1922.218641,
+        "pipeline_us": 2167.061329
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 1262840,
+        "relL2": 1.06570317e-06,
+        "gemm_us": 1400.298595,
+        "pipeline_us": 1645.514647
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 1262840,
+        "relL2": 1.06570317e-06,
+        "gemm_us": 1815.669378,
+        "pipeline_us": 2060.757319
+      },
+      {
+        "mode": 0,
+        "algo": 7,
+        "different": 1259272,
+        "relL2": 8.26941697e-07,
+        "gemm_us": 1627.466679,
+        "pipeline_us": 1876.586596
+      },
+      {
+        "mode": 0,
+        "algo": 8,
+        "different": 1259272,
+        "relL2": 8.26941697e-07,
+        "gemm_us": 1527.712027,
+        "pipeline_us": 1775.05064
+      },
+      {
+        "mode": 0,
+        "algo": 9,
+        "different": 1259272,
+        "relL2": 8.26941697e-07,
+        "gemm_us": 1863.488038,
+        "pipeline_us": 2107.552052
+      },
+      {
+        "mode": 0,
+        "algo": 10,
+        "different": 1259272,
+        "relL2": 8.26941697e-07,
+        "gemm_us": 1466.527939,
+        "pipeline_us": 1710.560004
+      },
+      {
+        "mode": 0,
+        "algo": 11,
+        "different": 1259272,
+        "relL2": 8.26941697e-07,
+        "gemm_us": 1462.154706,
+        "pipeline_us": 1710.090637
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.00959354122,
+        "gemm_us": 885.162671,
+        "pipeline_us": 1148.917357
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.00959354122,
+        "gemm_us": 1005.642653,
+        "pipeline_us": 1265.525341
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.00959354122,
+        "gemm_us": 1065.536022,
+        "pipeline_us": 1323.72268
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 1278846,
+        "relL2": 0.00329856677,
+        "gemm_us": 1234.208028,
+        "pipeline_us": 1504.565398
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 1278846,
+        "relL2": 0.00329856677,
+        "gemm_us": 820.138693,
+        "pipeline_us": 1085.568031
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 1278846,
+        "relL2": 0.00329856677,
+        "gemm_us": 817.248027,
+        "pipeline_us": 1078.76269
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/5120-512-4352-0.jsonl",
+    "M": 5120,
+    "N": 512,
+    "K": 4352,
+    "stages": {
+      "weight_us": 230.732799,
+      "activation_us": 28.652799,
+      "finish_us": 33.087999
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3138.688087,
+        "pipeline_us": 3394.048055
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.00956846585,
+        "gemm_us": 2464.608033,
+        "pipeline_us": 2672.885259
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.00956846585,
+        "gemm_us": 2350.645383,
+        "pipeline_us": 2664.565404
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3136.447906,
+        "pipeline_us": 3393.631935
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3087.989489,
+        "pipeline_us": 3341.706594
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3655.925433,
+        "pipeline_us": 3908.992132
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3239.541372,
+        "pipeline_us": 3497.162819
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3342.111905,
+        "pipeline_us": 3600.170771
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.00956846585,
+        "gemm_us": 2353.013357,
+        "pipeline_us": 2702.549299
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.00956846585,
+        "gemm_us": 1434.720039,
+        "pipeline_us": 1724.522591
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.00956846585,
+        "gemm_us": 1854.047934,
+        "pipeline_us": 2143.125375
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 2557865,
+        "relL2": 0.00329676377,
+        "gemm_us": 2577.280045,
+        "pipeline_us": 2913.951874
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 2557865,
+        "relL2": 0.00329676377,
+        "gemm_us": 1552.031994,
+        "pipeline_us": 1844.949404
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 2557865,
+        "relL2": 0.00329676377,
+        "gemm_us": 1544.095993,
+        "pipeline_us": 1837.386608
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/5120-512-4352-1.jsonl",
+    "M": 5120,
+    "N": 512,
+    "K": 4352,
+    "stages": {
+      "weight_us": 230.82881,
+      "activation_us": 28.601599,
+      "finish_us": 33.222401
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3138.22937,
+        "pipeline_us": 3394.229253
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.00957480266,
+        "gemm_us": 2426.741282,
+        "pipeline_us": 2757.621447
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.00957480266,
+        "gemm_us": 2434.783936,
+        "pipeline_us": 2732.159932
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3134.293238,
+        "pipeline_us": 3392.437299
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3082.954725,
+        "pipeline_us": 3344.88519
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3712.213198,
+        "pipeline_us": 3909.01343
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3238.922755,
+        "pipeline_us": 3497.546514
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3618.816058,
+        "pipeline_us": 3875.616074
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.00957480266,
+        "gemm_us": 2396.586736,
+        "pipeline_us": 2766.037305
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.00957480266,
+        "gemm_us": 1433.205287,
+        "pipeline_us": 1725.194613
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.00957480266,
+        "gemm_us": 1854.143937,
+        "pipeline_us": 2142.229398
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 2557249,
+        "relL2": 0.00329575377,
+        "gemm_us": 2509.002686,
+        "pipeline_us": 2883.712133
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 2557249,
+        "relL2": 0.00329575377,
+        "gemm_us": 1551.114718,
+        "pipeline_us": 1846.495946
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 2557249,
+        "relL2": 0.00329575377,
+        "gemm_us": 1544.149399,
+        "pipeline_us": 1837.06665
+      }
+    ]
+  },
+  {
+    "file": "run-1788898282619755313/5120-512-4352-2.jsonl",
+    "M": 5120,
+    "N": 512,
+    "K": 4352,
+    "stages": {
+      "weight_us": 230.835199,
+      "activation_us": 28.5184,
+      "finish_us": 33.2032
+    },
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3138.570786,
+        "pipeline_us": 3393.642743
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "different": 0,
+        "relL2": 0.00957864365,
+        "gemm_us": 2366.250674,
+        "pipeline_us": 2761.727969
+      },
+      {
+        "mode": 1,
+        "algo": -1,
+        "different": 0,
+        "relL2": 0.00957864365,
+        "gemm_us": 2492.383957,
+        "pipeline_us": 2693.653425
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3135.637283,
+        "pipeline_us": 3393.386523
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3087.12546,
+        "pipeline_us": 3341.792107
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3678.688049,
+        "pipeline_us": 3943.125407
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3240.85331,
+        "pipeline_us": 3498.261452
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "different": 0,
+        "relL2": 0,
+        "gemm_us": 3618.368149,
+        "pipeline_us": 3599.967957
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "different": 0,
+        "relL2": 0.00957864365,
+        "gemm_us": 2458.538691,
+        "pipeline_us": 2719.519933
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "different": 0,
+        "relL2": 0.00957864365,
+        "gemm_us": 1434.528033,
+        "pipeline_us": 1725.087961
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "different": 0,
+        "relL2": 0.00957864365,
+        "gemm_us": 1854.357402,
+        "pipeline_us": 2142.399947
+      },
+      {
+        "mode": 1,
+        "algo": 4,
+        "different": 2557942,
+        "relL2": 0.00329732117,
+        "gemm_us": 2538.592021,
+        "pipeline_us": 2874.112129
+      },
+      {
+        "mode": 1,
+        "algo": 5,
+        "different": 2557942,
+        "relL2": 0.00329732117,
+        "gemm_us": 1551.09326,
+        "pipeline_us": 1847.658634
+      },
+      {
+        "mode": 1,
+        "algo": 6,
+        "different": 2557942,
+        "relL2": 0.00329732117,
+        "gemm_us": 1543.178717,
+        "pipeline_us": 1837.877274
+      }
+    ]
+  }
+]

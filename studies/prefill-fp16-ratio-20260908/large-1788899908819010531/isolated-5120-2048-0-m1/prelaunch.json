@@ -1,0 +1,32 @@
+{
+  "command": [
+    "/usr/bin/env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_DEVICE_ORDER=PCI_BUS_ID",
+    "CUDA_VISIBLE_DEVICES=GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+    "/usr/bin/taskset",
+    "--cpu-list",
+    "0-11",
+    "/home/arian/P100-arithmetic/studies/prefill-fp16-ratio-20260908/confirm_large",
+    "5120",
+    "2048",
+    "4352",
+    "903211",
+    "6",
+    "2",
+    "3",
+    "6",
+    "6",
+    "3",
+    "0",
+    "0",
+    "1",
+    "2"
+  ],
+  "before": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 5, 0, 430, 0\n",
+  "binary_sha256": "44a1c358b27ed8898ba2889eb8e25a4cd5e150f1a34eb394f08be42c5286b692",
+  "source_sha256": "f2a5acc7ae5f94e5509309645a479d2f4d9493f3df83d2e0cef062bbe1ab2edc",
+  "token": "prefill-fp16-large-1788899908725887790-gpu1"
+}

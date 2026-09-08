@@ -1,0 +1,30 @@
+SHAPE (4352, 256, 5120) workers 6 STAGES {'weight_us': 231.0048105, 'activation_us': 18.2592005, 'finish_us': 16.115199500000003}
+DEFAULT (0, -1) {'gemm_us': 1668.5492989999998, 'pipeline_us': 1876.5866755000002, 'different': 0.0, 'relL2': 0.0, 'exact': True} BEST EXACT (0, -1) {'gemm_us': 1668.5492989999998, 'pipeline_us': 1876.5866755000002, 'different': 0.0, 'relL2': 0.0, 'exact': True}
+DEFAULT (1, 99) {'gemm_us': 844.7999955, 'pipeline_us': 1112.0106380000002, 'different': 0.0, 'relL2': 0.00335217413, 'exact': True} BEST EXACT (1, 99) {'gemm_us': 844.7999955, 'pipeline_us': 1112.0106380000002, 'different': 0.0, 'relL2': 0.00335217413, 'exact': True}
+DEFAULT RATIOS GEMM 1.975082040586966 PIPE 1.6875618014546367
+TOP HALF [((1, 99), 1112.0106380000002, True), ((1, -1), 1112.5386555, True), ((1, 5), 1113.0133074999999, True), ((1, 6), 1136.1973285, True), ((1, 1), 1322.213332, False), ((1, 2), 1420.053323, False), ((1, 3), 1506.8693159999998, False), ((1, 4), 1534.98133, True)]
+SHAPE (4352, 512, 5120) workers 3 STAGES {'weight_us': 231.507206, 'activation_us': 33.0432, 'finish_us': 28.876799}
+DEFAULT (0, -1) {'gemm_us': 3385.653178, 'pipeline_us': 3645.74941, 'different': 0, 'relL2': 0, 'exact': True} BEST EXACT (0, 6) {'gemm_us': 3246.080081, 'pipeline_us': 3509.119987, 'different': 0, 'relL2': 0, 'exact': True}
+DEFAULT (1, 99) {'gemm_us': 1591.95741, 'pipeline_us': 1883.072058, 'different': 0, 'relL2': 0.0103792255, 'exact': True} BEST EXACT (1, 1) {'gemm_us': 1581.504027, 'pipeline_us': 1882.229328, 'different': 0, 'relL2': 0.0103792255, 'exact': True}
+DEFAULT RATIOS GEMM 2.1267234642916737 PIPE 1.9360647376777123
+TOP HALF [((1, 6), 1869.749387, False), ((1, 1), 1882.229328, True), ((1, 99), 1883.072058, True), ((1, -1), 1884.138743, True), ((1, 5), 1896.671931, False), ((1, 2), 1974.367936, True), ((1, 3), 2468.202591, True), ((1, 4), 3186.485291, False)]
+SHAPE (4352, 2048, 5120) workers 3 STAGES {'weight_us': 231.302404, 'activation_us': 122.841597, 'finish_us': 105.862403}
+DEFAULT (0, -1) {'gemm_us': 12228.543599, 'pipeline_us': 12580.404917, 'different': 0, 'relL2': 0, 'exact': True} BEST EXACT (0, 6) {'gemm_us': 10619.082769, 'pipeline_us': 10972.522736, 'different': 0, 'relL2': 0, 'exact': True}
+DEFAULT (1, 99) {'gemm_us': 6380.75765, 'pipeline_us': 6839.967728, 'different': 0, 'relL2': 0.0103780223, 'exact': True} BEST EXACT (1, 2) {'gemm_us': 6105.834961, 'pipeline_us': 6562.634786, 'different': 0, 'relL2': 0.0103780223, 'exact': True}
+DEFAULT RATIOS GEMM 1.9164720351038567 PIPE 1.839249162755699
+TOP HALF [((1, 6), 6363.381068, False), ((1, 5), 6423.893611, False), ((1, 2), 6562.634786, True), ((1, -1), 6633.834839, True), ((1, 99), 6839.967728, True), ((1, 3), 6966.773351, True), ((1, 4), 12047.77654, False), ((1, 1), 13001.098633, True)]
+SHAPE (5120, 256, 4352) workers 6 STAGES {'weight_us': 231.0848, 'activation_us': 15.9168005, 'finish_us': 18.070400499999998}
+DEFAULT (0, -1) {'gemm_us': 1585.242669, 'pipeline_us': 1830.1812805, 'different': 0.0, 'relL2': 0.0, 'exact': True} BEST EXACT (0, -1) {'gemm_us': 1585.242669, 'pipeline_us': 1830.1812805, 'different': 0.0, 'relL2': 0.0, 'exact': True}
+DEFAULT (1, 99) {'gemm_us': 885.0880070000001, 'pipeline_us': 1144.762675, 'different': 0.0, 'relL2': 0.0095866597, 'exact': True} BEST EXACT (1, -1) {'gemm_us': 883.562684, 'pipeline_us': 1144.05334, 'different': 0.0, 'relL2': 0.0095866597, 'exact': True}
+DEFAULT RATIOS GEMM 1.7910565463124617 PIPE 1.5987429713324641
+TOP HALF [((1, 6), 1078.8160165, False), ((1, 5), 1085.2586824999998, False), ((1, -1), 1144.05334, True), ((1, 99), 1144.762675, True), ((1, 1), 1145.6213395, True), ((1, 2), 1264.741341, True), ((1, 3), 1323.4080075, True), ((1, 4), 1502.5653045, False)]
+SHAPE (5120, 512, 4352) workers 3 STAGES {'weight_us': 230.82881, 'activation_us': 28.601599, 'finish_us': 33.2032}
+DEFAULT (0, -1) {'gemm_us': 3138.570786, 'pipeline_us': 3394.048055, 'different': 0, 'relL2': 0, 'exact': True} BEST EXACT (0, 3) {'gemm_us': 3087.12546, 'pipeline_us': 3341.792107, 'different': 0, 'relL2': 0, 'exact': True}
+DEFAULT (1, 99) {'gemm_us': 2426.741282, 'pipeline_us': 2757.621447, 'different': 0, 'relL2': 0.00957480266, 'exact': True} BEST EXACT (1, 2) {'gemm_us': 1434.528033, 'pipeline_us': 1725.087961, 'different': 0, 'relL2': 0.00957480266, 'exact': True}
+DEFAULT RATIOS GEMM 1.2933273148150946 PIPE 1.23078824277798
+TOP HALF [((1, 2), 1725.087961, True), ((1, 6), 1837.386608, False), ((1, 5), 1846.495946, False), ((1, 3), 2142.399947, True), ((1, -1), 2693.653425, True), ((1, 1), 2719.519933, True), ((1, 99), 2757.621447, True), ((1, 4), 2883.712133, False)]
+SHAPE (5120, 2048, 4352) workers 3 STAGES {'weight_us': 231.404805, 'activation_us': 104.678404, 'finish_us': 124.281597}
+DEFAULT (0, -1) {'gemm_us': 12082.324982, 'pipeline_us': 12648.77828, 'different': 0, 'relL2': 0, 'exact': True} BEST EXACT (0, 6) {'gemm_us': 10843.605042, 'pipeline_us': 11176.85318, 'different': 0, 'relL2': 0, 'exact': True}
+DEFAULT (1, 99) {'gemm_us': 5838.815689, 'pipeline_us': 6300.256093, 'different': 0, 'relL2': 0.00957616523, 'exact': True} BEST EXACT (1, 3) {'gemm_us': 5541.514715, 'pipeline_us': 5999.765396, 'different': 0, 'relL2': 0.00957616523, 'exact': True}
+DEFAULT RATIOS GEMM 2.0693109057650885 PIPE 2.00766097334577
+TOP HALF [((1, 3), 5999.765396, True), ((1, 2), 6141.706467, True), ((1, -1), 6285.568237, True), ((1, 99), 6300.256093, True), ((1, 6), 6392.725627, False), ((1, 5), 6412.917455, False), ((1, 4), 13784.618378, False), ((1, 1), 14187.754313, True)]

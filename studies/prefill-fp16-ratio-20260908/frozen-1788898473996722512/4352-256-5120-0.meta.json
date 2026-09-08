@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/usr/bin/env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_DEVICE_ORDER=PCI_BUS_ID",
+    "CUDA_VISIBLE_DEVICES=GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+    "/usr/bin/taskset",
+    "--cpu-list",
+    "0-11",
+    "/usr/local/cuda-12.8/bin/compute-sanitizer",
+    "--tool",
+    "memcheck",
+    "--error-exitcode",
+    "9",
+    "/home/arian/P100-arithmetic/studies/prefill-fp16-ratio-20260908/frozen",
+    "4352",
+    "256",
+    "5120",
+    "701009",
+    "--check-only"
+  ],
+  "before": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 5, 0, 405, 0\n"
+}

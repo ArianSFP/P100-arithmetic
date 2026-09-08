@@ -1,0 +1,11 @@
+========= COMPUTE-SANITIZER
+{"type":"device","sm":56,"blas":120803,"M":4352,"N":256,"K":5120}
+{"type":"frozen_check","mode":0,"algo":-1,"variant":0,"different":0,"outputs":1114112}
+{"type":"frozen_check","mode":0,"algo":-1,"variant":0,"different":0,"outputs":1114112}
+{"type":"frozen_check","mode":0,"algo":-1,"variant":4,"different":0,"outputs":1114112}
+{"type":"frozen_check","mode":0,"algo":-1,"variant":-1,"different":0,"outputs":1114112}
+{"type":"frozen_check","mode":1,"algo":99,"variant":0,"different":0,"outputs":1114112}
+{"type":"frozen_check","mode":1,"algo":99,"variant":0,"different":0,"outputs":1114112}
+{"type":"frozen_check","mode":1,"algo":99,"variant":4,"different":0,"outputs":1114112}
+{"type":"frozen_check","mode":1,"algo":99,"variant":-1,"different":0,"outputs":1114112}
+========= ERROR SUMMARY: 0 errors

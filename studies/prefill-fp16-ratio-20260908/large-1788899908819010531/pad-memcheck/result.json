@@ -1,0 +1,31 @@
+{
+  "command": [
+    "/usr/bin/env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_DEVICE_ORDER=PCI_BUS_ID",
+    "CUDA_VISIBLE_DEVICES=GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+    "/usr/bin/taskset",
+    "--cpu-list",
+    "0-11",
+    "/usr/local/cuda-12.8/bin/compute-sanitizer",
+    "--tool",
+    "memcheck",
+    "--error-exitcode",
+    "9",
+    "/home/arian/P100-arithmetic/studies/prefill-fp16-ratio-20260908/layout_fused",
+    "4352",
+    "2048",
+    "5120",
+    "802110",
+    "--check-only"
+  ],
+  "before": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 5, 0, 405, 0\n",
+  "binary_sha256": "7ff0a0f88c458f0b1bb1ba1bfa70e2d49288803359c3d5df01d26cc367b5267a",
+  "source_sha256": "1fe203c49cf2e7957791405525420890905a052e4b22764848ee6aa213b50c03",
+  "token": "prefill-fp16-large-1788899908725887790-gpu1",
+  "status": "PASS",
+  "returncode": 0,
+  "after": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 5, 42, 1328, 0\n"
+}

@@ -1,0 +1,109 @@
+{
+  "cuda": 12080,
+  "cublas": 120803,
+  "architecture": "sm_60",
+  "plans": [
+    {
+      "M": 4352,
+      "N": 2048,
+      "K": 5120,
+      "fp32": {
+        "algo": 6,
+        "layout": 2,
+        "pad": 0
+      },
+      "fp16": {
+        "algo": 3,
+        "layout": 2,
+        "pad": 8
+      },
+      "paired_ratio": 1.7142874311357152,
+      "status": "experimental synthetic; per-shape full-output identity passed"
+    },
+    {
+      "M": 5120,
+      "N": 2048,
+      "K": 4352,
+      "fp32": {
+        "algo": 6,
+        "layout": 2,
+        "pad": 0
+      },
+      "fp16": {
+        "algo": 3,
+        "layout": 6,
+        "pad": 0
+      },
+      "paired_ratio": 1.8910165653339406,
+      "status": "experimental synthetic; per-shape full-output identity passed"
+    },
+    {
+      "M": 4352,
+      "N": 4096,
+      "K": 5120,
+      "fp32": {
+        "algo": 6,
+        "layout": 3,
+        "pad": 0
+      },
+      "fp16": {
+        "algo": 3,
+        "layout": 6,
+        "pad": 0
+      },
+      "paired_ratio": 1.8953427097107336,
+      "status": "experimental synthetic; per-shape full-output identity passed"
+    },
+    {
+      "M": 5120,
+      "N": 4096,
+      "K": 4352,
+      "fp32": {
+        "algo": 6,
+        "layout": 3,
+        "pad": 0
+      },
+      "fp16": {
+        "algo": 3,
+        "layout": 3,
+        "pad": 0
+      },
+      "paired_ratio": 1.8910055577768308,
+      "status": "experimental synthetic; per-shape full-output identity passed"
+    },
+    {
+      "M": 4352,
+      "N": 8192,
+      "K": 5120,
+      "fp32": {
+        "algo": 6,
+        "layout": 3,
+        "pad": 0
+      },
+      "fp16": {
+        "algo": 99,
+        "layout": 3,
+        "pad": 0
+      },
+      "paired_ratio": 1.9064267677319546,
+      "status": "experimental synthetic; per-shape full-output identity passed"
+    },
+    {
+      "M": 5120,
+      "N": 8192,
+      "K": 4352,
+      "fp32": {
+        "algo": 6,
+        "layout": 3,
+        "pad": 0
+      },
+      "fp16": {
+        "algo": 99,
+        "layout": 0,
+        "pad": 0
+      },
+      "paired_ratio": 1.8143359257203664,
+      "status": "experimental synthetic; per-shape full-output identity passed"
+    }
+  ]
+}

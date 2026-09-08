@@ -1,0 +1,1974 @@
+{
+  "workers": [
+    {
+      "M": 4352,
+      "N": 2048,
+      "K": 5120,
+      "file": "frozen-1788898513426767227/4352-2048-5120-0.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 12717.868805,
+          "gemm_us": 12205.471802
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": 6,
+          "variant": 0,
+          "pipeline_us": 11095.123291,
+          "gemm_us": 10808.076477
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": 6,
+          "variant": 4,
+          "pipeline_us": 10947.673798,
+          "gemm_us": 10680.319977
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": 6,
+          "variant": -1,
+          "pipeline_us": 10740.895844,
+          "gemm_us": 10620.755005
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 6561.170959,
+          "gemm_us": 6105.13916
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 2,
+          "variant": 0,
+          "pipeline_us": 6563.148499,
+          "gemm_us": 6105.836868
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 2,
+          "variant": 4,
+          "pipeline_us": 6493.260956,
+          "gemm_us": 6104.006577
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 2,
+          "variant": -1,
+          "pipeline_us": 6331.667328,
+          "gemm_us": 6104.86412
+        }
+      ]
+    },
+    {
+      "M": 4352,
+      "N": 2048,
+      "K": 5120,
+      "file": "frozen-1788898513426767227/4352-2048-5120-1.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 12773.638153,
+          "gemm_us": 12230.950165
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": 6,
+          "variant": 0,
+          "pipeline_us": 11035.75058,
+          "gemm_us": 10785.670471
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": 6,
+          "variant": 4,
+          "pipeline_us": 10921.22879,
+          "gemm_us": 10666.304016
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": 6,
+          "variant": -1,
+          "pipeline_us": 10742.591858,
+          "gemm_us": 10629.689789
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 6562.892914,
+          "gemm_us": 6104.947281
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 2,
+          "variant": 0,
+          "pipeline_us": 6561.248016,
+          "gemm_us": 6104.038239
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 2,
+          "variant": 4,
+          "pipeline_us": 6493.004608,
+          "gemm_us": 6103.289413
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 2,
+          "variant": -1,
+          "pipeline_us": 6331.667328,
+          "gemm_us": 6103.673553
+        }
+      ]
+    },
+    {
+      "M": 4352,
+      "N": 2048,
+      "K": 5120,
+      "file": "frozen-1788898513426767227/4352-2048-5120-2.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 12754.943848,
+          "gemm_us": 12202.342224
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": 6,
+          "variant": 0,
+          "pipeline_us": 11071.321869,
+          "gemm_us": 10791.027069
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": 6,
+          "variant": 4,
+          "pipeline_us": 10955.808258,
+          "gemm_us": 10676.64032
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": 6,
+          "variant": -1,
+          "pipeline_us": 10742.137909,
+          "gemm_us": 10642.585754
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 6564.147186,
+          "gemm_us": 6105.913544
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 2,
+          "variant": 0,
+          "pipeline_us": 6562.368011,
+          "gemm_us": 6102.975845
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 2,
+          "variant": 4,
+          "pipeline_us": 6492.781067,
+          "gemm_us": 6105.04303
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 2,
+          "variant": -1,
+          "pipeline_us": 6331.212616,
+          "gemm_us": 6104.326248
+        }
+      ]
+    },
+    {
+      "M": 4352,
+      "N": 256,
+      "K": 5120,
+      "file": "frozen-1788898513426767227/4352-256-5120-0.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 1886.457634,
+          "gemm_us": 1637.657547
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 1865.689659,
+          "gemm_us": 1642.707253
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": -1,
+          "variant": 4,
+          "pipeline_us": 1793.286324,
+          "gemm_us": 1636.998367
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": -1,
+          "variant": -1,
+          "pipeline_us": 1650.086403,
+          "gemm_us": 1638.931274
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1118.105602,
+          "gemm_us": 848.511982
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1117.843246,
+          "gemm_us": 852.19841
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 99,
+          "variant": 4,
+          "pipeline_us": 1043.366432,
+          "gemm_us": 852.755165
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 99,
+          "variant": -1,
+          "pipeline_us": 882.195187,
+          "gemm_us": 849.459171
+        }
+      ]
+    },
+    {
+      "M": 4352,
+      "N": 256,
+      "K": 5120,
+      "file": "frozen-1788898513426767227/4352-256-5120-1.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 1888.614464,
+          "gemm_us": 1635.411263
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 1882.969666,
+          "gemm_us": 1659.353638
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": -1,
+          "variant": 4,
+          "pipeline_us": 1817.299271,
+          "gemm_us": 1637.196732
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": -1,
+          "variant": -1,
+          "pipeline_us": 1631.104088,
+          "gemm_us": 1636.47995
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1113.126373,
+          "gemm_us": 842.790413
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1116.889572,
+          "gemm_us": 847.961617
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 99,
+          "variant": 4,
+          "pipeline_us": 1038.527966,
+          "gemm_us": 844.044781
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 99,
+          "variant": -1,
+          "pipeline_us": 883.737564,
+          "gemm_us": 853.843212
+        }
+      ]
+    },
+    {
+      "M": 4352,
+      "N": 256,
+      "K": 5120,
+      "file": "frozen-1788898513426767227/4352-256-5120-2.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 1882.752037,
+          "gemm_us": 1638.220787
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 1885.868835,
+          "gemm_us": 1635.647964
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": -1,
+          "variant": 4,
+          "pipeline_us": 1792.819214,
+          "gemm_us": 1635.046387
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": -1,
+          "variant": -1,
+          "pipeline_us": 1632.159996,
+          "gemm_us": 1638.374329
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1114.406395,
+          "gemm_us": 841.919994
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1116.230392,
+          "gemm_us": 844.358444
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 99,
+          "variant": 4,
+          "pipeline_us": 1036.10239,
+          "gemm_us": 843.455982
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 99,
+          "variant": -1,
+          "pipeline_us": 882.380772,
+          "gemm_us": 849.657631
+        }
+      ]
+    },
+    {
+      "M": 4352,
+      "N": 512,
+      "K": 5120,
+      "file": "frozen-1788898513426767227/4352-512-5120-0.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 3644.044876,
+          "gemm_us": 3382.963181
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": 6,
+          "variant": 0,
+          "pipeline_us": 3506.028748,
+          "gemm_us": 3244.883347
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": 6,
+          "variant": 4,
+          "pipeline_us": 3438.06076,
+          "gemm_us": 3244.070435
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": 6,
+          "variant": -1,
+          "pipeline_us": 3276.294327,
+          "gemm_us": 3243.481445
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1880.812836,
+          "gemm_us": 1585.49118
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1880.518341,
+          "gemm_us": 1585.599995
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 99,
+          "variant": 4,
+          "pipeline_us": 1810.764885,
+          "gemm_us": 1581.177616
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 99,
+          "variant": -1,
+          "pipeline_us": 1653.440094,
+          "gemm_us": 1583.219242
+        }
+      ]
+    },
+    {
+      "M": 4352,
+      "N": 512,
+      "K": 5120,
+      "file": "frozen-1788898513426767227/4352-512-5120-1.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 3643.462372,
+          "gemm_us": 3384.230423
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": 6,
+          "variant": 0,
+          "pipeline_us": 3506.566238,
+          "gemm_us": 3245.689774
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": 6,
+          "variant": 4,
+          "pipeline_us": 3438.259125,
+          "gemm_us": 3244.736099
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": 6,
+          "variant": -1,
+          "pipeline_us": 3276.332855,
+          "gemm_us": 3244.908905
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1880.390358,
+          "gemm_us": 1581.881618
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1884.140778,
+          "gemm_us": 1581.555176
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 99,
+          "variant": 4,
+          "pipeline_us": 1812.742424,
+          "gemm_us": 1581.696033
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 99,
+          "variant": -1,
+          "pipeline_us": 1647.436714,
+          "gemm_us": 1583.027172
+        }
+      ]
+    },
+    {
+      "M": 4352,
+      "N": 512,
+      "K": 5120,
+      "file": "frozen-1788898513426767227/4352-512-5120-2.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 3643.667221,
+          "gemm_us": 3381.414413
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": 6,
+          "variant": 0,
+          "pipeline_us": 3506.771088,
+          "gemm_us": 3244.633484
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": 6,
+          "variant": 4,
+          "pipeline_us": 3437.625504,
+          "gemm_us": 3244.236755
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": 6,
+          "variant": -1,
+          "pipeline_us": 3276.435089,
+          "gemm_us": 3243.590546
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1884.582329,
+          "gemm_us": 1585.318375
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1883.161545,
+          "gemm_us": 1582.304001
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 99,
+          "variant": 4,
+          "pipeline_us": 1820.147133,
+          "gemm_us": 1585.433578
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 99,
+          "variant": -1,
+          "pipeline_us": 1651.328087,
+          "gemm_us": 1584.959984
+        }
+      ]
+    },
+    {
+      "M": 5120,
+      "N": 2048,
+      "K": 4352,
+      "file": "frozen-1788898513426767227/5120-2048-4352-0.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 12640.493011,
+          "gemm_us": 12162.976074
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": 6,
+          "variant": 0,
+          "pipeline_us": 11239.033508,
+          "gemm_us": 10950.790405
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": 6,
+          "variant": 4,
+          "pipeline_us": 11109.664154,
+          "gemm_us": 10855.104065
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": 6,
+          "variant": -1,
+          "pipeline_us": 10946.060944,
+          "gemm_us": 10845.26062
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 6137.465668,
+          "gemm_us": 5681.100845
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 3,
+          "variant": 0,
+          "pipeline_us": 5999.5327,
+          "gemm_us": 5541.241455
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 3,
+          "variant": 4,
+          "pipeline_us": 5930.169678,
+          "gemm_us": 5540.812683
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 3,
+          "variant": -1,
+          "pipeline_us": 5768.979263,
+          "gemm_us": 5540.192032
+        }
+      ]
+    },
+    {
+      "M": 5120,
+      "N": 2048,
+      "K": 4352,
+      "file": "frozen-1788898513426767227/5120-2048-4352-1.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 12737.490845,
+          "gemm_us": 12203.065491
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": 6,
+          "variant": 0,
+          "pipeline_us": 11192.108917,
+          "gemm_us": 10908.02536
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": 6,
+          "variant": 4,
+          "pipeline_us": 11114.208221,
+          "gemm_us": 10853.727722
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": 6,
+          "variant": -1,
+          "pipeline_us": 10945.772552,
+          "gemm_us": 10841.983795
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 6138.579178,
+          "gemm_us": 5681.715012
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 3,
+          "variant": 0,
+          "pipeline_us": 5999.129486,
+          "gemm_us": 5540.736008
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 3,
+          "variant": 4,
+          "pipeline_us": 5930.041504,
+          "gemm_us": 5540.659332
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 3,
+          "variant": -1,
+          "pipeline_us": 5769.075012,
+          "gemm_us": 5540.012741
+        }
+      ]
+    },
+    {
+      "M": 5120,
+      "N": 2048,
+      "K": 4352,
+      "file": "frozen-1788898513426767227/5120-2048-4352-2.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 12732.985687,
+          "gemm_us": 12212.467194
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": 6,
+          "variant": 0,
+          "pipeline_us": 11191.916656,
+          "gemm_us": 10953.356934
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": 6,
+          "variant": 4,
+          "pipeline_us": 11119.814301,
+          "gemm_us": 10856.428528
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": 6,
+          "variant": -1,
+          "pipeline_us": 10945.324707,
+          "gemm_us": 10844.338989
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 6140.620804,
+          "gemm_us": 5684.799957
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 3,
+          "variant": 0,
+          "pipeline_us": 5999.62883,
+          "gemm_us": 5541.145706
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 3,
+          "variant": 4,
+          "pipeline_us": 5931.244659,
+          "gemm_us": 5540.9729
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 3,
+          "variant": -1,
+          "pipeline_us": 5769.023895,
+          "gemm_us": 5541.120148
+        }
+      ]
+    },
+    {
+      "M": 5120,
+      "N": 256,
+      "K": 4352,
+      "file": "frozen-1788898513426767227/5120-256-4352-0.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 1829.529572,
+          "gemm_us": 1583.852768
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 1828.422356,
+          "gemm_us": 1584.255981
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": -1,
+          "variant": 4,
+          "pipeline_us": 1761.305618,
+          "gemm_us": 1582.828808
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": -1,
+          "variant": -1,
+          "pipeline_us": 1600.902367,
+          "gemm_us": 1581.753635
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1141.273594,
+          "gemm_us": 882.950401
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1143.379211,
+          "gemm_us": 879.936028
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 99,
+          "variant": 4,
+          "pipeline_us": 1076.134396,
+          "gemm_us": 883.065605
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 99,
+          "variant": -1,
+          "pipeline_us": 914.815998,
+          "gemm_us": 882.5984
+        }
+      ]
+    },
+    {
+      "M": 5120,
+      "N": 256,
+      "K": 4352,
+      "file": "frozen-1788898513426767227/5120-256-4352-1.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 1830.854416,
+          "gemm_us": 1583.571243
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 1831.001663,
+          "gemm_us": 1585.184002
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": -1,
+          "variant": 4,
+          "pipeline_us": 1759.967995,
+          "gemm_us": 1603.199959
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": -1,
+          "variant": -1,
+          "pipeline_us": 1598.431969,
+          "gemm_us": 1585.568047
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1144.121647,
+          "gemm_us": 883.283234
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1142.636776,
+          "gemm_us": 882.816029
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 99,
+          "variant": 4,
+          "pipeline_us": 1076.883221,
+          "gemm_us": 882.803154
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 99,
+          "variant": -1,
+          "pipeline_us": 913.036823,
+          "gemm_us": 882.944012
+        }
+      ]
+    },
+    {
+      "M": 5120,
+      "N": 256,
+      "K": 4352,
+      "file": "frozen-1788898513426767227/5120-256-4352-2.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 1848.300743,
+          "gemm_us": 1602.860832
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 1830.112076,
+          "gemm_us": 1585.644817
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": -1,
+          "variant": 4,
+          "pipeline_us": 1779.33445,
+          "gemm_us": 1585.740757
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": -1,
+          "variant": -1,
+          "pipeline_us": 1617.331123,
+          "gemm_us": 1602.649689
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1146.118355,
+          "gemm_us": 885.715199
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1144.268799,
+          "gemm_us": 884.422398
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 99,
+          "variant": 4,
+          "pipeline_us": 1076.88961,
+          "gemm_us": 883.334446
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 99,
+          "variant": -1,
+          "pipeline_us": 916.755199,
+          "gemm_us": 882.752037
+        }
+      ]
+    },
+    {
+      "M": 5120,
+      "N": 512,
+      "K": 4352,
+      "file": "frozen-1788898513426767227/5120-512-4352-0.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 3393.254471,
+          "gemm_us": 3136.761665
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": 3,
+          "variant": 0,
+          "pipeline_us": 3344.60144,
+          "gemm_us": 3084.518433
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": 3,
+          "variant": 4,
+          "pipeline_us": 3274.687958,
+          "gemm_us": 3084.921646
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": 3,
+          "variant": -1,
+          "pipeline_us": 3111.142349,
+          "gemm_us": 3084.204865
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 2745.023918,
+          "gemm_us": 2401.59359
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 2,
+          "variant": 0,
+          "pipeline_us": 1727.404785,
+          "gemm_us": 1435.257626
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 2,
+          "variant": 4,
+          "pipeline_us": 1657.881546,
+          "gemm_us": 1435.468769
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 2,
+          "variant": -1,
+          "pipeline_us": 1496.019173,
+          "gemm_us": 1435.73761
+        }
+      ]
+    },
+    {
+      "M": 5120,
+      "N": 512,
+      "K": 4352,
+      "file": "frozen-1788898513426767227/5120-512-4352-1.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 3393.420792,
+          "gemm_us": 3136.940765
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": 3,
+          "variant": 0,
+          "pipeline_us": 3343.603134,
+          "gemm_us": 3084.486389
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": 3,
+          "variant": 4,
+          "pipeline_us": 3274.950409,
+          "gemm_us": 3084.428787
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": 3,
+          "variant": -1,
+          "pipeline_us": 3110.419273,
+          "gemm_us": 3085.619164
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 2709.945679,
+          "gemm_us": 2403.315163
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 2,
+          "variant": 0,
+          "pipeline_us": 1724.723244,
+          "gemm_us": 1434.502411
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 2,
+          "variant": 4,
+          "pipeline_us": 1656.064034,
+          "gemm_us": 1433.420753
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 2,
+          "variant": -1,
+          "pipeline_us": 1494.892788,
+          "gemm_us": 1433.49123
+        }
+      ]
+    },
+    {
+      "M": 5120,
+      "N": 512,
+      "K": 4352,
+      "file": "frozen-1788898513426767227/5120-512-4352-2.jsonl",
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 3393.721771,
+          "gemm_us": 3136.921692
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": 3,
+          "variant": 0,
+          "pipeline_us": 3341.600037,
+          "gemm_us": 3085.318375
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": 3,
+          "variant": 4,
+          "pipeline_us": 3272.812653,
+          "gemm_us": 3085.50396
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": 3,
+          "variant": -1,
+          "pipeline_us": 3112.947273,
+          "gemm_us": 3083.558464
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 2740.768051,
+          "gemm_us": 2411.77597
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 2,
+          "variant": 0,
+          "pipeline_us": 1726.841545,
+          "gemm_us": 1434.111977
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 2,
+          "variant": 4,
+          "pipeline_us": 1658.067131,
+          "gemm_us": 1435.417557
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 2,
+          "variant": -1,
+          "pipeline_us": 1496.204758,
+          "gemm_us": 1434.956837
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "M": 4352,
+      "N": 256,
+      "K": 5120,
+      "workers": 3,
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 1886.457634,
+          "gemm_us": 1637.657547,
+          "worker_pipeline_us": [
+            1886.457634,
+            1888.614464,
+            1882.752037
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 1882.969666,
+          "gemm_us": 1642.707253,
+          "worker_pipeline_us": [
+            1865.689659,
+            1882.969666,
+            1885.868835
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": -1,
+          "variant": 4,
+          "pipeline_us": 1793.286324,
+          "gemm_us": 1636.998367,
+          "worker_pipeline_us": [
+            1793.286324,
+            1817.299271,
+            1792.819214
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": -1,
+          "variant": -1,
+          "pipeline_us": 1632.159996,
+          "gemm_us": 1638.374329,
+          "worker_pipeline_us": [
+            1650.086403,
+            1631.104088,
+            1632.159996
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1114.406395,
+          "gemm_us": 842.790413,
+          "worker_pipeline_us": [
+            1118.105602,
+            1113.126373,
+            1114.406395
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1116.889572,
+          "gemm_us": 847.961617,
+          "worker_pipeline_us": [
+            1117.843246,
+            1116.889572,
+            1116.230392
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 99,
+          "variant": 4,
+          "pipeline_us": 1038.527966,
+          "gemm_us": 844.044781,
+          "worker_pipeline_us": [
+            1043.366432,
+            1038.527966,
+            1036.10239
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 99,
+          "variant": -1,
+          "pipeline_us": 882.380772,
+          "gemm_us": 849.657631,
+          "worker_pipeline_us": [
+            882.195187,
+            883.737564,
+            882.380772
+          ]
+        }
+      ]
+    },
+    {
+      "M": 4352,
+      "N": 512,
+      "K": 5120,
+      "workers": 3,
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 3643.667221,
+          "gemm_us": 3382.963181,
+          "worker_pipeline_us": [
+            3644.044876,
+            3643.462372,
+            3643.667221
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": 6,
+          "variant": 0,
+          "pipeline_us": 3506.566238,
+          "gemm_us": 3244.883347,
+          "worker_pipeline_us": [
+            3506.028748,
+            3506.566238,
+            3506.771088
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": 6,
+          "variant": 4,
+          "pipeline_us": 3438.06076,
+          "gemm_us": 3244.236755,
+          "worker_pipeline_us": [
+            3438.06076,
+            3438.259125,
+            3437.625504
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": 6,
+          "variant": -1,
+          "pipeline_us": 3276.332855,
+          "gemm_us": 3243.590546,
+          "worker_pipeline_us": [
+            3276.294327,
+            3276.332855,
+            3276.435089
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1880.812836,
+          "gemm_us": 1585.318375,
+          "worker_pipeline_us": [
+            1880.812836,
+            1880.390358,
+            1884.582329
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1883.161545,
+          "gemm_us": 1582.304001,
+          "worker_pipeline_us": [
+            1880.518341,
+            1884.140778,
+            1883.161545
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 99,
+          "variant": 4,
+          "pipeline_us": 1812.742424,
+          "gemm_us": 1581.696033,
+          "worker_pipeline_us": [
+            1810.764885,
+            1812.742424,
+            1820.147133
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 99,
+          "variant": -1,
+          "pipeline_us": 1651.328087,
+          "gemm_us": 1583.219242,
+          "worker_pipeline_us": [
+            1653.440094,
+            1647.436714,
+            1651.328087
+          ]
+        }
+      ]
+    },
+    {
+      "M": 4352,
+      "N": 2048,
+      "K": 5120,
+      "workers": 3,
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 12754.943848,
+          "gemm_us": 12205.471802,
+          "worker_pipeline_us": [
+            12717.868805,
+            12773.638153,
+            12754.943848
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": 6,
+          "variant": 0,
+          "pipeline_us": 11071.321869,
+          "gemm_us": 10791.027069,
+          "worker_pipeline_us": [
+            11095.123291,
+            11035.75058,
+            11071.321869
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": 6,
+          "variant": 4,
+          "pipeline_us": 10947.673798,
+          "gemm_us": 10676.64032,
+          "worker_pipeline_us": [
+            10947.673798,
+            10921.22879,
+            10955.808258
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": 6,
+          "variant": -1,
+          "pipeline_us": 10742.137909,
+          "gemm_us": 10629.689789,
+          "worker_pipeline_us": [
+            10740.895844,
+            10742.591858,
+            10742.137909
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 6562.892914,
+          "gemm_us": 6105.13916,
+          "worker_pipeline_us": [
+            6561.170959,
+            6562.892914,
+            6564.147186
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 2,
+          "variant": 0,
+          "pipeline_us": 6562.368011,
+          "gemm_us": 6104.038239,
+          "worker_pipeline_us": [
+            6563.148499,
+            6561.248016,
+            6562.368011
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 2,
+          "variant": 4,
+          "pipeline_us": 6493.004608,
+          "gemm_us": 6104.006577,
+          "worker_pipeline_us": [
+            6493.260956,
+            6493.004608,
+            6492.781067
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 2,
+          "variant": -1,
+          "pipeline_us": 6331.667328,
+          "gemm_us": 6104.326248,
+          "worker_pipeline_us": [
+            6331.667328,
+            6331.667328,
+            6331.212616
+          ]
+        }
+      ]
+    },
+    {
+      "M": 5120,
+      "N": 256,
+      "K": 4352,
+      "workers": 3,
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 1830.854416,
+          "gemm_us": 1583.852768,
+          "worker_pipeline_us": [
+            1829.529572,
+            1830.854416,
+            1848.300743
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 1830.112076,
+          "gemm_us": 1585.184002,
+          "worker_pipeline_us": [
+            1828.422356,
+            1831.001663,
+            1830.112076
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": -1,
+          "variant": 4,
+          "pipeline_us": 1761.305618,
+          "gemm_us": 1585.740757,
+          "worker_pipeline_us": [
+            1761.305618,
+            1759.967995,
+            1779.33445
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": -1,
+          "variant": -1,
+          "pipeline_us": 1600.902367,
+          "gemm_us": 1585.568047,
+          "worker_pipeline_us": [
+            1600.902367,
+            1598.431969,
+            1617.331123
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1144.121647,
+          "gemm_us": 883.283234,
+          "worker_pipeline_us": [
+            1141.273594,
+            1144.121647,
+            1146.118355
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 1143.379211,
+          "gemm_us": 882.816029,
+          "worker_pipeline_us": [
+            1143.379211,
+            1142.636776,
+            1144.268799
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 99,
+          "variant": 4,
+          "pipeline_us": 1076.883221,
+          "gemm_us": 883.065605,
+          "worker_pipeline_us": [
+            1076.134396,
+            1076.883221,
+            1076.88961
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 99,
+          "variant": -1,
+          "pipeline_us": 914.815998,
+          "gemm_us": 882.752037,
+          "worker_pipeline_us": [
+            914.815998,
+            913.036823,
+            916.755199
+          ]
+        }
+      ]
+    },
+    {
+      "M": 5120,
+      "N": 512,
+      "K": 4352,
+      "workers": 3,
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 3393.420792,
+          "gemm_us": 3136.921692,
+          "worker_pipeline_us": [
+            3393.254471,
+            3393.420792,
+            3393.721771
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": 3,
+          "variant": 0,
+          "pipeline_us": 3343.603134,
+          "gemm_us": 3084.518433,
+          "worker_pipeline_us": [
+            3344.60144,
+            3343.603134,
+            3341.600037
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": 3,
+          "variant": 4,
+          "pipeline_us": 3274.687958,
+          "gemm_us": 3084.921646,
+          "worker_pipeline_us": [
+            3274.687958,
+            3274.950409,
+            3272.812653
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": 3,
+          "variant": -1,
+          "pipeline_us": 3111.142349,
+          "gemm_us": 3084.204865,
+          "worker_pipeline_us": [
+            3111.142349,
+            3110.419273,
+            3112.947273
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 2740.768051,
+          "gemm_us": 2403.315163,
+          "worker_pipeline_us": [
+            2745.023918,
+            2709.945679,
+            2740.768051
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 2,
+          "variant": 0,
+          "pipeline_us": 1726.841545,
+          "gemm_us": 1434.502411,
+          "worker_pipeline_us": [
+            1727.404785,
+            1724.723244,
+            1726.841545
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 2,
+          "variant": 4,
+          "pipeline_us": 1657.881546,
+          "gemm_us": 1435.417557,
+          "worker_pipeline_us": [
+            1657.881546,
+            1656.064034,
+            1658.067131
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 2,
+          "variant": -1,
+          "pipeline_us": 1496.019173,
+          "gemm_us": 1434.956837,
+          "worker_pipeline_us": [
+            1496.019173,
+            1494.892788,
+            1496.204758
+          ]
+        }
+      ]
+    },
+    {
+      "M": 5120,
+      "N": 2048,
+      "K": 4352,
+      "workers": 3,
+      "configs": [
+        {
+          "mode": 0,
+          "arm": 0,
+          "algo": -1,
+          "variant": 0,
+          "pipeline_us": 12732.985687,
+          "gemm_us": 12203.065491,
+          "worker_pipeline_us": [
+            12640.493011,
+            12737.490845,
+            12732.985687
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 1,
+          "algo": 6,
+          "variant": 0,
+          "pipeline_us": 11192.108917,
+          "gemm_us": 10950.790405,
+          "worker_pipeline_us": [
+            11239.033508,
+            11192.108917,
+            11191.916656
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 2,
+          "algo": 6,
+          "variant": 4,
+          "pipeline_us": 11114.208221,
+          "gemm_us": 10855.104065,
+          "worker_pipeline_us": [
+            11109.664154,
+            11114.208221,
+            11119.814301
+          ]
+        },
+        {
+          "mode": 0,
+          "arm": 3,
+          "algo": 6,
+          "variant": -1,
+          "pipeline_us": 10945.772552,
+          "gemm_us": 10844.338989,
+          "worker_pipeline_us": [
+            10946.060944,
+            10945.772552,
+            10945.324707
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 0,
+          "algo": 99,
+          "variant": 0,
+          "pipeline_us": 6138.579178,
+          "gemm_us": 5681.715012,
+          "worker_pipeline_us": [
+            6137.465668,
+            6138.579178,
+            6140.620804
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 1,
+          "algo": 3,
+          "variant": 0,
+          "pipeline_us": 5999.5327,
+          "gemm_us": 5541.145706,
+          "worker_pipeline_us": [
+            5999.5327,
+            5999.129486,
+            5999.62883
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 2,
+          "algo": 3,
+          "variant": 4,
+          "pipeline_us": 5930.169678,
+          "gemm_us": 5540.812683,
+          "worker_pipeline_us": [
+            5930.169678,
+            5930.041504,
+            5931.244659
+          ]
+        },
+        {
+          "mode": 1,
+          "arm": 3,
+          "algo": 3,
+          "variant": -1,
+          "pipeline_us": 5769.023895,
+          "gemm_us": 5540.192032,
+          "worker_pipeline_us": [
+            5768.979263,
+            5769.075012,
+            5769.023895
+          ]
+        }
+      ]
+    }
+  ]
+}

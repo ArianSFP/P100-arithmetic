@@ -1,0 +1,1638 @@
+{
+  "workers": [
+    {
+      "file": "run-1788898282619755313/4352-2048-5120-0.jsonl",
+      "M": 4352,
+      "N": 2048,
+      "K": 5120,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 12544.927979,
+          "weight_us": 233.881593
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 12479.283142,
+          "weight_us": 179.584002
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 12459.0271,
+          "weight_us": 164.576006
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 12623.519897,
+          "weight_us": 290.451193
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 12347.602844,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 6562.982178,
+          "weight_us": 234.048009
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 6508.03833,
+          "weight_us": 180.147195
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 6494.080353,
+          "weight_us": 164.383996
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 6618.169403,
+          "weight_us": 290.284801
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 6334.041595,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "file": "run-1788898282619755313/4352-2048-5120-1.jsonl",
+      "M": 4352,
+      "N": 2048,
+      "K": 5120,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 12581.132507,
+          "weight_us": 233.625603
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 12518.886566,
+          "weight_us": 179.513597
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 12509.248352,
+          "weight_us": 164.537597
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 12586.508942,
+          "weight_us": 290.425611
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 12301.760101,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 6562.169647,
+          "weight_us": 233.8624
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 6510.598755,
+          "weight_us": 180.006397
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 6492.953491,
+          "weight_us": 164.345598
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 6617.823792,
+          "weight_us": 290.860796
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 6334.6241,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "file": "run-1788898282619755313/4352-2048-5120-2.jsonl",
+      "M": 4352,
+      "N": 2048,
+      "K": 5120,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 12558.783722,
+          "weight_us": 233.638406
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 12472.97287,
+          "weight_us": 179.372799
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 12513.273621,
+          "weight_us": 165.139198
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 12585.094452,
+          "weight_us": 290.444803
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 12317.657471,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 6561.958313,
+          "weight_us": 233.958411
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 6509.254456,
+          "weight_us": 179.680002
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 6493.45932,
+          "weight_us": 164.608002
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 6617.817688,
+          "weight_us": 290.483189
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 6334.969711,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "file": "run-1788898282619755313/4352-256-5120-0.jsonl",
+      "M": 4352,
+      "N": 256,
+      "K": 5120,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 1883.872032,
+          "weight_us": 231.507206
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 1810.489655,
+          "weight_us": 177.696002
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 1793.196869,
+          "weight_us": 162.585604
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 1939.206314,
+          "weight_us": 288.140798
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 1652.633667,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 1110.540771,
+          "weight_us": 231.62241
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 1061.625576,
+          "weight_us": 177.395201
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 1042.527962,
+          "weight_us": 162.195206
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 1167.302418,
+          "weight_us": 288.083196
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 883.091164,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "file": "run-1788898282619755313/4352-256-5120-1.jsonl",
+      "M": 4352,
+      "N": 256,
+      "K": 5120,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 1887.852859,
+          "weight_us": 231.526399
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 1829.612732,
+          "weight_us": 177.337599
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 1814.924812,
+          "weight_us": 162.195206
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 1941.964722,
+          "weight_us": 288.313603
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 1653.190422,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 1113.036823,
+          "weight_us": 231.660795
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 1063.142395,
+          "weight_us": 177.465606
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 1040.710354,
+          "weight_us": 162.303996
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 1166.745567,
+          "weight_us": 288.262391
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 878.060818,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "file": "run-1788898282619755313/4352-256-5120-2.jsonl",
+      "M": 4352,
+      "N": 256,
+      "K": 5120,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 1886.05442,
+          "weight_us": 231.398392
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 1807.993507,
+          "weight_us": 177.868795
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 1814.944077,
+          "weight_us": 162.342405
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 1939.334488,
+          "weight_us": 288.384008
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 1672.7808,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 1109.8176,
+          "weight_us": 231.507206
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 1061.331177,
+          "weight_us": 177.305603
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 1042.886353,
+          "weight_us": 162.240005
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 1167.142391,
+          "weight_us": 288.204789
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 887.059212,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "file": "run-1788898282619755313/4352-512-5120-0.jsonl",
+      "M": 4352,
+      "N": 512,
+      "K": 5120,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 3644.691086,
+          "weight_us": 232.435203
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 3593.52951,
+          "weight_us": 177.9392
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 3575.475311,
+          "weight_us": 162.835205
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 3699.379349,
+          "weight_us": 288.915205
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 3414.214325,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 1882.847977,
+          "weight_us": 232.204795
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 1827.96154,
+          "weight_us": 178.771198
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 1815.219116,
+          "weight_us": 162.803197
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 1938.886452,
+          "weight_us": 288.58881
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 1649.721527,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "file": "run-1788898282619755313/4352-512-5120-1.jsonl",
+      "M": 4352,
+      "N": 512,
+      "K": 5120,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 3644.012833,
+          "weight_us": 232.044792
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 3589.158249,
+          "weight_us": 178.0352
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 3575.609589,
+          "weight_us": 162.751997
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 3699.366379,
+          "weight_us": 288.166404
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 3414.239883,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 1882.68795,
+          "weight_us": 232.083201
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 1822.17598,
+          "weight_us": 178.220797
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 1815.744019,
+          "weight_us": 162.598395
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 1937.657547,
+          "weight_us": 288.467193
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 1649.817657,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "file": "run-1788898282619755313/4352-512-5120-2.jsonl",
+      "M": 4352,
+      "N": 512,
+      "K": 5120,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 3643.942261,
+          "weight_us": 231.801605
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 3589.209747,
+          "weight_us": 177.907205
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 3546.822357,
+          "weight_us": 162.758398
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 3698.400116,
+          "weight_us": 288.793612
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 3415.81459,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 1886.201668,
+          "weight_us": 231.999993
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 1832.089615,
+          "weight_us": 177.497602
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 1809.478378,
+          "weight_us": 162.847996
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 1939.782333,
+          "weight_us": 288.710403
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 1651.763153,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "file": "run-1788898282619755313/5120-2048-4352-0.jsonl",
+      "M": 5120,
+      "N": 2048,
+      "K": 4352,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 12484.947205,
+          "weight_us": 236.3904
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 12514.137268,
+          "weight_us": 181.363201
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 12398.124695,
+          "weight_us": 165.5424
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 12513.938904,
+          "weight_us": 291.51361
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 12223.967743,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 6219.74411,
+          "weight_us": 235.481596
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 6130.368042,
+          "weight_us": 180.8128
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 6097.260666,
+          "weight_us": 165.171194
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 6222.156906,
+          "weight_us": 291.091204
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 5954.079819,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "file": "run-1788898282619755313/5120-2048-4352-1.jsonl",
+      "M": 5120,
+      "N": 2048,
+      "K": 4352,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 12421.759796,
+          "weight_us": 233.920002
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 12401.631927,
+          "weight_us": 180.486405
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 12350.96283,
+          "weight_us": 164.889598
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 12610.066986,
+          "weight_us": 291.08479
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 12263.513947,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 6168.268967,
+          "weight_us": 233.932805
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 6083.302307,
+          "weight_us": 180.236804
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 6229.9263,
+          "weight_us": 165.382397
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 6236.153412,
+          "weight_us": 290.867209
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 5940.089417,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "file": "run-1788898282619755313/5120-2048-4352-2.jsonl",
+      "M": 5120,
+      "N": 2048,
+      "K": 4352,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 12518.067169,
+          "weight_us": 235.891199
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 12429.958344,
+          "weight_us": 181.932795
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 12409.088135,
+          "weight_us": 166.342402
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 12549.081421,
+          "weight_us": 292.281604
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 12266.329956,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 6292.153549,
+          "weight_us": 238.195205
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 6126.214218,
+          "weight_us": 181.708801
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 6117.171097,
+          "weight_us": 166.547203
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 6232.735825,
+          "weight_us": 292.134404
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 5954.156876,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "file": "run-1788898282619755313/5120-256-4352-0.jsonl",
+      "M": 5120,
+      "N": 256,
+      "K": 4352,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 1830.419159,
+          "weight_us": 231.686401
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 1796.294403,
+          "weight_us": 177.427197
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 1760.012817,
+          "weight_us": 162.342405
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 1904.281616,
+          "weight_us": 288.108802
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 1619.219208,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 1142.739201,
+          "weight_us": 231.73759
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 1089.977646,
+          "weight_us": 177.862406
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 1073.567963,
+          "weight_us": 162.118399
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 1201.670361,
+          "weight_us": 287.993598
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 915.89756,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "file": "run-1788898282619755313/5120-256-4352-1.jsonl",
+      "M": 5120,
+      "N": 256,
+      "K": 4352,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 1852.467155,
+          "weight_us": 231.449604
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 1775.251198,
+          "weight_us": 177.375996
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 1780.121613,
+          "weight_us": 162.047994
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 1885.843277,
+          "weight_us": 288.153601
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 1597.292805,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 1143.916798,
+          "weight_us": 231.423998
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 1089.420795,
+          "weight_us": 177.382398
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 1074.316788,
+          "weight_us": 162.124801
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 1200.448036,
+          "weight_us": 288.000011
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 915.833569,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "file": "run-1788898282619755313/5120-256-4352-2.jsonl",
+      "M": 5120,
+      "N": 256,
+      "K": 4352,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 1829.721642,
+          "weight_us": 231.865597
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 1774.975967,
+          "weight_us": 178.214395
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 1761.113548,
+          "weight_us": 162.374401
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 1905.523109,
+          "weight_us": 288.351989
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 1618.348885,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 1143.353558,
+          "weight_us": 231.993604
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 1089.305592,
+          "weight_us": 177.971196
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 1075.654411,
+          "weight_us": 162.745595
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 1200.556755,
+          "weight_us": 288.524795
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 914.175987,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "file": "run-1788898282619755313/5120-512-4352-0.jsonl",
+      "M": 5120,
+      "N": 512,
+      "K": 4352,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 3393.689728,
+          "weight_us": 231.62241
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 3338.617706,
+          "weight_us": 177.260804
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 3324.025726,
+          "weight_us": 162.124801
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 3450.009537,
+          "weight_us": 288.403201
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 3162.291145,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 2700.870323,
+          "weight_us": 231.520009
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 2650.464058,
+          "weight_us": 177.100801
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 2638.316727,
+          "weight_us": 162.310398
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 2781.766319,
+          "weight_us": 288.147211
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 2489.260864,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "file": "run-1788898282619755313/5120-512-4352-1.jsonl",
+      "M": 5120,
+      "N": 512,
+      "K": 4352,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 3392.768097,
+          "weight_us": 231.62241
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 3338.694382,
+          "weight_us": 177.369595
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 3324.038315,
+          "weight_us": 162.240005
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 3448.47374,
+          "weight_us": 288.537598
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 3162.963295,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 2775.065613,
+          "weight_us": 231.532788
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 2683.967972,
+          "weight_us": 177.171195
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 2659.193611,
+          "weight_us": 162.1696
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 2789.894485,
+          "weight_us": 288.185596
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 2530.975914,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "file": "run-1788898282619755313/5120-512-4352-2.jsonl",
+      "M": 5120,
+      "N": 512,
+      "K": 4352,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 3393.190384,
+          "weight_us": 231.520009
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 3339.231873,
+          "weight_us": 177.344
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 3323.801422,
+          "weight_us": 162.547195
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 3449.145508,
+          "weight_us": 288.243198
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 3162.803268,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 2740.172768,
+          "weight_us": 231.7312
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 2691.20636,
+          "weight_us": 177.331197
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 2688.512039,
+          "weight_us": 162.412798
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 2801.600075,
+          "weight_us": 288.319993
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 2463.61599,
+          "weight_us": 0.0
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "M": 4352,
+      "N": 256,
+      "K": 5120,
+      "workers": 3,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 1886.05442,
+          "weight_us": 231.507206
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 1810.489655,
+          "weight_us": 177.696002
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 1814.924812,
+          "weight_us": 162.342405
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 1939.334488,
+          "weight_us": 288.313603
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 1653.190422,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 1110.540771,
+          "weight_us": 231.62241
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 1061.625576,
+          "weight_us": 177.395201
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 1042.527962,
+          "weight_us": 162.240005
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 1167.142391,
+          "weight_us": 288.204789
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 883.091164,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "M": 4352,
+      "N": 512,
+      "K": 5120,
+      "workers": 3,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 3644.012833,
+          "weight_us": 232.044792
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 3589.209747,
+          "weight_us": 177.9392
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 3575.475311,
+          "weight_us": 162.758398
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 3699.366379,
+          "weight_us": 288.793612
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 3414.239883,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 1882.847977,
+          "weight_us": 232.083201
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 1827.96154,
+          "weight_us": 178.220797
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 1815.219116,
+          "weight_us": 162.803197
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 1938.886452,
+          "weight_us": 288.58881
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 1649.817657,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "M": 4352,
+      "N": 2048,
+      "K": 5120,
+      "workers": 3,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 12558.783722,
+          "weight_us": 233.638406
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 12479.283142,
+          "weight_us": 179.513597
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 12509.248352,
+          "weight_us": 164.576006
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 12586.508942,
+          "weight_us": 290.444803
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 12317.657471,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 6562.169647,
+          "weight_us": 233.958411
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 6509.254456,
+          "weight_us": 180.006397
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 6493.45932,
+          "weight_us": 164.383996
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 6617.823792,
+          "weight_us": 290.483189
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 6334.6241,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "M": 5120,
+      "N": 256,
+      "K": 4352,
+      "workers": 3,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 1830.419159,
+          "weight_us": 231.686401
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 1775.251198,
+          "weight_us": 177.427197
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 1761.113548,
+          "weight_us": 162.342405
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 1904.281616,
+          "weight_us": 288.153601
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 1618.348885,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 1143.353558,
+          "weight_us": 231.73759
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 1089.420795,
+          "weight_us": 177.862406
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 1074.316788,
+          "weight_us": 162.124801
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 1200.556755,
+          "weight_us": 288.000011
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 915.833569,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "M": 5120,
+      "N": 512,
+      "K": 4352,
+      "workers": 3,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 3393.190384,
+          "weight_us": 231.62241
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 3338.694382,
+          "weight_us": 177.344
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 3324.025726,
+          "weight_us": 162.240005
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 3449.145508,
+          "weight_us": 288.403201
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 3162.803268,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 2740.172768,
+          "weight_us": 231.532788
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 2683.967972,
+          "weight_us": 177.171195
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 2659.193611,
+          "weight_us": 162.310398
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 2789.894485,
+          "weight_us": 288.185596
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 2489.260864,
+          "weight_us": 0.0
+        }
+      ]
+    },
+    {
+      "M": 5120,
+      "N": 2048,
+      "K": 4352,
+      "workers": 3,
+      "configs": [
+        {
+          "mode": 0,
+          "variant": 0,
+          "pipeline_us": 12484.947205,
+          "weight_us": 235.891199
+        },
+        {
+          "mode": 0,
+          "variant": 2,
+          "pipeline_us": 12429.958344,
+          "weight_us": 181.363201
+        },
+        {
+          "mode": 0,
+          "variant": 4,
+          "pipeline_us": 12398.124695,
+          "weight_us": 165.5424
+        },
+        {
+          "mode": 0,
+          "variant": 8,
+          "pipeline_us": 12549.081421,
+          "weight_us": 291.51361
+        },
+        {
+          "mode": 0,
+          "variant": -1,
+          "pipeline_us": 12263.513947,
+          "weight_us": 0.0
+        },
+        {
+          "mode": 1,
+          "variant": 0,
+          "pipeline_us": 6219.74411,
+          "weight_us": 235.481596
+        },
+        {
+          "mode": 1,
+          "variant": 2,
+          "pipeline_us": 6126.214218,
+          "weight_us": 180.8128
+        },
+        {
+          "mode": 1,
+          "variant": 4,
+          "pipeline_us": 6117.171097,
+          "weight_us": 165.382397
+        },
+        {
+          "mode": 1,
+          "variant": 8,
+          "pipeline_us": 6232.735825,
+          "weight_us": 291.091204
+        },
+        {
+          "mode": 1,
+          "variant": -1,
+          "pipeline_us": 5954.079819,
+          "weight_us": 0.0
+        }
+      ]
+    }
+  ]
+}

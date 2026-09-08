@@ -1,0 +1,6 @@
+{
+  "token": "prefill-fp16-large-1788901782086468004-gpu1",
+  "before": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 5, 0, 405, 0\n",
+  "pid": 1289658,
+  "controller_sha256": "ea00dd802a13170374698601123757554e0effd16796c2eb2b53f2394df250d9"
+}

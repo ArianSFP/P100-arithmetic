@@ -1,0 +1,21 @@
+========= COMPUTE-SANITIZER
+{"type":"device","sm":56,"blas":120803,"M":4352,"N":2048,"K":5120}
+{"type":"fused_input_check","weights":22282240,"activations":10485760,"different":0}
+{"type":"m_pad_check","mode":0,"layout":2,"pad":0,"different":0}
+{"type":"m_pad_check","mode":1,"layout":2,"pad":0,"different":0}
+{"type":"m_pad_check","mode":0,"layout":6,"pad":0,"different":0}
+{"type":"m_pad_check","mode":1,"layout":6,"pad":0,"different":0}
+{"type":"m_pad_check","mode":0,"layout":2,"pad":128,"different":0}
+{"type":"m_pad_check","mode":1,"layout":2,"pad":128,"different":0}
+{"type":"m_pad_check","mode":0,"layout":6,"pad":128,"different":0}
+{"type":"m_pad_check","mode":1,"layout":6,"pad":128,"different":0}
+{"type":"m_pad_check","mode":0,"layout":2,"pad":256,"different":0}
+{"type":"m_pad_check","mode":1,"layout":2,"pad":256,"different":0}
+{"type":"m_pad_check","mode":0,"layout":6,"pad":256,"different":0}
+{"type":"m_pad_check","mode":1,"layout":6,"pad":256,"different":0}
+{"type":"m_pad_check","mode":0,"layout":2,"pad":512,"different":0}
+{"type":"m_pad_check","mode":1,"layout":2,"pad":512,"different":0}
+{"type":"m_pad_check","mode":0,"layout":6,"pad":512,"different":0}
+{"type":"m_pad_check","mode":1,"layout":6,"pad":512,"different":0}
+{"type":"post_timing_check","configs":16,"different":0}
+========= ERROR SUMMARY: 0 errors

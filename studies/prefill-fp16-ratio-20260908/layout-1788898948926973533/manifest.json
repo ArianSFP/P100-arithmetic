@@ -1,0 +1,9 @@
+{
+  "hashes": {
+    "layout": "c9fb6a98028f1dd530cb4c981a186118d914802381f0191663d27133f1a660e7",
+    "layout.cu": "ae36cb5b1da2c275a6855fc6496ba935f445040e2b31035b51f467b21c1b2546",
+    "run_layout.py": "59b749945bc6bc4b69e94742169d05cd036ad69ea4155530586c31703a95fa38"
+  },
+  "before": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 5, 0, 405, 0\n",
+  "token": "prefill-fp16-ratio-1788898948832916586-gpu1"
+}

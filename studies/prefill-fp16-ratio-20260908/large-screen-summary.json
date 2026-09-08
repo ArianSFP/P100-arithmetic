@@ -1,0 +1,3410 @@
+[
+  {
+    "M": 5120,
+    "N": 2048,
+    "K": 4352,
+    "file": "large-1788899908819010531/down-2048-screen/stdout.jsonl",
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 0,
+        "gemm_us": 12027.615547,
+        "pipeline_us": 12337.471962
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 0,
+        "gemm_us": 12030.608177,
+        "pipeline_us": 12266.608238
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 0,
+        "gemm_us": 11379.039764,
+        "pipeline_us": 11661.472321
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 0,
+        "gemm_us": 21945.02449,
+        "pipeline_us": 22216.415405
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 0,
+        "gemm_us": 11100.30365,
+        "pipeline_us": 11331.711769
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 0,
+        "gemm_us": 10843.855858,
+        "pipeline_us": 11080.207825
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 0,
+        "gemm_us": 5683.167934,
+        "pipeline_us": 6050.479889
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 0,
+        "gemm_us": 13792.079926,
+        "pipeline_us": 14143.055916
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 0,
+        "gemm_us": 5682.879925,
+        "pipeline_us": 6059.519768
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 0,
+        "gemm_us": 5544.223785,
+        "pipeline_us": 5901.199818
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 1,
+        "gemm_us": 12069.439888,
+        "pipeline_us": 12412.384033
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 1,
+        "gemm_us": 12059.167862,
+        "pipeline_us": 12486.895561
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 1,
+        "gemm_us": 10895.199776,
+        "pipeline_us": 11316.080093
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 1,
+        "gemm_us": 11583.408356,
+        "pipeline_us": 12006.719589
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 1,
+        "gemm_us": 10790.65609,
+        "pipeline_us": 11213.456154
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 1,
+        "gemm_us": 10725.008011,
+        "pipeline_us": 11147.839546
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 1,
+        "gemm_us": 5512.320042,
+        "pipeline_us": 6064.288139
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 1,
+        "gemm_us": 5631.76012,
+        "pipeline_us": 6175.280094
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 1,
+        "gemm_us": 5512.832165,
+        "pipeline_us": 6061.664104
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 1,
+        "gemm_us": 5396.624088,
+        "pipeline_us": 5942.527771
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 2,
+        "gemm_us": 11419.455528,
+        "pipeline_us": 11692.751884
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 2,
+        "gemm_us": 11424.192429,
+        "pipeline_us": 11692.687988
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 2,
+        "gemm_us": 10929.391861,
+        "pipeline_us": 11189.920425
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 2,
+        "gemm_us": 21607.055664,
+        "pipeline_us": 21755.535126
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 2,
+        "gemm_us": 10997.119904,
+        "pipeline_us": 11260.560036
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 2,
+        "gemm_us": 10728.655815,
+        "pipeline_us": 10992.447853
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 2,
+        "gemm_us": 5510.879993,
+        "pipeline_us": 5896.927834
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 2,
+        "gemm_us": 12078.576088,
+        "pipeline_us": 11969.599724
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 2,
+        "gemm_us": 5506.847858,
+        "pipeline_us": 5897.3279
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 2,
+        "gemm_us": 5474.112034,
+        "pipeline_us": 5859.344006
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 3,
+        "gemm_us": 10846.367836,
+        "pipeline_us": 11290.287971
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 3,
+        "gemm_us": 11435.872078,
+        "pipeline_us": 11893.631935
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 3,
+        "gemm_us": 10848.671913,
+        "pipeline_us": 11195.055962
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 3,
+        "gemm_us": 11559.007645,
+        "pipeline_us": 12009.231567
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 3,
+        "gemm_us": 10727.647781,
+        "pipeline_us": 11180.080414
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 3,
+        "gemm_us": 10570.287704,
+        "pipeline_us": 11020.432472
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 3,
+        "gemm_us": 5352.191925,
+        "pipeline_us": 5924.287796
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 3,
+        "gemm_us": 5507.135868,
+        "pipeline_us": 6080.048084
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 3,
+        "gemm_us": 5346.623898,
+        "pipeline_us": 5926.191807
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 3,
+        "gemm_us": 5332.367897,
+        "pipeline_us": 5906.095982
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 4,
+        "gemm_us": 12080.911636,
+        "pipeline_us": 12405.808449
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 4,
+        "gemm_us": 12074.959755,
+        "pipeline_us": 12402.784348
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 4,
+        "gemm_us": 11255.711555,
+        "pipeline_us": 11552.096367
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 4,
+        "gemm_us": 17446.048737,
+        "pipeline_us": 18088.943481
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 4,
+        "gemm_us": 11072.28756,
+        "pipeline_us": 11485.600471
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 4,
+        "gemm_us": 10831.952095,
+        "pipeline_us": 11246.704102
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 4,
+        "gemm_us": 5655.856133,
+        "pipeline_us": 6043.519974
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 4,
+        "gemm_us": 7626.992226,
+        "pipeline_us": 8295.647621
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 4,
+        "gemm_us": 5653.967857,
+        "pipeline_us": 6040.592194
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 4,
+        "gemm_us": 5538.256168,
+        "pipeline_us": 5923.48814
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 5,
+        "gemm_us": 11422.927856,
+        "pipeline_us": 12035.023689
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 5,
+        "gemm_us": 11414.959908,
+        "pipeline_us": 12020.256042
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 5,
+        "gemm_us": 10868.17646,
+        "pipeline_us": 11578.463554
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 5,
+        "gemm_us": 16861.055374,
+        "pipeline_us": 17447.807312
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 5,
+        "gemm_us": 10983.023643,
+        "pipeline_us": 11586.319923
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 5,
+        "gemm_us": 10722.080231,
+        "pipeline_us": 11325.920105
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 5,
+        "gemm_us": 5502.048016,
+        "pipeline_us": 6078.735828
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 5,
+        "gemm_us": 5822.783947,
+        "pipeline_us": 6387.904167
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 5,
+        "gemm_us": 5500.112057,
+        "pipeline_us": 6075.920105
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 5,
+        "gemm_us": 5469.344139,
+        "pipeline_us": 6043.488026
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 6,
+        "gemm_us": 11946.000099,
+        "pipeline_us": 12468.015671
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 6,
+        "gemm_us": 12024.368286,
+        "pipeline_us": 12395.0243
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 6,
+        "gemm_us": 10995.120049,
+        "pipeline_us": 11433.759689
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 6,
+        "gemm_us": 11567.567825,
+        "pipeline_us": 12013.983727
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 6,
+        "gemm_us": 10786.65638,
+        "pipeline_us": 11227.392197
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 6,
+        "gemm_us": 10722.751617,
+        "pipeline_us": 11166.175842
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 6,
+        "gemm_us": 5507.647991,
+        "pipeline_us": 5922.41621
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 6,
+        "gemm_us": 5616.015911,
+        "pipeline_us": 6032.864094
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 6,
+        "gemm_us": 5507.215977,
+        "pipeline_us": 5921.904087
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 6,
+        "gemm_us": 5396.704197,
+        "pipeline_us": 5811.696053
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 7,
+        "gemm_us": 10737.327576,
+        "pipeline_us": 11371.808052
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 7,
+        "gemm_us": 11411.791801,
+        "pipeline_us": 12045.61615
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 7,
+        "gemm_us": 10842.672348,
+        "pipeline_us": 11370.71991
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 7,
+        "gemm_us": 11446.368217,
+        "pipeline_us": 12176.688194
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 7,
+        "gemm_us": 10723.888397,
+        "pipeline_us": 11353.311539
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 7,
+        "gemm_us": 10569.4561,
+        "pipeline_us": 11199.968338
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 7,
+        "gemm_us": 5348.303795,
+        "pipeline_us": 5949.888229
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 7,
+        "gemm_us": 5496.592045,
+        "pipeline_us": 6097.248077
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 7,
+        "gemm_us": 5346.240044,
+        "pipeline_us": 5949.967861
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 7,
+        "gemm_us": 5331.75993,
+        "pipeline_us": 5933.152199
+      }
+    ]
+  },
+  {
+    "M": 5120,
+    "N": 4096,
+    "K": 4352,
+    "file": "large-1788899908819010531/down-4096-screen/stdout.jsonl",
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 0,
+        "gemm_us": 23922.096252,
+        "pipeline_us": 24691.520691
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 0,
+        "gemm_us": 24423.75946,
+        "pipeline_us": 24585.216522
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 0,
+        "gemm_us": 23631.551743,
+        "pipeline_us": 23924.367905
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 0,
+        "gemm_us": 48859.375,
+        "pipeline_us": 49143.054962
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 0,
+        "gemm_us": 22526.960373,
+        "pipeline_us": 22869.247437
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 0,
+        "gemm_us": 21660.032272,
+        "pipeline_us": 21994.335175
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 0,
+        "gemm_us": 11523.839951,
+        "pipeline_us": 12179.679871
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 0,
+        "gemm_us": 30367.263794,
+        "pipeline_us": 31469.743729
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 0,
+        "gemm_us": 11523.983955,
+        "pipeline_us": 12178.031921
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 0,
+        "gemm_us": 11078.751564,
+        "pipeline_us": 11657.391548
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 1,
+        "gemm_us": 23829.59938,
+        "pipeline_us": 24450.656891
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 1,
+        "gemm_us": 23927.984238,
+        "pipeline_us": 24447.759628
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 1,
+        "gemm_us": 21635.503769,
+        "pipeline_us": 22153.728485
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 1,
+        "gemm_us": 22990.591049,
+        "pipeline_us": 23720.159531
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 1,
+        "gemm_us": 21793.519974,
+        "pipeline_us": 21941.776276
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 1,
+        "gemm_us": 21437.599182,
+        "pipeline_us": 21965.120316
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 1,
+        "gemm_us": 11007.663727,
+        "pipeline_us": 11777.327538
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 1,
+        "gemm_us": 11097.904205,
+        "pipeline_us": 11918.064117
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 1,
+        "gemm_us": 10985.487938,
+        "pipeline_us": 11758.815765
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 1,
+        "gemm_us": 10782.704353,
+        "pipeline_us": 11551.520348
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 2,
+        "gemm_us": 22896.623611,
+        "pipeline_us": 23290.399551
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 2,
+        "gemm_us": 22802.640915,
+        "pipeline_us": 23193.855286
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 2,
+        "gemm_us": 22259.824753,
+        "pipeline_us": 22754.623413
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 2,
+        "gemm_us": 46560.241699,
+        "pipeline_us": 46934.383392
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 2,
+        "gemm_us": 21663.152695,
+        "pipeline_us": 22058.799744
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 2,
+        "gemm_us": 21428.40004,
+        "pipeline_us": 21820.896149
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 2,
+        "gemm_us": 11053.296089,
+        "pipeline_us": 11667.311668
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 2,
+        "gemm_us": 26474.319458,
+        "pipeline_us": 26600.063324
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 2,
+        "gemm_us": 11051.967621,
+        "pipeline_us": 11676.832199
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 2,
+        "gemm_us": 10937.040329,
+        "pipeline_us": 11571.231842
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 3,
+        "gemm_us": 22795.951843,
+        "pipeline_us": 23378.143311
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 3,
+        "gemm_us": 22797.023773,
+        "pipeline_us": 23374.015808
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 3,
+        "gemm_us": 21331.951141,
+        "pipeline_us": 21803.647995
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 3,
+        "gemm_us": 22840.175629,
+        "pipeline_us": 23431.808472
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 3,
+        "gemm_us": 21478.063583,
+        "pipeline_us": 22112.464905
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 3,
+        "gemm_us": 21129.776001,
+        "pipeline_us": 21704.048157
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 3,
+        "gemm_us": 10695.551872,
+        "pipeline_us": 11499.88842
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 3,
+        "gemm_us": 10858.832359,
+        "pipeline_us": 11682.847977
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 3,
+        "gemm_us": 10676.480293,
+        "pipeline_us": 11499.520302
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 3,
+        "gemm_us": 10654.975891,
+        "pipeline_us": 11475.98362
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 4,
+        "gemm_us": 23929.391861,
+        "pipeline_us": 25017.20047
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 4,
+        "gemm_us": 24363.456726,
+        "pipeline_us": 25026.55983
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 4,
+        "gemm_us": 23474.000931,
+        "pipeline_us": 24240.543365
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 4,
+        "gemm_us": 47142.974854,
+        "pipeline_us": 47809.47113
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 4,
+        "gemm_us": 22047.792435,
+        "pipeline_us": 22815.296173
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 4,
+        "gemm_us": 21650.495529,
+        "pipeline_us": 22354.911804
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 4,
+        "gemm_us": 11392.208099,
+        "pipeline_us": 12109.487534
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 4,
+        "gemm_us": 28435.024261,
+        "pipeline_us": 29308.128357
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 4,
+        "gemm_us": 11423.071861,
+        "pipeline_us": 12061.984062
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 4,
+        "gemm_us": 11071.21563,
+        "pipeline_us": 11718.607903
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 5,
+        "gemm_us": 22802.143097,
+        "pipeline_us": 23695.648193
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 5,
+        "gemm_us": 22798.400879,
+        "pipeline_us": 23693.712234
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 5,
+        "gemm_us": 22032.991409,
+        "pipeline_us": 22990.064621
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 5,
+        "gemm_us": 45107.200623,
+        "pipeline_us": 46025.344849
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 5,
+        "gemm_us": 21557.056427,
+        "pipeline_us": 22457.424164
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 5,
+        "gemm_us": 21427.679062,
+        "pipeline_us": 22322.816849
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 5,
+        "gemm_us": 11005.200386,
+        "pipeline_us": 11840.44838
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 5,
+        "gemm_us": 19902.975082,
+        "pipeline_us": 19467.536926
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 5,
+        "gemm_us": 11003.10421,
+        "pipeline_us": 11844.575882
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 5,
+        "gemm_us": 10930.959702,
+        "pipeline_us": 11765.376091
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 6,
+        "gemm_us": 23908.895493,
+        "pipeline_us": 24675.487518
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 6,
+        "gemm_us": 23914.97612,
+        "pipeline_us": 24761.247635
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 6,
+        "gemm_us": 21739.055634,
+        "pipeline_us": 22500.032425
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 6,
+        "gemm_us": 22906.9767,
+        "pipeline_us": 23752.832413
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 6,
+        "gemm_us": 21209.056854,
+        "pipeline_us": 21884.880066
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 6,
+        "gemm_us": 21428.287506,
+        "pipeline_us": 22187.120438
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 6,
+        "gemm_us": 10992.671967,
+        "pipeline_us": 11688.672066
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 6,
+        "gemm_us": 11108.752251,
+        "pipeline_us": 11805.775642
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 6,
+        "gemm_us": 10987.487793,
+        "pipeline_us": 11688.60817
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 6,
+        "gemm_us": 10781.744003,
+        "pipeline_us": 11482.912064
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 7,
+        "gemm_us": 22801.519394,
+        "pipeline_us": 23745.407104
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 7,
+        "gemm_us": 22808.864594,
+        "pipeline_us": 23754.911423
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 7,
+        "gemm_us": 21232.51152,
+        "pipeline_us": 22274.400711
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 7,
+        "gemm_us": 22841.279984,
+        "pipeline_us": 23790.704727
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 7,
+        "gemm_us": 21487.520218,
+        "pipeline_us": 22473.760605
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 7,
+        "gemm_us": 21302.719116,
+        "pipeline_us": 22079.536438
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 7,
+        "gemm_us": 10738.623619,
+        "pipeline_us": 11588.80043
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 7,
+        "gemm_us": 10895.855904,
+        "pipeline_us": 11759.552002
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 7,
+        "gemm_us": 10675.999641,
+        "pipeline_us": 11567.152023
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 7,
+        "gemm_us": 10653.039932,
+        "pipeline_us": 11540.975571
+      }
+    ]
+  },
+  {
+    "M": 5120,
+    "N": 8192,
+    "K": 4352,
+    "file": "large-1788899908819010531/down-8192-screen/stdout.jsonl",
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 0,
+        "gemm_us": 48731.807709,
+        "pipeline_us": 49717.552185
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 0,
+        "gemm_us": 49208.686829,
+        "pipeline_us": 49713.5849
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 0,
+        "gemm_us": 50283.615112,
+        "pipeline_us": 50713.855743
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 0,
+        "gemm_us": 103762.252808,
+        "pipeline_us": 104153.694153
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 0,
+        "gemm_us": 49105.918884,
+        "pipeline_us": 49578.609467
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 0,
+        "gemm_us": 41509.0065,
+        "pipeline_us": 42045.600891
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 0,
+        "gemm_us": 21349.216461,
+        "pipeline_us": 22377.71225
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 0,
+        "gemm_us": 67326.461792,
+        "pipeline_us": 68850.769043
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 0,
+        "gemm_us": 27028.560638,
+        "pipeline_us": 27693.216324
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 0,
+        "gemm_us": 21740.175247,
+        "pipeline_us": 22769.968033
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 1,
+        "gemm_us": 48552.448273,
+        "pipeline_us": 49671.569824
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 1,
+        "gemm_us": 48992.015839,
+        "pipeline_us": 49521.759033
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 1,
+        "gemm_us": 43867.950439,
+        "pipeline_us": 44283.889771
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 1,
+        "gemm_us": 47044.223785,
+        "pipeline_us": 48316.783905
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 1,
+        "gemm_us": 42742.702484,
+        "pipeline_us": 43256.832123
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 1,
+        "gemm_us": 41334.640503,
+        "pipeline_us": 41993.408203
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 1,
+        "gemm_us": 21553.90358,
+        "pipeline_us": 22766.91246
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 1,
+        "gemm_us": 21977.327347,
+        "pipeline_us": 23827.871323
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 1,
+        "gemm_us": 22220.672607,
+        "pipeline_us": 23448.848724
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 1,
+        "gemm_us": 22118.848801,
+        "pipeline_us": 23096.544266
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 2,
+        "gemm_us": 46240.783691,
+        "pipeline_us": 47042.385101
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 2,
+        "gemm_us": 46719.841003,
+        "pipeline_us": 47369.472504
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 2,
+        "gemm_us": 45094.31839,
+        "pipeline_us": 45613.311768
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 2,
+        "gemm_us": 97911.827087,
+        "pipeline_us": 98719.75708
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 2,
+        "gemm_us": 43883.377075,
+        "pipeline_us": 44672.431946
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 2,
+        "gemm_us": 41059.53598,
+        "pipeline_us": 41703.632355
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 2,
+        "gemm_us": 21858.287811,
+        "pipeline_us": 22561.296463
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 2,
+        "gemm_us": 59278.751373,
+        "pipeline_us": 59779.712677
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 2,
+        "gemm_us": 22272.464752,
+        "pipeline_us": 23660.640717
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 2,
+        "gemm_us": 22551.263809,
+        "pipeline_us": 23449.199677
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 3,
+        "gemm_us": 42184.047699,
+        "pipeline_us": 42997.825623
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 3,
+        "gemm_us": 45668.926239,
+        "pipeline_us": 46967.487335
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 3,
+        "gemm_us": 42703.24707,
+        "pipeline_us": 43003.551483
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 3,
+        "gemm_us": 46751.647949,
+        "pipeline_us": 47804.382324
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 3,
+        "gemm_us": 42399.406433,
+        "pipeline_us": 43118.881226
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 3,
+        "gemm_us": 40719.425201,
+        "pipeline_us": 41483.921051
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 3,
+        "gemm_us": 21295.360565,
+        "pipeline_us": 22615.407944
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 3,
+        "gemm_us": 21625.167847,
+        "pipeline_us": 23445.167542
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 3,
+        "gemm_us": 21577.232361,
+        "pipeline_us": 22969.135284
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 3,
+        "gemm_us": 21873.952866,
+        "pipeline_us": 22794.336319
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 4,
+        "gemm_us": 48716.384888,
+        "pipeline_us": 50334.640503
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 4,
+        "gemm_us": 49145.118713,
+        "pipeline_us": 50480.239868
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 4,
+        "gemm_us": 50106.529236,
+        "pipeline_us": 51201.198578
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 4,
+        "gemm_us": 106476.722717,
+        "pipeline_us": 107472.65625
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 4,
+        "gemm_us": 50372.79892,
+        "pipeline_us": 51749.008179
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 4,
+        "gemm_us": 41549.45755,
+        "pipeline_us": 42814.254761
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 4,
+        "gemm_us": 22517.328262,
+        "pipeline_us": 22961.984634
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 4,
+        "gemm_us": 70112.579346,
+        "pipeline_us": 71933.059692
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 4,
+        "gemm_us": 27210.191727,
+        "pipeline_us": 28558.847427
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 4,
+        "gemm_us": 21936.080933,
+        "pipeline_us": 22993.312836
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 5,
+        "gemm_us": 46313.774109,
+        "pipeline_us": 47647.888184
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 5,
+        "gemm_us": 46413.841248,
+        "pipeline_us": 48158.992767
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 5,
+        "gemm_us": 46182.350159,
+        "pipeline_us": 47925.457001
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 5,
+        "gemm_us": 103669.212341,
+        "pipeline_us": 105007.148743
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 5,
+        "gemm_us": 45976.272583,
+        "pipeline_us": 47330.223083
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 5,
+        "gemm_us": 41070.079803,
+        "pipeline_us": 42520.366669
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 5,
+        "gemm_us": 21893.344879,
+        "pipeline_us": 23283.807755
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 5,
+        "gemm_us": 65451.889038,
+        "pipeline_us": 66676.109314
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 5,
+        "gemm_us": 23278.944016,
+        "pipeline_us": 24959.7435
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 5,
+        "gemm_us": 21891.168594,
+        "pipeline_us": 22907.024384
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 6,
+        "gemm_us": 48414.558411,
+        "pipeline_us": 50291.503906
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 6,
+        "gemm_us": 48801.006317,
+        "pipeline_us": 50079.662323
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 6,
+        "gemm_us": 43712.89444,
+        "pipeline_us": 44449.710846
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 6,
+        "gemm_us": 46648.609161,
+        "pipeline_us": 48551.422119
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 6,
+        "gemm_us": 42690.799713,
+        "pipeline_us": 43777.454376
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 6,
+        "gemm_us": 41274.719238,
+        "pipeline_us": 42473.953247
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 6,
+        "gemm_us": 21548.656464,
+        "pipeline_us": 22858.800888
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 6,
+        "gemm_us": 22019.727707,
+        "pipeline_us": 24328.863144
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 6,
+        "gemm_us": 22605.264664,
+        "pipeline_us": 23597.055435
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 6,
+        "gemm_us": 22122.816086,
+        "pipeline_us": 23194.576263
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 7,
+        "gemm_us": 42252.254486,
+        "pipeline_us": 43686.065674
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 7,
+        "gemm_us": 46045.856476,
+        "pipeline_us": 47857.551575
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 7,
+        "gemm_us": 42205.696106,
+        "pipeline_us": 43676.815033
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 7,
+        "gemm_us": 46672.737122,
+        "pipeline_us": 48561.840057
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 7,
+        "gemm_us": 42368.270874,
+        "pipeline_us": 43460.88028
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 7,
+        "gemm_us": 40669.120789,
+        "pipeline_us": 42129.470825
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 7,
+        "gemm_us": 21297.632217,
+        "pipeline_us": 22795.32814
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 7,
+        "gemm_us": 21502.159119,
+        "pipeline_us": 23843.0233
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 7,
+        "gemm_us": 21700.752258,
+        "pipeline_us": 23119.279861
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 7,
+        "gemm_us": 21844.816208,
+        "pipeline_us": 22980.688095
+      }
+    ]
+  },
+  {
+    "M": 4352,
+    "N": 2048,
+    "K": 5120,
+    "file": "large-1788899908819010531/up-2048-screen/stdout.jsonl",
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 0,
+        "gemm_us": 12206.352234,
+        "pipeline_us": 12470.73555
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 0,
+        "gemm_us": 12215.167999,
+        "pipeline_us": 12484.448433
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 0,
+        "gemm_us": 11345.439911,
+        "pipeline_us": 11699.328423
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 0,
+        "gemm_us": 21942.623138,
+        "pipeline_us": 22233.312607
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 0,
+        "gemm_us": 10866.383553,
+        "pipeline_us": 11121.456146
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 0,
+        "gemm_us": 10621.871948,
+        "pipeline_us": 10874.112129
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 0,
+        "gemm_us": 6107.312202,
+        "pipeline_us": 6464.288235
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 0,
+        "gemm_us": 13056.351662,
+        "pipeline_us": 13035.424232
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 0,
+        "gemm_us": 6102.640152,
+        "pipeline_us": 6464.079857
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 0,
+        "gemm_us": 6513.408184,
+        "pipeline_us": 6867.263794
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 1,
+        "gemm_us": 12154.319763,
+        "pipeline_us": 12615.152359
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 1,
+        "gemm_us": 12160.351753,
+        "pipeline_us": 12511.055946
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 1,
+        "gemm_us": 11156.751633,
+        "pipeline_us": 11466.464043
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 1,
+        "gemm_us": 11491.120338,
+        "pipeline_us": 11938.92765
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 1,
+        "gemm_us": 10579.392433,
+        "pipeline_us": 11021.743774
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 1,
+        "gemm_us": 10502.415657,
+        "pipeline_us": 10942.864418
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 1,
+        "gemm_us": 5932.928085,
+        "pipeline_us": 6478.208065
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 1,
+        "gemm_us": 5918.704033,
+        "pipeline_us": 6455.855846
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 1,
+        "gemm_us": 5929.552078,
+        "pipeline_us": 6479.712009
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 1,
+        "gemm_us": 5821.15221,
+        "pipeline_us": 6366.655827
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 2,
+        "gemm_us": 11447.392464,
+        "pipeline_us": 11735.808372
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 2,
+        "gemm_us": 11443.792343,
+        "pipeline_us": 11732.512474
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 2,
+        "gemm_us": 11152.447701,
+        "pipeline_us": 11428.175926
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 2,
+        "gemm_us": 21174.800873,
+        "pipeline_us": 21579.408646
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 2,
+        "gemm_us": 10774.512291,
+        "pipeline_us": 11058.032036
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 2,
+        "gemm_us": 10508.192062,
+        "pipeline_us": 10792.415619
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 2,
+        "gemm_us": 5932.335854,
+        "pipeline_us": 6317.728043
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 2,
+        "gemm_us": 7756.768227,
+        "pipeline_us": 7873.680115
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 2,
+        "gemm_us": 5929.056168,
+        "pipeline_us": 6319.200039
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 2,
+        "gemm_us": 5393.424034,
+        "pipeline_us": 6296.703815
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 3,
+        "gemm_us": 10745.424271,
+        "pipeline_us": 11219.759941
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 3,
+        "gemm_us": 11547.76001,
+        "pipeline_us": 12019.040108
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 3,
+        "gemm_us": 10745.21637,
+        "pipeline_us": 11223.487854
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 3,
+        "gemm_us": 11466.73584,
+        "pipeline_us": 11944.224358
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 3,
+        "gemm_us": 10519.568443,
+        "pipeline_us": 10993.215561
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 3,
+        "gemm_us": 10361.071587,
+        "pipeline_us": 10831.871986
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 3,
+        "gemm_us": 5761.504173,
+        "pipeline_us": 6337.552071
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 3,
+        "gemm_us": 5923.967838,
+        "pipeline_us": 6491.615772
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 3,
+        "gemm_us": 5758.751869,
+        "pipeline_us": 6338.255882
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 3,
+        "gemm_us": 6263.696194,
+        "pipeline_us": 6838.960171
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 4,
+        "gemm_us": 12096.960068,
+        "pipeline_us": 12395.680428
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 4,
+        "gemm_us": 12202.799797,
+        "pipeline_us": 12397.983551
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 4,
+        "gemm_us": 11365.039825,
+        "pipeline_us": 11653.823853
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 4,
+        "gemm_us": 17522.384644,
+        "pipeline_us": 18007.696152
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 4,
+        "gemm_us": 10853.615761,
+        "pipeline_us": 11257.823944
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 4,
+        "gemm_us": 10610.912323,
+        "pipeline_us": 11018.56041
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 4,
+        "gemm_us": 6092.895985,
+        "pipeline_us": 6475.952148
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 4,
+        "gemm_us": 7380.864143,
+        "pipeline_us": 7808.9118
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 4,
+        "gemm_us": 6091.695786,
+        "pipeline_us": 6475.168228
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 4,
+        "gemm_us": 6507.535934,
+        "pipeline_us": 6887.423992
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 5,
+        "gemm_us": 11441.391945,
+        "pipeline_us": 12028.528214
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 5,
+        "gemm_us": 11434.687614,
+        "pipeline_us": 12025.808334
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 5,
+        "gemm_us": 11003.472328,
+        "pipeline_us": 11593.615532
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 5,
+        "gemm_us": 16524.112701,
+        "pipeline_us": 17036.287308
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 5,
+        "gemm_us": 10767.439842,
+        "pipeline_us": 11357.69558
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 5,
+        "gemm_us": 10501.872063,
+        "pipeline_us": 11094.047546
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 5,
+        "gemm_us": 5927.392006,
+        "pipeline_us": 6495.679855
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 5,
+        "gemm_us": 6314.383984,
+        "pipeline_us": 6896.863937
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 5,
+        "gemm_us": 5923.247814,
+        "pipeline_us": 6495.967865
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 5,
+        "gemm_us": 5392.464161,
+        "pipeline_us": 6472.176075
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 6,
+        "gemm_us": 11942.784309,
+        "pipeline_us": 12384.400368
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 6,
+        "gemm_us": 12048.25592,
+        "pipeline_us": 12472.703934
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 6,
+        "gemm_us": 11023.584366,
+        "pipeline_us": 11454.799652
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 6,
+        "gemm_us": 11486.448288,
+        "pipeline_us": 11922.160149
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 6,
+        "gemm_us": 10576.800346,
+        "pipeline_us": 11011.471748
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 6,
+        "gemm_us": 10503.071785,
+        "pipeline_us": 10937.871933
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 6,
+        "gemm_us": 5930.096149,
+        "pipeline_us": 6344.768047
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 6,
+        "gemm_us": 5913.216114,
+        "pipeline_us": 6325.312138
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 6,
+        "gemm_us": 5927.728176,
+        "pipeline_us": 6345.376015
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 6,
+        "gemm_us": 5821.248055,
+        "pipeline_us": 6745.103836
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 7,
+        "gemm_us": 10748.127937,
+        "pipeline_us": 11365.216255
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 7,
+        "gemm_us": 11440.079689,
+        "pipeline_us": 12061.296463
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 7,
+        "gemm_us": 10747.920036,
+        "pipeline_us": 11369.5364
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 7,
+        "gemm_us": 11466.591835,
+        "pipeline_us": 12083.616257
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 7,
+        "gemm_us": 10512.576103,
+        "pipeline_us": 11135.824203
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 7,
+        "gemm_us": 10361.280441,
+        "pipeline_us": 10984.368324
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 7,
+        "gemm_us": 5760.543823,
+        "pipeline_us": 6360.51178
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 7,
+        "gemm_us": 5917.920113,
+        "pipeline_us": 6513.631821
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 7,
+        "gemm_us": 5758.096218,
+        "pipeline_us": 6359.360218
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 7,
+        "gemm_us": 6262.112141,
+        "pipeline_us": 6862.927914
+      }
+    ]
+  },
+  {
+    "M": 4352,
+    "N": 4096,
+    "K": 5120,
+    "file": "large-1788899908819010531/up-4096-screen/stdout.jsonl",
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 0,
+        "gemm_us": 23828.208923,
+        "pipeline_us": 24221.839905
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 0,
+        "gemm_us": 24015.584946,
+        "pipeline_us": 24321.0392
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 0,
+        "gemm_us": 23746.591568,
+        "pipeline_us": 24156.591415
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 0,
+        "gemm_us": 49160.785675,
+        "pipeline_us": 49376.384735
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 0,
+        "gemm_us": 21766.815186,
+        "pipeline_us": 22158.447266
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 0,
+        "gemm_us": 21225.343704,
+        "pipeline_us": 21597.999573
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 0,
+        "gemm_us": 11234.560013,
+        "pipeline_us": 11920.687675
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 0,
+        "gemm_us": 29710.655212,
+        "pipeline_us": 30498.416901
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 0,
+        "gemm_us": 11249.471664,
+        "pipeline_us": 11813.53569
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 0,
+        "gemm_us": 10848.480225,
+        "pipeline_us": 11426.927567
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 1,
+        "gemm_us": 23722.335815,
+        "pipeline_us": 24294.063568
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 1,
+        "gemm_us": 23728.79982,
+        "pipeline_us": 24289.871216
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 1,
+        "gemm_us": 21774.208069,
+        "pipeline_us": 22456.30455
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 1,
+        "gemm_us": 22963.039398,
+        "pipeline_us": 23640.480042
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 1,
+        "gemm_us": 21174.991608,
+        "pipeline_us": 21700.704575
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 1,
+        "gemm_us": 20988.639832,
+        "pipeline_us": 21545.984268
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 1,
+        "gemm_us": 10777.392387,
+        "pipeline_us": 11545.712471
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 1,
+        "gemm_us": 10996.928215,
+        "pipeline_us": 11761.88755
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 1,
+        "gemm_us": 10776.464462,
+        "pipeline_us": 11545.856476
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 1,
+        "gemm_us": 10558.015823,
+        "pipeline_us": 11327.456474
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 2,
+        "gemm_us": 22983.343124,
+        "pipeline_us": 23411.119461
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 2,
+        "gemm_us": 22980.991364,
+        "pipeline_us": 23418.19191
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 2,
+        "gemm_us": 22063.903809,
+        "pipeline_us": 22437.728882
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 2,
+        "gemm_us": 46845.680237,
+        "pipeline_us": 47307.247162
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 2,
+        "gemm_us": 21575.59967,
+        "pipeline_us": 21997.631073
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 2,
+        "gemm_us": 20996.543884,
+        "pipeline_us": 21424.127579
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 2,
+        "gemm_us": 10788.687706,
+        "pipeline_us": 11426.431656
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 2,
+        "gemm_us": 20481.456757,
+        "pipeline_us": 21676.416397
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 2,
+        "gemm_us": 10784.815788,
+        "pipeline_us": 11427.71244
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 2,
+        "gemm_us": 10702.879906,
+        "pipeline_us": 11340.895653
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 3,
+        "gemm_us": 21204.751968,
+        "pipeline_us": 21817.775726
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 3,
+        "gemm_us": 22755.792618,
+        "pipeline_us": 23479.120255
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 3,
+        "gemm_us": 21321.0392,
+        "pipeline_us": 21817.056656
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 3,
+        "gemm_us": 22927.10495,
+        "pipeline_us": 23543.151855
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 3,
+        "gemm_us": 21017.328262,
+        "pipeline_us": 21634.784698
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 3,
+        "gemm_us": 20704.048157,
+        "pipeline_us": 21320.640564
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 3,
+        "gemm_us": 10468.336105,
+        "pipeline_us": 11295.32814
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 3,
+        "gemm_us": 10758.992195,
+        "pipeline_us": 11584.416389
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 3,
+        "gemm_us": 10466.863632,
+        "pipeline_us": 11293.984413
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 3,
+        "gemm_us": 10435.839653,
+        "pipeline_us": 11260.144234
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 4,
+        "gemm_us": 23831.951141,
+        "pipeline_us": 24517.456055
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 4,
+        "gemm_us": 23984.111786,
+        "pipeline_us": 24663.648605
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 4,
+        "gemm_us": 23601.551056,
+        "pipeline_us": 24203.119278
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 4,
+        "gemm_us": 47853.809357,
+        "pipeline_us": 48564.224243
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 4,
+        "gemm_us": 21740.703583,
+        "pipeline_us": 22436.527252
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 4,
+        "gemm_us": 21222.192764,
+        "pipeline_us": 21902.767181
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 4,
+        "gemm_us": 11212.544441,
+        "pipeline_us": 11797.023773
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 4,
+        "gemm_us": 28408.527374,
+        "pipeline_us": 29356.624603
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 4,
+        "gemm_us": 11160.719872,
+        "pipeline_us": 11833.647728
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 4,
+        "gemm_us": 10846.096039,
+        "pipeline_us": 11480.031967
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 5,
+        "gemm_us": 22981.887817,
+        "pipeline_us": 23861.743927
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 5,
+        "gemm_us": 22977.600098,
+        "pipeline_us": 23860.336304
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 5,
+        "gemm_us": 21979.343414,
+        "pipeline_us": 22841.712952
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 5,
+        "gemm_us": 46609.329224,
+        "pipeline_us": 47445.152283
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 5,
+        "gemm_us": 21568.511963,
+        "pipeline_us": 22433.376312
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 5,
+        "gemm_us": 20997.247696,
+        "pipeline_us": 21869.64798
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 5,
+        "gemm_us": 10779.696465,
+        "pipeline_us": 11603.311539
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 5,
+        "gemm_us": 16155.887604,
+        "pipeline_us": 17133.63266
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 5,
+        "gemm_us": 10780.079842,
+        "pipeline_us": 11610.032082
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 5,
+        "gemm_us": 10701.616287,
+        "pipeline_us": 11522.064209
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 6,
+        "gemm_us": 23729.64859,
+        "pipeline_us": 24475.856781
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 6,
+        "gemm_us": 23721.055984,
+        "pipeline_us": 24463.327408
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 6,
+        "gemm_us": 21780.784607,
+        "pipeline_us": 22503.664017
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 6,
+        "gemm_us": 22872.463226,
+        "pipeline_us": 23810.848236
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 6,
+        "gemm_us": 21137.807846,
+        "pipeline_us": 21877.855301
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 6,
+        "gemm_us": 20986.976624,
+        "pipeline_us": 21763.935089
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 6,
+        "gemm_us": 10834.367752,
+        "pipeline_us": 11524.847984
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 6,
+        "gemm_us": 11016.91246,
+        "pipeline_us": 11690.688133
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 6,
+        "gemm_us": 10773.376465,
+        "pipeline_us": 11467.616081
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 6,
+        "gemm_us": 10558.639526,
+        "pipeline_us": 11248.175621
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 7,
+        "gemm_us": 21321.456909,
+        "pipeline_us": 22129.135132
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 7,
+        "gemm_us": 22858.976364,
+        "pipeline_us": 23797.296524
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 7,
+        "gemm_us": 21212.848663,
+        "pipeline_us": 22131.120682
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 7,
+        "gemm_us": 22910.560608,
+        "pipeline_us": 23858.112335
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 7,
+        "gemm_us": 21017.408371,
+        "pipeline_us": 21948.959351
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 7,
+        "gemm_us": 20706.079483,
+        "pipeline_us": 21634.176254
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 7,
+        "gemm_us": 10468.912125,
+        "pipeline_us": 11345.487595
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 7,
+        "gemm_us": 10760.99205,
+        "pipeline_us": 11640.84816
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 7,
+        "gemm_us": 10467.455864,
+        "pipeline_us": 11346.30394
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 7,
+        "gemm_us": 10434.335709,
+        "pipeline_us": 11312.368393
+      }
+    ]
+  },
+  {
+    "M": 4352,
+    "N": 8192,
+    "K": 5120,
+    "file": "large-1788899908819010531/up-8192-screen/stdout.jsonl",
+    "configs": [
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 0,
+        "gemm_us": 48432.415009,
+        "pipeline_us": 49097.297668
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 0,
+        "gemm_us": 48720.142365,
+        "pipeline_us": 49570.289612
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 0,
+        "gemm_us": 50359.43985,
+        "pipeline_us": 50864.063263
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 0,
+        "gemm_us": 103127.13623,
+        "pipeline_us": 104284.095764
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 0,
+        "gemm_us": 46700.527191,
+        "pipeline_us": 47686.096191
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 0,
+        "gemm_us": 41965.984344,
+        "pipeline_us": 43041.728973
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 0,
+        "gemm_us": 21685.136795,
+        "pipeline_us": 22711.984634
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 0,
+        "gemm_us": 68945.053101,
+        "pipeline_us": 68900.718689
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 0,
+        "gemm_us": 26408.54454,
+        "pipeline_us": 27148.672104
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 0,
+        "gemm_us": 21681.247711,
+        "pipeline_us": 22711.248398
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 1,
+        "gemm_us": 48266.399384,
+        "pipeline_us": 48850.078583
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 1,
+        "gemm_us": 48019.824982,
+        "pipeline_us": 48486.095428
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 1,
+        "gemm_us": 43026.416779,
+        "pipeline_us": 43763.694763
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 1,
+        "gemm_us": 46486.160278,
+        "pipeline_us": 47369.697571
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 1,
+        "gemm_us": 42070.095062,
+        "pipeline_us": 42771.408081
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 1,
+        "gemm_us": 41968.238831,
+        "pipeline_us": 42758.094788
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 1,
+        "gemm_us": 21100.032806,
+        "pipeline_us": 22314.735413
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 1,
+        "gemm_us": 21726.064682,
+        "pipeline_us": 23557.840347
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 1,
+        "gemm_us": 22022.575378,
+        "pipeline_us": 23075.824738
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 1,
+        "gemm_us": 21291.999817,
+        "pipeline_us": 22423.471451
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 2,
+        "gemm_us": 45662.433624,
+        "pipeline_us": 46173.583984
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 2,
+        "gemm_us": 45629.28009,
+        "pipeline_us": 46206.192017
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 2,
+        "gemm_us": 44584.575653,
+        "pipeline_us": 45289.505005
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 2,
+        "gemm_us": 97460.30426,
+        "pipeline_us": 98272.499084
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 2,
+        "gemm_us": 43084.751129,
+        "pipeline_us": 43944.75174
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 2,
+        "gemm_us": 41964.881897,
+        "pipeline_us": 42686.927795
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 2,
+        "gemm_us": 21395.967484,
+        "pipeline_us": 22529.296875
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 2,
+        "gemm_us": 52597.232819,
+        "pipeline_us": 54874.977112
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 2,
+        "gemm_us": 21764.255524,
+        "pipeline_us": 22879.087448
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 2,
+        "gemm_us": 21391.759872,
+        "pipeline_us": 22532.896042
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 3,
+        "gemm_us": 45499.713898,
+        "pipeline_us": 46412.654877
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 3,
+        "gemm_us": 45383.182526,
+        "pipeline_us": 46307.777405
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 3,
+        "gemm_us": 42228.351593,
+        "pipeline_us": 43020.305634
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 3,
+        "gemm_us": 46207.038879,
+        "pipeline_us": 47510.879517
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 3,
+        "gemm_us": 42054.782867,
+        "pipeline_us": 42596.416473
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 3,
+        "gemm_us": 41406.223297,
+        "pipeline_us": 42292.015076
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 3,
+        "gemm_us": 20860.591888,
+        "pipeline_us": 22182.17659
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 3,
+        "gemm_us": 21235.79216,
+        "pipeline_us": 22907.47261
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 3,
+        "gemm_us": 21426.912308,
+        "pipeline_us": 22510.240555
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 3,
+        "gemm_us": 21058.271408,
+        "pipeline_us": 22273.023605
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 4,
+        "gemm_us": 48030.334473,
+        "pipeline_us": 49827.552795
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 4,
+        "gemm_us": 48471.439362,
+        "pipeline_us": 49806.76651
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 4,
+        "gemm_us": 49575.59967,
+        "pipeline_us": 51188.591003
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 4,
+        "gemm_us": 105659.744263,
+        "pipeline_us": 107091.697693
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 4,
+        "gemm_us": 50000.991821,
+        "pipeline_us": 50790.016174
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 4,
+        "gemm_us": 41551.456451,
+        "pipeline_us": 43230.625153
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 4,
+        "gemm_us": 21720.287323,
+        "pipeline_us": 22873.344421
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 4,
+        "gemm_us": 73978.065491,
+        "pipeline_us": 74601.18103
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 4,
+        "gemm_us": 26459.775925,
+        "pipeline_us": 27519.472122
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 4,
+        "gemm_us": 21717.008591,
+        "pipeline_us": 22873.439789
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 5,
+        "gemm_us": 46080.638885,
+        "pipeline_us": 47568.225861
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 5,
+        "gemm_us": 45610.305786,
+        "pipeline_us": 47083.633423
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 5,
+        "gemm_us": 45706.943512,
+        "pipeline_us": 46956.577301
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 5,
+        "gemm_us": 102880.462646,
+        "pipeline_us": 104487.724304
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 5,
+        "gemm_us": 46653.553009,
+        "pipeline_us": 48100.719452
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 5,
+        "gemm_us": 41971.328735,
+        "pipeline_us": 43386.478424
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 5,
+        "gemm_us": 21469.039917,
+        "pipeline_us": 22798.959732
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 5,
+        "gemm_us": 68809.837341,
+        "pipeline_us": 70209.533691
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 5,
+        "gemm_us": 23366.912842,
+        "pipeline_us": 24627.056122
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 5,
+        "gemm_us": 21451.408386,
+        "pipeline_us": 22797.775269
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 6,
+        "gemm_us": 48099.281311,
+        "pipeline_us": 49411.727905
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 6,
+        "gemm_us": 47680.751801,
+        "pipeline_us": 49007.263184
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 6,
+        "gemm_us": 42938.800812,
+        "pipeline_us": 44263.233185
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 6,
+        "gemm_us": 46476.192474,
+        "pipeline_us": 47941.680908
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 6,
+        "gemm_us": 43028.48053,
+        "pipeline_us": 44251.20163
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 6,
+        "gemm_us": 42043.678284,
+        "pipeline_us": 43307.537079
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 6,
+        "gemm_us": 21100.496292,
+        "pipeline_us": 22363.744736
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 6,
+        "gemm_us": 21823.423386,
+        "pipeline_us": 23582.639694
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 6,
+        "gemm_us": 22109.455109,
+        "pipeline_us": 23082.527161
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 6,
+        "gemm_us": 21306.016922,
+        "pipeline_us": 22571.95282
+      },
+      {
+        "mode": 0,
+        "algo": -1,
+        "layout": 7,
+        "gemm_us": 45653.759003,
+        "pipeline_us": 47035.47287
+      },
+      {
+        "mode": 0,
+        "algo": 2,
+        "layout": 7,
+        "gemm_us": 45377.281189,
+        "pipeline_us": 46906.68869
+      },
+      {
+        "mode": 0,
+        "algo": 3,
+        "layout": 7,
+        "gemm_us": 42226.463318,
+        "pipeline_us": 43638.561249
+      },
+      {
+        "mode": 0,
+        "algo": 4,
+        "layout": 7,
+        "gemm_us": 46158.401489,
+        "pipeline_us": 48026.40152
+      },
+      {
+        "mode": 0,
+        "algo": 5,
+        "layout": 7,
+        "gemm_us": 41923.278809,
+        "pipeline_us": 43248.92807
+      },
+      {
+        "mode": 0,
+        "algo": 6,
+        "layout": 7,
+        "gemm_us": 41400.047302,
+        "pipeline_us": 42912.017822
+      },
+      {
+        "mode": 1,
+        "algo": 99,
+        "layout": 7,
+        "gemm_us": 20860.28862,
+        "pipeline_us": 22311.040878
+      },
+      {
+        "mode": 1,
+        "algo": 1,
+        "layout": 7,
+        "gemm_us": 21269.136429,
+        "pipeline_us": 23265.968323
+      },
+      {
+        "mode": 1,
+        "algo": 2,
+        "layout": 7,
+        "gemm_us": 21268.304825,
+        "pipeline_us": 22486.911774
+      },
+      {
+        "mode": 1,
+        "algo": 3,
+        "layout": 7,
+        "gemm_us": 20893.007278,
+        "pipeline_us": 22337.104797
+      }
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+SHAPE 5120 2048 4352 exact configs 80
+MODE 0 TOP [{'mode': 0, 'algo': 6, 'layout': 2, 'gemm_us': 10728.655815, 'pipeline_us': 10992.447853}, {'mode': 0, 'algo': 6, 'layout': 3, 'gemm_us': 10570.287704, 'pipeline_us': 11020.432472}, {'mode': 0, 'algo': 6, 'layout': 0, 'gemm_us': 10843.855858, 'pipeline_us': 11080.207825}, {'mode': 0, 'algo': 6, 'layout': 1, 'gemm_us': 10725.008011, 'pipeline_us': 11147.839546}]
+BEST TN {'mode': 0, 'algo': 6, 'layout': 0, 'gemm_us': 10843.855858, 'pipeline_us': 11080.207825}
+MODE 1 TOP [{'mode': 1, 'algo': 3, 'layout': 6, 'gemm_us': 5396.704197, 'pipeline_us': 5811.696053}, {'mode': 1, 'algo': 3, 'layout': 2, 'gemm_us': 5474.112034, 'pipeline_us': 5859.344006}, {'mode': 1, 'algo': 99, 'layout': 2, 'gemm_us': 5510.879993, 'pipeline_us': 5896.927834}, {'mode': 1, 'algo': 2, 'layout': 2, 'gemm_us': 5506.847858, 'pipeline_us': 5897.3279}]
+BEST TN {'mode': 1, 'algo': 3, 'layout': 0, 'gemm_us': 5544.223785, 'pipeline_us': 5901.199818}
+BEST RATIO 1.8914354351559204
+SHAPE 5120 4096 4352 exact configs 80
+MODE 0 TOP [{'mode': 0, 'algo': 6, 'layout': 3, 'gemm_us': 21129.776001, 'pipeline_us': 21704.048157}, {'mode': 0, 'algo': 3, 'layout': 3, 'gemm_us': 21331.951141, 'pipeline_us': 21803.647995}, {'mode': 0, 'algo': 6, 'layout': 2, 'gemm_us': 21428.40004, 'pipeline_us': 21820.896149}, {'mode': 0, 'algo': 5, 'layout': 6, 'gemm_us': 21209.056854, 'pipeline_us': 21884.880066}]
+BEST TN {'mode': 0, 'algo': 6, 'layout': 0, 'gemm_us': 21660.032272, 'pipeline_us': 21994.335175}
+MODE 1 TOP [{'mode': 1, 'algo': 3, 'layout': 3, 'gemm_us': 10654.975891, 'pipeline_us': 11475.98362}, {'mode': 1, 'algo': 3, 'layout': 6, 'gemm_us': 10781.744003, 'pipeline_us': 11482.912064}, {'mode': 1, 'algo': 2, 'layout': 3, 'gemm_us': 10676.480293, 'pipeline_us': 11499.520302}, {'mode': 1, 'algo': 99, 'layout': 3, 'gemm_us': 10695.551872, 'pipeline_us': 11499.88842}]
+BEST TN {'mode': 1, 'algo': 3, 'layout': 0, 'gemm_us': 11078.751564, 'pipeline_us': 11657.391548}
+BEST RATIO 1.8912582028415268
+SHAPE 5120 8192 4352 exact configs 80
+MODE 0 TOP [{'mode': 0, 'algo': 6, 'layout': 3, 'gemm_us': 40719.425201, 'pipeline_us': 41483.921051}, {'mode': 0, 'algo': 6, 'layout': 2, 'gemm_us': 41059.53598, 'pipeline_us': 41703.632355}, {'mode': 0, 'algo': 6, 'layout': 1, 'gemm_us': 41334.640503, 'pipeline_us': 41993.408203}, {'mode': 0, 'algo': 6, 'layout': 0, 'gemm_us': 41509.0065, 'pipeline_us': 42045.600891}]
+BEST TN {'mode': 0, 'algo': 6, 'layout': 0, 'gemm_us': 41509.0065, 'pipeline_us': 42045.600891}
+MODE 1 TOP [{'mode': 1, 'algo': 99, 'layout': 0, 'gemm_us': 21349.216461, 'pipeline_us': 22377.71225}, {'mode': 1, 'algo': 99, 'layout': 2, 'gemm_us': 21858.287811, 'pipeline_us': 22561.296463}, {'mode': 1, 'algo': 99, 'layout': 3, 'gemm_us': 21295.360565, 'pipeline_us': 22615.407944}, {'mode': 1, 'algo': 99, 'layout': 1, 'gemm_us': 21553.90358, 'pipeline_us': 22766.91246}]
+BEST TN {'mode': 1, 'algo': 99, 'layout': 0, 'gemm_us': 21349.216461, 'pipeline_us': 22377.71225}
+BEST RATIO 1.853805276765948
+SHAPE 4352 2048 5120 exact configs 80
+MODE 0 TOP [{'mode': 0, 'algo': 6, 'layout': 2, 'gemm_us': 10508.192062, 'pipeline_us': 10792.415619}, {'mode': 0, 'algo': 6, 'layout': 3, 'gemm_us': 10361.071587, 'pipeline_us': 10831.871986}, {'mode': 0, 'algo': 6, 'layout': 0, 'gemm_us': 10621.871948, 'pipeline_us': 10874.112129}, {'mode': 0, 'algo': 6, 'layout': 6, 'gemm_us': 10503.071785, 'pipeline_us': 10937.871933}]
+BEST TN {'mode': 0, 'algo': 6, 'layout': 0, 'gemm_us': 10621.871948, 'pipeline_us': 10874.112129}
+MODE 1 TOP [{'mode': 1, 'algo': 3, 'layout': 2, 'gemm_us': 5393.424034, 'pipeline_us': 6296.703815}, {'mode': 1, 'algo': 99, 'layout': 2, 'gemm_us': 5932.335854, 'pipeline_us': 6317.728043}, {'mode': 1, 'algo': 2, 'layout': 2, 'gemm_us': 5929.056168, 'pipeline_us': 6319.200039}, {'mode': 1, 'algo': 1, 'layout': 6, 'gemm_us': 5913.216114, 'pipeline_us': 6325.312138}]
+BEST TN {'mode': 1, 'algo': 2, 'layout': 0, 'gemm_us': 6102.640152, 'pipeline_us': 6464.079857}
+BEST RATIO 1.7139786046931922
+SHAPE 4352 4096 5120 exact configs 80
+MODE 0 TOP [{'mode': 0, 'algo': 6, 'layout': 3, 'gemm_us': 20704.048157, 'pipeline_us': 21320.640564}, {'mode': 0, 'algo': 6, 'layout': 2, 'gemm_us': 20996.543884, 'pipeline_us': 21424.127579}, {'mode': 0, 'algo': 6, 'layout': 1, 'gemm_us': 20988.639832, 'pipeline_us': 21545.984268}, {'mode': 0, 'algo': 6, 'layout': 0, 'gemm_us': 21225.343704, 'pipeline_us': 21597.999573}]
+BEST TN {'mode': 0, 'algo': 6, 'layout': 0, 'gemm_us': 21225.343704, 'pipeline_us': 21597.999573}
+MODE 1 TOP [{'mode': 1, 'algo': 3, 'layout': 6, 'gemm_us': 10558.639526, 'pipeline_us': 11248.175621}, {'mode': 1, 'algo': 3, 'layout': 3, 'gemm_us': 10435.839653, 'pipeline_us': 11260.144234}, {'mode': 1, 'algo': 2, 'layout': 3, 'gemm_us': 10466.863632, 'pipeline_us': 11293.984413}, {'mode': 1, 'algo': 99, 'layout': 3, 'gemm_us': 10468.336105, 'pipeline_us': 11295.32814}]
+BEST TN {'mode': 1, 'algo': 3, 'layout': 0, 'gemm_us': 10848.480225, 'pipeline_us': 11426.927567}
+BEST RATIO 1.8954754337401183
+SHAPE 4352 8192 5120 exact configs 80
+MODE 0 TOP [{'mode': 0, 'algo': 6, 'layout': 3, 'gemm_us': 41406.223297, 'pipeline_us': 42292.015076}, {'mode': 0, 'algo': 5, 'layout': 3, 'gemm_us': 42054.782867, 'pipeline_us': 42596.416473}, {'mode': 0, 'algo': 6, 'layout': 2, 'gemm_us': 41964.881897, 'pipeline_us': 42686.927795}, {'mode': 0, 'algo': 6, 'layout': 1, 'gemm_us': 41968.238831, 'pipeline_us': 42758.094788}]
+BEST TN {'mode': 0, 'algo': 6, 'layout': 0, 'gemm_us': 41965.984344, 'pipeline_us': 43041.728973}
+MODE 1 TOP [{'mode': 1, 'algo': 99, 'layout': 3, 'gemm_us': 20860.591888, 'pipeline_us': 22182.17659}, {'mode': 1, 'algo': 3, 'layout': 3, 'gemm_us': 21058.271408, 'pipeline_us': 22273.023605}, {'mode': 1, 'algo': 99, 'layout': 7, 'gemm_us': 20860.28862, 'pipeline_us': 22311.040878}, {'mode': 1, 'algo': 99, 'layout': 1, 'gemm_us': 21100.032806, 'pipeline_us': 22314.735413}]
+BEST TN {'mode': 1, 'algo': 3, 'layout': 0, 'gemm_us': 21681.247711, 'pipeline_us': 22711.248398}
+BEST RATIO 1.906576431055272
