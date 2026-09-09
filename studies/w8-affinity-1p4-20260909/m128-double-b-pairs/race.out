@@ -1,0 +1,22 @@
+========= COMPUTE-SANITIZER
+QUANT bits=8 values=202752 bad=0
+QUANT bits=4 values=202752 bad=0
+CHECK A32 outputs=270336 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A16 outputs=270336 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A64 outputs=270336 samples=256 bad=0 nonfinite=0 changed=270324 rel_l2=0.000876341434
+MATCH_PREVIOUS A64 values=270336 bad=0
+CHECK A128 outputs=270336 samples=256 bad=0 nonfinite=0 changed=270327 rel_l2=0.00110327415
+MATCH_PREVIOUS A128 values=270336 bad=0
+CHECK A256 outputs=270336 samples=256 bad=0 nonfinite=0 changed=270329 rel_l2=0.00146271965
+MATCH_PREVIOUS A256 values=270336 bad=0
+CHECK A512 outputs=270336 samples=256 bad=0 nonfinite=0 changed=270329 rel_l2=0.00146271965
+MATCH_PREVIOUS A512 values=270336 bad=0
+META M=33 N=128 K=96 experts=64 quantization_timed=1 full_q8_codes=1
+TIME A32 prep=1 rep=0 us=241225.375
+TIME A16 prep=1 rep=0 us=213228
+TIME A64 prep=1 rep=0 us=247094.969
+TIME A128 prep=1 rep=0 us=242802.281
+TIME A256 prep=1 rep=0 us=251522.141
+TIME A512 prep=1 rep=0 us=233604.422
+PASS
+========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)

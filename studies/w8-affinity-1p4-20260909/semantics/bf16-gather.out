@@ -1,0 +1,16 @@
+========= COMPUTE-SANITIZER
+CHECK A32 outputs=33792 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A16 outputs=33792 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A64 outputs=33792 samples=256 bad=0 nonfinite=0 changed=33792 rel_l2=0.000885103661
+CHECK A128 outputs=33792 samples=256 bad=0 nonfinite=0 changed=33792 rel_l2=0.00121480116
+CHECK A256 outputs=33792 samples=256 bad=0 nonfinite=0 changed=33792 rel_l2=0.00168797421
+CHECK A512 outputs=33792 samples=256 bad=0 nonfinite=0 changed=33792 rel_l2=0.00658346378
+META M=33 N=512 K=2048 experts=2 quantization_timed=1 full_q8_codes=1
+TIME A32 prep=1 rep=0 us=20429.3125
+TIME A16 prep=1 rep=0 us=20077.5684
+TIME A64 prep=1 rep=0 us=17543.1035
+TIME A128 prep=1 rep=0 us=17549.6953
+TIME A256 prep=1 rep=0 us=17372.5137
+TIME A512 prep=1 rep=0 us=17410.5605
+PASS
+========= ERROR SUMMARY: 0 errors

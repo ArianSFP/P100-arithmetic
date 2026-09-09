@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/usr/local/cuda-12.8/bin/nvcc",
+    "-ccbin",
+    "/usr/bin/g++-13",
+    "-O3",
+    "-std=c++17",
+    "-arch=sm_60",
+    "-lineinfo",
+    "-Xptxas=-v",
+    "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m128-double-b/worker.cu",
+    "-o",
+    "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m128-double-b/worker"
+  ],
+  "hashes": {
+    "worker": "e0f793593d6c490af5dfd6e2311b012f2c9ac893981af1705d1d67d2093fcc86",
+    "worker.cu": "73526acafa295025605246c6d675d2158ad859b804881596d0bd5d4ecc6f95a4",
+    "q8.inc": "cfc73310e817cbcecf895ce4764c7753cdb3bbe1109ca1f3d539a5f775ac1d00",
+    "lowact.inc": "8ef9f6e5a32cddc4338503f2d024c4ac83e3428dc95ba93954c451df13dd2d98",
+    "packed.inc": "206add7348f54d2749a6fb6a81378ceac4b52976e8b5c9a2660a8cdd29306932",
+    "build.py": "99d3d478c5a38b2756ea2bd6100fb43f91753170e018db7ec60fd5d02abcf966"
+  }
+}

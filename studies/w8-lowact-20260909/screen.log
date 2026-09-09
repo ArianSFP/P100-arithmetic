@@ -1,0 +1,6 @@
+PASS gu-r0 GPU 2
+PASS down-r0 GPU 2
+PASS gu-r1 GPU 2
+PASS down-r1 GPU 2
+PASS gu-r2 GPU 2
+PASS down-r2 GPU 2

@@ -1,0 +1,30 @@
+{
+  "dual-raw-f16": {
+    "HFMA2": 1024,
+    "FFMA": 0,
+    "LDS": 128,
+    "STS": 48,
+    "LDG": 14,
+    "BAR": 3,
+    "LDL": 0,
+    "STL": 0,
+    "BRA": 5,
+    "PRMT": 32,
+    "F2F": 2,
+    "I2F": 0
+  },
+  "virtual-raw-f16": {
+    "HFMA2": 1024,
+    "FFMA": 0,
+    "LDS": 128,
+    "STS": 48,
+    "LDG": 25,
+    "BAR": 3,
+    "LDL": 0,
+    "STL": 0,
+    "BRA": 9,
+    "PRMT": 32,
+    "F2F": 2,
+    "I2F": 0
+  }
+}

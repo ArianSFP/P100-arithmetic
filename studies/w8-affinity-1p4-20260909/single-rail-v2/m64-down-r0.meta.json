@@ -1,0 +1,67 @@
+{
+  "args": {
+    "tag": "m64-down-r0",
+    "tokens": 64,
+    "projection": "down",
+    "memcheck": false,
+    "ctas": 2
+  },
+  "device": 2,
+  "initial_gpu": "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 5, 0, 37, 1328, 0",
+  "started": 1788919930.9082017,
+  "build": {
+    "command": [
+      "/usr/local/cuda-12.8/bin/nvcc",
+      "-ccbin",
+      "/usr/bin/g++-13",
+      "-O3",
+      "-std=c++17",
+      "-arch=sm_60",
+      "-lineinfo",
+      "-Xptxas=-v",
+      "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/single-rail-v2/worker.cu",
+      "-o",
+      "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/single-rail-v2/worker"
+    ],
+    "hashes": {
+      "worker": "42ed720bdb5e6e98cee01cb0536bee4dad8c1e6ea6310d3ac05010ce346daee2",
+      "worker.cu": "864cd63a84d9c0c80d6c9982095b83cdf586e486bfe281bec44444a2b96b19b8",
+      "q8.inc": "cfc73310e817cbcecf895ce4764c7753cdb3bbe1109ca1f3d539a5f775ac1d00",
+      "lowact.inc": "8ef9f6e5a32cddc4338503f2d024c4ac83e3428dc95ba93954c451df13dd2d98",
+      "packed.inc": "c4cd92001958b26508e769e8bdfc52bea0273261c46bcf8d425080dadbecb44e",
+      "build.py": "99d3d478c5a38b2756ea2bd6100fb43f91753170e018db7ec60fd5d02abcf966"
+    }
+  },
+  "runner_sha256": "56fca06f6e873a31847b9cad547a0da4e8031882e6d7e247da59faba69fdee6a",
+  "command": [
+    "env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_VISIBLE_DEVICES=2",
+    "taskset",
+    "--cpu-list",
+    "0-11",
+    "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/single-rail-v2/worker",
+    "--gpu-approved",
+    "1",
+    "64",
+    "2048",
+    "512",
+    "64",
+    "2"
+  ],
+  "telemetry": [
+    [
+      1788919930.9198909,
+      "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 5, 0, 36, 1328, 0"
+    ],
+    [
+      1788919932.973405,
+      "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 381, 100, 41, 1328, 0"
+    ]
+  ],
+  "exit_code": 0,
+  "finished": 1788919935.0231109,
+  "final_gpu": "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 5, 0, 39, 1328, 0"
+}

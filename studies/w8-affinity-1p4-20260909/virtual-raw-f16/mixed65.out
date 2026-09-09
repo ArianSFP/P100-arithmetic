@@ -1,0 +1,22 @@
+========= COMPUTE-SANITIZER
+QUANT bits=8 values=266240 bad=0
+QUANT bits=4 values=266240 bad=0
+CHECK A32 outputs=66560 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A16 outputs=66560 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A64 outputs=66560 samples=256 bad=0 nonfinite=0 changed=66558 rel_l2=0.000649120636
+MATCH_PREVIOUS A64 values=66560 bad=0
+CHECK A128 outputs=66560 samples=256 bad=0 nonfinite=0 changed=66557 rel_l2=0.000871614124
+MATCH_PREVIOUS A128 values=66560 bad=0
+CHECK A256 outputs=66560 samples=256 bad=0 nonfinite=0 changed=66558 rel_l2=0.00120045203
+MATCH_PREVIOUS A256 values=66560 bad=0
+CHECK A512 outputs=66560 samples=256 bad=0 nonfinite=0 changed=66559 rel_l2=0.0046576296
+MATCH_PREVIOUS A512 values=66560 bad=0
+META M=65 N=512 K=2048 experts=2 quantization_timed=1 full_q8_codes=1
+TIME A32 prep=1 rep=0 us=19893.6328
+TIME A16 prep=1 rep=0 us=19493.5039
+TIME A64 prep=1 rep=0 us=17229.6641
+TIME A128 prep=1 rep=0 us=17186.4648
+TIME A256 prep=1 rep=0 us=17189.4727
+TIME A512 prep=1 rep=0 us=17099.3594
+PASS
+========= ERROR SUMMARY: 0 errors

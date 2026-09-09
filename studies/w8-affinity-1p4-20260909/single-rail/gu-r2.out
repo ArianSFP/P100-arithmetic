@@ -1,0 +1,44 @@
+QUANT bits=8 values=33554432 bad=0
+QUANT bits=4 values=33554432 bad=0
+CHECK A32 outputs=8388608 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A16 outputs=8388608 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A64 outputs=8388608 samples=256 bad=0 nonfinite=0 changed=8388240 rel_l2=0.000882587476
+CHECK A128 outputs=8388608 samples=256 bad=0 nonfinite=0 changed=8388415 rel_l2=0.00167732544
+CHECK A256 outputs=8388608 samples=256 bad=0 nonfinite=0 changed=8388544 rel_l2=0.00656814682
+META M=256 N=512 K=2048 experts=64 quantization_timed=1 full_q8_codes=1
+TIME A32 prep=1 rep=0 us=4623.65869
+TIME A16 prep=1 rep=0 us=4627.33887
+TIME A64 prep=1 rep=0 us=3364.5918
+TIME A128 prep=1 rep=0 us=3201.7334
+TIME A256 prep=1 rep=0 us=3041.71216
+TIME A16 prep=1 rep=1 us=4622.35205
+TIME A64 prep=1 rep=1 us=3363.59473
+TIME A128 prep=1 rep=1 us=3199.50952
+TIME A256 prep=1 rep=1 us=3037.11987
+TIME A32 prep=1 rep=1 us=4624.47461
+TIME A64 prep=1 rep=2 us=3366.41602
+TIME A128 prep=1 rep=2 us=3198.92285
+TIME A256 prep=1 rep=2 us=3039.15723
+TIME A32 prep=1 rep=2 us=4624.57568
+TIME A16 prep=1 rep=2 us=4622.6665
+TIME A128 prep=1 rep=3 us=3200.40552
+TIME A256 prep=1 rep=3 us=3036.16528
+TIME A32 prep=1 rep=3 us=4624.3999
+TIME A16 prep=1 rep=3 us=4625.90967
+TIME A64 prep=1 rep=3 us=3364
+TIME A256 prep=1 rep=4 us=3035.91479
+TIME A32 prep=1 rep=4 us=4623.15186
+TIME A16 prep=1 rep=4 us=4623.62158
+TIME A64 prep=1 rep=4 us=3363.76001
+TIME A128 prep=1 rep=4 us=3198.94409
+TIME A32 prep=1 rep=5 us=4623.2749
+TIME A16 prep=1 rep=5 us=4625.51465
+TIME A64 prep=1 rep=5 us=3358.90137
+TIME A128 prep=1 rep=5 us=3197.65845
+TIME A256 prep=1 rep=5 us=3032.30933
+TIME A16 prep=1 rep=6 us=4624.57568
+TIME A64 prep=1 rep=6 us=3363.43481
+TIME A128 prep=1 rep=6 us=3196.71484
+TIME A256 prep=1 rep=6 us=3129.29077
+TIME A32 prep=1 rep=6 us=4634.64551
+PASS

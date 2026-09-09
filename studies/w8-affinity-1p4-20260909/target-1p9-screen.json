@@ -1,0 +1,578 @@
+[
+  {
+    "variant": "compact-plan-dimensions",
+    "projection": "gu",
+    "baseline_us": 4625.010745,
+    "candidate_us": 2519.250735,
+    "speedup": 1.8358675779050628,
+    "device": 2
+  },
+  {
+    "variant": "compact-plan-dimensions",
+    "projection": "down",
+    "baseline_us": 4527.7334,
+    "candidate_us": 2401.9093000000003,
+    "speedup": 1.8850559427868485,
+    "device": 2
+  },
+  {
+    "variant": "compact-plan-f32",
+    "projection": "gu",
+    "baseline_us": 4624.757325,
+    "candidate_us": 2589.0932599999996,
+    "speedup": 1.7862459404030893,
+    "device": 2
+  },
+  {
+    "variant": "compact-plan-f32",
+    "projection": "down",
+    "baseline_us": 4527.821285,
+    "candidate_us": 2458.90662,
+    "speedup": 1.8413961913689914,
+    "device": 2
+  },
+  {
+    "variant": "compact-plan-raw",
+    "projection": "gu",
+    "baseline_us": 4624.872069999999,
+    "candidate_us": 2527.8266599999997,
+    "speedup": 1.8295843394578328,
+    "device": 2
+  },
+  {
+    "variant": "compact-plan-raw",
+    "projection": "down",
+    "baseline_us": 4530.2426749999995,
+    "candidate_us": 2435.03723,
+    "speedup": 1.860440825785649,
+    "device": 2
+  },
+  {
+    "variant": "dual-512",
+    "projection": "gu",
+    "baseline_us": 4625.554445,
+    "candidate_us": 2890.26953,
+    "speedup": 1.6003886132377418,
+    "device": 2
+  },
+  {
+    "variant": "dual-512",
+    "projection": "down",
+    "baseline_us": 4524.877445,
+    "candidate_us": 2760.44275,
+    "speedup": 1.6391853969802488,
+    "device": 2
+  },
+  {
+    "variant": "dual-balanced",
+    "projection": "gu",
+    "baseline_us": 4626.53589,
+    "candidate_us": 2669.0427250000002,
+    "speedup": 1.733406455679723,
+    "device": 2
+  },
+  {
+    "variant": "dual-balanced",
+    "projection": "down",
+    "baseline_us": 4530.80005,
+    "candidate_us": 2562.554565,
+    "speedup": 1.768079443802985,
+    "device": 2
+  },
+  {
+    "variant": "dual-coalesced-a",
+    "projection": "gu",
+    "baseline_us": 4624.048095,
+    "candidate_us": 2704.5573750000003,
+    "speedup": 1.7097245330208606,
+    "device": 2
+  },
+  {
+    "variant": "dual-coalesced-a",
+    "projection": "down",
+    "baseline_us": 4530.957275000001,
+    "candidate_us": 2601.8053,
+    "speedup": 1.7414666942987627,
+    "device": 2
+  },
+  {
+    "variant": "dual-interleave",
+    "projection": "gu",
+    "baseline_us": 4624.930420000001,
+    "candidate_us": 2637.19202,
+    "speedup": 1.7537329041364234,
+    "device": 2
+  },
+  {
+    "variant": "dual-interleave",
+    "projection": "down",
+    "baseline_us": 4532.445315,
+    "candidate_us": 2539.69592,
+    "speedup": 1.7846409404004553,
+    "device": 2
+  },
+  {
+    "variant": "dual-interleave-loop",
+    "projection": "gu",
+    "baseline_us": 4624.869385,
+    "candidate_us": 2746.1627200000003,
+    "speedup": 1.6841206645613482,
+    "device": 2
+  },
+  {
+    "variant": "dual-interleave-loop",
+    "projection": "down",
+    "baseline_us": 4529.650635,
+    "candidate_us": 2635.61609,
+    "speedup": 1.7186306655913608,
+    "device": 2
+  },
+  {
+    "variant": "dual-jouter",
+    "projection": "gu",
+    "baseline_us": 4624.717285000001,
+    "candidate_us": 2654.6452600000002,
+    "speedup": 1.7421225180949413,
+    "device": 2
+  },
+  {
+    "variant": "dual-jouter",
+    "projection": "down",
+    "baseline_us": 4531.56812,
+    "candidate_us": 2563.49597,
+    "speedup": 1.7677297616348506,
+    "device": 2
+  },
+  {
+    "variant": "dual-late-a",
+    "projection": "gu",
+    "baseline_us": 4625.45874,
+    "candidate_us": 2788.5092750000003,
+    "speedup": 1.658756806537787,
+    "device": 2
+  },
+  {
+    "variant": "dual-late-a",
+    "projection": "down",
+    "baseline_us": 4527.43213,
+    "candidate_us": 2703.8480250000002,
+    "speedup": 1.6744403117849052,
+    "device": 2
+  },
+  {
+    "variant": "dual-m256-512",
+    "projection": "gu",
+    "baseline_us": 4622.9201649999995,
+    "candidate_us": 2899.527955,
+    "speedup": 1.594369923914046,
+    "device": 2
+  },
+  {
+    "variant": "dual-m256-512",
+    "projection": "down",
+    "baseline_us": 4527.741215,
+    "candidate_us": 2918.11987,
+    "speedup": 1.551595347932023,
+    "device": 2
+  },
+  {
+    "variant": "dual-m256-512-raw",
+    "projection": "gu",
+    "baseline_us": 4624.90918,
+    "candidate_us": 2862.4985349999997,
+    "speedup": 1.6156896234009777,
+    "device": 2
+  },
+  {
+    "variant": "dual-m256-512-raw",
+    "projection": "down",
+    "baseline_us": 4528.75464,
+    "candidate_us": 2884.610715,
+    "speedup": 1.5699708166687583,
+    "device": 2
+  },
+  {
+    "variant": "dual-m256-balanced",
+    "projection": "gu",
+    "baseline_us": 4625.919925,
+    "candidate_us": 2735.7626950000003,
+    "speedup": 1.690906866101557,
+    "device": 2
+  },
+  {
+    "variant": "dual-m256-balanced",
+    "projection": "down",
+    "baseline_us": 4527.55469,
+    "candidate_us": 2783.2106949999998,
+    "speedup": 1.6267380324937994,
+    "device": 2
+  },
+  {
+    "variant": "dual-magic-decode",
+    "projection": "gu",
+    "baseline_us": 4625.263919999999,
+    "candidate_us": 2612.1839600000003,
+    "speedup": 1.7706501497696965,
+    "device": 2
+  },
+  {
+    "variant": "dual-magic-decode",
+    "projection": "down",
+    "baseline_us": 4528.17871,
+    "candidate_us": 2511.98938,
+    "speedup": 1.8026265341933891,
+    "device": 2
+  },
+  {
+    "variant": "dual-n256",
+    "projection": "gu",
+    "baseline_us": 4628.85596,
+    "candidate_us": 2839.359865,
+    "speedup": 1.6302463161005483,
+    "device": 2
+  },
+  {
+    "variant": "dual-n256",
+    "projection": "down",
+    "baseline_us": 4529.464355,
+    "candidate_us": 2842.56006,
+    "speedup": 1.593445436294493,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-cache-ca",
+    "projection": "gu",
+    "baseline_us": 4624.165285,
+    "candidate_us": 2506.72803,
+    "speedup": 1.844701630834678,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-cache-ca",
+    "projection": "down",
+    "baseline_us": 4526.349365,
+    "candidate_us": 2385.36267,
+    "speedup": 1.8975518573869525,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-cache-cg",
+    "projection": "gu",
+    "baseline_us": 4622.20532,
+    "candidate_us": 2508.472165,
+    "speedup": 1.8426376758300604,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-cache-cg",
+    "projection": "down",
+    "baseline_us": 4526.42944,
+    "candidate_us": 2387.837405,
+    "speedup": 1.8956187848142028,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-chunk2",
+    "projection": "gu",
+    "baseline_us": 4622.354740000001,
+    "candidate_us": 2523.855955,
+    "speedup": 1.8314653539726282,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-chunk2",
+    "projection": "down",
+    "baseline_us": 4531.117184999999,
+    "candidate_us": 2428.359985,
+    "speedup": 1.8659165910279976,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-chunk4",
+    "projection": "gu",
+    "baseline_us": 4624.34375,
+    "candidate_us": 2645.71472,
+    "speedup": 1.7478618216252735,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-chunk4",
+    "projection": "down",
+    "baseline_us": 4529.5813,
+    "candidate_us": 2534.746705,
+    "speedup": 1.786995635920947,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-chunk8",
+    "projection": "gu",
+    "baseline_us": 4623.546875,
+    "candidate_us": 2658.248045,
+    "speedup": 1.739321085440693,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-chunk8",
+    "projection": "down",
+    "baseline_us": 4527.631835,
+    "candidate_us": 2547.56799,
+    "speedup": 1.7772368991808538,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-dimensions",
+    "projection": "gu",
+    "baseline_us": 4622.839845,
+    "candidate_us": 2509.7893050000002,
+    "speedup": 1.841923477715991,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-dimensions",
+    "projection": "down",
+    "baseline_us": 4528.200199999999,
+    "candidate_us": 2387.778565,
+    "speedup": 1.896407089993288,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-f16",
+    "projection": "gu",
+    "baseline_us": 4621.93872,
+    "candidate_us": 2522.802735,
+    "speedup": 1.8320650504606337,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-f16",
+    "projection": "down",
+    "baseline_us": 4525.375975,
+    "candidate_us": 2432.5467550000003,
+    "speedup": 1.8603449104105707,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-f32-dimensions",
+    "projection": "gu",
+    "baseline_us": 4623.08008,
+    "candidate_us": 2584.29065,
+    "speedup": 1.788916459532135,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-f32-dimensions",
+    "projection": "down",
+    "baseline_us": 4529.86133,
+    "candidate_us": 2454.44275,
+    "speedup": 1.845576284066923,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-full",
+    "projection": "gu",
+    "baseline_us": 4621.50928,
+    "candidate_us": 2558.42944,
+    "speedup": 1.8063852798692,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-full",
+    "projection": "down",
+    "baseline_us": 4526.3198250000005,
+    "candidate_us": 2424.96533,
+    "speedup": 1.8665503250720703,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-generic",
+    "projection": "gu",
+    "baseline_us": 4628.231935,
+    "candidate_us": 2660.70935,
+    "speedup": 1.7394729473176014,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-generic",
+    "projection": "down",
+    "baseline_us": 4527.557615,
+    "candidate_us": 2550.653325,
+    "speedup": 1.775058009892426,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-hoist",
+    "projection": "gu",
+    "baseline_us": 4622.936035000001,
+    "candidate_us": 2569.776,
+    "speedup": 1.7989645926337552,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-hoist",
+    "projection": "down",
+    "baseline_us": 4527.919925,
+    "candidate_us": 2449.1945800000003,
+    "speedup": 1.8487383411570344,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-swizzle",
+    "projection": "gu",
+    "baseline_us": 4622.61865,
+    "candidate_us": 2713.3360599999996,
+    "speedup": 1.7036660950873888,
+    "device": 2
+  },
+  {
+    "variant": "dual-raw-swizzle",
+    "projection": "down",
+    "baseline_us": 4528.92017,
+    "candidate_us": 2602.58936,
+    "speedup": 1.7401593350093465,
+    "device": 2
+  },
+  {
+    "variant": "dual-split-a",
+    "projection": "gu",
+    "baseline_us": 4623.770505,
+    "candidate_us": 3466.2214350000004,
+    "speedup": 1.3339512756778045,
+    "device": 2
+  },
+  {
+    "variant": "dual-split-a",
+    "projection": "down",
+    "baseline_us": 4528.29077,
+    "candidate_us": 3387.850585,
+    "speedup": 1.3366264704970745,
+    "device": 2
+  },
+  {
+    "variant": "dual-sync-c2",
+    "projection": "gu",
+    "baseline_us": 4624.765625,
+    "candidate_us": 2730.1626,
+    "speedup": 1.6939524499383296,
+    "device": 2
+  },
+  {
+    "variant": "dual-sync-c2",
+    "projection": "down",
+    "baseline_us": 4530.853515000001,
+    "candidate_us": 2621.9439700000003,
+    "speedup": 1.7280512348248236,
+    "device": 2
+  },
+  {
+    "variant": "dual-sync-c3",
+    "projection": "gu",
+    "baseline_us": 4630.032225,
+    "candidate_us": 14518.2031,
+    "speedup": 0.31891220925267255,
+    "device": 2
+  },
+  {
+    "variant": "dual-sync-c3",
+    "projection": "down",
+    "baseline_us": 4532.93066,
+    "candidate_us": 14150.8823,
+    "speedup": 0.320328482980881,
+    "device": 2
+  },
+  {
+    "variant": "dual-sync-n64",
+    "projection": "gu",
+    "baseline_us": 4624.7573250000005,
+    "candidate_us": 3138.626835,
+    "speedup": 1.4734970317043123,
+    "device": 2
+  },
+  {
+    "variant": "dual-sync-n64",
+    "projection": "down",
+    "baseline_us": 4531.54932,
+    "candidate_us": 3169.586795,
+    "speedup": 1.4296971854970135,
+    "device": 2
+  },
+  {
+    "variant": "dual-sync-n64-raw",
+    "projection": "gu",
+    "baseline_us": 4623.466555,
+    "candidate_us": 2867.253295,
+    "speedup": 1.6125071904399015,
+    "device": 2
+  },
+  {
+    "variant": "dual-sync-n64-raw",
+    "projection": "down",
+    "baseline_us": 4530.7334,
+    "candidate_us": 2916.170775,
+    "speedup": 1.5536584615830669,
+    "device": 2
+  },
+  {
+    "variant": "dual-vector-b",
+    "projection": "gu",
+    "baseline_us": 4623.4292000000005,
+    "candidate_us": 2616.33862,
+    "speedup": 1.7671371605560753,
+    "device": 2
+  },
+  {
+    "variant": "dual-vector-b",
+    "projection": "down",
+    "baseline_us": 4526.4213899999995,
+    "candidate_us": 2527.40796,
+    "speedup": 1.7909342146726481,
+    "device": 2
+  },
+  {
+    "variant": "planned-raw-f16",
+    "projection": "gu",
+    "baseline_us": 4629.23462,
+    "candidate_us": 2542.19995,
+    "speedup": 1.8209561446966436,
+    "device": 2
+  },
+  {
+    "variant": "planned-raw-f16",
+    "projection": "down",
+    "baseline_us": 4531.122555,
+    "candidate_us": 2490.434695,
+    "speedup": 1.8194103078057222,
+    "device": 2
+  },
+  {
+    "variant": "virtual-raw-f16",
+    "projection": "gu",
+    "baseline_us": 4623.9279750000005,
+    "candidate_us": 2759.02954,
+    "speedup": 1.675925504951281,
+    "device": 2
+  },
+  {
+    "variant": "virtual-raw-f16",
+    "projection": "down",
+    "baseline_us": 4529.669435,
+    "candidate_us": 2670.63477,
+    "speedup": 1.6961021723685563,
+    "device": 2
+  },
+  {
+    "variant": "virtual-raw-f16-only",
+    "projection": "gu",
+    "baseline_us": 4626.173339999999,
+    "candidate_us": 2759.51465,
+    "speedup": 1.6764445660761393,
+    "device": 2
+  },
+  {
+    "variant": "virtual-raw-f16-only",
+    "projection": "down",
+    "baseline_us": 4525.72778,
+    "candidate_us": 2643.68799,
+    "speedup": 1.7118993607108683,
+    "device": 2
+  }
+]

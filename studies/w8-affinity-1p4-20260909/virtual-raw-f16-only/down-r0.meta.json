@@ -1,0 +1,76 @@
+{
+  "args": {
+    "tag": "down-r0",
+    "tokens": 256,
+    "projection": "down",
+    "memcheck": false,
+    "ctas": 2,
+    "racecheck": false
+  },
+  "device": 2,
+  "initial_gpu": "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 5, 0, 37, 1328, 0",
+  "started": 1788948679.5430558,
+  "build": {
+    "command": [
+      "/usr/local/cuda-12.8/bin/nvcc",
+      "-ccbin",
+      "/usr/bin/g++-13",
+      "-O3",
+      "-std=c++17",
+      "-arch=sm_60",
+      "-lineinfo",
+      "-Xptxas=-v",
+      "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/virtual-raw-f16-only/worker.cu",
+      "-o",
+      "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/virtual-raw-f16-only/worker"
+    ],
+    "hashes": {
+      "worker": "a05d2bc8e67b07e3b695cb0e8aa7111e57968bdb307d6d1291ca15aad90200d5",
+      "worker.cu": "747704386b0d7f97264446582165305db947cc78612813196bb575a3df415472",
+      "q8.inc": "cfc73310e817cbcecf895ce4764c7753cdb3bbe1109ca1f3d539a5f775ac1d00",
+      "lowact.inc": "8ef9f6e5a32cddc4338503f2d024c4ac83e3428dc95ba93954c451df13dd2d98",
+      "packed.inc": "7835822ba9f888ae58f3213d0a3a9a44b5460b9e3b4c8a637cfa0d7123d8f221",
+      "pair.inc": "f3ee8e8acc0c4f6a17bdd64dc1f52cece4c23d5c57028cb8c9580f5a3fc5a65e",
+      "decode.inc": "12003f1da3b97ba383e7038fd846d255f565cc2bc7a6713d1ca4b9d7c9688207",
+      "fallback.inc": "9e4d9a6444d03c629400e8054e8c847f93312b3419f7eeb2d27b903eb81eb83b",
+      "old-packed.inc": "f9ede8112077df5ea7cd3195b2b9d8771130f5d651fddcd281d4d5cd7fc5c5fc",
+      "build.py": "0e83d826c2241228430c7e0fb7fcc383f81f2fe218bf85e26452e475d860fb0f"
+    }
+  },
+  "runner_sha256": "de6f5e6249ec04c79571157a7929c26aae366745db3e48a02ad7f6641d368296",
+  "command": [
+    "env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_VISIBLE_DEVICES=2",
+    "taskset",
+    "--cpu-list",
+    "0-11",
+    "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/virtual-raw-f16-only/worker",
+    "--gpu-approved",
+    "1",
+    "256",
+    "2048",
+    "512",
+    "64",
+    "2"
+  ],
+  "telemetry": [
+    [
+      1788948679.563683,
+      "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 7, 0, 37, 1328, 0"
+    ],
+    [
+      1788948681.6217291,
+      "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 525, 7, 36, 1328, 0"
+    ],
+    [
+      1788948683.670181,
+      "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 525, 100, 42, 1328, 0"
+    ]
+  ],
+  "exit_code": 0,
+  "finished": 1788948685.717726,
+  "final_gpu": "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 5, 0, 39, 1328, 0"
+}

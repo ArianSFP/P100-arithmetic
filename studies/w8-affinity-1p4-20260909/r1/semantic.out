@@ -1,0 +1,9 @@
+========= COMPUTE-SANITIZER
+QUANT bits=8 values=135168 bad=0
+QUANT bits=4 values=135168 bad=0
+CHECK A32 outputs=33792 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A16 outputs=33792 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A64 outputs=33792 samples=256 bad=0 nonfinite=0 changed=33789 rel_l2=0.000649276358
+CHECK A128 outputs=33792 samples=256 bad=4 nonfinite=0 changed=33791 rel_l2=0.00120432509
+========= Target application returned an error
+========= ERROR SUMMARY: 0 errors

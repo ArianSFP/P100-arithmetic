@@ -1,0 +1,67 @@
+{
+  "args": {
+    "tag": "semantic",
+    "tokens": 33,
+    "projection": "gu",
+    "memcheck": true
+  },
+  "device": 2,
+  "initial_gpu": "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 5, 0, 38, 1328, 0",
+  "started": 1788920920.71234,
+  "build": {
+    "command": [
+      "/usr/local/cuda-12.8/bin/nvcc",
+      "-ccbin",
+      "/usr/bin/g++-13",
+      "-O3",
+      "-std=c++17",
+      "-arch=sm_60",
+      "-lineinfo",
+      "-Xptxas=-v",
+      "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/vendor/worker.cu",
+      "-o",
+      "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/vendor/worker",
+      "-lcublas"
+    ],
+    "hashes": {
+      "worker": "6c96279f3ad836c923235f30faf4a99cec30811424e56c9c160fc1edf5ee8514",
+      "worker.cu": "114d712ea9eeb19871b028a5c3c2a65ff797b720dbe871c4936304c733e00993",
+      "q8.inc": "cfc73310e817cbcecf895ce4764c7753cdb3bbe1109ca1f3d539a5f775ac1d00",
+      "lowact.inc": "8ef9f6e5a32cddc4338503f2d024c4ac83e3428dc95ba93954c451df13dd2d98",
+      "prepare.py": "441e5f90d759bc58f65fb0ab1073ab1ca06dfc52b394465d4f7f9bc92748828b",
+      "build.py": "8fddca944045239385be29cd0b772999476e95fedd845934bc80928c36b6dea4"
+    }
+  },
+  "runner_sha256": "63339c46a8973a10813fa539fc7a2e9b6560580dc915ba54b1f14c85b79dc682",
+  "command": [
+    "env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_VISIBLE_DEVICES=2",
+    "taskset",
+    "--cpu-list",
+    "0-11",
+    "/usr/local/cuda-12.8/bin/compute-sanitizer",
+    "--tool",
+    "memcheck",
+    "--error-exitcode",
+    "99",
+    "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/vendor/worker",
+    "--gpu-approved",
+    "1",
+    "33",
+    "512",
+    "2048",
+    "2"
+  ],
+  "telemetry": [
+    [
+      1788920920.7203796,
+      "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 5, 0, 38, 1328, 0"
+    ]
+  ],
+  "exit_code": 0,
+  "finished": 1788920922.7651176,
+  "final_gpu": "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 5, 0, 38, 1328, 0"
+}

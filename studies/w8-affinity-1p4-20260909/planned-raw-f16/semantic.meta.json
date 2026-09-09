@@ -1,0 +1,73 @@
+{
+  "args": {
+    "tag": "semantic",
+    "tokens": 129,
+    "projection": "gu",
+    "memcheck": true,
+    "ctas": 2,
+    "racecheck": false
+  },
+  "device": 2,
+  "initial_gpu": "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 5, 0, 33, 405, 0",
+  "started": 1788948752.8767548,
+  "build": {
+    "command": [
+      "/usr/local/cuda-12.8/bin/nvcc",
+      "-ccbin",
+      "/usr/bin/g++-13",
+      "-O3",
+      "-std=c++17",
+      "-arch=sm_60",
+      "-lineinfo",
+      "-Xptxas=-v",
+      "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/planned-raw-f16/worker.cu",
+      "-o",
+      "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/planned-raw-f16/worker"
+    ],
+    "hashes": {
+      "worker": "8f42219cc3d67b7b8372481c5612331a152bd8a03cc3b57f87ccdf8c09b71f23",
+      "worker.cu": "36b29805394c552187516651937001d97a1f6cec5bb18ebbe7f2b0a1ec18e706",
+      "q8.inc": "cfc73310e817cbcecf895ce4764c7753cdb3bbe1109ca1f3d539a5f775ac1d00",
+      "lowact.inc": "8ef9f6e5a32cddc4338503f2d024c4ac83e3428dc95ba93954c451df13dd2d98",
+      "packed.inc": "84a5db39ae0ef27029f729845f854b9878423085e37aeb240007c65c5e219b63",
+      "pair.inc": "ad44fcc02de101dba39ffa9c8eeffa7577f94dedf1e80b43b7eb9e4991aab822",
+      "decode.inc": "12003f1da3b97ba383e7038fd846d255f565cc2bc7a6713d1ca4b9d7c9688207",
+      "fallback.inc": "9e4d9a6444d03c629400e8054e8c847f93312b3419f7eeb2d27b903eb81eb83b",
+      "old-packed.inc": "f9ede8112077df5ea7cd3195b2b9d8771130f5d651fddcd281d4d5cd7fc5c5fc",
+      "build.py": "0e83d826c2241228430c7e0fb7fcc383f81f2fe218bf85e26452e475d860fb0f"
+    }
+  },
+  "runner_sha256": "de6f5e6249ec04c79571157a7929c26aae366745db3e48a02ad7f6641d368296",
+  "command": [
+    "env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_VISIBLE_DEVICES=2",
+    "taskset",
+    "--cpu-list",
+    "0-11",
+    "/usr/local/cuda-12.8/bin/compute-sanitizer",
+    "--tool",
+    "memcheck",
+    "--error-exitcode",
+    "99",
+    "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/planned-raw-f16/worker",
+    "--gpu-approved",
+    "1",
+    "129",
+    "512",
+    "2048",
+    "2",
+    "2"
+  ],
+  "telemetry": [
+    [
+      1788948752.8948207,
+      "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 5, 0, 33, 405, 0"
+    ]
+  ],
+  "exit_code": 0,
+  "finished": 1788948754.9525015,
+  "final_gpu": "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 5, 0, 33, 1328, 0"
+}

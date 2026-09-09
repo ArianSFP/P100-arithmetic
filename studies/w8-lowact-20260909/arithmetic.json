@@ -1,0 +1,45 @@
+{
+  "4": {
+    "activation_integer_range": [
+      -7,
+      7
+    ],
+    "weight_integer_range": [
+      -128,
+      127
+    ],
+    "g32_abs_sum_bound": 28672,
+    "fp32_integer_dot_exact_g32": true,
+    "fp16_inexact_products": 0,
+    "product_cases": 3840
+  },
+  "8": {
+    "activation_integer_range": [
+      -127,
+      127
+    ],
+    "weight_integer_range": [
+      -128,
+      127
+    ],
+    "g32_abs_sum_bound": 520192,
+    "fp32_integer_dot_exact_g32": true,
+    "fp16_inexact_products": 18568,
+    "product_cases": 65280
+  },
+  "w8a4_counterexample": {
+    "terms": [
+      889,
+      889,
+      889
+    ],
+    "integer_sum": 2667,
+    "half_sequential_sum": 2668.0
+  },
+  "w8a4_exact_nibble_split": {
+    "equation": "w=(w & 15)+16*(w >> 4)",
+    "g16_low_abs_sum_bound": 1680,
+    "g16_high_abs_sum_bound": 896,
+    "note": "Both integer partials exact in half, but two nibble FMAs per original product consume one half2 FMA instruction: no automatic instruction-count reduction versus one FP32 FMA."
+  }
+}

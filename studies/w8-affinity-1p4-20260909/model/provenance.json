@@ -1,0 +1,10 @@
+{
+  "source": "/home/arian/llama.cpp-q36-moe/.worktrees/coding-serve-p100-20260906/ggml/src/ggml-cuda/affinity-wave.cu",
+  "sha256": "173003f61c4a4c33a37748657633f14a740911ec005e0a5706e9ab0af4bdafcb",
+  "redirected_m64_launch_sites": 8,
+  "scope": "Isolated M64-service adapter only; all M32/M16 original. Modes: 0 unchanged FP32 original, 1 dual FP16 G32, 2 single FP16 G64, 3 single FP16 G128, 4 dual FP16 full M64, 5 dual FP16 full virtual M128 pairs plus M64 leftovers. Mode 5 includes both launches. Model accuracy and performance NOT RUN.",
+  "generation": "Final affinity-wave.cu and headers are canonical; pre-virtual/prepare.py is historical initial scaffolding and must not be rerun.",
+  "mode6": "F32-storage compact GPU tile planner + dimension-specialized M128 dual-half kernel + original dual-half M64 leftovers. BF16/FP16 input template retains mode5 generic path. Per-device/per-stream/per-host-thread workspace grows to caller tile capacity; first allocations are included in first call. Built only, not model-tested.",
+  "dynamic_capacity_sites": 4,
+  "prefill_mode": "GGML_CUDA_AW_W8_MODE=0..6, or run-warm-job.py --w8-mode 0..6; paired quality validator selects modes itself."
+}

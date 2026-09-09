@@ -1,0 +1,38 @@
+{
+  "_Z36aw_q8_service_m64_n128_halfpipe_syncILb1EEvPK12aw_work_descPK12aw_tile_desciiiPKi": {
+    "HFMA2": 0,
+    "FFMA": 1024,
+    "LDL": 0,
+    "STL": 0
+  },
+  "_Z36aw_q8_service_m64_n128_halfpipe_syncILb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi": {
+    "HFMA2": 0,
+    "FFMA": 1024,
+    "LDL": 0,
+    "STL": 0
+  },
+  "_Z14w8_packed_halfILb1ELi0EEvPK12aw_work_descPK12aw_tile_desciiiPKi": {
+    "HFMA2": 512,
+    "FFMA": 0,
+    "LDL": 0,
+    "STL": 0
+  },
+  "_Z14w8_packed_halfILb1ELi4EEvPK12aw_work_descPK12aw_tile_desciiiPKi": {
+    "HFMA2": 512,
+    "FFMA": 0,
+    "LDL": 0,
+    "STL": 0
+  },
+  "_Z14w8_packed_halfILb1ELi2EEvPK12aw_work_descPK12aw_tile_desciiiPKi": {
+    "HFMA2": 512,
+    "FFMA": 0,
+    "LDL": 0,
+    "STL": 0
+  },
+  "_Z14w8_packed_halfILb1ELi1EEvPK12aw_work_descPK12aw_tile_desciiiPKi": {
+    "HFMA2": 512,
+    "FFMA": 0,
+    "LDL": 0,
+    "STL": 0
+  }
+}

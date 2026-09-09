@@ -1,0 +1,173 @@
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/packed.inc(4): error: closing brace of template definition not found
+  static void w8_packed_half(
+              ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(46): error: a template declaration is not allowed here
+  template<class T>struct Device{T*p;size_t n;Device(size_t x):n(x){do{auto e=(cudaMalloc(&p,n*sizeof(T)));if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaMalloc(&p,n*sizeof(T))")+cudaGetErrorString(e));}while(0);}~Device(){cudaFree(p);}void put(const std::vector<T>&v){do{auto e=(cudaMemcpy(p,v.data(),n*sizeof(T),cudaMemcpyHostToDevice));if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaMemcpy(p,v.data(),n*sizeof(T),cudaMemcpyHostToDevice)")+cudaGetErrorString(e));}while(0);}std::vector<T>get(){std::vector<T>v(n);do{auto e=(cudaMemcpy(v.data(),p,n*sizeof(T),cudaMemcpyDeviceToHost));if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaMemcpy(v.data(),p,n*sizeof(T),cudaMemcpyDeviceToHost)")+cudaGetErrorString(e));}while(0);return v;}};
+  ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(47): error: expected a ";"
+  uint32_t rng(uint32_t&s){s^=s<<13;s^=s>>17;s^=s<<5;return s;}
+                          ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(76): warning #12-D: parsing restarts here after previous syntax error
+   for(int e=0;e<ex;++e)for(int r=0;r<m;r+=256)ts128.push_back({e,r,std::min(256,m-r)});Device<aw_tile_desc>dt128(ts128.size());dt128.put(ts128);
+                                                                                       ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(76): error: identifier "Device" is undefined
+   for(int e=0;e<ex;++e)for(int r=0;r<m;r+=256)ts128.push_back({e,r,std::min(256,m-r)});Device<aw_tile_desc>dt128(ts128.size());dt128.put(ts128);
+                                                                                        ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(76): error: type name is not allowed
+   for(int e=0;e<ex;++e)for(int r=0;r<m;r+=256)ts128.push_back({e,r,std::min(256,m-r)});Device<aw_tile_desc>dt128(ts128.size());dt128.put(ts128);
+                                                                                               ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(76): error: identifier "ts128" is undefined
+   for(int e=0;e<ex;++e)for(int r=0;r<m;r+=256)ts128.push_back({e,r,std::min(256,m-r)});Device<aw_tile_desc>dt128(ts128.size());dt128.put(ts128);
+                                                                                                                  ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(76): error: identifier "dt128" is undefined
+   for(int e=0;e<ex;++e)for(int r=0;r<m;r+=256)ts128.push_back({e,r,std::min(256,m-r)});Device<aw_tile_desc>dt128(ts128.size());dt128.put(ts128);
+                                                                                                            ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(77): error: type name is not allowed
+   Device<aw_work_desc>dd(ds.size()),dd16(ds16.size()),dd8(ds8.size()),dd4(ds4.size());Device<aw_tile_desc>dt(ts.size());dd.put(ds);dd16.put(ds16);dd8.put(ds8);dd4.put(ds4);dt.put(ts);
+          ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(77): error: identifier "ds" is undefined
+   Device<aw_work_desc>dd(ds.size()),dd16(ds16.size()),dd8(ds8.size()),dd4(ds4.size());Device<aw_tile_desc>dt(ts.size());dd.put(ds);dd16.put(ds16);dd8.put(ds8);dd4.put(ds4);dt.put(ts);
+                          ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(77): error: identifier "dd" is undefined
+   Device<aw_work_desc>dd(ds.size()),dd16(ds16.size()),dd8(ds8.size()),dd4(ds4.size());Device<aw_tile_desc>dt(ts.size());dd.put(ds);dd16.put(ds16);dd8.put(ds8);dd4.put(ds4);dt.put(ts);
+                       ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(77): error: identifier "ds16" is undefined
+   Device<aw_work_desc>dd(ds.size()),dd16(ds16.size()),dd8(ds8.size()),dd4(ds4.size());Device<aw_tile_desc>dt(ts.size());dd.put(ds);dd16.put(ds16);dd8.put(ds8);dd4.put(ds4);dt.put(ts);
+                                          ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(77): error: identifier "dd16" is undefined
+   Device<aw_work_desc>dd(ds.size()),dd16(ds16.size()),dd8(ds8.size()),dd4(ds4.size());Device<aw_tile_desc>dt(ts.size());dd.put(ds);dd16.put(ds16);dd8.put(ds8);dd4.put(ds4);dt.put(ts);
+                                     ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(77): error: identifier "ds8" is undefined
+   Device<aw_work_desc>dd(ds.size()),dd16(ds16.size()),dd8(ds8.size()),dd4(ds4.size());Device<aw_tile_desc>dt(ts.size());dd.put(ds);dd16.put(ds16);dd8.put(ds8);dd4.put(ds4);dt.put(ts);
+                                                           ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(77): error: identifier "dd8" is undefined
+   Device<aw_work_desc>dd(ds.size()),dd16(ds16.size()),dd8(ds8.size()),dd4(ds4.size());Device<aw_tile_desc>dt(ts.size());dd.put(ds);dd16.put(ds16);dd8.put(ds8);dd4.put(ds4);dt.put(ts);
+                                                       ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(77): error: identifier "ds4" is undefined
+   Device<aw_work_desc>dd(ds.size()),dd16(ds16.size()),dd8(ds8.size()),dd4(ds4.size());Device<aw_tile_desc>dt(ts.size());dd.put(ds);dd16.put(ds16);dd8.put(ds8);dd4.put(ds4);dt.put(ts);
+                                                                           ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(77): error: identifier "dd4" is undefined
+   Device<aw_work_desc>dd(ds.size()),dd16(ds16.size()),dd8(ds8.size()),dd4(ds4.size());Device<aw_tile_desc>dt(ts.size());dd.put(ds);dd16.put(ds16);dd8.put(ds8);dd4.put(ds4);dt.put(ts);
+                                                                       ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(77): error: type name is not allowed
+   Device<aw_work_desc>dd(ds.size()),dd16(ds16.size()),dd8(ds8.size()),dd4(ds4.size());Device<aw_tile_desc>dt(ts.size());dd.put(ds);dd16.put(ds16);dd8.put(ds8);dd4.put(ds4);dt.put(ts);
+                                                                                              ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(77): error: identifier "ts" is undefined
+   Device<aw_work_desc>dd(ds.size()),dd16(ds16.size()),dd8(ds8.size()),dd4(ds4.size());Device<aw_tile_desc>dt(ts.size());dd.put(ds);dd16.put(ds16);dd8.put(ds8);dd4.put(ds4);dt.put(ts);
+                                                                                                              ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(77): error: identifier "dt" is undefined
+   Device<aw_work_desc>dd(ds.size()),dd16(ds16.size()),dd8(ds8.size()),dd4(ds4.size());Device<aw_tile_desc>dt(ts.size());dd.put(ds);dd16.put(ds16);dd8.put(ds8);dd4.put(ds4);dt.put(ts);
+                                                                                                           ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(78): error: identifier "grid" is undefined
+   auto run=[&](int b,bool prep){if(b==32)aw_q8_service_m64_n128_halfpipe_sync<false><<<grid,256>>>(dd.p,dt.p,ts.size(),n,k);else if(b==16)aw_q8_service_m64_n128_halfpipe_sync<true><<<grid,256>>>(dd16.p,dt.p,ts.size(),n,k);else w8_packed_half<true,0><<<candidate_grid,256>>>(dd16.p,dt128.p,ts128.size(),n,k);do{auto e=(cudaGetLastError());if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaGetLastError()")+cudaGetErrorString(e));}while(0);};
+                                                                                        ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(78): error: identifier "grid" is undefined
+   auto run=[&](int b,bool prep){if(b==32)aw_q8_service_m64_n128_halfpipe_sync<false><<<grid,256>>>(dd.p,dt.p,ts.size(),n,k);else if(b==16)aw_q8_service_m64_n128_halfpipe_sync<true><<<grid,256>>>(dd16.p,dt.p,ts.size(),n,k);else w8_packed_half<true,0><<<candidate_grid,256>>>(dd16.p,dt128.p,ts128.size(),n,k);do{auto e=(cudaGetLastError());if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaGetLastError()")+cudaGetErrorString(e));}while(0);};
+                                                                                                                                                                                        ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(78): error: identifier "candidate_grid" is undefined
+   auto run=[&](int b,bool prep){if(b==32)aw_q8_service_m64_n128_halfpipe_sync<false><<<grid,256>>>(dd.p,dt.p,ts.size(),n,k);else if(b==16)aw_q8_service_m64_n128_halfpipe_sync<true><<<grid,256>>>(dd16.p,dt.p,ts.size(),n,k);else w8_packed_half<true,0><<<candidate_grid,256>>>(dd16.p,dt128.p,ts128.size(),n,k);do{auto e=(cudaGetLastError());if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaGetLastError()")+cudaGetErrorString(e));}while(0);};
+                                                                                                                                                                                                                                                             ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(80): error: identifier "out" is undefined
+   for(int b:{32,16,512}){do{auto e=(cudaMemset(out.p,0xff,oc*4));if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaMemset(out.p,0xff,oc*4)")+cudaGetErrorString(e));}while(0);run(b,true);do{auto e=(cudaDeviceSynchronize());if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaDeviceSynchronize()")+cudaGetErrorString(e));}while(0);auto got=out.get();if(b==32)ref=got;auto&aa=b>=16?a:b==8?d8:d4;size_t nonfinite=0,changed=0,bad=0;double err=0,norm=0;for(size_t i=0;i<oc;++i){nonfinite+=!std::isfinite(got[i]);changed+=bits(got[i])!=bits(ref[i]);double d=double(got[i])-ref[i];err+=d*d;norm+=double(ref[i])*ref[i];}
+                                                ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(80): error: identifier "oc" is undefined
+   for(int b:{32,16,512}){do{auto e=(cudaMemset(out.p,0xff,oc*4));if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaMemset(out.p,0xff,oc*4)")+cudaGetErrorString(e));}while(0);run(b,true);do{auto e=(cudaDeviceSynchronize());if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaDeviceSynchronize()")+cudaGetErrorString(e));}while(0);auto got=out.get();if(b==32)ref=got;auto&aa=b>=16?a:b==8?d8:d4;size_t nonfinite=0,changed=0,bad=0;double err=0,norm=0;for(size_t i=0;i<oc;++i){nonfinite+=!std::isfinite(got[i]);changed+=bits(got[i])!=bits(ref[i]);double d=double(got[i])-ref[i];err+=d*d;norm+=double(ref[i])*ref[i];}
+                                                           ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(80): error: identifier "out" is undefined
+   for(int b:{32,16,512}){do{auto e=(cudaMemset(out.p,0xff,oc*4));if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaMemset(out.p,0xff,oc*4)")+cudaGetErrorString(e));}while(0);run(b,true);do{auto e=(cudaDeviceSynchronize());if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaDeviceSynchronize()")+cudaGetErrorString(e));}while(0);auto got=out.get();if(b==32)ref=got;auto&aa=b>=16?a:b==8?d8:d4;size_t nonfinite=0,changed=0,bad=0;double err=0,norm=0;for(size_t i=0;i<oc;++i){nonfinite+=!std::isfinite(got[i]);changed+=bits(got[i])!=bits(ref[i]);double d=double(got[i])-ref[i];err+=d*d;norm+=double(ref[i])*ref[i];}
+                                                                                                                                                                                                                                                                                                                                                                     ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(80): error: identifier "a" is undefined
+   for(int b:{32,16,512}){do{auto e=(cudaMemset(out.p,0xff,oc*4));if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaMemset(out.p,0xff,oc*4)")+cudaGetErrorString(e));}while(0);run(b,true);do{auto e=(cudaDeviceSynchronize());if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaDeviceSynchronize()")+cudaGetErrorString(e));}while(0);auto got=out.get();if(b==32)ref=got;auto&aa=b>=16?a:b==8?d8:d4;size_t nonfinite=0,changed=0,bad=0;double err=0,norm=0;for(size_t i=0;i<oc;++i){nonfinite+=!std::isfinite(got[i]);changed+=bits(got[i])!=bits(ref[i]);double d=double(got[i])-ref[i];err+=d*d;norm+=double(ref[i])*ref[i];}
+                                                                                                                                                                                                                                                                                                                                                                                                              ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(80): error: identifier "d8" is undefined
+   for(int b:{32,16,512}){do{auto e=(cudaMemset(out.p,0xff,oc*4));if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaMemset(out.p,0xff,oc*4)")+cudaGetErrorString(e));}while(0);run(b,true);do{auto e=(cudaDeviceSynchronize());if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaDeviceSynchronize()")+cudaGetErrorString(e));}while(0);auto got=out.get();if(b==32)ref=got;auto&aa=b>=16?a:b==8?d8:d4;size_t nonfinite=0,changed=0,bad=0;double err=0,norm=0;for(size_t i=0;i<oc;++i){nonfinite+=!std::isfinite(got[i]);changed+=bits(got[i])!=bits(ref[i]);double d=double(got[i])-ref[i];err+=d*d;norm+=double(ref[i])*ref[i];}
+                                                                                                                                                                                                                                                                                                                                                                                                                     ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(80): error: identifier "d4" is undefined
+   for(int b:{32,16,512}){do{auto e=(cudaMemset(out.p,0xff,oc*4));if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaMemset(out.p,0xff,oc*4)")+cudaGetErrorString(e));}while(0);run(b,true);do{auto e=(cudaDeviceSynchronize());if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaDeviceSynchronize()")+cudaGetErrorString(e));}while(0);auto got=out.get();if(b==32)ref=got;auto&aa=b>=16?a:b==8?d8:d4;size_t nonfinite=0,changed=0,bad=0;double err=0,norm=0;for(size_t i=0;i<oc;++i){nonfinite+=!std::isfinite(got[i]);changed+=bits(got[i])!=bits(ref[i]);double d=double(got[i])-ref[i];err+=d*d;norm+=double(ref[i])*ref[i];}
+                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(80): error: identifier "oc" is undefined
+   for(int b:{32,16,512}){do{auto e=(cudaMemset(out.p,0xff,oc*4));if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaMemset(out.p,0xff,oc*4)")+cudaGetErrorString(e));}while(0);run(b,true);do{auto e=(cudaDeviceSynchronize());if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaDeviceSynchronize()")+cudaGetErrorString(e));}while(0);auto got=out.get();if(b==32)ref=got;auto&aa=b>=16?a:b==8?d8:d4;size_t nonfinite=0,changed=0,bad=0;double err=0,norm=0;for(size_t i=0;i<oc;++i){nonfinite+=!std::isfinite(got[i]);changed+=bits(got[i])!=bits(ref[i]);double d=double(got[i])-ref[i];err+=d*d;norm+=double(ref[i])*ref[i];}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(80): error: identifier "bits" is undefined
+   for(int b:{32,16,512}){do{auto e=(cudaMemset(out.p,0xff,oc*4));if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaMemset(out.p,0xff,oc*4)")+cudaGetErrorString(e));}while(0);run(b,true);do{auto e=(cudaDeviceSynchronize());if(e!=cudaSuccess)throw std::runtime_error(std::string("cudaDeviceSynchronize()")+cudaGetErrorString(e));}while(0);auto got=out.get();if(b==32)ref=got;auto&aa=b>=16?a:b==8?d8:d4;size_t nonfinite=0,changed=0,bad=0;double err=0,norm=0;for(size_t i=0;i<oc;++i){nonfinite+=!std::isfinite(got[i]);changed+=bits(got[i])!=bits(ref[i]);double d=double(got[i])-ref[i];err+=d*d;norm+=double(ref[i])*ref[i];}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(81): error: identifier "oc" is undefined
+    size_t samples=std::min<size_t>(oc,256);uint32_t sr=731;for(size_t z=0;z<samples;++z){size_t ix=rng(sr)%oc;int col=ix%n,row=(ix/n)%m,e=ix/(size_t(m)*n);float sum[2]={},total=0;int flush=b==64?1:b==128?2:b==256?4:0;for(int g=0;g<kg;++g){float d=__half2float(sc[(size_t(e)*n+col)*kg+g]);for(int j=0;j<32;++j){float weight=float(w[((size_t(e)*n+col)*kg+g)*32+j])*d;float activation=aa[(size_t(e)*m+row)*k+g*32+j];if(b>=64){weight=__half2float(__float2half_rn(weight));sum[0]=half_round(double(activation)*double(weight)+double(sum[0]));}else sum[j/16]=std::fma(activation,weight,sum[j/16]);}if(flush&&((g+1)%flush==0||g+1==kg)){total+=sum[0]+sum[1];sum[0]=sum[1]=0;}}float expected=flush?total:sum[0]+sum[1];bad+=bits(got[ix])!=bits(expected);}
+                                    ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(81): error: identifier "m" is undefined
+    size_t samples=std::min<size_t>(oc,256);uint32_t sr=731;for(size_t z=0;z<samples;++z){size_t ix=rng(sr)%oc;int col=ix%n,row=(ix/n)%m,e=ix/(size_t(m)*n);float sum[2]={},total=0;int flush=b==64?1:b==128?2:b==256?4:0;for(int g=0;g<kg;++g){float d=__half2float(sc[(size_t(e)*n+col)*kg+g]);for(int j=0;j<32;++j){float weight=float(w[((size_t(e)*n+col)*kg+g)*32+j])*d;float activation=aa[(size_t(e)*m+row)*k+g*32+j];if(b>=64){weight=__half2float(__float2half_rn(weight));sum[0]=half_round(double(activation)*double(weight)+double(sum[0]));}else sum[j/16]=std::fma(activation,weight,sum[j/16]);}if(flush&&((g+1)%flush==0||g+1==kg)){total+=sum[0]+sum[1];sum[0]=sum[1]=0;}}float expected=flush?total:sum[0]+sum[1];bad+=bits(got[ix])!=bits(expected);}
+                                                                                                                                       ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(81): error: identifier "kg" is undefined
+    size_t samples=std::min<size_t>(oc,256);uint32_t sr=731;for(size_t z=0;z<samples;++z){size_t ix=rng(sr)%oc;int col=ix%n,row=(ix/n)%m,e=ix/(size_t(m)*n);float sum[2]={},total=0;int flush=b==64?1:b==128?2:b==256?4:0;for(int g=0;g<kg;++g){float d=__half2float(sc[(size_t(e)*n+col)*kg+g]);for(int j=0;j<32;++j){float weight=float(w[((size_t(e)*n+col)*kg+g)*32+j])*d;float activation=aa[(size_t(e)*m+row)*k+g*32+j];if(b>=64){weight=__half2float(__float2half_rn(weight));sum[0]=half_round(double(activation)*double(weight)+double(sum[0]));}else sum[j/16]=std::fma(activation,weight,sum[j/16]);}if(flush&&((g+1)%flush==0||g+1==kg)){total+=sum[0]+sum[1];sum[0]=sum[1]=0;}}float expected=flush?total:sum[0]+sum[1];bad+=bits(got[ix])!=bits(expected);}
+                                                                                                                                                                                                                                        ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(81): error: identifier "sc" is undefined
+    size_t samples=std::min<size_t>(oc,256);uint32_t sr=731;for(size_t z=0;z<samples;++z){size_t ix=rng(sr)%oc;int col=ix%n,row=(ix/n)%m,e=ix/(size_t(m)*n);float sum[2]={},total=0;int flush=b==64?1:b==128?2:b==256?4:0;for(int g=0;g<kg;++g){float d=__half2float(sc[(size_t(e)*n+col)*kg+g]);for(int j=0;j<32;++j){float weight=float(w[((size_t(e)*n+col)*kg+g)*32+j])*d;float activation=aa[(size_t(e)*m+row)*k+g*32+j];if(b>=64){weight=__half2float(__float2half_rn(weight));sum[0]=half_round(double(activation)*double(weight)+double(sum[0]));}else sum[j/16]=std::fma(activation,weight,sum[j/16]);}if(flush&&((g+1)%flush==0||g+1==kg)){total+=sum[0]+sum[1];sum[0]=sum[1]=0;}}float expected=flush?total:sum[0]+sum[1];bad+=bits(got[ix])!=bits(expected);}
+                                                                                                                                                                                                                                                                     ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(81): error: identifier "w" is undefined
+    size_t samples=std::min<size_t>(oc,256);uint32_t sr=731;for(size_t z=0;z<samples;++z){size_t ix=rng(sr)%oc;int col=ix%n,row=(ix/n)%m,e=ix/(size_t(m)*n);float sum[2]={},total=0;int flush=b==64?1:b==128?2:b==256?4:0;for(int g=0;g<kg;++g){float d=__half2float(sc[(size_t(e)*n+col)*kg+g]);for(int j=0;j<32;++j){float weight=float(w[((size_t(e)*n+col)*kg+g)*32+j])*d;float activation=aa[(size_t(e)*m+row)*k+g*32+j];if(b>=64){weight=__half2float(__float2half_rn(weight));sum[0]=half_round(double(activation)*double(weight)+double(sum[0]));}else sum[j/16]=std::fma(activation,weight,sum[j/16]);}if(flush&&((g+1)%flush==0||g+1==kg)){total+=sum[0]+sum[1];sum[0]=sum[1]=0;}}float expected=flush?total:sum[0]+sum[1];bad+=bits(got[ix])!=bits(expected);}
+                                                                                                                                                                                                                                                                                                                                          ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(81): error: identifier "half_round" is undefined
+    size_t samples=std::min<size_t>(oc,256);uint32_t sr=731;for(size_t z=0;z<samples;++z){size_t ix=rng(sr)%oc;int col=ix%n,row=(ix/n)%m,e=ix/(size_t(m)*n);float sum[2]={},total=0;int flush=b==64?1:b==128?2:b==256?4:0;for(int g=0;g<kg;++g){float d=__half2float(sc[(size_t(e)*n+col)*kg+g]);for(int j=0;j<32;++j){float weight=float(w[((size_t(e)*n+col)*kg+g)*32+j])*d;float activation=aa[(size_t(e)*m+row)*k+g*32+j];if(b>=64){weight=__half2float(__float2half_rn(weight));sum[0]=half_round(double(activation)*double(weight)+double(sum[0]));}else sum[j/16]=std::fma(activation,weight,sum[j/16]);}if(flush&&((g+1)%flush==0||g+1==kg)){total+=sum[0]+sum[1];sum[0]=sum[1]=0;}}float expected=flush?total:sum[0]+sum[1];bad+=bits(got[ix])!=bits(expected);}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(81): error: identifier "bits" is undefined
+    size_t samples=std::min<size_t>(oc,256);uint32_t sr=731;for(size_t z=0;z<samples;++z){size_t ix=rng(sr)%oc;int col=ix%n,row=(ix/n)%m,e=ix/(size_t(m)*n);float sum[2]={},total=0;int flush=b==64?1:b==128?2:b==256?4:0;for(int g=0;g<kg;++g){float d=__half2float(sc[(size_t(e)*n+col)*kg+g]);for(int j=0;j<32;++j){float weight=float(w[((size_t(e)*n+col)*kg+g)*32+j])*d;float activation=aa[(size_t(e)*m+row)*k+g*32+j];if(b>=64){weight=__half2float(__float2half_rn(weight));sum[0]=half_round(double(activation)*double(weight)+double(sum[0]));}else sum[j/16]=std::fma(activation,weight,sum[j/16]);}if(flush&&((g+1)%flush==0||g+1==kg)){total+=sum[0]+sum[1];sum[0]=sum[1]=0;}}float expected=flush?total:sum[0]+sum[1];bad+=bits(got[ix])!=bits(expected);}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(83): error: identifier "m" is undefined
+   printf("META M=%d N=%d K=%d experts=%d quantization_timed=1 full_q8_codes=1\n",m,n,k,ex);
+                                                                                  ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(83): error: identifier "ex" is undefined
+   printf("META M=%d N=%d K=%d experts=%d quantization_timed=1 full_q8_codes=1\n",m,n,k,ex);
+                                                                                        ^
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu(88): error: expected a statement
+  }catch(const std::exception&e){fprintf(
+   ^
+
+At end of source: error: expected a "}"
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/packed.inc(44): note #3196-D: to match this "{"
+          {
+          ^
+
+41 errors detected in the compilation of "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/m256-tile/worker.cu".

@@ -1,0 +1,56 @@
+QUANT bits=8 values=8388608 bad=0
+QUANT bits=4 values=8388608 bad=0
+CHECK A32 outputs=33554432 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A16 outputs=33554432 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A64 outputs=33554432 samples=256 bad=0 nonfinite=0 changed=33552460 rel_l2=0.000646755344
+MATCH_PREVIOUS A64 values=33554432 bad=0
+CHECK A128 outputs=33554432 samples=256 bad=0 nonfinite=0 changed=33552924 rel_l2=0.000870702495
+MATCH_PREVIOUS A128 values=33554432 bad=0
+CHECK A256 outputs=33554432 samples=256 bad=0 nonfinite=0 changed=33553306 rel_l2=0.0011977545
+MATCH_PREVIOUS A256 values=33554432 bad=0
+CHECK A512 outputs=33554432 samples=256 bad=0 nonfinite=0 changed=33553839 rel_l2=0.00234354039
+MATCH_PREVIOUS A512 values=33554432 bad=0
+META M=256 N=2048 K=512 experts=64 quantization_timed=1 full_q8_codes=1
+TIME A32 prep=1 rep=0 us=4538.27734
+TIME A16 prep=1 rep=0 us=4529.38623
+TIME A64 prep=1 rep=0 us=5561.25342
+TIME A128 prep=1 rep=0 us=4774.56006
+TIME A256 prep=1 rep=0 us=3891.88794
+TIME A512 prep=1 rep=0 us=2838.80005
+TIME A16 prep=1 rep=1 us=4530.04834
+TIME A64 prep=1 rep=1 us=5550.35742
+TIME A128 prep=1 rep=1 us=4762.9707
+TIME A256 prep=1 rep=1 us=3882.13354
+TIME A512 prep=1 rep=1 us=2841.81348
+TIME A32 prep=1 rep=1 us=4541.01904
+TIME A64 prep=1 rep=2 us=5573.73877
+TIME A128 prep=1 rep=2 us=4767.74414
+TIME A256 prep=1 rep=2 us=3878.67749
+TIME A512 prep=1 rep=2 us=2849.90942
+TIME A32 prep=1 rep=2 us=4529.22656
+TIME A16 prep=1 rep=2 us=4528.06396
+TIME A128 prep=1 rep=3 us=4769.41357
+TIME A256 prep=1 rep=3 us=3886.46899
+TIME A512 prep=1 rep=3 us=2843.1145
+TIME A32 prep=1 rep=3 us=4530.50146
+TIME A16 prep=1 rep=3 us=4530.44287
+TIME A64 prep=1 rep=3 us=5563.64258
+TIME A256 prep=1 rep=4 us=3887.40796
+TIME A512 prep=1 rep=4 us=2842.00562
+TIME A32 prep=1 rep=4 us=4534.33594
+TIME A16 prep=1 rep=4 us=4533.54688
+TIME A64 prep=1 rep=4 us=5548.14893
+TIME A128 prep=1 rep=4 us=4761.6958
+TIME A512 prep=1 rep=5 us=2841.66406
+TIME A32 prep=1 rep=5 us=4535.76514
+TIME A16 prep=1 rep=5 us=4528.88037
+TIME A64 prep=1 rep=5 us=5551.03955
+TIME A128 prep=1 rep=5 us=4763.45605
+TIME A256 prep=1 rep=5 us=3878.61841
+TIME A32 prep=1 rep=6 us=4533.63184
+TIME A16 prep=1 rep=6 us=4527.94678
+TIME A64 prep=1 rep=6 us=5565.10938
+TIME A128 prep=1 rep=6 us=4775.52002
+TIME A256 prep=1 rep=6 us=3904.53345
+TIME A512 prep=1 rep=6 us=2849.96802
+PASS

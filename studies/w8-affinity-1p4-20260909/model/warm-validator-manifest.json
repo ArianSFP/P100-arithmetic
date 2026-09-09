@@ -1,0 +1,28 @@
+{
+  "command": [
+    "/usr/bin/g++-14",
+    "-std=c++17",
+    "-O3",
+    "-DNDEBUG",
+    "-I/home/arian/llama.cpp-q36-moe/.worktrees/coding-serve-p100-20260906/common",
+    "-I/home/arian/llama.cpp-q36-moe/.worktrees/coding-serve-p100-20260906/include",
+    "-I/home/arian/llama.cpp-q36-moe/.worktrees/coding-serve-p100-20260906/ggml/include",
+    "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/model/validate-warm.cpp",
+    "-L/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/model/build/bin",
+    "-Wl,-rpath,/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/model/build/bin",
+    "-lllama-common",
+    "/home/arian/llama.cpp-q36-moe/.worktrees/coding-serve-p100-20260906/build-coding-serve/common/libllama-common-base.a",
+    "-lllama",
+    "-lggml",
+    "-lggml-base",
+    "-pthread",
+    "-ldl",
+    "-o",
+    "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/model/test-aw-warm"
+  ],
+  "hashes": {
+    "validate-warm.cpp": "5051b45851c5ac1656ce09b04396f80ef09c1a5e2087417d5534592aafadf7ca",
+    "test-aw-warm": "97407ef9f1757c71bc8541a6342c58e4221f01edc95f335bb59d04cdc3b9b105",
+    "build-warm-validator.py": "24448f0cd579a0ad6457e429da61bbe9450acf49373252b84551069dd957f160"
+  }
+}

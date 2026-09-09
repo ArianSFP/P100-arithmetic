@@ -1,0 +1,52 @@
+QUANT bits=8 values=16777216 bad=0
+QUANT bits=4 values=16777216 bad=0
+CHECK A32 outputs=67108864 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A16 outputs=67108864 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A64 outputs=67108864 samples=256 bad=0 nonfinite=0 changed=67105841 rel_l2=0.000882794225
+CHECK A128 outputs=67108864 samples=256 bad=0 nonfinite=0 changed=67106608 rel_l2=0.00120733789
+CHECK A256 outputs=67108864 samples=256 bad=0 nonfinite=0 changed=67107235 rel_l2=0.00167814905
+CHECK A512 outputs=67108864 samples=256 bad=0 nonfinite=0 changed=67108035 rel_l2=0.00330660737
+META M=512 N=2048 K=512 experts=64 quantization_timed=1 full_q8_codes=1
+TIME A32 prep=1 rep=0 us=9027.09277
+TIME A16 prep=1 rep=0 us=9032.65527
+TIME A64 prep=1 rep=0 us=6495.7915
+TIME A128 prep=1 rep=0 us=6301.9043
+TIME A256 prep=1 rep=0 us=6141.35498
+TIME A512 prep=1 rep=0 us=5899.2749
+TIME A16 prep=1 rep=1 us=9024.25098
+TIME A64 prep=1 rep=1 us=6494.60303
+TIME A128 prep=1 rep=1 us=6300.76318
+TIME A256 prep=1 rep=1 us=6152.52783
+TIME A512 prep=1 rep=1 us=5895.73828
+TIME A32 prep=1 rep=1 us=9038.27734
+TIME A64 prep=1 rep=2 us=6494.18604
+TIME A128 prep=1 rep=2 us=6291.47705
+TIME A256 prep=1 rep=2 us=6148.34619
+TIME A512 prep=1 rep=2 us=5890.74658
+TIME A32 prep=1 rep=2 us=9035.28027
+TIME A16 prep=1 rep=2 us=9043.97363
+TIME A128 prep=1 rep=3 us=6267.31787
+TIME A256 prep=1 rep=3 us=6140.76318
+TIME A512 prep=1 rep=3 us=5896.5332
+TIME A32 prep=1 rep=3 us=9035.11523
+TIME A16 prep=1 rep=3 us=9025.90332
+TIME A64 prep=1 rep=3 us=6488.71484
+TIME A256 prep=1 rep=4 us=6161.05615
+TIME A512 prep=1 rep=4 us=5893.45654
+TIME A32 prep=1 rep=4 us=9049.44531
+TIME A16 prep=1 rep=4 us=9003.81348
+TIME A64 prep=1 rep=4 us=6489.85596
+TIME A128 prep=1 rep=4 us=6282.82666
+TIME A512 prep=1 rep=5 us=5882.3999
+TIME A32 prep=1 rep=5 us=9023.44531
+TIME A16 prep=1 rep=5 us=8990.45898
+TIME A64 prep=1 rep=5 us=6483.74414
+TIME A128 prep=1 rep=5 us=6286.77295
+TIME A256 prep=1 rep=5 us=6160
+TIME A32 prep=1 rep=6 us=9016.63965
+TIME A16 prep=1 rep=6 us=9007.24316
+TIME A64 prep=1 rep=6 us=6490.92334
+TIME A128 prep=1 rep=6 us=6295.55225
+TIME A256 prep=1 rep=6 us=6137.72266
+TIME A512 prep=1 rep=6 us=5882.10107
+PASS

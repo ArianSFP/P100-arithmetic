@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/usr/local/cuda-12.8/bin/nvcc",
+    "-ccbin",
+    "/usr/bin/g++-13",
+    "-O3",
+    "-std=c++17",
+    "-arch=sm_60",
+    "-lineinfo",
+    "-Xptxas=-v",
+    "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/compact-plan-f32-semantics/worker.cu",
+    "-o",
+    "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/compact-plan-f32-semantics/worker"
+  ],
+  "hashes": {
+    "worker": "6255022bfb4fbb993d66b35a12bc67559142de5c81e89c548b1589cee7a363f9",
+    "worker.cu": "a90b72e345811ec0154c0c6824cc233f6e212bdd2c7205ef489b5e1e1976889f",
+    "q8.inc": "cfc73310e817cbcecf895ce4764c7753cdb3bbe1109ca1f3d539a5f775ac1d00",
+    "lowact.inc": "8ef9f6e5a32cddc4338503f2d024c4ac83e3428dc95ba93954c451df13dd2d98",
+    "packed.inc": "6d390bff032a440568ab4f9a3c0e66541a919a8ab74fc303bb807d422963c30a",
+    "pair.inc": "eb14a5e2c22d76b94c7919bc32377fabe49ded2fa7084c1fe482267fcb9bd8d9",
+    "decode.inc": "12003f1da3b97ba383e7038fd846d255f565cc2bc7a6713d1ca4b9d7c9688207",
+    "fallback.inc": "9b19370c5e7411ea09b75b9e53cb9d2cbbc940f6114b89b39adb38f087288249",
+    "old-packed.inc": "f9ede8112077df5ea7cd3195b2b9d8771130f5d651fddcd281d4d5cd7fc5c5fc",
+    "build.py": "0e83d826c2241228430c7e0fb7fcc383f81f2fe218bf85e26452e475d860fb0f"
+  }
+}

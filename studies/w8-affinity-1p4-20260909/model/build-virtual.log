@@ -1,0 +1,9 @@
+Compiling isolated CUDA TU
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/model/affinity-wave.cu:17334:54: warning: no previous declaration for ‘void aw_w8_set_mode(int)’ [-Wmissing-declarations]
+17334 | extern "C" __attribute__((visibility("default"))) void aw_w8_set_mode(int mode){GGML_ASSERT(mode>=0&&mode<=5);w8_validation_mode.store(mode);}
+      |                                                      ^~~~~~~~~~~~~~
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/model/affinity-wave.cu:17335:68: warning: no previous declaration for ‘long long unsigned int aw_w8_calls(int)’ [-Wmissing-declarations]
+17335 | extern "C" __attribute__((visibility("default"))) unsigned long long aw_w8_calls(int mode){GGML_ASSERT(mode>=0&&mode<=5);return w8_validation_calls[mode].load();}
+      |                                                                    ^~~~~~~~~~~
+Build complete

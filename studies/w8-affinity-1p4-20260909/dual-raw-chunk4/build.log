@@ -1,0 +1,83 @@
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/dual-raw-chunk4/packed.inc(151): warning #20058-D: the #pragma unroll must precede a loop
+  #pragma unroll
+          ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_Z11w8_old_halfILb1ELi0EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z11w8_old_halfILb1ELi0EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 128 registers, used 1 barriers, 24576 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 193.470 ms
+ptxas info    : Compiling entry function '_Z11w8_old_halfILb1ELi4EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z11w8_old_halfILb1ELi4EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 193 registers, used 1 barriers, 24576 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 218.733 ms
+ptxas info    : Compiling entry function '_Z11w8_old_halfILb1ELi2EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z11w8_old_halfILb1ELi2EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 193 registers, used 1 barriers, 24576 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 213.980 ms
+ptxas info    : Compiling entry function '_Z11w8_old_halfILb1ELi1EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z11w8_old_halfILb1ELi1EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 176 registers, used 1 barriers, 24576 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 215.754 ms
+ptxas info    : Compiling entry function '_Z9w8_lowactILi4EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z9w8_lowactILi4EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 127 registers, used 1 barriers, 32768 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 101.344 ms
+ptxas info    : Compiling entry function '_Z9w8_lowactILi8EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z9w8_lowactILi8EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 127 registers, used 1 barriers, 32768 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 103.649 ms
+ptxas info    : Compiling entry function '_Z36aw_q8_service_m64_n128_halfpipe_syncILb1EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z36aw_q8_service_m64_n128_halfpipe_syncILb1EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 122 registers, used 1 barriers, 32768 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 101.428 ms
+ptxas info    : Compiling entry function '_Z36aw_q8_service_m64_n128_halfpipe_syncILb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z36aw_q8_service_m64_n128_halfpipe_syncILb0EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 122 registers, used 1 barriers, 32768 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 99.877 ms
+ptxas info    : Compiling entry function '_Z14w8_packed_halfILb1ELi0EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z14w8_packed_halfILb1ELi0EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 127 registers, used 1 barriers, 32768 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 227.900 ms
+ptxas info    : Compiling entry function '_Z14w8_packed_halfILb1ELi4EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z14w8_packed_halfILb1ELi4EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    216 bytes stack frame, 604 bytes spill stores, 412 bytes spill loads
+ptxas info    : Used 128 registers, used 1 barriers, 216 bytes cumulative stack size, 32768 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 227.835 ms
+ptxas info    : Compiling entry function '_Z14w8_packed_halfILb1ELi2EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z14w8_packed_halfILb1ELi2EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    224 bytes stack frame, 616 bytes spill stores, 420 bytes spill loads
+ptxas info    : Used 128 registers, used 1 barriers, 224 bytes cumulative stack size, 32768 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 228.949 ms
+ptxas info    : Compiling entry function '_Z14w8_packed_halfILb1ELi1EEvPK12aw_work_descPK12aw_tile_desciiiPKi' for 'sm_60'
+ptxas info    : Function properties for _Z14w8_packed_halfILb1ELi1EEvPK12aw_work_descPK12aw_tile_desciiiPKi
+    240 bytes stack frame, 620 bytes spill stores, 432 bytes spill loads
+ptxas info    : Used 128 registers, used 1 barriers, 240 bytes cumulative stack size, 32768 bytes smem, 360 bytes cmem[0]
+ptxas info    : Compile time = 240.666 ms
+ptxas info    : Compiling entry function '_Z8quantizeILi4EEvPK6__halfPhm' for 'sm_60'
+ptxas info    : Function properties for _Z8quantizeILi4EEvPK6__halfPhm
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 21 registers, used 0 barriers, 344 bytes cmem[0], 24 bytes cmem[2]
+ptxas info    : Compile time = 7.543 ms
+ptxas info    : Compiling entry function '_Z8quantizeILi8EEvPK6__halfPhm' for 'sm_60'
+ptxas info    : Function properties for _Z8quantizeILi8EEvPK6__halfPhm
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 21 registers, used 0 barriers, 344 bytes cmem[0], 20 bytes cmem[2]
+ptxas info    : Compile time = 7.104 ms
+ptxas info    : Compiling entry function '_Z15w8_check_decodePj' for 'sm_60'
+ptxas info    : Function properties for _Z15w8_check_decodePj
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 10 registers, used 0 barriers, 328 bytes cmem[0], 12 bytes cmem[2]
+ptxas info    : Compile time = 1.952 ms

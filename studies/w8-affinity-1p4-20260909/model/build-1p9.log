@@ -1,0 +1,21 @@
+Compiling isolated CUDA TU
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/model/fast-pair.inc(153): warning #20058-D: the #pragma unroll must precede a loop
+  #pragma unroll
+          ^
+          detected during:
+            instantiation of "void <unnamed>::aw_dispatch_w8_planned<BF16_INPUT>(int, cudaStream_t, const <unnamed>::aw_work_desc *, const <unnamed>::aw_tile_desc *, int, int, int, const int *) [with BF16_INPUT=false]" at line 3349 of /home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/model/affinity-wave.cu
+            instantiation of "void <unnamed>::aw_dispatch_w8<BF16_INPUT>(int, cudaStream_t, const <unnamed>::aw_work_desc *, const <unnamed>::aw_tile_desc *, int, int, int, const int *) [with BF16_INPUT=false]" at line 10185 of /home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/model/affinity-wave.cu
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/model/affinity-wave.cu:17367:54: warning: no previous declaration for ‘void aw_w8_set_mode(int)’ [-Wmissing-declarations]
+17367 | extern "C" __attribute__((visibility("default"))) void aw_w8_set_mode(int mode){GGML_ASSERT(mode>=0&&mode<=6);w8_validation_mode.store(mode);}
+      |                                                      ^~~~~~~~~~~~~~
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/model/affinity-wave.cu:17368:68: warning: no previous declaration for ‘long long unsigned int aw_w8_calls(int)’ [-Wmissing-declarations]
+17368 | extern "C" __attribute__((visibility("default"))) unsigned long long aw_w8_calls(int mode){GGML_ASSERT(mode>=0&&mode<=6);return w8_validation_calls[mode].load();}
+      |                                                                    ^~~~~~~~~~~
+/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/model/affinity-wave.cu:17370:68: warning: no previous declaration for ‘long long unsigned int aw_w8_fast_calls()’ [-Wmissing-declarations]
+17370 | extern "C" __attribute__((visibility("default"))) unsigned long long aw_w8_fast_calls(){return w8_fast_calls.load();}
+      |                                                                    ^~~~~~~~~~~~~~~~
+Build complete

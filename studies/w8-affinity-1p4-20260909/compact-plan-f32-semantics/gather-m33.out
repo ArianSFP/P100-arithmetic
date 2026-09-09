@@ -1,0 +1,4 @@
+========= COMPUTE-SANITIZER
+QUANT bits=8 values=135168 bad=5178
+========= Target application returned an error
+========= ERROR SUMMARY: 0 errors

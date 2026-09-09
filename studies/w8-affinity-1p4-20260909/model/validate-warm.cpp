@@ -1,0 +1,194 @@
+#include "arg.h"
+#include "common.h"
+#include "llama.h"
+
+#include <cmath>
+#include <cstring>
+#include <dlfcn.h>
+#include <algorithm>
+#include <cstdint>
+#include <cstdlib>
+#include <fstream>
+#include <stdexcept>
+#include <string>
+#include <vector>
+
+// Teacher-forced fresh/cached transitions. Save the entire vocabulary at
+// each boundary, not sampled text or rounded HTTP probabilities.
+int main(int argc, char ** argv) {
+    try {
+        common_init();
+        common_params params;
+        params.n_ctx = 16384;
+        params.n_parallel = 1;
+        params.warmup = false;
+        if (!common_params_parse(argc, argv, params, LLAMA_EXAMPLE_PERPLEXITY)) {
+            return 1;
+        }
+        const char * output = getenv("GGML_CUDA_AW_VALIDATION_OUTPUT");
+        if (output == nullptr) {
+            throw std::runtime_error("validation output path required");
+        }
+        std::ofstream out(output, std::ios::binary);
+        if (!out) {
+            throw std::runtime_error("cannot open validation output");
+        }
+        llama_backend_init();
+        auto initialized = common_init_from_params(params);
+        auto * ctx = initialized->context();
+        auto * model = initialized->model();
+        if (ctx == nullptr || model == nullptr || llama_n_ctx(ctx) < 10000) {
+            throw std::runtime_error("validation needs a loaded model and at least 10000 context tokens");
+        }
+        const std::string code =
+            "// Review this patch and suggest a minimal correction with tests.\n"
+            "template<class T> class Buffer { std::vector<T> values; public:\n"
+            "void append(const T& value) { values.push_back(value); }\n"
+            "const T& at(size_t index) const { return values.at(index); } };\n"
+            "// Tool result: build completed; two tests passed. Check edge cases.\n";
+        std::string text;
+        for (int i = 0; i < 200; ++i) {
+            text += code;
+        }
+        const auto tokens = common_tokenize(ctx, params.prompt.empty() ? text : params.prompt, true);
+        if (tokens.size() < 10000) {
+            throw std::runtime_error("validation fixture too short");
+        }
+        const uint32_t n_vocab = llama_vocab_n_tokens(llama_model_get_vocab(model));
+        const char * quality_tokens = getenv("GGML_CUDA_AW_VALIDATION_TOKENS");
+        if (quality_tokens != nullptr) {
+            const uint32_t total = std::stoul(quality_tokens);
+            const uint32_t rows = 512;
+            if (total < rows || total + 1 > tokens.size() || total > llama_n_ctx(ctx)) {
+                throw std::runtime_error("invalid quality token count");
+            }
+            auto library=dlopen("libggml-cuda.so",RTLD_NOW|RTLD_LOCAL);
+            if(!library)throw std::runtime_error("paired CUDA library missing");
+            auto set_mode=(void(*)(int))dlsym(library,"aw_w8_set_mode");
+            if(!set_mode)throw std::runtime_error("paired kernel selector missing");
+            std::vector<float> reference(size_t(rows)*n_vocab);
+            double reference_ppl=0;
+            const int modes[]={0,0,0,1,0,2,0,3,0,4,0,5,0,6,0};
+            for(int iteration=0;iteration<15;++iteration){
+            const int mode=modes[iteration];set_mode(mode);
+            auto calls=(unsigned long long(*)(int))dlsym(library,"aw_w8_calls");
+            if(!calls)throw std::runtime_error("missing dispatch coverage counter");
+            const auto before=calls(mode);
+            auto fast_calls=(unsigned long long(*)())dlsym(library,"aw_w8_fast_calls");
+            if(!fast_calls)throw std::runtime_error("missing optimized dispatch counter");
+            const auto fast_before=fast_calls();
+            llama_memory_clear(llama_get_memory(ctx),true);
+            std::ofstream out(std::string(output)+"-"+std::to_string(iteration)+".logits",std::ios::binary);
+            if(!out)throw std::runtime_error("paired output creation failed");
+            size_t changed_rows=0;
+            auto batch = llama_batch_init(total, 0, 1);
+            for (uint32_t i = 0; i < total; ++i) {
+                common_batch_add(batch, tokens[i], i, {0}, i >= total - rows);
+            }
+            const int status = llama_decode(ctx, batch);
+            llama_batch_free(batch);
+            if (status != 0) {
+                throw std::runtime_error("quality decode failed");
+            }
+            out.write("AWQLOG01", 8);
+            out.write(reinterpret_cast<const char *>(&total), sizeof(total));
+            out.write(reinterpret_cast<const char *>(&rows), sizeof(rows));
+            out.write(reinterpret_cast<const char *>(&n_vocab), sizeof(n_vocab));
+            double loss = 0;
+            for (uint32_t row = 0; row < rows; ++row) {
+                const float * logits = llama_get_logits_ith(ctx, int(row) - int(rows));
+                const uint32_t target = tokens[total - rows + row + 1];
+                if (logits == nullptr) {
+                    throw std::runtime_error("missing quality logits");
+                }
+                if(iteration==1)memcpy(reference.data()+size_t(row)*n_vocab,logits,n_vocab*sizeof(float));
+                else if(iteration>1)changed_rows+=memcmp(reference.data()+size_t(row)*n_vocab,logits,n_vocab*sizeof(float))!=0;
+                const float maximum = *std::max_element(logits, logits + n_vocab);
+                double sum = 0;
+                for (uint32_t i = 0; i < n_vocab; ++i) {
+                    if (!std::isfinite(logits[i])) {
+                        throw std::runtime_error("non-finite quality logits");
+                    }
+                    sum += std::exp(double(logits[i]) - maximum);
+                }
+                loss += std::log(sum) + maximum - logits[target];
+                out.write(reinterpret_cast<const char *>(&target), sizeof(target));
+                out.write(reinterpret_cast<const char *>(logits), n_vocab*sizeof(float));
+            }
+            if (!out) {
+                throw std::runtime_error("quality logit write failed");
+            }
+            fprintf(stdout, "quality tokens=%u evaluated_suffix=%u ppl=%.9f\n", total, rows, std::exp(loss/rows));
+            const double ppl=std::exp(loss/rows);
+            const auto launched=calls(mode)-before;
+            fprintf(stdout,"COVERAGE mode=%d launches=%llu\n",mode,launched);
+            if(!launched)throw std::runtime_error("candidate dispatch not exercised");
+            if(mode==6&&fast_calls()==fast_before)throw std::runtime_error("optimized F32 dispatch not exercised");
+            if(iteration<=1)reference_ppl=ppl;
+            fprintf(stdout,"PAIR iteration=%d mode=%d changed_rows=%zu ppl=%.12g delta=%+.12g\n",iteration,mode,changed_rows,ppl,ppl-reference_ppl);fflush(stdout);
+            if(iteration>1&&mode==0&&changed_rows)throw std::runtime_error("same-process control drift; stop paired test");
+            if(iteration>1&&std::abs(ppl-reference_ppl)>.003)throw std::runtime_error("paired model PPL gate failed");
+            }
+            return 0;
+        }
+        int position = 0;
+        auto step = [&](const std::string & label, int count) {
+            auto batch = llama_batch_init(count, 0, 1);
+            for (int i = 0; i < count; ++i) {
+                common_batch_add(batch, tokens.at(position + i), position + i, {0}, i == count - 1);
+            }
+            const int status = llama_decode(ctx, batch);
+            llama_batch_free(batch);
+            if (status != 0) {
+                throw std::runtime_error("decode failed at " + label);
+            }
+            const float * logits = llama_get_logits_ith(ctx, -1);
+            if (logits == nullptr) {
+                throw std::runtime_error("missing logits at " + label);
+            }
+            for (uint32_t i = 0; i < n_vocab; ++i) {
+                if (!std::isfinite(logits[i])) {
+                    throw std::runtime_error("non-finite logits at " + label);
+                }
+            }
+            const uint32_t length = label.size();
+            out.write(reinterpret_cast<const char *>(&length), sizeof(length));
+            out.write(label.data(), length);
+            out.write(reinterpret_cast<const char *>(&n_vocab), sizeof(n_vocab));
+            out.write(reinterpret_cast<const char *>(logits), n_vocab*sizeof(float));
+            out.flush();
+            if (!out) {
+                throw std::runtime_error("logit write failed");
+            }
+            position += count;
+            fprintf(stdout, "validated boundary %s position=%d vocab=%u\n", label.c_str(), position, n_vocab);
+            fflush(stdout);
+        };
+        auto fresh = [&](const std::string & label, const std::vector<int> & chunks) {
+            llama_memory_clear(llama_get_memory(ctx), true);
+            position = 0;
+            for (size_t i = 0; i < chunks.size(); ++i) {
+                step(label + "/" + std::to_string(i), chunks[i]);
+            }
+        };
+        fresh("fresh128", {124, 4});
+        fresh("fresh513", {508, 4, 1});
+        fresh("fresh1025", {1020, 4, 1});
+        fresh("repeat128", {124, 4});
+        fresh("seed2048", {2044, 4});
+        step("cached65/0", 60);
+        step("cached65/1", 4);
+        step("cached65/2", 1);
+        step("cached130/0", 124);
+        step("cached130/1", 4);
+        step("cached130/2", 2);
+        fresh("long8128", {8124, 4});
+        for (int count : {64, 128, 256, 512}) {
+            step("long-cached" + std::to_string(count), count);
+        }
+        return 0;
+    } catch (const std::exception & error) {
+        fprintf(stderr, "validation failed: %s\n", error.what());
+        return 1;
+    }
+}

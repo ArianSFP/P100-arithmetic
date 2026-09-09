@@ -1,0 +1,12 @@
+========= COMPUTE-SANITIZER
+QUANT bits=8 values=126976 bad=0
+QUANT bits=4 values=126976 bad=0
+CHECK A32 outputs=31744 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A16 outputs=31744 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A64 outputs=31744 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+META M=31 N=512 K=2048 experts=2 quantization_timed=1 full_q8_codes=1
+TIME A32 prep=1 rep=0 us=9733.02344
+TIME A16 prep=1 rep=0 us=8783.74414
+TIME A64 prep=1 rep=0 us=8689.12012
+PASS
+========= ERROR SUMMARY: 0 errors

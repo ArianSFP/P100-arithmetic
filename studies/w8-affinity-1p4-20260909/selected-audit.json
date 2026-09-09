@@ -1,0 +1,40 @@
+{
+  "m128-pairs-dual": {
+    "workers": [
+      "down-r0",
+      "down-r1",
+      "down-r2",
+      "gu-r0",
+      "gu-r1",
+      "gu-r2",
+      "m128-down-r0",
+      "m128-gu-r0",
+      "m512-down-r0",
+      "m512-gu-r0",
+      "race",
+      "semantic"
+    ],
+    "manifest_sha256": "6a8a560ef365bc48e8c0012e22f8900dcc18e2f2fe28b0d1da878520e97a17e4"
+  },
+  "virtual-pairs-dual": {
+    "workers": [
+      "down-r0",
+      "down-r1",
+      "down-r2",
+      "gu-r0",
+      "gu-r1",
+      "gu-r2",
+      "mixed129",
+      "mixed65"
+    ],
+    "manifest_sha256": "b23fdd54421d1a9de0c0b1c61c82bc9869b49962a453fed07d33766229b785fd"
+  },
+  "virtual-dual-semantics": {
+    "workers": [
+      "kind0-gather-count",
+      "kind1-gather-count",
+      "kind2-gather-count"
+    ],
+    "manifest_sha256": "8d4df763f886e4b082b042e257f9a2c25daee618a235caa324f9181c4021e594"
+  }
+}

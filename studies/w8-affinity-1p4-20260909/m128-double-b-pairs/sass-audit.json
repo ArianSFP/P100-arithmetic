@@ -1,0 +1,20 @@
+{
+  "_Z11w8_old_halfILb1ELi0EEvPK12aw_work_descPK12aw_tile_desciiiPKi": {
+    "HFMA2": 1024,
+    "FFMA": 0,
+    "LDS": 192,
+    "STS": 80,
+    "BAR": 4,
+    "LDL": 0,
+    "STL": 0
+  },
+  "_Z14w8_packed_halfILb1ELi0EEvPK12aw_work_descPK12aw_tile_desciiiPKi": {
+    "HFMA2": 1024,
+    "FFMA": 0,
+    "LDS": 128,
+    "STS": 56,
+    "BAR": 3,
+    "LDL": 0,
+    "STL": 0
+  }
+}

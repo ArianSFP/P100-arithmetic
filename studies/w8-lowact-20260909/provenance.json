@@ -1,0 +1,5 @@
+{
+  "original_q8": "/home/arian/P100-arithmetic/studies/q4-halfpipe-20260908/build/q8.inc",
+  "sha256": "cfc73310e817cbcecf895ce4764c7753cdb3bbe1109ca1f3d539a5f775ac1d00",
+  "change": "Only input loads replaced; weight loading, FP32 accumulators, tile geometry and K order retained."
+}

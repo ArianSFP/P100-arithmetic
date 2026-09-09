@@ -1,0 +1,122 @@
+{
+  "compact-plan-f32": [
+    {
+      "tag": "semantic",
+      "output_sha256": "bb1434984ea7459aa57e4dac9e81f4aaa612c0bdcf9c584ee182169c36b5fe3e",
+      "device": 2,
+      "exit_code": 0
+    },
+    {
+      "tag": "race",
+      "output_sha256": "45f9c745523321308e2c92394c6e01fa1055f969c82a0a09fa253328880b4dc4",
+      "device": 2,
+      "exit_code": 0
+    },
+    {
+      "tag": "gu-r0",
+      "output_sha256": "91bf6813014414f13b29a6a65955a029dd8b0f067c31796b1a53272d96762ecb",
+      "device": 2,
+      "exit_code": 0
+    },
+    {
+      "tag": "down-r0",
+      "output_sha256": "157be7a587934faece55bec3f07fe42e831b8dab66a9388db99aa0a1a245ba6e",
+      "device": 2,
+      "exit_code": 0
+    },
+    {
+      "tag": "gu-r1",
+      "output_sha256": "6d4d08ede79357d4db41d02f2dc661160126f3d8c73e751352f1c87ea444a1b4",
+      "device": 2,
+      "exit_code": 0
+    },
+    {
+      "tag": "down-r1",
+      "output_sha256": "f93c9773e204baa68631b0e2502b3fa2d4de879c1dd844ca9acf6c507e21498e",
+      "device": 2,
+      "exit_code": 0
+    },
+    {
+      "tag": "gu-r2",
+      "output_sha256": "eb432c6be8c10171c9155c7963614ca5060faaa23fc03fb5841e0c7d6ac9e7d1",
+      "device": 2,
+      "exit_code": 0
+    },
+    {
+      "tag": "down-r2",
+      "output_sha256": "169c537a784214ba00a53d2f7a3de9e6e2375d1f40ef91b78a15fdd32236a875",
+      "device": 2,
+      "exit_code": 0
+    }
+  ],
+  "compact-plan-dimensions": [
+    {
+      "tag": "semantic",
+      "output_sha256": "7988c62d4bb8df17af071fede16fee52d7dc598f19c75b60e14dadf5defb12dc",
+      "device": 2,
+      "exit_code": 0
+    },
+    {
+      "tag": "race",
+      "output_sha256": "d8a7141e4ac6a0bb300c4c1bcdffa3df12c10935dd5e96b017bc1d0088d247a2",
+      "device": 2,
+      "exit_code": 0
+    },
+    {
+      "tag": "gu-r0",
+      "output_sha256": "32f9de9da9e1bfe97e5e24de89b81237de9b2f9fe6d4202b567947c6682460b0",
+      "device": 2,
+      "exit_code": 0
+    },
+    {
+      "tag": "down-r0",
+      "output_sha256": "0a69d427741ccd207b9a19e229e73494880703a716ccfcc5bad826db893b575e",
+      "device": 2,
+      "exit_code": 0
+    },
+    {
+      "tag": "gu-r1",
+      "output_sha256": "4cd7e7bf15696ff7ffc62e8b10787421500ccf31e5af39c4b8403f555a49850f",
+      "device": 2,
+      "exit_code": 0
+    },
+    {
+      "tag": "down-r1",
+      "output_sha256": "7b895d8427600b39fb71c966d74707e3ee771e86e55cf27ea6ae35bebe7bd2d4",
+      "device": 2,
+      "exit_code": 0
+    },
+    {
+      "tag": "gu-r2",
+      "output_sha256": "71dcae8be89c3018c2f52bebf7419d29324cdce1f6682bd437ac2fcd2c7aa111",
+      "device": 2,
+      "exit_code": 0
+    },
+    {
+      "tag": "down-r2",
+      "output_sha256": "1d8a10f81c11f68ffe0e69aa58f29e3ca6f0450397751fe02197cb8f431bb32c",
+      "device": 2,
+      "exit_code": 0
+    }
+  ],
+  "compact-plan-f32-semantics": [
+    {
+      "tag": "gather-m33-fixed",
+      "output_sha256": "9bfa17a692ed775b88adbf119a01650b15ccdc398b1da6290d9d7166cdf8fb34",
+      "device": 2,
+      "exit_code": 0
+    },
+    {
+      "tag": "gather-m129-fixed",
+      "output_sha256": "576fc606cd46d2148850fb7c1e57ada849e67cadb2b96a94355eda76af1eeb4f",
+      "device": 2,
+      "exit_code": 0
+    },
+    {
+      "tag": "gather-down",
+      "output_sha256": "229750d7e732a46ee64a2dfbfa5893a74a2585899e0c6ab91ca1df1ac48576c7",
+      "device": 2,
+      "exit_code": 0
+    }
+  ]
+}

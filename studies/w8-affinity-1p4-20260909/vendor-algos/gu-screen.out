@@ -1,0 +1,103 @@
+QUANT bits=8 values=33554432 bad=0
+QUANT bits=4 values=33554432 bad=0
+CHECK A32 outputs=8388608 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A16 outputs=8388608 samples=256 bad=0 nonfinite=0 changed=0 rel_l2=0
+CHECK A2048 outputs=8388608 samples=256 bad=0 nonfinite=0 changed=8387380 rel_l2=0.000199027004
+CHECK A199 outputs=8388608 samples=256 bad=0 nonfinite=0 changed=8388544 rel_l2=0.00656814682
+CHECK A100 outputs=8388608 samples=256 bad=0 nonfinite=0 changed=8388544 rel_l2=0.00656814682
+CHECK A101 outputs=8388608 samples=256 bad=0 nonfinite=0 changed=8388544 rel_l2=0.00656814682
+CHECK A102 outputs=8388608 samples=256 bad=0 nonfinite=0 changed=8388544 rel_l2=0.00656814682
+CHECK A103 outputs=8388608 samples=256 bad=0 nonfinite=0 changed=8388544 rel_l2=0.00656814682
+CHECK A104 outputs=8388608 samples=256 bad=0 nonfinite=0 changed=8388544 rel_l2=0.00656814682
+CHECK A105 outputs=8388608 samples=256 bad=0 nonfinite=0 changed=8388544 rel_l2=0.00656814682
+SKIP A106 cublas_status=15
+SKIP A107 cublas_status=15
+SKIP A108 cublas_status=15
+SKIP A109 cublas_status=15
+SKIP A110 cublas_status=15
+SKIP A111 cublas_status=15
+SKIP A112 cublas_status=15
+SKIP A113 cublas_status=15
+SKIP A114 cublas_status=15
+SKIP A115 cublas_status=15
+SKIP A116 cublas_status=15
+SKIP A117 cublas_status=15
+SKIP A118 cublas_status=15
+SKIP A119 cublas_status=15
+SKIP A120 cublas_status=15
+SKIP A121 cublas_status=15
+SKIP A122 cublas_status=15
+SKIP A123 cublas_status=15
+WEIGHT_DECODE values=67108864 bad=0
+META M=256 N=512 K=2048 experts=64 quantization_timed=1 full_q8_codes=1
+TIME A32 prep=1 rep=0 us=4623.48291
+TIME A16 prep=1 rep=0 us=4623.06104
+TIME A2048 prep=1 rep=0 us=4822.29883
+TIME A199 prep=1 rep=0 us=5157.68018
+TIME A100 prep=1 rep=0 us=5177.59473
+TIME A101 prep=1 rep=0 us=3560.54395
+TIME A102 prep=1 rep=0 us=3422.29883
+TIME A103 prep=1 rep=0 us=5148.26123
+TIME A104 prep=1 rep=0 us=3623.16797
+TIME A105 prep=1 rep=0 us=3495.05591
+TIME A16 prep=1 rep=1 us=4625.35498
+TIME A2048 prep=1 rep=1 us=4821.5415
+TIME A199 prep=1 rep=1 us=5165.08789
+TIME A100 prep=1 rep=1 us=5173.94141
+TIME A101 prep=1 rep=1 us=3734.05859
+TIME A102 prep=1 rep=1 us=3493.06665
+TIME A103 prep=1 rep=1 us=5084.99219
+TIME A104 prep=1 rep=1 us=3606.7627
+TIME A105 prep=1 rep=1 us=3497.48804
+TIME A32 prep=1 rep=1 us=4625.86133
+TIME A2048 prep=1 rep=2 us=4822.34668
+TIME A199 prep=1 rep=2 us=5110.31982
+TIME A100 prep=1 rep=2 us=5121.39746
+TIME A101 prep=1 rep=2 us=3567.2959
+TIME A102 prep=1 rep=2 us=3438.29858
+TIME A103 prep=1 rep=2 us=5131.56787
+TIME A104 prep=1 rep=2 us=3699.97852
+TIME A105 prep=1 rep=2 us=3426.91724
+TIME A32 prep=1 rep=2 us=4623.12012
+TIME A16 prep=1 rep=2 us=4623.52539
+TIME A199 prep=1 rep=3 us=4929.979
+TIME A100 prep=1 rep=3 us=5061.95166
+TIME A101 prep=1 rep=3 us=3696.8479
+TIME A102 prep=1 rep=3 us=3495.64258
+TIME A103 prep=1 rep=3 us=5027.89893
+TIME A104 prep=1 rep=3 us=3549.22681
+TIME A105 prep=1 rep=3 us=3363.07202
+TIME A32 prep=1 rep=3 us=4625.47217
+TIME A16 prep=1 rep=3 us=4626.61865
+TIME A2048 prep=1 rep=3 us=4821.98926
+TIME A100 prep=1 rep=4 us=5065.24268
+TIME A101 prep=1 rep=4 us=3637.88794
+TIME A102 prep=1 rep=4 us=3490.14429
+TIME A103 prep=1 rep=4 us=4991.18945
+TIME A104 prep=1 rep=4 us=3575.323
+TIME A105 prep=1 rep=4 us=3414.20801
+TIME A32 prep=1 rep=4 us=4622.6665
+TIME A16 prep=1 rep=4 us=4625.81348
+TIME A2048 prep=1 rep=4 us=4820.90137
+TIME A199 prep=1 rep=4 us=5057.92529
+TIME A101 prep=1 rep=5 us=3415.93066
+TIME A102 prep=1 rep=5 us=3492.448
+TIME A103 prep=1 rep=5 us=5163.14697
+TIME A104 prep=1 rep=5 us=3688.62964
+TIME A105 prep=1 rep=5 us=3424.55981
+TIME A32 prep=1 rep=5 us=4628.02686
+TIME A16 prep=1 rep=5 us=4627.00244
+TIME A2048 prep=1 rep=5 us=4821.20557
+TIME A199 prep=1 rep=5 us=5132.36816
+TIME A100 prep=1 rep=5 us=5036.23438
+TIME A102 prep=1 rep=6 us=3492.89062
+TIME A103 prep=1 rep=6 us=4933.53564
+TIME A104 prep=1 rep=6 us=3523.73853
+TIME A105 prep=1 rep=6 us=3418.77856
+TIME A32 prep=1 rep=6 us=4626.64551
+TIME A16 prep=1 rep=6 us=4627.6958
+TIME A2048 prep=1 rep=6 us=4820.64502
+TIME A199 prep=1 rep=6 us=5020.67188
+TIME A100 prep=1 rep=6 us=4998.39453
+TIME A101 prep=1 rep=6 us=3607.27466
+PASS

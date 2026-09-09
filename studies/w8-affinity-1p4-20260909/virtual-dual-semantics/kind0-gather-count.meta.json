@@ -1,0 +1,75 @@
+{
+  "args": {
+    "tag": "kind0-gather-count",
+    "tokens": 129,
+    "projection": "gu",
+    "memcheck": true,
+    "ctas": 2,
+    "input_kind": 0,
+    "gather": 1
+  },
+  "device": 2,
+  "initial_gpu": "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 5, 0, 36, 405, 0",
+  "started": 1788923955.6305177,
+  "build": {
+    "command": [
+      "/usr/local/cuda-12.8/bin/nvcc",
+      "-ccbin",
+      "/usr/bin/g++-13",
+      "-O3",
+      "-std=c++17",
+      "-arch=sm_60",
+      "-lineinfo",
+      "-Xptxas=-v",
+      "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/virtual-dual-semantics/worker.cu",
+      "-o",
+      "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/virtual-dual-semantics/worker"
+    ],
+    "hashes": {
+      "worker": "8d0bf99697ae66b7633bf0d6f8f90acd5a45db32b2ebfc7a31bdf55fedf8e9fd",
+      "worker.cu": "f2e6238346a5de21a55c00eaa834b48cafe639a051e02c2de700f6fdd840e315",
+      "q8.inc": "cfc73310e817cbcecf895ce4764c7753cdb3bbe1109ca1f3d539a5f775ac1d00",
+      "lowact.inc": "8ef9f6e5a32cddc4338503f2d024c4ac83e3428dc95ba93954c451df13dd2d98",
+      "packed.inc": "7835822ba9f888ae58f3213d0a3a9a44b5460b9e3b4c8a637cfa0d7123d8f221",
+      "pair.inc": "1ed10864e745209c62d7b6491f1e7d9ad55beb43a186dfbb3b38fc8323f4a725",
+      "fallback.inc": "836c3dd18af2e946325ea86648f335baf80d136df3f7991650fd6dd529cb3ff1",
+      "old-packed.inc": "f9ede8112077df5ea7cd3195b2b9d8771130f5d651fddcd281d4d5cd7fc5c5fc",
+      "build.py": "79fee09188cfc4b04fd1cb98a231ccbf1822b0ff4d56d0ce55c76ca80bbd203a"
+    }
+  },
+  "runner_sha256": "dd9a63178dd4888220cb5aa498e4f17e4e61675d601139dbc22abd340c996a45",
+  "command": [
+    "env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_VISIBLE_DEVICES=2",
+    "taskset",
+    "--cpu-list",
+    "0-11",
+    "/usr/local/cuda-12.8/bin/compute-sanitizer",
+    "--tool",
+    "memcheck",
+    "--error-exitcode",
+    "99",
+    "/home/arian/P100-arithmetic/studies/w8-affinity-1p4-20260909/virtual-dual-semantics/worker",
+    "--gpu-approved",
+    "1",
+    "129",
+    "512",
+    "2048",
+    "2",
+    "2",
+    "0",
+    "1"
+  ],
+  "telemetry": [
+    [
+      1788923955.6537156,
+      "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 5, 0, 36, 405, 0"
+    ]
+  ],
+  "exit_code": 0,
+  "finished": 1788923957.7078042,
+  "final_gpu": "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 5, 0, 36, 1328, 0"
+}

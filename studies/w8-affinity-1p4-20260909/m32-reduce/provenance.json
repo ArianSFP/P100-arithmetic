@@ -1,0 +1,5 @@
+{
+  "source": "/home/arian/llama.cpp-q36-moe/.worktrees/coding-serve-p100-20260906/ggml/src/ggml-cuda/affinity-wave.cu",
+  "sha256": "173003f61c4a4c33a37748657633f14a740911ec005e0a5706e9ab0af4bdafcb",
+  "change": "Only final cross-warp reduction stages are batched into existing shared-memory capacity; same sum order."
+}
