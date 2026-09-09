@@ -1,0 +1,10 @@
+========= COMPUTE-SANITIZER
+CHECK mode=original-q8 outputs=33792 samples=0 bad=0 nonfinite=0 diff_vs_w8=0
+CHECK mode=w8-dualrail outputs=33792 samples=256 bad=0 nonfinite=0 diff_vs_w8=0
+CHECK mode=w16-dualrail outputs=33792 samples=256 bad=0 nonfinite=0 diff_vs_w8=0
+META M=33 N=512 K=2048 experts=2 seed=3911 pair_grid=112 all_dispatch_launches_timed=1
+TIME mode=original-q8 rep=0 us=20388.6387
+TIME mode=w8-dualrail rep=0 us=18004.3828
+TIME mode=w16-dualrail rep=0 us=17495.8086
+PASS
+========= ERROR SUMMARY: 0 errors

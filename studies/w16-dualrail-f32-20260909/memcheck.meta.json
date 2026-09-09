@@ -1,0 +1,73 @@
+{
+  "args": {
+    "tag": "memcheck",
+    "tokens": 33,
+    "projection": "gu",
+    "memcheck": true,
+    "racecheck": false,
+    "ctas": 2
+  },
+  "device": 2,
+  "initial_gpu": "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 5, 0, 30, 405, 0",
+  "started": 1788963210.2633312,
+  "build": {
+    "command": [
+      "/usr/local/cuda-12.8/bin/nvcc",
+      "-ccbin",
+      "/usr/bin/g++-13",
+      "-O3",
+      "-std=c++17",
+      "-arch=sm_60",
+      "-lineinfo",
+      "-Xptxas=-v",
+      "/home/arian/P100-arithmetic/studies/w16-dualrail-f32-20260909/worker.cu",
+      "-o",
+      "/home/arian/P100-arithmetic/studies/w16-dualrail-f32-20260909/worker"
+    ],
+    "hashes": {
+      "worker.cu": "1d0e1a8379a9ab720d104a47428a2f2babc29943708c10f3b22707559e5cca51",
+      "q8.inc": "cfc73310e817cbcecf895ce4764c7753cdb3bbe1109ca1f3d539a5f775ac1d00",
+      "decode.inc": "12003f1da3b97ba383e7038fd846d255f565cc2bc7a6713d1ca4b9d7c9688207",
+      "packed.inc": "971fafeaa00dbfd3f731e3d8760b8636aa72c4a54b4c7c53f0b803e37dfbfab8",
+      "pair.inc": "eb14a5e2c22d76b94c7919bc32377fabe49ded2fa7084c1fe482267fcb9bd8d9",
+      "fallback.inc": "9b19370c5e7411ea09b75b9e53cb9d2cbbc940f6114b89b39adb38f087288249",
+      "w16-pair.inc": "0f01c140605760d44d61d9a729c4130fdd0dacddd7710d0b2beff7c27f13821a",
+      "w16-fallback.inc": "94f304399c448682c2b244c22aeec51b30579ba31099a5aba4e15fa21aa54c8a",
+      "build.py": "8fc59c0583cf91951f1af099df18c5223cfd2a4cbc85539459a7700ebbcc74fc",
+      "worker": "a40486ddfb37aeda7a4770fca093fcc14766b88e5bd1e850c2db1cf94fcb49c9"
+    }
+  },
+  "runner_sha256": "ac3ae8fbdc168c8a014de5ad88be007917534021890e7b70a1d1070b956135a2",
+  "command": [
+    "env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_VISIBLE_DEVICES=2",
+    "taskset",
+    "--cpu-list",
+    "0-11",
+    "/usr/local/cuda-12.8/bin/compute-sanitizer",
+    "--tool",
+    "memcheck",
+    "--error-exitcode",
+    "99",
+    "/home/arian/P100-arithmetic/studies/w16-dualrail-f32-20260909/worker",
+    "--gpu-approved",
+    "1",
+    "33",
+    "512",
+    "2048",
+    "2",
+    "2"
+  ],
+  "telemetry": [
+    [
+      1788963210.2648342,
+      "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 5, 0, 30, 405, 0"
+    ]
+  ],
+  "exit_code": 0,
+  "finished": 1788963212.311821,
+  "final_gpu": "GPU-2aa85c85-bc04-0ac3-fc1b-4827d8303d81, 5, 0, 30, 1316, 0"
+}

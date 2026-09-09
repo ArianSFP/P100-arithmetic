@@ -1,0 +1,10 @@
+========= COMPUTE-SANITIZER
+CHECK mode=original-q8 outputs=132096 samples=0 bad=0 nonfinite=0 diff_vs_w8=0
+CHECK mode=w8-dualrail outputs=132096 samples=256 bad=0 nonfinite=0 diff_vs_w8=0
+CHECK mode=w16-dualrail outputs=132096 samples=256 bad=0 nonfinite=0 diff_vs_w8=0
+META M=129 N=512 K=2048 experts=2 seed=3911 pair_grid=112 all_dispatch_launches_timed=1
+TIME mode=original-q8 rep=0 us=3558076.5
+TIME mode=w8-dualrail rep=0 us=5576207.5
+TIME mode=w16-dualrail rep=0 us=5571740.5
+PASS
+========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)

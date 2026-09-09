@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/usr/local/cuda-12.8/bin/nvcc",
+    "-ccbin",
+    "/usr/bin/g++-13",
+    "-O3",
+    "-std=c++17",
+    "-arch=sm_60",
+    "-lineinfo",
+    "-Xptxas=-v",
+    "/home/arian/P100-arithmetic/studies/w16-dualrail-20260909/worker.cu",
+    "-o",
+    "/home/arian/P100-arithmetic/studies/w16-dualrail-20260909/worker"
+  ],
+  "hashes": {
+    "worker.cu": "9a3b40b8db19fdbc6c8d824e368c91e8e5ea3d548dd1c270a5b1923fe2fd7640",
+    "q8.inc": "cfc73310e817cbcecf895ce4764c7753cdb3bbe1109ca1f3d539a5f775ac1d00",
+    "decode.inc": "12003f1da3b97ba383e7038fd846d255f565cc2bc7a6713d1ca4b9d7c9688207",
+    "packed.inc": "971fafeaa00dbfd3f731e3d8760b8636aa72c4a54b4c7c53f0b803e37dfbfab8",
+    "pair.inc": "69efe3a7e29b8b2074f941e7a463920b95f2d8414774ac9a7cddab07d3ec8ad9",
+    "fallback.inc": "9b19370c5e7411ea09b75b9e53cb9d2cbbc940f6114b89b39adb38f087288249",
+    "w16-pair.inc": "2be3bdd0fa26571af54d29c3a129e0ed8f932a0f00663d346e774e2384f35a7b",
+    "w16-fallback.inc": "94f304399c448682c2b244c22aeec51b30579ba31099a5aba4e15fa21aa54c8a",
+    "build.py": "8fc59c0583cf91951f1af099df18c5223cfd2a4cbc85539459a7700ebbcc74fc",
+    "worker": "b50495c1de7c43c30de84cecdc4efb60ce3f8bd6a41570095dc61106e6de4da7"
+  }
+}

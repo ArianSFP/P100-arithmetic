@@ -1,0 +1,174 @@
+{
+  "workers": [
+    {
+      "tag": "gu-r0",
+      "device": 2,
+      "us": {
+        "original-q8": 4623.72803,
+        "w8-dualrail": 2515.2373,
+        "w16-dualrail": 2462.50122
+      },
+      "w16_vs_w8": 1.0214156563950858,
+      "w16_vs_original": 1.8776551225424367
+    },
+    {
+      "tag": "gu-r1",
+      "device": 2,
+      "us": {
+        "original-q8": 4624.59717,
+        "w8-dualrail": 2514.448,
+        "w16-dualrail": 2460.51733
+      },
+      "w16_vs_w8": 1.0219184272114026,
+      "w16_vs_original": 1.8795222913548835
+    },
+    {
+      "tag": "gu-r2",
+      "device": 2,
+      "us": {
+        "original-q8": 4624.39502,
+        "w8-dualrail": 2514.2561,
+        "w16-dualrail": 2464.11743
+      },
+      "w16_vs_w8": 1.0203475164736773,
+      "w16_vs_original": 1.876694253163089
+    },
+    {
+      "tag": "down-r0",
+      "device": 2,
+      "us": {
+        "original-q8": 4532.87451,
+        "w8-dualrail": 2393.43481,
+        "w16-dualrail": 2353.96265
+      },
+      "w16_vs_w8": 1.0167683884024243,
+      "w16_vs_original": 1.9256356977456714
+    },
+    {
+      "tag": "down-r1",
+      "device": 2,
+      "us": {
+        "original-q8": 4529.72266,
+        "w8-dualrail": 2397.94116,
+        "w16-dualrail": 2356.35718
+      },
+      "w16_vs_w8": 1.0176475707303423,
+      "w16_vs_original": 1.92234127255699
+    },
+    {
+      "tag": "down-r2",
+      "device": 2,
+      "us": {
+        "original-q8": 4531.6748,
+        "w8-dualrail": 2391.55737,
+        "w16-dualrail": 2350.39478
+      },
+      "w16_vs_w8": 1.0175130537007064,
+      "w16_vs_original": 1.9280483596036575
+    }
+  ],
+  "summary": {
+    "gu": {
+      "original_q8_us": 4624.39502,
+      "w8_dualrail_us": 2514.448,
+      "w16_dualrail_us": 2462.50122,
+      "w16_vs_w8": 1.0214156563950858,
+      "w16_vs_original": 1.8776551225424367,
+      "w16_vs_w8_range": [
+        1.0203475164736773,
+        1.0219184272114026
+      ]
+    },
+    "down": {
+      "original_q8_us": 4531.6748,
+      "w8_dualrail_us": 2393.43481,
+      "w16_dualrail_us": 2353.96265,
+      "w16_vs_w8": 1.0175130537007064,
+      "w16_vs_original": 1.9256356977456714,
+      "w16_vs_w8_range": [
+        1.0167683884024243,
+        1.0176475707303423
+      ]
+    }
+  },
+  "screens": [
+    {
+      "tag": "screen-m64-gu",
+      "tokens": 64,
+      "projection": "gu",
+      "device": 2,
+      "us": {
+        "original-q8": 1274.92273,
+        "w8-dualrail": 874.624023,
+        "w16-dualrail": 934.202637
+      },
+      "w16_vs_w8": 0.936225170385598,
+      "w16_vs_original": 1.3647175457501948
+    },
+    {
+      "tag": "screen-m64-down",
+      "tokens": 64,
+      "projection": "down",
+      "device": 2,
+      "us": {
+        "original-q8": 1186.82129,
+        "w8-dualrail": 989.3974,
+        "w16-dualrail": 966.986633
+      },
+      "w16_vs_w8": 1.0231758808603924,
+      "w16_vs_original": 1.2273399129809897
+    },
+    {
+      "tag": "screen-m128-gu",
+      "tokens": 128,
+      "projection": "gu",
+      "device": 2,
+      "us": {
+        "original-q8": 2409.92017,
+        "w8-dualrail": 1344.23462,
+        "w16-dualrail": 1314.81067
+      },
+      "w16_vs_w8": 1.0223788494201982,
+      "w16_vs_original": 1.8329028087367132
+    },
+    {
+      "tag": "screen-m128-down",
+      "tokens": 128,
+      "projection": "down",
+      "device": 2,
+      "us": {
+        "original-q8": 2283.90405,
+        "w8-dualrail": 1256.95471,
+        "w16-dualrail": 1234.16003
+      },
+      "w16_vs_w8": 1.0184697927707154,
+      "w16_vs_original": 1.850573665069999
+    },
+    {
+      "tag": "screen-m512-gu",
+      "tokens": 512,
+      "projection": "gu",
+      "device": 2,
+      "us": {
+        "original-q8": 8922.25098,
+        "w8-dualrail": 4826.25635,
+        "w16-dualrail": 4707.21045
+      },
+      "w16_vs_w8": 1.0252901163575552,
+      "w16_vs_original": 1.895443400028992
+    },
+    {
+      "tag": "screen-m512-down",
+      "tokens": 512,
+      "projection": "down",
+      "device": 2,
+      "us": {
+        "original-q8": 9017.94629,
+        "w8-dualrail": 4738.39502,
+        "w16-dualrail": 4640.21875
+      },
+      "w16_vs_w8": 1.0211576814131877,
+      "w16_vs_original": 1.9434312854323947
+    }
+  ]
+}

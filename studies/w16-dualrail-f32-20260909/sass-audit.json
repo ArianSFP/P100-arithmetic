@@ -1,0 +1,44 @@
+{
+  "_Z12w8_pair_halfILb0ELi0ELi2048ELi512EEvPK12aw_work_descPK12aw_tile_desciiiPKi": {
+    "instructions": 1974,
+    "hfma2": 1024,
+    "ldg_128": 10,
+    "ldl": 0,
+    "stl": 0
+  },
+  "_Z12w8_pair_halfILb0ELi0ELi512ELi2048EEvPK12aw_work_descPK12aw_tile_desciiiPKi": {
+    "instructions": 1974,
+    "hfma2": 1024,
+    "ldg_128": 10,
+    "ldl": 0,
+    "stl": 0
+  },
+  "_Z13w16_pair_halfILb0ELi0ELi2048ELi512EEvPK12aw_work_descPK12aw_tile_desciiiPKi": {
+    "instructions": 1890,
+    "hfma2": 1024,
+    "ldg_128": 12,
+    "ldl": 0,
+    "stl": 0
+  },
+  "_Z13w16_pair_halfILb0ELi0ELi512ELi2048EEvPK12aw_work_descPK12aw_tile_desciiiPKi": {
+    "instructions": 1890,
+    "hfma2": 1024,
+    "ldg_128": 12,
+    "ldl": 0,
+    "stl": 0
+  },
+  "_Z16w8_fallback_halfILb0ELi0EEvPK12aw_work_descPK12aw_tile_desciiiPKi": {
+    "instructions": 1584,
+    "hfma2": 512,
+    "ldg_128": 3,
+    "ldl": 0,
+    "stl": 0
+  },
+  "_Z17w16_fallback_halfILb0ELi0EEvPK12aw_work_descPK12aw_tile_desciiiPKi": {
+    "instructions": 1386,
+    "hfma2": 512,
+    "ldg_128": 6,
+    "ldl": 0,
+    "stl": 0
+  }
+}

@@ -1,0 +1,26 @@
+CHECK mode=original-q8 outputs=33554432 samples=0 bad=0 nonfinite=0 diff_vs_w8=0
+CHECK mode=w8-dualrail outputs=33554432 samples=256 bad=0 nonfinite=0 diff_vs_w8=0
+CHECK mode=w16-dualrail outputs=33554432 samples=256 bad=0 nonfinite=0 diff_vs_w8=0
+META M=256 N=2048 K=512 experts=64 seed=3911 wire=f32 pair_grid=112 all_dispatch_launches_timed=1
+TIME mode=original-q8 rep=0 us=4528.38379
+TIME mode=w8-dualrail rep=0 us=2452.9707
+TIME mode=w16-dualrail rep=0 us=2405.48804
+TIME mode=w8-dualrail rep=1 us=2457.09351
+TIME mode=w16-dualrail rep=1 us=2419.0188
+TIME mode=original-q8 rep=1 us=4529.41846
+TIME mode=w16-dualrail rep=2 us=2412.73608
+TIME mode=original-q8 rep=2 us=4532.56543
+TIME mode=w8-dualrail rep=2 us=2454.27734
+TIME mode=original-q8 rep=3 us=4524.88525
+TIME mode=w8-dualrail rep=3 us=2457.94653
+TIME mode=w16-dualrail rep=3 us=2410.14404
+TIME mode=w8-dualrail rep=4 us=2458.32007
+TIME mode=w16-dualrail rep=4 us=2410.81616
+TIME mode=original-q8 rep=4 us=4524.84814
+TIME mode=w16-dualrail rep=5 us=2407.95728
+TIME mode=original-q8 rep=5 us=4533.77051
+TIME mode=w8-dualrail rep=5 us=2455.72266
+TIME mode=original-q8 rep=6 us=4527.86133
+TIME mode=w8-dualrail rep=6 us=2455.97876
+TIME mode=w16-dualrail rep=6 us=2409.86133
+PASS
