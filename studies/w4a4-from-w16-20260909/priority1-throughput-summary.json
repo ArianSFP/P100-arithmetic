@@ -1,0 +1,28 @@
+{
+  "fp32-pack2": {
+    "median_us": 4244.93345,
+    "median_useful_tmac_s": 7.082507055000001,
+    "throughput_vs_hfma2": 1.0515198874901417
+  },
+  "dfma-pack4": {
+    "median_us": 3436.245285,
+    "median_useful_tmac_s": 8.7493088,
+    "throughput_vs_hfma2": 1.2989852510626982
+  },
+  "mixed-hfma2-dfma": {
+    "median_us": 6587.146755,
+    "median_useful_tmac_s": 9.128313725,
+    "throughput_vs_hfma2": 1.3552550455012171,
+    "overlap_efficiency_vs_separate": 1.199286660647657
+  },
+  "hfma2": {
+    "median_us": 4463.63195,
+    "median_useful_tmac_s": 6.735495105,
+    "throughput_vs_hfma2": 1.0
+  },
+  "xmad-s16-pack2": {
+    "median_us": 4238.581340000001,
+    "median_useful_tmac_s": 7.093121200000001,
+    "throughput_vs_hfma2": 1.053095739722908
+  }
+}

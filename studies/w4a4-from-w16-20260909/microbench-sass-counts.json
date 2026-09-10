@@ -1,0 +1,72 @@
+{
+  "bench_mixed_hfma2_dfma": {
+    "instructions": 150,
+    "HFMA2": 8,
+    "FFMA": 0,
+    "DFMA": 7,
+    "XMAD": 4,
+    "IADD": 2,
+    "ISETP": 2,
+    "BRA": 3,
+    "LDG": 1,
+    "STG": 1,
+    "LDL": 0,
+    "STL": 0
+  },
+  "bench_dfma_pack4": {
+    "instructions": 66,
+    "HFMA2": 0,
+    "FFMA": 0,
+    "DFMA": 7,
+    "XMAD": 3,
+    "IADD": 2,
+    "ISETP": 2,
+    "BRA": 3,
+    "LDG": 1,
+    "STG": 1,
+    "LDL": 0,
+    "STL": 0
+  },
+  "bench_fp32_pack2": {
+    "instructions": 66,
+    "HFMA2": 0,
+    "FFMA": 9,
+    "DFMA": 0,
+    "XMAD": 3,
+    "IADD": 2,
+    "ISETP": 2,
+    "BRA": 3,
+    "LDG": 1,
+    "STG": 1,
+    "LDL": 0,
+    "STL": 0
+  },
+  "bench_xmad_s16": {
+    "instructions": 60,
+    "HFMA2": 0,
+    "FFMA": 0,
+    "DFMA": 0,
+    "XMAD": 11,
+    "IADD": 0,
+    "ISETP": 2,
+    "BRA": 3,
+    "LDG": 1,
+    "STG": 1,
+    "LDL": 0,
+    "STL": 0
+  },
+  "bench_hfma2": {
+    "instructions": 96,
+    "HFMA2": 8,
+    "FFMA": 0,
+    "DFMA": 0,
+    "XMAD": 4,
+    "IADD": 1,
+    "ISETP": 2,
+    "BRA": 3,
+    "LDG": 1,
+    "STG": 1,
+    "LDL": 0,
+    "STL": 0
+  }
+}

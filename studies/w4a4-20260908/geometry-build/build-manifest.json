@@ -1,0 +1,52 @@
+{
+  "commands": [
+    [
+      "/usr/local/cuda-12.8/bin/nvcc",
+      "-ccbin",
+      "/usr/bin/g++-14",
+      "-arch=sm_60",
+      "-std=c++17",
+      "-O3",
+      "--fmad=false",
+      "-Xptxas=-v",
+      "-cubin",
+      "/home/arian/P100-arithmetic/studies/w4a4-20260908/kernels.cu",
+      "-o",
+      "/home/arian/P100-arithmetic/studies/w4a4-20260908/kernels.cubin"
+    ],
+    [
+      "/usr/bin/g++-14",
+      "-std=c++17",
+      "-O2",
+      "-ffp-contract=off",
+      "-I/usr/local/cuda-12.8/include",
+      "/home/arian/P100-arithmetic/studies/w4a4-20260908/worker.cpp",
+      "-L/usr/local/cuda-12.8/lib64/stubs",
+      "-lcuda",
+      "-o",
+      "/home/arian/P100-arithmetic/studies/w4a4-20260908/worker"
+    ],
+    [
+      "/usr/local/cuda-12.8/bin/cuobjdump",
+      "--dump-sass",
+      "/home/arian/P100-arithmetic/studies/w4a4-20260908/kernels.cubin"
+    ],
+    [
+      "python3",
+      "/home/arian/P100-arithmetic/studies/w4a4-20260908/cpu_checks.py"
+    ]
+  ],
+  "hashes": {
+    "kernels.cu": "2c520bc8c6a5c16010ff7cf22d4b18f59c81ca23282b9f8099a904af75f022ca",
+    "kernels.cubin": "041396a7c72c55b6e60feb190982deb99e0b7592e38dda4042df1d2b1170034f",
+    "kernels.sass": "af3f0773cbc64d5760efff746bedabdf6402e574f48441c660ca2c465383ff20",
+    "worker.cpp": "246366b9dd450d80675070250d64cde887ade9d3a86a07c92525c7845cde4f80",
+    "worker": "4491fb467cfa3a57285c8ba1ecbef5ce1b8866f1ed3241ac9142ec56a1baddb6",
+    "cpu_checks.py": "33093e4fd0695e704129c07470dc0eb4810e3a57a197cbd465098eea5a5a02d3",
+    "cpu-results.json": "454ae973e6784215b26ace34c10188d34215ee47e987da5603f6b5839f1b7553",
+    "build.py": "82cbe0cedf9365bc04dc80abc306ec5632823449d20fa5be2acc2cde1eba141a",
+    "../../archive/w4a16-r2-20260908/common.hpp": "b0384c0a1ee4515e1f98a70ed98f83718383ddc5e7c4e6fd13a34b745ebff5dc",
+    "../../archive/w4a16-r2-20260908/build/kernels.cubin": "64fdbef07437dc6918821a6209577000cfe7f61a818fb973fd13b1c643d84d94"
+  },
+  "gpu_executed": false
+}

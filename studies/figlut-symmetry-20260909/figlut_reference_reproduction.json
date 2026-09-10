@@ -1,0 +1,58 @@
+{
+  "seed": 250306862,
+  "gpu_timing_performed": false,
+  "exhaustive_identity": {
+    "2": {
+      "quartet_patterns": 256,
+      "activation_probes": 6,
+      "identity_mismatches": 0
+    },
+    "3": {
+      "quartet_patterns": 4096,
+      "activation_probes": 6,
+      "identity_mismatches": 0
+    },
+    "4": {
+      "quartet_patterns": 65536,
+      "activation_probes": 6,
+      "identity_mismatches": 0
+    }
+  },
+  "g32_repack": {
+    "random_blocks": 65536,
+    "mismatches": 0,
+    "code_bytes_per_block": 16,
+    "fp16_scale_bytes": 2,
+    "total_bits_per_weight": 4.5
+  },
+  "four_tables_per_warp_addressing": {
+    "warp_cases": 128,
+    "output_rows_checked": 4096,
+    "fp64_identity_mismatches": 0
+  },
+  "fp32_arithmetic_diagnostics_not_model_quality": {
+    "normal": {
+      "blocks": 8192,
+      "relative_l2_vs_fp64": 3.0398713467017225e-08,
+      "max_abs_error_over_sum_abs_terms": 1.0072154758370086e-07,
+      "finite_output": true
+    },
+    "wide_finite_fp16": {
+      "blocks": 8192,
+      "relative_l2_vs_fp64": 7.380427713730206e-08,
+      "max_abs_error_over_sum_abs_terms": 1.4544428854383068e-06,
+      "finite_output": true
+    },
+    "cancellation": {
+      "blocks": 8192,
+      "relative_l2_vs_fp64": 2.6152422647397814e-08,
+      "max_abs_error_over_sum_abs_terms": 6.733089860378574e-08,
+      "finite_output": true
+    }
+  },
+  "shared_bank_address_model_not_measured_latency": {
+    "random_warp_requests": 1000,
+    "contiguous_four_tables_max_multiplicity": 1,
+    "stride32_four_tables_max_multiplicity": 4
+  }
+}

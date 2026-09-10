@@ -1,0 +1,26 @@
+{
+  "prebuilt-resident-lut-r16": {
+    "samples": 8,
+    "median_us": 3718.501405,
+    "median_useful_tmac_s": 8.085184845,
+    "speedup_vs_matched_half2": 0.8681762808154702,
+    "fraction_of_required_2x": 0.4340881404077351
+  },
+  "resident-half2-r8": {
+    "samples": 8,
+    "median_us": 1610.16536,
+    "median_useful_tmac_s": 9.33592667
+  },
+  "prebuilt-resident-lut-r8": {
+    "samples": 8,
+    "median_us": 1466.351985,
+    "median_useful_tmac_s": 10.251553300000001,
+    "speedup_vs_matched_half2": 1.0980756165444137,
+    "fraction_of_required_2x": 0.5490378082722068
+  },
+  "resident-half2-r16": {
+    "samples": 8,
+    "median_us": 3228.3147200000003,
+    "median_useful_tmac_s": 9.312837725
+  }
+}

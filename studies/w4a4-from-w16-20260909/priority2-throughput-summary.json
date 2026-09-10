@@ -1,0 +1,21 @@
+{
+  "normalized-split": {
+    "samples": 8,
+    "median_us": 37309.12015,
+    "median_useful_tmac_s": 3.223316005,
+    "speedup_vs_plain": 0.574382794711925,
+    "fraction_of_required_2x": 0.2871913973559625
+  },
+  "hmul-prmt-repair": {
+    "samples": 8,
+    "median_us": 138728.49,
+    "median_useful_tmac_s": 0.8668665255,
+    "speedup_vs_plain": 0.1544723560387632,
+    "fraction_of_required_2x": 0.0772361780193816
+  },
+  "plain-hfma2": {
+    "samples": 8,
+    "median_us": 21429.716699999997,
+    "median_useful_tmac_s": 5.611790665
+  }
+}

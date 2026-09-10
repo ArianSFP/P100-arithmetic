@@ -1,0 +1,309 @@
+**I found two better implementations than the earlier 2 KiB repair table: a three-operation, entirely FP16 construction, and a genuine single-multiply construction whose repair needs only three residue bits.**
+
+For beating your already-fast FP16 kernels, **the single-multiply plus register-residue approach is the more relevant experiment**. The all-FP16 construction is an excellent exact control, but its operation count is not yet competitive with ordinary `half2`.
+
+I verified the numerical identities exhaustively on the signed INT4 domain and checked complete 32-term accumulations. **Neither CUDA implementation has been compiled or timed on a P100 here.**
+
+## 1. A much cleaner all-FP16 construction
+
+Instead of packing
+
+$$
+P=w_0+128w_1,
+$$
+
+normalise it:
+
+$$
+\boxed{p=w_1+\frac{w_0}{128}.}
+$$
+
+Every possible \(p\), for \(w_0,w_1\in[-8,7]\), is exactly representable in FP16.
+
+Now compute:
+
+$$
+\begin{aligned}
+t&=\operatorname{FMA}_{16}(p,a,1536),\\
+H&=t-1536,\\
+L_{\mathrm{scaled}}&=\operatorname{FMA}_{16}(p,a,-H).
+\end{aligned}
+$$
+
+The results are
+
+$$
+\boxed{H=w_1a,\qquad L_{\mathrm{scaled}}=\frac{w_0a}{128}}
+$$
+
+**exactly—not approximately.**
+
+### Why the constant 1536 works
+
+Before rounding, the first FMA contains
+
+$$
+1536+w_1a+\frac{w_0a}{128}.
+$$
+
+Around 1536, FP16’s representable values are spaced one integer apart. The small fractional term therefore rounds away, leaving \(1536+w_1a\).
+
+The endpoint needs care: \(w_0a=64\) gives a fractional term of \(1/2\). But this requires \(w_0=a=-8\), making \(w_1a\) a multiple of eight. Round-to-nearest-even therefore still selects the correct integer.
+
+The second FMA cancels the high product **before rounding**, leaving the exact low product divided by 128. This relies on actual fused arithmetic; NVIDIA specifies that `__hfma2` rounds only once after multiplication and addition. ([NVIDIA Docs][1])
+
+### The actual `half2` inner operation
+
+Each FP16 lane contains a different weight pair. Broadcasting the activation across both lanes gives four useful products:
+
+```cpp
+// Each lane of p contains w_high + w_low / 128.
+// Each lane of a contains the raw signed INT4 activation.
+
+const __half2 magic = __float2half2_rn(1536.0f);
+
+__half2 t  = __hfma2(p, a, magic);
+__half2 hi = __hsub2_rn(t, magic);
+__half2 lo = __hfma2(p, a, __hneg2(hi));
+
+// hi: two exact high-row products.
+// lo: two exact low-row products, divided by 128.
+```
+
+That is **three packed-half arithmetic operations**, with no product lookup, integer conversion, division, or FP32 arithmetic. Compiler-generated moves and sign handling still need an assembly check; three arithmetic intrinsics are not automatically a certified three-instruction SASS sequence. The intrinsics above provide the required packed arithmetic and explicit rounding semantics. ([NVIDIA Docs][1])
+
+Keep the low accumulator scaled by \(1/128\), and absorb the factor of 128 into its final FP32 scaling operation rather than multiplying every individual product.
+
+### Example: the case that previously lost one count
+
+Take \(w_0=w_1=a=7\). Then
+
+$$
+p=7+\frac7{128}=7.0546875.
+$$
+
+The first FMA gives
+
+$$
+t=\operatorname{RN}_{16}(1585.3828125)=1585,
+$$
+
+so
+
+$$
+H=49.
+$$
+
+The second FMA gives
+
+$$
+L_{\mathrm{scaled}}
+=\operatorname{FMA}_{16}(7.0546875,7,-49)
+=\frac{49}{128}.
+$$
+
+Both products are exactly 49. There is no rounded value of 48 to repair afterwards.
+
+**Validation:** all 4,096 signed INT4 triples passed. Separate low/high accumulation also passed 100,000 32-term blocks, and an independent C++ checker passed its exhaustive and random tests. [Numerical results](sandbox:/mnt/data/fp16_shared_fast/results.json).
+
+## 2. Why that is not yet faster than your existing kernels
+
+The construction above computes the packed multiplication **twice**, once in each FMA. It replaces an expensive repair with a compact arithmetic sequence, but it does not preserve the original “one multiplication for two products” advantage.
+
+Your baseline matters enormously: P100 already obtains its high FP16 throughput through paired `half2` operations. One native HFMA2 performs two multiply-accumulates. ([NVIDIA Docs][2])
+
+For **four useful multiply-accumulates**, excluding loading, packing and final scaling:
+
+| Approach                                   | Inner arithmetic                                                       |
+| ------------------------------------------ | ---------------------------------------------------------------------- |
+| Ordinary `half2`                           | **2 HFMA2 operations**                                                 |
+| Exact normalised split                     | 3 packed-half operations to produce the products, then 2 additions     |
+| Single packed multiply with integer repair | 1 packed-half multiplication, then conversion, repair and accumulation |
+
+The normalised split therefore needs **five packed-half arithmetic operations where ordinary `half2` needs two**.
+
+That is not a timing prediction, but it is a strong warning against replacing your fast inner loop with the three-operation split and expecting a gain. Its main value is as a small, exact, lookup-free control.
+
+**To retain a real two-for-one multiplication advantage, we need to repair the original rounded product without another floating-point multiplication.**
+
+## 3. The genuine single-multiply route: repair with three residue bits
+
+Return to the original, **unnormalised** packing:
+
+$$
+P=w_0+128w_1,
+\qquad
+R=\operatorname{RN}_{16}(Pa).
+$$
+
+For this domain, \(R\) is an integer, and the high product remains exact:
+
+$$
+H=\left\lfloor\frac{R+63}{128}\right\rfloor.
+$$
+
+The low product’s rounding error is at most two counts. That means we do not need a complete product lookup. We only need enough information to distinguish a correction in
+
+$$
+\{-2,-1,0,1,2\}.
+$$
+
+### The key identity
+
+Compute only the low three bits of the original low product:
+
+$$
+\rho=(w_0a)\bmod8.
+$$
+
+Because \(128w_1a\) is divisible by eight,
+
+$$
+Pa\bmod8=\rho.
+$$
+
+The exact correction is consequently
+
+$$
+\boxed{
+\delta=((\rho-R+4)\bmod8)-4.
+}
+$$
+
+Then
+
+$$
+\boxed{
+w_0a=R-128H+\delta.
+}
+$$
+
+In device-style integer operations:
+
+```cpp
+int hi    = (r + 63) >> 7;
+int delta = ((rho - r + 4) & 7) - 4;
+int lo    = r - 128 * hi + delta;
+```
+
+Here `r` is the rounded FP16 result converted exactly to an integer. The supplied CUDA version targets the device’s arithmetic signed shift.
+
+**This repair passed all 4,096 signed input triples.**
+
+For the old \(7,7,7\) example:
+
+$$
+R=6320,\quad H=49,\quad \rho=49\bmod8=1,
+$$
+
+so
+
+$$
+\delta=1,\qquad w_0a=48+1=49.
+$$
+
+The important improvement is that **the correction needs only a three-bit product**, not a second full multiplication.
+
+### Get four residues with one `PRMT`
+
+For a shared activation \(a\), form an eight-entry byte table:
+
+$$
+T_a[j]=(aj)\bmod8,\qquad j=0,\ldots,7.
+$$
+
+Those eight bytes fit into **two 32-bit registers**.
+
+Because only \(a\bmod8\) matters, all possible activation tables occupy
+
+$$
+8\times8=\boxed{64\text{ bytes total}}.
+$$
+
+Now take four low-row weight codes, packed as four nibbles. Their bottom three bits select four table entries:
+
+```cpp
+rho_bytes = PRMT(table_lo, table_hi, low_nibbles & 0x7777);
+```
+
+The four output bytes contain four independent residues. PTX’s `prmt.b32` can select four bytes from the eight bytes held in two registers, which is exactly the operation needed here. ([NVIDIA Docs][3])
+
+**One PRMT supplies the residue information for four weight pairs—eight useful INT4 products.**
+
+This is not one instruction for the complete repair. You still need to obtain the integer rounded results, extract fields, apply corrections and accumulate outputs. But it removes the earlier large lookup and avoids a full integer multiplication.
+
+I checked all **32,768 combinations** of activation residue and four-way table selector, with zero mismatches.
+
+### The distinction from the previous table
+
+The earlier table used only the activation and the rounded low output. This cheaper method also uses the **original low-row weight code**, which should still be available from the packed weight load.
+
+That extra information is what lets us replace the 2 KiB reconstruction table with a 64-byte family of register lookup tables.
+
+## 4. The real obstacle is cheap accumulation, not recovering one product
+
+A tempting next step is to run your existing fast FP16 dot-product loop on packed weights, then unpack once at the end.
+
+For the original radix-128 scheme, **that is not generally recoverable from the packed accumulator alone—even after only two terms, and even without rounding error.**
+
+Use the same activations \(a=[7,6]\):
+
+| Weight sequence             | Low-row dot | High-row dot | Packed sum |
+| --------------------------- | ----------: | -----------: | ---------: |
+| \(w_0=[-8,-8],\ w_1=[0,0]\) |    \(-104\) |        \(0\) |   \(-104\) |
+| \(w_0=[6,-3],\ w_1=[-1,1]\) |      \(24\) |       \(-1\) |   \(-104\) |
+
+Both calculations give
+
+$$
+C=D_0+128D_1=-104,
+$$
+
+but the two pairs of desired outputs differ. Every multiplication and partial sum in this example is exactly representable in FP16.
+
+**No final lookup can distinguish those cases using only \(C\) and the activation vector.**
+
+This rules out a stateless, end-of-dot repair for this particular encoding. It does **not** rule out additional state, other encodings, restricted domains or approximate arithmetic—but those must pay their own costs.
+
+There is another tempting optimisation to avoid:
+
+```cpp
+lo_acc = __hfma2(p, a, lo_acc - hi);
+```
+
+This is not equivalent to computing the exact residual and then adding it. Forming `lo_acc - hi` can round away accumulator bits before the FMA. For \(w_0=w_1=a=-8\) and `lo_acc = 1/128`, that shortcut returns \(64/128\) instead of \(65/128\).
+
+**The cheap fused-accumulation step we would need for a large speedup has not been established.**
+
+## 5. How I would test this against your fast FP16 kernels
+
+I would keep the existing macro-tile and compare three matched inner loops: ordinary `half2`, the normalised three-operation split, and the original packed multiply with PRMT/residue repair.
+
+For the residue version, the useful layout is **four output-row pairs sharing one activation**. Two `half2` multiplications then produce the rounded encodings for eight products, and one PRMT supplies all four low-product residues. The two table registers should be reused across those row pairs.
+
+Keep the weights in their existing 4-bit representation in HBM. Form the arithmetic packing during shared-memory or register tile loading and reuse it across tokens. Storing the expanded FP16 packing permanently would double the bytes occupied by each pair of INT4 weights and could erase a compute-side benefit.
+
+After repairing or splitting each product, maintain separate output accumulators. For raw signed INT4 codes, groups of up to 32 terms have the useful bound
+
+$$
+\left|\text{partial sum}\right|\le32\times64=2048,
+$$
+
+so ordinary FP16 accumulation is exact over that domain; the normalised low accumulator has the same property scaled by \(1/128\). Apply activation and per-row weight scales afterwards in FP32. **The paired rows do not need identical weight scales.**
+
+The assembly and timing comparison needs to include the half-to-integer conversions, PRMT selector preparation, shifts, correction operations, accumulation, registers and spills—not just the HMUL2 count. Activation quantisation must also be included in the full device-pipeline comparison.
+
+## My recommendation
+
+**Do not implement the old 2 KiB repair table.**
+
+Use the **three-operation normalised split as the exact arithmetic control**, and investigate **one packed multiply plus the 3-bit PRMT repair** as the performance candidate. The latter preserves the single-multiply idea and has a much smaller repair mechanism than we previously had.
+
+But with your already-fast FP16 kernels, **I would not currently predict an extra 2× from this approach**. We have solved exact product recovery much more cleanly; we have not yet made recovery and accumulation cheaper than the native paired-FP16 MACs they replace. That is the decisive benchmark.
+
+[Download the verified simulations, independent C++ checker, CUDA primitives and SM60 compile probes](sandbox:/mnt/data/fp16_shared_fast.zip). The package includes the 64-byte table constants and counterexamples; the CUDA files are uncompiled candidates, not measured GPU kernels.
+
+[1]: https://docs.nvidia.com/cuda/archive/12.8.1/cuda-math-api/cuda_math_api/group__CUDA__MATH____HALF2__ARITHMETIC.html "4.6. Half2 Arithmetic Functions — CUDA Math API Reference Manual 12.8 documentation"
+[2]: https://docs.nvidia.com/cuda/archive/12.8.1/pascal-tuning-guide/index.html "1. Pascal Tuning Guide — Pascal Tuning Guide 12.8 documentation"
+[3]: https://docs.nvidia.com/cuda/archive/12.8.1/parallel-thread-execution/index.html "1. Introduction — PTX ISA 8.7 documentation"
+

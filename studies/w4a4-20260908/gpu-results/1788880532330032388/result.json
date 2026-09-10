@@ -1,0 +1,36 @@
+{
+  "argv": [
+    "/usr/bin/env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_DEVICE_ORDER=PCI_BUS_ID",
+    "CUDA_VISIBLE_DEVICES=GPU-4868830a-c1cf-90bd-8018-2360c55293b8",
+    "/usr/bin/taskset",
+    "--cpu-list",
+    "0-11",
+    "/home/arian/P100-arithmetic/studies/w4a4-20260908/worker",
+    "/home/arian/P100-arithmetic/studies/w4a4-20260908/kernels.cubin",
+    "bench",
+    "5120",
+    "5120",
+    "1"
+  ],
+  "token": "w4a4-20260908-1514-gpu3",
+  "manifest_sha256": "7dca8eeadf791ebafeb309d14563ac8299fd82da1b4942121f3cb9c14d85e853",
+  "supervisor_sha256": "0ad478b179c752dbf493c3b740f0268843b222a8b7ab20d3145793cd61158767",
+  "coordination_sha256": [
+    "5aea3eda38113cb60470e2f57d90a57ff15baf4378f77dc6fbc54eccff776213",
+    "1e7d21069f0c82c31b960108c2402debcabf2584fe637d5d2dda30f0d925c3f7"
+  ],
+  "hypothesis": "# W4A4 on SM60 \u2014 bounded arithmetic study\n\nScope: signed integer W4/A4 (not FP4), Q4_0 codes and half weight scales,\n32-element common scale groups. Preserve the sealed archive and other studies.\nUser approved GPU3 execution on 2026-09-08; reservation token\nw4a4-20260908-1514-gpu3 is held through final checks.\nGPU1 and GPU2 are reserved by independent sessions. No production integration.\n\nHypothesis: after activation quantization, a G32 integer dot has every prefix\nbounded by 32*64=2048. All integers in [-2048,2048] are exactly representable\nin binary16. Thus documented HFMA2 can accumulate two independent K stripes\nexactly, followed by exact FP32 lane addition. Unlike W4A16/Q8 attempts, this\nrequires no intermediate flush inside the group. It is new numerical evidence,\nnot a reopening of the refuted Q8 or arbitrary-FP16 substitution experiments.\n\nCompare paired-K HFMA2 with a matched warp-sharing FP32 kernel, inheriting\nround-2 weight layout, row/batch reuse, scale FMA and S32 final tree. Include\nFP16-to-A4 quantization, packed activation storage, scales, and final reduction\nin timing. Repacking weights is offline and excluded consistently. Include a\nlive sealed W4A16 round-2 control on the original inputs, explicitly recognizing\nthat activation quantization changes its numerical problem.\n\nCorrectness: exact integer CPU oracle for each group; identical scaled FP32\nresults for W4A4 candidates. Quantizer independently checked. Endpoint,\ncancellation, zero, tail and random cases precede timings. Quantization error\nagainst A16 is reported separately; no synthetic error metric establishes the\nproduction +/-0.003 perplexity requirement using KLD-pair methodology.\n\nOnly compiler-generated documented instructions, no binary patches or resets.\nIf GPU access is approved, reserve by UUID, hold across gaps, fresh worker per\nrun, fail closed on health/process/CUDA/correctness errors; freeze candidates\nbefore fresh-worker repetitions. Record all observations, including losses.\n",
+  "before": {
+    "device": "2026/09/08 15:15:32.371, GPU-4868830a-c1cf-90bd-8018-2360c55293b8, Tesla P100-PCIE-16GB, 5, 0, 29, 0\n",
+    "processes": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1121899, /usr/bin/gnome-text-editor\n"
+  },
+  "after": {
+    "device": "2026/09/08 15:15:33.329, GPU-4868830a-c1cf-90bd-8018-2360c55293b8, Tesla P100-PCIE-16GB, 5, 63, 29, 0\n",
+    "processes": "GPU-bb126d7c-3d48-3911-bf1f-8b4ed9f2e706, 1121899, /usr/bin/gnome-text-editor\n"
+  },
+  "status": "PASS"
+}

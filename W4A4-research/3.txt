@@ -1,0 +1,388 @@
+**Yes—LUT-GEMM suggests a useful way around the accumulation problem, but it bypasses packed-FP16 multiplication rather than making its repair free.** It precomputes partial dot products, then looks them up and accumulates them directly. There is no need to recover two individual products from a rounded FP16 result. ([arXiv][1])
+
+Following that direction, I derived and CPU-tested **an exact construction that accumulates four shared-activation INT4 dot products across a full 32-element group, without per-product unpacking or correction**.
+
+That is progress on the highlighted bottleneck. **Whether it beats your fast HFMA2 kernels remains unmeasured.** The promising candidate is a **weight-derived, four-output LUT with packed integer accumulation**, rather than another refinement of the FP16 repair sequence.
+
+## 1. What LUT-GEMM contributes—and what its benchmarks establish
+
+LUT-GEMM decomposes low-bit weights into binary planes and precomputes short activation-dependent partial dots. Weight patterns select table entries, which are accumulated and scaled. The original method supports full-precision activations; it does **not** require A4. ([arXiv][1])
+
+Its results need careful interpretation. In the paper’s A100-80GB kernel comparison, INT4 LUT-GEMM takes **0.2688 ms versus AWQ’s 0.3238 ms**, approximately **1.20× faster**. Its larger headline improvements use different comparisons. The authors also explicitly warn that gains diminish at larger batches because shared-memory LUT bandwidth becomes limiting. Those results do not establish an extra 2× over your P100 FP16 kernels. ([arXiv][2])
+
+There is also relevant negative evidence in **your own archive**: a 16-entry FP32 register-LUT implementation using shuffle lookups took **52.928 μs versus 49.019 μs** for the best matched direct kernel on the square, single-vector case. This was the older FP32-accumulating W4A16 study, not your newer fast FP16 prefill kernel. Nevertheless, **“port a generic LUT kernel” is not a sufficiently new experiment.**
+
+The useful question is narrower:
+
+> **Can the table return several partial sums already packed into a representation that supports cheap, exact groupwise accumulation?**
+
+The answer to that arithmetic question is yes.
+
+## 2. Why changing the accumulator representation matters
+
+Our previous approach put two outputs into one scalar:
+
+$$
+C=D_0+128D_1.
+$$
+
+The difficulty was not merely FP16 rounding. The fields can become ambiguous after accumulation.
+
+There is a simple general constraint. Fix 32 shared activations to all be \(1\). Each signed INT4 weight-row sum can take any of **481 values**, from \(-256\) to \(224\). Two independent outputs therefore have
+
+$$
+481^2=231{,}361
+$$
+
+possible combinations—more than the 65,536 states available in any 16-bit representation.
+
+Thus, **one 16-bit accumulator alone cannot preserve every such pair of dots exactly**. Additional state, restricted inputs, approximation, or rereading the weights changes the problem; this is not a prohibition on all packing algorithms.
+
+The better direction is to use a wider accumulator efficiently. P100’s ordinary `half2` already does this with two independent FP16 lanes, so the new construction must outperform that baseline—not merely outperform two scalar FP32 operations. ([NVIDIA Docs][3])
+
+## 3. An exact solution for two rows sharing one activation vector
+
+First, here is a straightforward solution to **defer unpacking until the end of a 32-term group**. Throughout these constructions, weights and activations are raw signed INT4 codes in \([-8,7]\); scales are applied afterwards.
+
+Represent the weight codes using offset binary:
+
+$$
+q=w+8,\qquad
+w=\sum_{b=0}^{3}2^b q_b-8.
+$$
+
+For each four-element activation subvector, construct its 16 subset sums:
+
+$$
+S(m)=\sum_{j=0}^{3}m_j a_j.
+$$
+
+Make them nonnegative with a shared bias:
+
+$$
+c=\sum_{j=0}^{3}\max(-a_j,0),
+\qquad
+U(m)=S(m)+c.
+$$
+
+Every entry satisfies
+
+$$
+0\le U(m)\le\sum_j|a_j|\le32.
+$$
+
+### Put two partial sums in each table entry
+
+For two output rows, the weight masks can differ. Construct a paired table:
+
+$$
+T[m_0+16m_1]
+=
+U(m_0)+2^{16}U(m_1).
+$$
+
+This table has **256 entries of four bytes: 1 KiB**.
+
+Each lookup returns a partial sum for both rows. Maintain four unsigned 32-bit accumulators, one for each weight bit plane:
+
+```cpp
+// Repeat over the eight four-element subvectors in a G32 group.
+P0 += table[pair_mask0];
+P1 += table[pair_mask1];
+P2 += table[pair_mask2];
+P3 += table[pair_mask3];
+```
+
+**No per-product conversion, rounding repair, or lane extraction appears in this loop.** Each update is a lookup followed by an ordinary integer addition—not a claim of a fused load-add instruction.
+
+At the group boundary, combine the planes:
+
+$$
+R=P_0+2P_1+4P_2+8P_3.
+$$
+
+Let
+
+$$
+C=\sum_{k=0}^{31}\max(-a_k,0),
+\qquad
+A=\sum_{k=0}^{31}a_k.
+$$
+
+Then recover the two dots:
+
+$$
+\boxed{
+D_0=(R\bmod2^{16})-(15C+8A)
+}
+$$
+
+$$
+\boxed{
+D_1=\left\lfloor R/2^{16}\right\rfloor-(15C+8A).
+}
+$$
+
+The carry bounds are generous: each accumulated bit-plane field is at most 256, and the weighted combination is at most
+
+$$
+15\times256=3840.
+$$
+
+Both fit comfortably inside each 16-bit field.
+
+### This solves accumulation, but is not yet the fast version
+
+For two 32-term dots, this implementation needs **32 table lookups and 32 packed additions**, before finishing work. Ordinary `half2` needs **32 HFMA2 operations**.
+
+Also, pairing two independent masks expands a scalar 16-entry table into a 256-entry table.
+
+So this construction establishes that **groupwise unpacking is possible**, but does not establish a compute advantage. We need to share the lookup key as well as the activation.
+
+## 4. The stronger candidate: build the LUT from four weight rows
+
+For your prefill workload, I would investigate the opposite table orientation:
+
+> **Build tables from the weights, and use activation bit planes as lookup keys.**
+
+Because the four output rows all multiply the same activation vector, **they share the same activation mask**. One table entry can return four partial sums without taking a Cartesian product of four independent masks.
+
+This is possible here because both operands are INT4. It is an algorithm and layout change, not a free operand swap in an existing W16A16 kernel.
+
+### One 256-entry table serves four output rows
+
+Take eight consecutive weights from each of four output rows. For row \(r\), define
+
+$$
+U_r(m)
+=
+\sum_{j=0}^{7}m_j w_{r,j}
++
+\sum_{j=0}^{7}\max(-w_{r,j},0).
+$$
+
+For now, each \(U_r\) lies between 0 and 64. Pack the four values into four bytes:
+
+$$
+\boxed{
+T[m]
+=
+U_0(m)
++2^8U_1(m)
++2^{16}U_2(m)
++2^{24}U_3(m).
+}
+$$
+
+There are only \(2^8=256\) masks, so the table is still **1 KiB**, now holding partial sums for **four output rows**.
+
+Decompose the activation codes as \(q_a=a+8\). The four activation bit-plane masks index the table:
+
+```cpp
+// One eight-element K slice, four output rows, one token.
+P0 += table[activation_mask0];
+P1 += table[activation_mask1];
+P2 += table[activation_mask2];
+P3 += table[activation_mask3];
+```
+
+The multiplication has disappeared from the inner loop. More importantly, **the retrieved quantities are already safe to accumulate in packed form**.
+
+### A useful refinement: full G32 accumulation, not just G16
+
+A conservative byte-lane bound would force unpacking after 16 terms:
+
+$$
+16\times8=128<256.
+$$
+
+But for 32 signed INT4 weights,
+
+$$
+\sum_{k=0}^{31}|w_k|\le255
+$$
+
+**unless all 32 weights equal \(-8\)**. That is the only exception: \(-8\) is the only allowed code with magnitude eight, so any other code lowers the maximum sum of 256 by at least one.
+
+We can handle the exception exactly during table preparation:
+
+$$
+w'_k=
+\begin{cases}
+-4,&\text{the entire row/group is }-8,\\
+w_k,&\text{otherwise},
+\end{cases}
+$$
+
+with a retained row/group factor
+
+$$
+f=
+\begin{cases}
+2,&\text{exceptional group},\\
+1,&\text{otherwise}.
+\end{cases}
+$$
+
+Build the table using \(w'\), then restore \(f\) after unpacking. This is an **exact representation change**, not additional quantisation.
+
+Now, for every possible input block,
+
+$$
+\boxed{\sum_k|w'_k|\le255.}
+$$
+
+Consequently, every byte field in each bit-plane accumulator remains carry-free across **all 32 terms**.
+
+The exception is handled once while staging weights, not with a per-product branch. It does not require changing the stored model weights. The factor can be folded into the final FP32 weight-scale application.
+
+### Unpack once per group, before applying bit-plane coefficients
+
+The final weighted dot does not fit in a byte. Therefore, widen the byte fields **before** combining planes:
+
+$$
+E_b=P_b\ \&\ \texttt{0x00ff00ff},
+$$
+
+$$
+O_b=(P_b\gg8)\ \&\ \texttt{0x00ff00ff}.
+$$
+
+These separate the four byte lanes into two pairs of 16-bit fields. Then form
+
+$$
+E=E_0+2E_1+4E_2+8E_3,
+$$
+
+$$
+O=O_0+2O_1+4O_2+8O_3.
+$$
+
+For each row, subtract its known offset
+
+$$
+15\sum_k\max(-w'_k,0)+8\sum_k w'_k,
+$$
+
+and restore \(f\).
+
+The weighted fields are at most
+
+$$
+15\times255=3825,
+$$
+
+so their 16-bit packing is safe.
+
+**Result: four exact 32-term INT4 dots, with no product-by-product unpacking and only one group-finishing step.** Each output row may retain its own weight scale.
+
+## 5. Does this have enough arithmetic advantage to be worth testing?
+
+For four output rows and one 32-element activation group:
+
+| Method                      | Selected inner-loop operations for 128 useful INT4 MACs |
+| --------------------------- | ------------------------------------------------------: |
+| Ordinary `half2`            |                                 **64 HFMA2 operations** |
+| Four-output, G32 packed LUT |     **16 shared-memory lookups + 16 integer additions** |
+
+This gives a **2× reduction in those selected inner-loop operations**.
+
+It is **not a 2× speed prediction**. The LUT version additionally needs table construction, activation-mask preparation, addressing, synchronization, packed-field widening, plane combination and scaling. Loads, integer additions and HFMA2 operations also need not have identical throughput or scheduling behaviour. NVIDIA explicitly notes that instruction costs and compiler lowering must be considered when evaluating arithmetic replacements. ([NVIDIA Docs][4])
+
+Nevertheless, this is a more relevant candidate than the old FP16 repair path:
+
+* The repair path incurred extra work **for every product**.
+* This construction amortizes finishing work over **32 products per output**.
+* A weight-derived table can be reused across the **token tile**, rather than rebuilt for each token.
+
+The last point is the architectural reason to investigate this orientation for prefill. It is a hypothesis to benchmark, not evidence that LUT-GEMM’s large-batch limitations have disappeared.
+
+### A P100-specific shared-memory layout
+
+One candidate is:
+
+```cpp
+__shared__ uint32_t table[256][32];
+
+uint32_t value = table[activation_mask][lane_id];
+```
+
+Each lane’s column holds a **different four-row table**. A warp therefore covers 128 output rows.
+
+For aligned 32-bit accesses, the bank index is
+
+$$
+(\text{mask}\times32+\text{lane})\bmod32
+=
+\text{lane}.
+$$
+
+Thus, these lookup addresses do not conflict between lanes, even when their masks differ. This follows from the documented mapping of successive 32-bit words onto 32 shared-memory banks. It does not certify construction, synchronization or epilogue performance. ([NVIDIA Docs][4])
+
+The cost is **32 KiB of shared memory for one eight-element weight slice**. P100 provides 64 KiB per SM and permits at most 48 KiB per block, so two such full tables cannot be double-buffered inside one block. ([NVIDIA Docs][3])
+
+Keep the weights compressed in HBM and build only the on-chip slice. Persisting the expanded LUT representation would defeat the weight-memory advantage.
+
+## 6. How to retain your fast FP16 machinery as a control
+
+There is also a simpler matched experiment: **store ordinary `half2` partial sums in the LUT**.
+
+Each entry contains two genuine FP16 lanes, rather than two quantities embedded inside one FP16 significand. The loop becomes lookup plus `HADD2`, with bit-plane coefficients combined at the group boundary.
+
+For raw INT4 inputs and G32, the relevant sums and ordered plane combinations remain exactly representable in FP16. This preserves the native paired-half arithmetic model; NVIDIA’s half2 API provides the required packed addition and FMA operations. ([NVIDIA Docs][5])
+
+However, for eight K positions and two outputs, it needs four lookups plus four packed additions, versus eight ordinary HFMA2 operations. **There is no automatic arithmetic-count improvement.**
+
+I would use it to answer a diagnostic question:
+
+> Does partial-sum lookup save enough weight decoding or data movement in your existing tile to justify its access cost?
+
+It is a useful control for the four-byte construction, not my leading candidate for an extra 2×.
+
+## 7. What the related research says about this exact bottleneck
+
+The papers point to several distinct approaches, which should not be conflated:
+
+| Work                | Relevant contribution                                                                               | Limitation for your P100 experiment                                                                                                 |
+| ------------------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **T-MAC**           | Register-resident lookup, table layout, symmetry and low-width accumulation ideas.                  | Its CPU lookup instructions do not map directly onto GP100; some fast aggregation techniques introduce rounding error. ([arXiv][6]) |
+| **ULPPACK**         | Packs low-precision integer operations and uses local accumulation to amortize extraction.          | Its integer-register bit budgets are not FP16 significand bits. ([Proceedings of MLsys][7])                                         |
+| **LUT Tensor Core** | Moves table preparation and LUT execution into a software–hardware co-design with new instructions. | Its proposed hardware is not an available P100 execution mode. ([arXiv][8])                                                         |
+| **FIGLUT**          | Explicitly introduces **read-accumulate units** and specialized table access.                       | This is custom accelerator hardware, not a software instruction we can enable on GP100. ([arXiv][9])                                |
+
+FIGLUT is especially relevant to your highlighted sentence: **it directly addresses the desire to make lookup and accumulation a cheap combined operation—but does so with specialized hardware.** Its software-relevant lesson is to organize the table and dataflow around accumulation, not merely around reproducing multiplication. ([arXiv][9])
+
+Our packed-integer construction takes that direction using ordinary arithmetic: the lookup already returns several accumulation-ready fields, and a standard addition updates them together.
+
+## 8. What I verified, and the experiment I would prioritize
+
+The new validation package includes:
+
+| Check                                                             |                                              Result |
+| ----------------------------------------------------------------- | --------------------------------------------------: |
+| Eight numerical variants and controls                             | **560,000 output-dot comparisons; zero mismatches** |
+| Exhaustive four-element activation LUT bounds                     |                       **1,048,576 entries checked** |
+| Independent C++ implementation with undefined-behaviour sanitizer | **100,000 output-dot comparisons; zero mismatches** |
+
+The tests include the all-\(-8\) exception, mixed exceptional/nonexceptional row quartets, and the near-boundary case of 31 weights equal to \(-8\) and one equal to \(-7\). The general exactness claim comes from the bounds above; complete dot products were not exhaustively enumerated.
+
+**No CUDA kernel was compiled or timed in this session.** These checks establish arithmetic correctness, not P100 throughput or model quality.
+
+For your next kernel investigation, I would prioritize **the normalized G32, four-output weight-derived LUT**, with ordinary raw-code `half2` and half2-valued LUT implementations as matched controls. Reuse your existing macro-tiling where practical, and vary token reuse and table width rather than assuming the largest LUT wins.
+
+The decisive timing must include **table construction and group finishing**. A benchmark with prebuilt tables is useful diagnostically, but cannot justify integration. Separately, exact W4A4 arithmetic does not preserve the original W4A16 model: activation quantisation still needs its own quality gate.
+
+**Bottom line:** LUT-based computation gives us an exact way to remove per-product repair and defer unpacking to a full group boundary. The remaining problem is now whether **table preparation, access and group finishing cost less than the HFMA2 work they replace**. That is a substantially better-defined experiment than continuing to search for a nearly free correction inside packed FP16.
+
+[Download the research notes, proofs, reproducible Python tests and independent C++ checker](sandbox:/mnt/data/lut_accumulation_research.zip).
+
+[1]: https://arxiv.org/html/2206.09557v4 "https://arxiv.org/html/2206.09557v4"
+[2]: https://arxiv.org/pdf/2206.09557 "https://arxiv.org/pdf/2206.09557"
+[3]: https://docs.nvidia.com/cuda/archive/12.8.1/pascal-tuning-guide/index.html "https://docs.nvidia.com/cuda/archive/12.8.1/pascal-tuning-guide/index.html"
+[4]: https://docs.nvidia.com/cuda/archive/12.8.1/cuda-c-programming-guide/index.html "https://docs.nvidia.com/cuda/archive/12.8.1/cuda-c-programming-guide/index.html"
+[5]: https://docs.nvidia.com/cuda/archive/12.8.1/cuda-math-api/cuda_math_api/group__CUDA__MATH____HALF2__ARITHMETIC.html "https://docs.nvidia.com/cuda/archive/12.8.1/cuda-math-api/cuda_math_api/group__CUDA__MATH____HALF2__ARITHMETIC.html"
+[6]: https://arxiv.org/html/2407.00088v2 "https://arxiv.org/html/2407.00088v2"
+[7]: https://proceedings.mlsys.org/paper_files/paper/2022/file/e09d45e14e9ece7142217550ddd3c4d0-Paper.pdf "https://proceedings.mlsys.org/paper_files/paper/2022/file/e09d45e14e9ece7142217550ddd3c4d0-Paper.pdf"
+[8]: https://arxiv.org/html/2408.06003v2 "https://arxiv.org/html/2408.06003v2"
+[9]: https://arxiv.org/html/2503.06862v1 "https://arxiv.org/html/2503.06862v1"
+

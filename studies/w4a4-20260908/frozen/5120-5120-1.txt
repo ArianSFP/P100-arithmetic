@@ -1,0 +1,5 @@
+w4a4_h2_r4_b1
+w4a4_h0_r1_b1
+w4a4_h0_r4_b1
+w4a4_h1_r4_b1
+w4a4_h2_r1_b1_w8_f

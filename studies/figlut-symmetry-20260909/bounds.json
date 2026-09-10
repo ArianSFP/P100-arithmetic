@@ -1,0 +1,35 @@
+{
+  "useful_macs_per_projection": 17179869184,
+  "targets": {
+    "gate_up": {
+      "baseline_us": 2462.5,
+      "target_us": 1894.230769230769,
+      "required_tmac_s": 9.069575609827412
+    },
+    "down": {
+      "baseline_us": 2353.96,
+      "target_us": 1810.7384615384615,
+      "required_tmac_s": 9.487769519957858
+    }
+  },
+  "full_table_store_bytes_per_projection": 4294967296,
+  "ideal_shared_store_peak_bytes_s": 9519104000000.0,
+  "ideal_shared_store_us": 451.19449225473323,
+  "consumers": {
+    "historical_best_full256_r16": {
+      "rate_tmac_s": 12.6748,
+      "projected_consumer_us": 1355.4351298639822,
+      "consumer_plus_ideal_store_us": 1806.6296221187154,
+      "gate_up_margin_us": 87.6011471120537,
+      "down_margin_us": 4.108839419746118
+    },
+    "fresh_full256_r16": {
+      "rate_tmac_s": 12.33092615,
+      "projected_consumer_us": 1393.2342935976467,
+      "consumer_plus_ideal_store_us": 1844.4287858523799,
+      "gate_up_margin_us": 49.801983378389195,
+      "down_margin_us": -33.69032431391838
+    }
+  },
+  "assumption": "Ideal bank peak: every bank accepts one 32-bit store every cycle; no builder arithmetic, decode, addressing, barriers, masks, finish, scales, tails, planning or output is charged."
+}

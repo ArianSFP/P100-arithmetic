@@ -1,0 +1,53 @@
+{
+  "commands": [
+    [
+      "/usr/local/cuda-12.8/bin/nvcc",
+      "-ccbin",
+      "/usr/bin/g++-14",
+      "-arch=sm_60",
+      "-std=c++17",
+      "-O3",
+      "--fmad=false",
+      "-Xptxas=-v",
+      "-cubin",
+      "/home/arian/P100-arithmetic/studies/w4a4-20260908/kernels.cu",
+      "-o",
+      "/home/arian/P100-arithmetic/studies/w4a4-20260908/kernels.cubin"
+    ],
+    [
+      "/usr/bin/g++-14",
+      "-std=c++17",
+      "-O2",
+      "-ffp-contract=off",
+      "-I/usr/local/cuda-12.8/include",
+      "/home/arian/P100-arithmetic/studies/w4a4-20260908/worker.cpp",
+      "-L/usr/local/cuda-12.8/lib64/stubs",
+      "-lcuda",
+      "-o",
+      "/home/arian/P100-arithmetic/studies/w4a4-20260908/worker"
+    ],
+    [
+      "/usr/local/cuda-12.8/bin/cuobjdump",
+      "--dump-sass",
+      "/home/arian/P100-arithmetic/studies/w4a4-20260908/kernels.cubin"
+    ],
+    [
+      "python3",
+      "/home/arian/P100-arithmetic/studies/w4a4-20260908/cpu_checks.py"
+    ]
+  ],
+  "hashes": {
+    "controls/w4a16-r3.cubin": "09b125f359d982e9870205427da7d602844090f0c018e856e6397fd49bde233c",
+    "kernels.cu": "046069e85734f50c74af5bc207508ec5358904336eecc50e3ca4b42d7fd2ebf3",
+    "kernels.cubin": "3db9885691c26145b34c18878a9736b04e1f4b1a2962e2921dc7352722d43f3d",
+    "kernels.sass": "9db6e415676484d425c6ab16cdf1523b38f60840799d0da496a82d51b454e34d",
+    "worker.cpp": "a8d5daf025e6967a06f1f04cc687ac05263928f7fc9f98b851659a24219aec32",
+    "worker": "17a17e8719a0158c3c4037c0f6187ecfde1cfe9dc352480e1c62fa26cb5fe7b2",
+    "cpu_checks.py": "33093e4fd0695e704129c07470dc0eb4810e3a57a197cbd465098eea5a5a02d3",
+    "cpu-results.json": "454ae973e6784215b26ace34c10188d34215ee47e987da5603f6b5839f1b7553",
+    "build.py": "4a1658f637c8967a90893930339ef3cbb585e61f160cab2f82c56daec989000a",
+    "../../archive/w4a16-r2-20260908/common.hpp": "b0384c0a1ee4515e1f98a70ed98f83718383ddc5e7c4e6fd13a34b745ebff5dc",
+    "../../archive/w4a16-r2-20260908/build/kernels.cubin": "64fdbef07437dc6918821a6209577000cfe7f61a818fb973fd13b1c643d84d94"
+  },
+  "gpu_executed": false
+}

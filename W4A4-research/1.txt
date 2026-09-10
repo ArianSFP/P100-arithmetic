@@ -1,0 +1,508 @@
+**Yes. I found exact constructions for both targets—including two separate dot products, not just two terms contributing to one dot.** The shared-activation case is particularly useful: **two complete 32-term INT4 dots can share one sequence of 16-bit-integer multiplies with 32-bit accumulation.**
+
+There is also a more interesting FP16 result than my earlier answer suggested: **one FP16 multiplication can produce two shared-activation INT4 products with a small, exactly repairable error.** The repair is not free, but this is worth distinguishing from an outright arithmetic impossibility.
+
+I tested the constructions with CPU simulations and an independent C++ checker. **These are numerical results, not P100 speed measurements.**
+
+## 1. What survived the search
+
+Here, “exact” means exact arithmetic on signed INT4 codes in \([-8,7]\), before applying quantisation scales—not equivalence to the original A16 model.
+
+| Construction                               | Useful work from each arithmetic step | Accumulation before unpacking | Numerical result                                  |
+| ------------------------------------------ | ------------------------------------- | ----------------------------: | ------------------------------------------------- |
+| Packed INT16, different activation vectors | Two independent INT4 MACs             |           **8 terms per dot** | Exact                                             |
+| Packed INT16, shared activation vector     | Two independent INT4 MACs             |          **32 terms per dot** | Exact                                             |
+| Packed FP32, shared activation vector      | Two independent INT4 MACs             |          **32 terms per dot** | Exact                                             |
+| Packed FP16, shared activation             | Two INT4 products                     |            One multiplication | One product exact; the other needs a small repair |
+| Packed FP32, three output rows             | Three INT4 MACs                       |               2 terms per dot | Exact                                             |
+| Packed FP64, four output rows              | Four INT4 MACs                        |              32 terms per dot | Exact                                             |
+
+The central distinction remains important: **INT16 and FP16 are both 16-bit formats, but they do not preserve the same packed numbers.** NVIDIA’s PTX supports 16-bit integer multiply/MAC operations with a 32-bit result; that is a different arithmetic route from FP16 FMA. The emitted SM60 instructions and their throughput still need inspection. ([NVIDIA Docs][1])
+
+---
+
+## 2. Two genuinely independent dots from one wide-multiply sequence
+
+Your highlighted construction reversed the activation order:
+
+$$
+(w_0+Bw_1)(a_1+Ba_0),
+$$
+
+putting the **sum of two products** in the middle field.
+
+For **two separate outputs**, instead keep the same order:
+
+$$
+P_k=w_{0,k}+Bw_{1,k},
+\qquad
+Q_k=a_{0,k}+Ba_{1,k}.
+$$
+
+Then
+
+$$
+\sum_k P_kQ_k
+=
+\underbrace{\sum_k w_{0,k}a_{0,k}}_{D_0}
++
+B\underbrace{\sum_k(w_{0,k}a_{1,k}+w_{1,k}a_{0,k})}_{X}
++
+B^2\underbrace{\sum_k w_{1,k}a_{1,k}}_{D_1}.
+$$
+
+**The two desired dots are now the low and high fields. We discard the unwanted middle field.**
+
+### A configuration that fits 16-bit inputs and a 32-bit accumulator
+
+Choose
+
+$$
+\boxed{B=2048,\qquad G=8.}
+$$
+
+The packed inputs satisfy
+
+$$
+-16392\le P_k,Q_k\le14343,
+$$
+
+so every possible packed operand fits a signed 16-bit integer.
+
+For eight terms,
+
+$$
+D_0,D_1\in[-448,512],
+\qquad
+X\in[-896,1024].
+$$
+
+Negative fields can borrow into neighbouring fields, so ordinary unsigned bit extraction is insufficient. We repair that **once at the end**, using a fixed bias:
+
+$$
+T=C+448+896B+448B^2
+\pmod{2^{32}},
+$$
+
+where \(C=\sum_kP_kQ_k\).
+
+The three biased fields now lie in
+
+$$
+[0,960],\qquad[0,1920],\qquad[0,960].
+$$
+
+These fit without inter-field carries. Extraction is simply
+
+$$
+\boxed{
+D_0=(T\ \&\ 2047)-448
+}
+$$
+
+and
+
+$$
+\boxed{
+D_1=((T\gg22)\ \&\ 1023)-448.
+}
+$$
+
+**Result: eight wide integer MACs compute two independent eight-term INT4 dots—16 useful INT4 MACs.**
+
+For longer dots, repeat this in eight-term blocks and add the extracted results. Eight is an unpacking interval, not a restriction on the model’s matrix dimensions.
+
+One implementation detail matters: the raw accumulator can cross the signed-32-bit boundary. The supplied implementation uses deliberate **unsigned 32-bit wraparound**, rather than undefined signed C++ overflow.
+
+**Validation:** 100,000 blocks, including endpoint cases, with zero mismatches. The independent C++ implementation also passed 100,000 cases with the undefined-behaviour sanitizer enabled.
+
+---
+
+## 3. The stronger practical construction: two shared-activation 32-term dots
+
+This maps naturally onto two output rows:
+
+$$
+D_0=\sum_{k=0}^{31}w_{0,k}a_k,
+\qquad
+D_1=\sum_{k=0}^{31}w_{1,k}a_k.
+$$
+
+Because the activation is shared, there is **no unwanted cross-product field**.
+
+We would like to pack
+
+$$
+P_k=w_{0,k}+4096w_{1,k}.
+$$
+
+However, one endpoint slightly exceeds the signed-16-bit range:
+
+$$
+-8+4096(-8)=-32776.
+$$
+
+### Centre the high field to make every input fit
+
+Use
+
+$$
+\boxed{
+P_k=w_{0,k}+4096w_{1,k}+2048.
+}
+$$
+
+Equivalently,
+
+$$
+P_k=w_{0,k}+4096\left(w_{1,k}+\frac12\right).
+$$
+
+Now
+
+$$
+\boxed{-30728\le P_k\le30727,}
+$$
+
+so **all 256 weight pairs fit exactly in signed INT16**.
+
+Let
+
+$$
+A=\sum_{k=0}^{31}a_k.
+$$
+
+After the packed MAC loop, remove the known offset:
+
+$$
+C=\sum_k P_ka_k-2048A.
+$$
+
+This gives
+
+$$
+\boxed{C=D_0+4096D_1.}
+$$
+
+For signed INT4 products, each 32-term dot lies in
+
+$$
+[-1792,2048].
+$$
+
+Consequently, adding 1792 makes the low field nonnegative without overflowing its radix:
+
+$$
+T=C+1792.
+$$
+
+Recover the two dots with
+
+$$
+\boxed{
+D_0=(T\bmod4096)-1792,
+\qquad
+D_1=\left\lfloor\frac{T}{4096}\right\rfloor.
+}
+$$
+
+### What the kernel actually does
+
+The inner loop becomes
+
+$$
+\text{one packed INT16 weight}
+\times
+\text{one INT4 activation widened to INT16}
+\longrightarrow
+\text{one INT32 accumulator}.
+$$
+
+After 32 iterations, it produces **two independent output dots**.
+
+The activation sum \(A\) should be computed **once per token and quantisation group**, then shared across all output-row pairs. It should not be recomputed separately for every pair.
+
+The two output rows can have **different weight scales**. Extract the integer dots first, then apply their respective scales:
+
+$$
+y_0 \mathrel{+}=s_{w,0}s_aD_0,
+\qquad
+y_1 \mathrel{+}=s_{w,1}s_aD_1.
+$$
+
+Only the reduction-group boundaries and activation scale need to align.
+
+**Validation:** 100,000 blocks, including endpoint cases, with zero mismatches in both the integer implementation and the equivalent FP32 implementation.
+
+### Why this is not an unchanged FP16 W16A16 kernel
+
+These packed inputs are exact as INT16 or FP32, but generally not as FP16. For example,
+
+$$
+4097 \xrightarrow{\mathrm{FP16}}4096.
+$$
+
+The low weight has already disappeared before multiplication. FP32 accumulation cannot recover information lost when loading or converting an operand to FP16. FP16’s significand has 11 bits of precision, including the implicit leading bit. ([NVIDIA Docs][2])
+
+**So this route reuses GEMM tiling and data-reuse ideas, but changes the arithmetic representation and inner loop.**
+
+---
+
+## 4. A useful refinement: actual FP16 packing can be repaired
+
+For **one shared activation**, use a smaller radix:
+
+$$
+P=w_0+128w_1.
+$$
+
+Every possible \(P\) is exactly representable in FP16. Compute
+
+$$
+R=\operatorname{round}_{16}(Pa).
+$$
+
+Then decode
+
+$$
+h=\left\lfloor\frac{R+63}{128}\right\rfloor,
+\qquad
+\ell=R-128h.
+$$
+
+I exhaustively tested all
+
+$$
+16^3=4096
+$$
+
+signed INT4 triples \((w_0,w_1,a)\).
+
+The result was:
+
+| Quantity                                        |    Exhaustive result |
+| ----------------------------------------------- | -------------------: |
+| Packed input represented exactly                |           Every case |
+| High product \(h=w_1a\)                         |       **Every case** |
+| Low product \(\ell=w_0a\) without correction    |  3,536 / 4,096 cases |
+| Low-product mismatch rate                       |       **13.671875%** |
+| Maximum low-product error                       | **2 integer counts** |
+| Low-product MSE over the uniform exhaustive set |           0.25390625 |
+
+For example,
+
+$$
+w_0=w_1=a=7
+$$
+
+gives
+
+$$
+P=903,
+\qquad
+Pa=6321=49+128(49).
+$$
+
+FP16 rounds this to
+
+$$
+6320=48+128(49).
+$$
+
+The high product remains exactly 49; the low product becomes 48.
+
+### The lost low bits are recoverable when the activation is known
+
+Over the complete input domain, I found **no conflicting cases** in the mapping
+
+$$
+(a,\ell)\longmapsto w_0a.
+$$
+
+Therefore, a small lookup table can repair the low product exactly. A straightforward table has 16 activation rows and 128 possible rounded residuals: **2 KiB with INT8 entries**.
+
+In the example,
+
+$$
+(a=7,\ell=48)\longmapsto49.
+$$
+
+After this repair, **both products are exact in all 4,096 cases**.
+
+That qualifies my earlier answer: **FP16 rounding does not necessarily destroy irrecoverable information in this shared-activation, single-multiplication setting.**
+
+### Why I would not make this the leading kernel candidate yet
+
+A packed `half2` multiply could now generate four useful products—two per FP16 lane—but the complete path still needs conversion, field extraction, correction-table access, and accumulation.
+
+Also, the result above is for **one multiplication**. It does not justify leaving both dots packed inside an FP16 accumulator for a long reduction.
+
+A direct lookup of the low product is another competing implementation; the repair construction must beat that too. The arithmetic is viable, but its surrounding work could easily consume the extra throughput.
+
+---
+
+## 5. The baseline we must beat: exact INT4 dots using ordinary `half2`
+
+This is probably the most immediately useful result for your existing kernel work.
+
+For
+
+$$
+w,a\in[-8,7],
+$$
+
+the product satisfies
+
+$$
+wa\in[-56,64].
+$$
+
+After at most 32 terms, every partial sum has magnitude at most
+
+$$
+32\times64=2048.
+$$
+
+**Every integer in that range is exactly representable in FP16.**
+
+Therefore:
+
+$$
+\boxed{
+\text{Raw signed INT4 products can accumulate exactly for 32 terms in FP16.}
+}
+$$
+
+With ordinary `half2`, the instruction performs
+
+$$
+(c_0,c_1)
+\leftarrow
+(c_0+w_0a,\;c_1+w_1a).
+$$
+
+Both lanes can compute exact 32-term quantised dots. Afterwards, widen the results, apply scales, and accumulate across groups in FP32.
+
+The critical requirement is **scales outside the inner loop**. This exactness argument does not apply to an arbitrary sequence of already-dequantised floating-point products.
+
+I tested 100,000 pairs of 32-term dots with zero mismatches. The bound is meaningful: at 33 terms, the constructed case
+
+$$
+32(64)+1=2049
+$$
+
+rounds to 2048 in FP16.
+
+### Why this changes the speed comparison
+
+P100 already issues a two-lane FP16 FMA at the same rate as a scalar FP32 FMA. Thus ordinary `half2` already supplies **two MACs per instruction**, rather than one. ([NVIDIA Developer][3])
+
+For two shared-activation 32-term dots:
+
+| Arithmetic core                   | Inner-loop operations, excluding preparation and finishing work |
+| --------------------------------- | --------------------------------------------------------------: |
+| Separate scalar FP32 accumulators |                                                        64 FFMAs |
+| Ordinary `half2`                  |                                                   **32 HFMA2s** |
+| Two-output packed FP32            |                                                    **32 FFMAs** |
+| Two-output packed INT16           |         **32 wide integer MACs**, subject to actual compilation |
+
+**The two-output packed FP32 route has a 2× arithmetic-count advantage over scalar FP32, but not over ordinary `half2`.**
+
+Your archived W4A16 winners preserve FP16 activations and FP32 accumulation/order. Moving to A4 creates a different numerical opportunity: the raw-code integer dot can use exact G32 half accumulation. That is a legitimate new control, but it is not a byte-identical replacement for the A16 computation.
+
+---
+
+## 6. Ambitious routes that could exceed ordinary `half2`
+
+### Three output rows packed into FP32
+
+For a shared activation, pack
+
+$$
+P=w_0+256w_1+256^2w_2.
+$$
+
+Accumulate **two terms**, then extract three dots.
+
+The three output sums fit their fields, and the packed products and accumulation remain exactly representable in FP32. This passed 100,000 simulated blocks.
+
+That gives three useful INT4 MACs per FFMA, versus two per HFMA2:
+
+$$
+\boxed{\text{1.5× arithmetic throughput headroom before overhead.}}
+$$
+
+The drawback is the short two-term unpacking interval. Three field extractions every two iterations can erase that advantage. I would treat it as a bounded microkernel experiment, not start with a full implementation.
+
+### Four output rows packed into FP64
+
+For 32-term shared-activation dots, pack
+
+$$
+P=w_0+4096w_1+4096^2w_2+4096^3w_3.
+$$
+
+A single FP64 accumulator can preserve all four integer dots exactly. This also passed 100,000 simulated blocks.
+
+However, P100’s FP64 arithmetic throughput is one-quarter of its paired-FP16 throughput. **Four useful products per FP64 FMA therefore only match ordinary `half2` at the arithmetic ceiling.** ([NVIDIA Developer][3])
+
+Standalone FP64 packing is not automatically the answer—and your repository already records unsuccessful FP64 substitution experiments.
+
+### The genuinely ambitious architecture: a mixed FP16/FP64 kernel
+
+The more interesting question is:
+
+> Can one kernel use ordinary HFMA2 for some output rows while using packed FP64 for others, gaining useful work from both execution paths?
+
+GP100 has separate FP32 and FP64 execution resources, but they share scheduling and other resources. Their advertised peaks cannot simply be added; simultaneous utilisation must be measured. ([NVIDIA Docs][4])
+
+Under an idealised assumption of fully overlapping utilisation:
+
+$$
+\underbrace{\text{ordinary half2}}_{\text{baseline throughput}}
++
+\underbrace{\text{four-output packed FP64}}_{\text{similar useful arithmetic throughput}}
+$$
+
+would offer a ceiling near **2× the half2-only arithmetic rate**.
+
+That is **a hypothesis to test, not a demonstrated capability**.
+
+The first experiment should be a mixed-instruction throughput probe with independent accumulator chains—not a GEMM. Measure HFMA2 alone, DFMA alone, and a mixed stream. Only proceed if the mixed stream increases *useful packed MAC throughput* after accounting for issue contention.
+
+This is the architecture search I would pursue for a genuine extra 2×, rather than assuming that two products inside a wider multiplication automatically provide it.
+
+---
+
+## 7. How I would map this onto your P100 kernels
+
+**First, establish the exact raw-code `half2` G32 baseline.** Compare it against both your production W4A16 kernel and a scalar-FP32 W4A4 control. The latter separates gains from activation quantisation from gains in the arithmetic implementation. Model-quality testing remains separate from integer-dot correctness.
+
+**Second, test the centred shared-activation packing.** Pair neighbouring output rows—or a gate/up row pair sharing the same input—and compare the INT16-wide and FP32-packed implementations. Compile the integer version through documented PTX and inspect the actual SM60 SASS before assuming one wide MAC becomes one fast native instruction.
+
+Keep the weights compressed in HBM: **two INT4 codes remain one byte**. Expand into the larger arithmetic representation only in registers or shared memory, with reuse across the token tile. Persisting expanded packed operands would increase weight traffic and could destroy the benefit.
+
+**Third, run the mixed HFMA2/FP64 probe as the ambitious branch.** The independent-dot G8 construction and the three-output FP32 construction are useful secondary experiments, but they have more frequent unpacking or less natural reuse than the shared-G32 route.
+
+The relevant win condition is not merely fewer multiply instructions. It is lower complete-kernel time after activation quantisation, packing, scale handling, extraction, reduction, and dispatch.
+
+### Bottom line
+
+**Your two-for-one idea is mathematically viable.** We now have:
+
+* **Exact two independent eight-term dots** using packed INT16 operands and one wide-MAC sequence.
+* **Exact two shared-activation 32-term dots**, with a centring correction that keeps every packed weight inside INT16.
+* **Two products from an actual FP16 multiply with an exact small-table repair**, although its performance is unproven.
+
+For speed, I would prioritise **ordinary exact G32 `half2` versus centred INT16 packing**, then investigate **mixed HFMA2/packed-FP64 execution** for gains beyond the existing two-lane FP16 ceiling.
+
+The underlying idea belongs to established radix/DSP-packing methods; the value here is the concrete signed bounds, correction scheme, and P100 implementation choices—not a claim of newly discovered hardware. ([arXiv][5])
+
+[Download the reproducible simulations, results, checked C++ integer implementations, CUDA primitives, and experiment notes](sandbox:/mnt/data/int4_packing_search.zip). The CUDA branches are supplied for compilation and hardware validation; they were not compiled or timed in this session.
+
+[1]: https://docs.nvidia.com/cuda/archive/12.8.1/parallel-thread-execution/index.html "https://docs.nvidia.com/cuda/archive/12.8.1/parallel-thread-execution/index.html"
+[2]: https://docs.nvidia.com/cuda/cuda-programming-guide/05-appendices/mathematical-functions.html "https://docs.nvidia.com/cuda/cuda-programming-guide/05-appendices/mathematical-functions.html"
+[3]: https://developer.nvidia.com/blog/mixed-precision-programming-cuda-8/ "https://developer.nvidia.com/blog/mixed-precision-programming-cuda-8/"
+[4]: https://docs.nvidia.com/cuda/pascal-tuning-guide/index.html "https://docs.nvidia.com/cuda/pascal-tuning-guide/index.html"
+[5]: https://arxiv.org/html/2203.11028v1 "https://arxiv.org/html/2203.11028v1"
+

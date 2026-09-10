@@ -1,0 +1,297 @@
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function 'reduce32' for 'sm_60'
+ptxas info    : Function properties for reduce32
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 40 registers, used 0 barriers, 340 bytes cmem[0]
+ptxas info    : Compile time = 6.398 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r1_b4_w16_f' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r1_b4_w16_f
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 48 registers, used 1 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 27.967 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r1_b4_w8_f' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r1_b4_w8_f
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 48 registers, used 1 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 27.325 ms
+ptxas info    : Compiling entry function 'w4a4_h0_r1_b4_w16_f' for 'sm_60'
+ptxas info    : Function properties for w4a4_h0_r1_b4_w16_f
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 64 registers, used 1 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 32.098 ms
+ptxas info    : Compiling entry function 'w4a4_h0_r1_b4_w8_f' for 'sm_60'
+ptxas info    : Function properties for w4a4_h0_r1_b4_w8_f
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 64 registers, used 1 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 31.560 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r2_b1_w32_f' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r2_b1_w32_f
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 1 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 27.172 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r2_b1_w16_f' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r2_b1_w16_f
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 1 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 28.530 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r2_b1_w8_f' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r2_b1_w8_f
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 1 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 28.038 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r1_b1_w32_f' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r1_b1_w32_f
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 1 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 22.161 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r1_b1_w16_f' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r1_b1_w16_f
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 1 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 21.381 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r1_b1_w8_f' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r1_b1_w8_f
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 1 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 22.626 ms
+ptxas info    : Compiling entry function 'w4a4_h0_r2_b1_w32_f' for 'sm_60'
+ptxas info    : Function properties for w4a4_h0_r2_b1_w32_f
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 1 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 25.932 ms
+ptxas info    : Compiling entry function 'w4a4_h0_r2_b1_w16_f' for 'sm_60'
+ptxas info    : Function properties for w4a4_h0_r2_b1_w16_f
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 1 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 24.634 ms
+ptxas info    : Compiling entry function 'w4a4_h0_r2_b1_w8_f' for 'sm_60'
+ptxas info    : Function properties for w4a4_h0_r2_b1_w8_f
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 1 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 24.646 ms
+ptxas info    : Compiling entry function 'w4a4_h0_r1_b1_w32_f' for 'sm_60'
+ptxas info    : Function properties for w4a4_h0_r1_b1_w32_f
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 31 registers, used 1 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 20.722 ms
+ptxas info    : Compiling entry function 'w4a4_h0_r1_b1_w16_f' for 'sm_60'
+ptxas info    : Function properties for w4a4_h0_r1_b1_w16_f
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 1 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 20.840 ms
+ptxas info    : Compiling entry function 'w4a4_h0_r1_b1_w8_f' for 'sm_60'
+ptxas info    : Function properties for w4a4_h0_r1_b1_w8_f
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 1 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 19.686 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r4_b4_w8' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r4_b4_w8
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 80 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 48.140 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r4_b4_w2' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r4_b4_w2
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 80 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 47.487 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r4_b4_w1' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r4_b4_w1
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 80 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 46.934 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r2_b4_w8' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r2_b4_w8
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 62 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 23.924 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r2_b4_w2' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r2_b4_w2
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 62 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 23.557 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r2_b4_w1' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r2_b4_w1
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 62 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 23.118 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r1_b4_w8' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r1_b4_w8
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 48 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 13.649 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r1_b4_w2' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r1_b4_w2
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 48 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 13.260 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r1_b4_w1' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r1_b4_w1
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 48 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 13.989 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r8_b1_w8' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r8_b1_w8
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 72 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 32.358 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r8_b1_w2' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r8_b1_w2
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 72 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 30.916 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r8_b1_w1' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r8_b1_w1
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 72 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 31.123 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r4_b1_w8' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r4_b1_w8
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 48 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 14.437 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r4_b1_w2' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r4_b1_w2
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 48 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 15.605 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r4_b1_w1' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r4_b1_w1
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 48 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 14.237 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r2_b1_w8' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r2_b1_w8
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 40 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 8.429 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r2_b1_w2' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r2_b1_w2
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 40 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 9.071 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r2_b1_w1' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r2_b1_w1
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 40 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 8.989 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r16_b1' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r16_b1
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 128 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 70.594 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r8_b4' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r8_b4
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 128 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 123.206 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r8_b1' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r8_b1
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 72 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 30.048 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r4_b4' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r4_b4
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 80 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 47.538 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r2_b4' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r2_b4
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 62 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 23.528 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r1_b4' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r1_b4
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 48 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 12.703 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r4_b1' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r4_b1
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 48 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 14.570 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r2_b1' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r2_b1
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 40 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 8.557 ms
+ptxas info    : Compiling entry function 'w4a4_h2_r1_b1' for 'sm_60'
+ptxas info    : Function properties for w4a4_h2_r1_b1
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 30 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 8.888 ms
+ptxas info    : Compiling entry function 'w4a4_h1_r4_b4' for 'sm_60'
+ptxas info    : Function properties for w4a4_h1_r4_b4
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 80 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 73.940 ms
+ptxas info    : Compiling entry function 'w4a4_h1_r2_b4' for 'sm_60'
+ptxas info    : Function properties for w4a4_h1_r2_b4
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 48 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 38.830 ms
+ptxas info    : Compiling entry function 'w4a4_h1_r1_b4' for 'sm_60'
+ptxas info    : Function properties for w4a4_h1_r1_b4
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 40 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 24.311 ms
+ptxas info    : Compiling entry function 'w4a4_h0_r4_b4' for 'sm_60'
+ptxas info    : Function properties for w4a4_h0_r4_b4
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 80 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 55.426 ms
+ptxas info    : Compiling entry function 'w4a4_h0_r2_b4' for 'sm_60'
+ptxas info    : Function properties for w4a4_h0_r2_b4
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 48 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 28.809 ms
+ptxas info    : Compiling entry function 'w4a4_h0_r1_b4' for 'sm_60'
+ptxas info    : Function properties for w4a4_h0_r1_b4
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 56 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 18.460 ms
+ptxas info    : Compiling entry function 'w4a4_h1_r4_b1' for 'sm_60'
+ptxas info    : Function properties for w4a4_h1_r4_b1
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 40 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 33.392 ms
+ptxas info    : Compiling entry function 'w4a4_h1_r2_b1' for 'sm_60'
+ptxas info    : Function properties for w4a4_h1_r2_b1
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 16.268 ms
+ptxas info    : Compiling entry function 'w4a4_h1_r1_b1' for 'sm_60'
+ptxas info    : Function properties for w4a4_h1_r1_b1
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 29 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 9.443 ms
+ptxas info    : Compiling entry function 'w4a4_h0_r4_b1' for 'sm_60'
+ptxas info    : Function properties for w4a4_h0_r4_b1
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 48 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 21.924 ms
+ptxas info    : Compiling entry function 'w4a4_h0_r2_b1' for 'sm_60'
+ptxas info    : Function properties for w4a4_h0_r2_b1
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 12.004 ms
+ptxas info    : Compiling entry function 'w4a4_h0_r1_b1' for 'sm_60'
+ptxas info    : Function properties for w4a4_h0_r1_b1
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 30 registers, used 0 barriers, 372 bytes cmem[0]
+ptxas info    : Compile time = 7.255 ms
+ptxas info    : Compiling entry function 'quantize_planes' for 'sm_60'
+ptxas info    : Function properties for quantize_planes
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 16 registers, used 0 barriers, 360 bytes cmem[0], 16 bytes cmem[2]
+ptxas info    : Compile time = 6.356 ms
+ptxas info    : Compiling entry function 'quantize_nibbles' for 'sm_60'
+ptxas info    : Function properties for quantize_nibbles
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 17 registers, used 0 barriers, 360 bytes cmem[0], 16 bytes cmem[2]
+ptxas info    : Compile time = 6.196 ms
+ptxas info    : Compiling entry function 'quantize' for 'sm_60'
+ptxas info    : Function properties for quantize
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 17 registers, used 0 barriers, 360 bytes cmem[0], 16 bytes cmem[2]
+ptxas info    : Compile time = 7.350 ms

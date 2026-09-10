@@ -1,0 +1,82 @@
+{
+  "gu-ctas1-r0": {
+    "samples_per_mode": {
+      "w4a4-exact-g32": 6,
+      "w16-dualrail": 6
+    },
+    "median_us": {
+      "w4a4-exact-g32": 4535.936035000001,
+      "w16-dualrail": 3165.38391
+    },
+    "w4_vs_w16_speed": 0.6978457997589465,
+    "w16_vs_w4_speed": 1.432981326742133,
+    "w4_target_us_for_2x": 1582.691955,
+    "w4_over_2x_target": 2.865962653484266,
+    "checks": [
+      "QUANT_CHECK groups=1048576 code_bytes=16777216 bad=0",
+      "PLANNER_CHECK input_tiles=256 pairs=128 leftovers=0 bad=0",
+      "CHECK mode=w16-dualrail outputs=8388608 samples=256 bad=0 nonfinite=0",
+      "CHECK mode=w4a4-exact-g32 outputs=8388608 samples=256 bad=0 nonfinite=0"
+    ]
+  },
+  "gu-ctas2-r0": {
+    "samples_per_mode": {
+      "w4a4-exact-g32": 6,
+      "w16-dualrail": 6
+    },
+    "median_us": {
+      "w4a4-exact-g32": 4522.306885,
+      "w16-dualrail": 2459.9678949999998
+    },
+    "w4_vs_w16_speed": 0.5439630607908202,
+    "w16_vs_w4_speed": 1.8383601242080438,
+    "w4_target_us_for_2x": 1229.9839474999999,
+    "w4_over_2x_target": 3.6767202484160877,
+    "checks": [
+      "QUANT_CHECK groups=1048576 code_bytes=16777216 bad=0",
+      "PLANNER_CHECK input_tiles=256 pairs=128 leftovers=0 bad=0",
+      "CHECK mode=w16-dualrail outputs=8388608 samples=256 bad=0 nonfinite=0",
+      "CHECK mode=w4a4-exact-g32 outputs=8388608 samples=256 bad=0 nonfinite=0"
+    ]
+  },
+  "down-ctas1-r0": {
+    "samples_per_mode": {
+      "w4a4-exact-g32": 6,
+      "w16-dualrail": 6
+    },
+    "median_us": {
+      "w4a4-exact-g32": 3630.49866,
+      "w16-dualrail": 3038.0080550000002
+    },
+    "w4_vs_w16_speed": 0.836801866496213,
+    "w16_vs_w4_speed": 1.1950260151630836,
+    "w4_target_us_for_2x": 1519.0040275000001,
+    "w4_over_2x_target": 2.390052030326167,
+    "checks": [
+      "QUANT_CHECK groups=262144 code_bytes=4194304 bad=0",
+      "PLANNER_CHECK input_tiles=256 pairs=128 leftovers=0 bad=0",
+      "CHECK mode=w16-dualrail outputs=33554432 samples=256 bad=0 nonfinite=0",
+      "CHECK mode=w4a4-exact-g32 outputs=33554432 samples=256 bad=0 nonfinite=0"
+    ]
+  },
+  "down-ctas2-r0": {
+    "samples_per_mode": {
+      "w4a4-exact-g32": 6,
+      "w16-dualrail": 6
+    },
+    "median_us": {
+      "w4a4-exact-g32": 3629.114745,
+      "w16-dualrail": 2348.56531
+    },
+    "w4_vs_w16_speed": 0.647145509310701,
+    "w16_vs_w4_speed": 1.5452475302890343,
+    "w4_target_us_for_2x": 1174.282655,
+    "w4_over_2x_target": 3.0904950605780686,
+    "checks": [
+      "QUANT_CHECK groups=262144 code_bytes=4194304 bad=0",
+      "PLANNER_CHECK input_tiles=256 pairs=128 leftovers=0 bad=0",
+      "CHECK mode=w16-dualrail outputs=33554432 samples=256 bad=0 nonfinite=0",
+      "CHECK mode=w4a4-exact-g32 outputs=33554432 samples=256 bad=0 nonfinite=0"
+    ]
+  }
+}

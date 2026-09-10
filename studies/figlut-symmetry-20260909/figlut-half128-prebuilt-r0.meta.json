@@ -1,0 +1,45 @@
+{
+  "tag": "figlut-half128-prebuilt-r0",
+  "device_index": 1,
+  "device_uuid": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+  "initial_gpu": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 5, 0, 27, 405, P0, 0",
+  "started": 1788969331.9285264,
+  "hashes": {
+    "prebuilt_worker.cu": "e256a1a0312c397c3dbcf744a1d7679e326d883e198ead62899f31b1a3061d5f",
+    "prebuilt_worker": "3122cb5d9fa6bdaf92fab9e7a09eb1eb763bc5098b64e0adfd20fa645a21f378",
+    "prebuilt_worker.sass": "d3e847abdbc9c0378d021ca35c6b17ab7850e52adc710017db05b03b622ca579",
+    "prebuilt_build.log": "6905a694462cb080cc86e7e46dc47ad0a779b33de8a4a24354116749d3782686"
+  },
+  "runner_sha256": "77d70af480a1c04e401696c680cfa670720548b0d495728a118de343d85abd6c",
+  "command": [
+    "env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64:/usr/lib/x86_64-linux-gnu",
+    "CUDA_VISIBLE_DEVICES=GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+    "taskset",
+    "--cpu-list",
+    "0-11",
+    "/home/arian/P100-arithmetic/studies/figlut-symmetry-20260909/prebuilt_worker",
+    "--gpu-approved",
+    "1",
+    "512"
+  ],
+  "telemetry": [
+    [
+      1788969331.929881,
+      "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 15, 0, 27, 405, P0, 0"
+    ],
+    [
+      1788969333.2183545,
+      "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 265, 100, 31, 1328, P0, 0"
+    ],
+    [
+      1788969334.2671187,
+      "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 265, 100, 32, 1328, P0, 0"
+    ]
+  ],
+  "exit_code": 0,
+  "finished": 1788969335.3139265,
+  "final_gpu": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 5, 0, 30, 1328, P0, 0"
+}

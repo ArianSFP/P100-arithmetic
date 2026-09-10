@@ -1,0 +1,10 @@
+========= COMPUTE-SANITIZER
+QUANT_CHECK groups=774 code_bytes=12384 bad=0
+PLANNER_CHECK input_tiles=6 pairs=2 leftovers=2 bad=0
+CHECK mode=w16-dualrail outputs=33024 samples=256 bad=0 nonfinite=0
+CHECK mode=w4a4-exact-g32 outputs=33024 samples=256 bad=0 nonfinite=0
+META M=129 N=128 K=96 experts=2 seed=3911 pair_grid=56 quant_grid=112 planner_timed=1 quantizer_timed_w4=1
+TIME mode=w16-dualrail rep=0 us=296550.531
+TIME mode=w4a4-exact-g32 rep=0 us=283056.625
+PASS
+========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)

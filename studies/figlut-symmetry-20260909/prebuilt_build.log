@@ -1,0 +1,47 @@
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_Z16prebuilt_half128ILi4ELi2EEvPKjS1_S1_Pmi' for 'sm_60'
+ptxas info    : Function properties for _Z16prebuilt_half128ILi4ELi2EEvPKjS1_S1_Pmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 72 registers, used 1 barriers, 16384 bytes smem, 356 bytes cmem[0]
+ptxas info    : Compile time = 63.065 ms
+ptxas info    : Compiling entry function '_Z16prebuilt_full256ILi4ELi2EEvPKjS1_Pmi' for 'sm_60'
+ptxas info    : Function properties for _Z16prebuilt_full256ILi4ELi2EEvPKjS1_Pmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 68 registers, used 1 barriers, 32768 bytes smem, 348 bytes cmem[0]
+ptxas info    : Compile time = 31.250 ms
+ptxas info    : Compiling entry function '_Z14resident_half2ILi4EEvPKjPmi' for 'sm_60'
+ptxas info    : Function properties for _Z14resident_half2ILi4EEvPKjPmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 30 registers, used 1 barriers, 32768 bytes smem, 340 bytes cmem[0]
+ptxas info    : Compile time = 70.921 ms
+ptxas info    : Compiling entry function '_Z16prebuilt_half128ILi8ELi2EEvPKjS1_S1_Pmi' for 'sm_60'
+ptxas info    : Function properties for _Z16prebuilt_half128ILi8ELi2EEvPKjS1_S1_Pmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 96 registers, used 1 barriers, 16384 bytes smem, 356 bytes cmem[0]
+ptxas info    : Compile time = 154.155 ms
+ptxas info    : Compiling entry function '_Z16prebuilt_full256ILi8ELi2EEvPKjS1_Pmi' for 'sm_60'
+ptxas info    : Function properties for _Z16prebuilt_full256ILi8ELi2EEvPKjS1_Pmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 111 registers, used 1 barriers, 32768 bytes smem, 348 bytes cmem[0]
+ptxas info    : Compile time = 70.324 ms
+ptxas info    : Compiling entry function '_Z14resident_half2ILi8EEvPKjPmi' for 'sm_60'
+ptxas info    : Function properties for _Z14resident_half2ILi8EEvPKjPmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 54 registers, used 1 barriers, 32768 bytes smem, 340 bytes cmem[0]
+ptxas info    : Compile time = 163.293 ms
+ptxas info    : Compiling entry function '_Z16prebuilt_half128ILi16ELi1EEvPKjS1_S1_Pmi' for 'sm_60'
+ptxas info    : Function properties for _Z16prebuilt_half128ILi16ELi1EEvPKjS1_S1_Pmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 200 registers, used 1 barriers, 16384 bytes smem, 356 bytes cmem[0]
+ptxas info    : Compile time = 297.188 ms
+ptxas info    : Compiling entry function '_Z16prebuilt_full256ILi16ELi1EEvPKjS1_Pmi' for 'sm_60'
+ptxas info    : Function properties for _Z16prebuilt_full256ILi16ELi1EEvPKjS1_Pmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 241 registers, used 1 barriers, 32768 bytes smem, 348 bytes cmem[0]
+ptxas info    : Compile time = 94.389 ms
+ptxas info    : Compiling entry function '_Z14resident_half2ILi16EEvPKjPmi' for 'sm_60'
+ptxas info    : Function properties for _Z14resident_half2ILi16EEvPKjPmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 105 registers, used 1 barriers, 32768 bytes smem, 340 bytes cmem[0]
+ptxas info    : Compile time = 360.929 ms

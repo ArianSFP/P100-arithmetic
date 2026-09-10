@@ -1,0 +1,21 @@
+{
+  "package_discrete_claims_exact_match": true,
+  "float_serialization_differences": [
+    [
+      "fp32_arithmetic_diagnostics_not_model_quality.normal.relative_l2_vs_fp64",
+      "float",
+      3.039871346701726e-08,
+      3.0398713467017225e-08,
+      3.3087224502121107e-23
+    ],
+    [
+      "fp32_arithmetic_diagnostics_not_model_quality.cancellation.relative_l2_vs_fp64",
+      "float",
+      2.6152422647397817e-08,
+      2.6152422647397814e-08,
+      3.308722450212111e-24
+    ]
+  ],
+  "maximum_absolute_float_difference": 3.3087224502121107e-23,
+  "interpretation": "All tests reran successfully. Differences are last-bit host NumPy reductions, not failed assertions."
+}

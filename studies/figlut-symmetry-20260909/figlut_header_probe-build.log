@@ -1,0 +1,12 @@
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function 'figlut_header_shared' for 'sm_60'
+ptxas info    : Function properties for figlut_header_shared
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 46 registers, used 0 barriers, 1024 bytes smem, 344 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 12.924 ms
+ptxas info    : Compiling entry function 'figlut_header_shuffle' for 'sm_60'
+ptxas info    : Function properties for figlut_header_shuffle
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 0 barriers, 344 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 9.411 ms

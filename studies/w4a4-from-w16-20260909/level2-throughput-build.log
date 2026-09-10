@@ -1,0 +1,17 @@
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+ptxas info    : 0 bytes gmem, 64 bytes cmem[3]
+ptxas info    : Compiling entry function 'level2_hmul_prmt_repair' for 'sm_60'
+ptxas info    : Function properties for level2_hmul_prmt_repair
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 121 registers, used 0 barriers, 340 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 24.871 ms
+ptxas info    : Compiling entry function 'level2_normalized_split' for 'sm_60'
+ptxas info    : Function properties for level2_normalized_split
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 56 registers, used 0 barriers, 340 bytes cmem[0], 56 bytes cmem[2]
+ptxas info    : Compile time = 15.118 ms
+ptxas info    : Compiling entry function 'level2_plain_hfma2' for 'sm_60'
+ptxas info    : Function properties for level2_plain_hfma2
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 64 registers, used 0 barriers, 340 bytes cmem[0], 44 bytes cmem[2]
+ptxas info    : Compile time = 13.152 ms

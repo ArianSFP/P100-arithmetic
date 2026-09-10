@@ -1,0 +1,29 @@
+TIME mode=plain-hfma2 rep=0 us=21430.3029 useful_tmac_s=5.61163716
+TIME mode=normalized-split rep=0 us=37309.1532 useful_tmac_s=3.22331315
+TIME mode=hmul-prmt-repair rep=0 us=139046.6 useful_tmac_s=0.864883312
+TIME mode=normalized-split rep=1 us=37309.8348 useful_tmac_s=3.22325427
+TIME mode=hmul-prmt-repair rep=1 us=138728.902 useful_tmac_s=0.866863951
+TIME mode=plain-hfma2 rep=1 us=21429.5349 useful_tmac_s=5.61183828
+TIME mode=hmul-prmt-repair rep=2 us=138721.985 useful_tmac_s=0.866907177
+TIME mode=plain-hfma2 rep=2 us=21429.8986 useful_tmac_s=5.61174304
+TIME mode=normalized-split rep=2 us=37309.4406 useful_tmac_s=3.22328832
+TIME mode=plain-hfma2 rep=3 us=21429.5781 useful_tmac_s=5.61182696
+TIME mode=normalized-split rep=3 us=37308.7362 useful_tmac_s=3.22334918
+TIME mode=hmul-prmt-repair rep=3 us=138726.023 useful_tmac_s=0.86688194
+TIME mode=normalized-split rep=4 us=37308.7997 useful_tmac_s=3.22334369
+TIME mode=hmul-prmt-repair rep=4 us=138728.078 useful_tmac_s=0.8668691
+TIME mode=plain-hfma2 rep=4 us=21429.8553 useful_tmac_s=5.61175437
+TIME mode=hmul-prmt-repair rep=5 us=138729.706 useful_tmac_s=0.86685893
+TIME mode=plain-hfma2 rep=5 us=21440.4475 useful_tmac_s=5.60898201
+TIME mode=normalized-split rep=5 us=37310.7834 useful_tmac_s=3.22317232
+TIME mode=plain-hfma2 rep=6 us=21429.5781 useful_tmac_s=5.61182696
+TIME mode=normalized-split rep=6 us=37308.6395 useful_tmac_s=3.22335753
+TIME mode=hmul-prmt-repair rep=6 us=138732.768 useful_tmac_s=0.866839797
+TIME mode=normalized-split rep=7 us=37309.995 useful_tmac_s=3.22324043
+TIME mode=hmul-prmt-repair rep=7 us=138728.963 useful_tmac_s=0.86686357
+TIME mode=plain-hfma2 rep=7 us=21429.9622 useful_tmac_s=5.6117264
+TIME mode=hmul-prmt-repair rep=8 us=138722.392 useful_tmac_s=0.866904634
+TIME mode=plain-hfma2 rep=8 us=21429.4815 useful_tmac_s=5.61185226
+TIME mode=normalized-split rep=8 us=37308.2987 useful_tmac_s=3.22338698
+META grid=112 block=256 threads=28672 chains=8 iterations=65536 useful_macs_per_thread_iteration=64 seed=3911
+PASS

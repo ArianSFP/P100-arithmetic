@@ -1,0 +1,46 @@
+{
+  "tag": "figlut-packed4-full16-r0",
+  "device_index": 1,
+  "device_uuid": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+  "initial_gpu": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 5, 0, 27, 405, P0, 0",
+  "started": 1788970704.2620401,
+  "hashes": {
+    "packed4_worker.cu": "6b7cc84362fcc15a9f204a6f0032a2ae8a9f8764a0db32efa5a45ead62f79b43",
+    "packed4_worker": "d2b15095da2bb780acef5585189b51d448de2402bcb90f0f02c250782bdc8f04",
+    "packed4_worker.sass": "2c7f1a05c26ad4ef50724b5506df407e98e0a701ba1cd7816cec8332b1b7d02f",
+    "packed4_build.log": "18f6c7d9a76cf2dc12c50b312d2d950bd0fb9859837db240d3cde79a787da986",
+    "packed4_sass_counts.json": "b28d82b7bfe7322e0328149c7a451e7930a14545ac15fa4074acc756db1f99b3"
+  },
+  "runner_sha256": "22e881b2e1c82c2b8c333f3988133184a71df322662784e95b3e27fa581c4870",
+  "command": [
+    "env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64:/usr/lib/x86_64-linux-gnu",
+    "CUDA_VISIBLE_DEVICES=GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+    "taskset",
+    "--cpu-list",
+    "0-11",
+    "/home/arian/P100-arithmetic/studies/figlut-symmetry-20260909/packed4_worker",
+    "--gpu-approved",
+    "1",
+    "256"
+  ],
+  "telemetry": [
+    [
+      1788970704.2631075,
+      "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 5, 0, 27, 405, P0, 0"
+    ],
+    [
+      1788970705.454208,
+      "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 269, 100, 31, 1328, P0, 0"
+    ],
+    [
+      1788970706.5007663,
+      "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 269, 100, 32, 1328, P0, 0"
+    ]
+  ],
+  "exit_code": 0,
+  "finished": 1788970707.5435984,
+  "final_gpu": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 5, 0, 29, 1328, P0, 0"
+}

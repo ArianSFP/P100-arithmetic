@@ -1,0 +1,14 @@
+{
+  "_Z28activation_register_lut_coreILb1EEvPKjS1_S1_Pm": {
+    "registers_per_thread": 55,
+    "stack_bytes_per_thread": 0,
+    "shared_bytes_per_cta": 0,
+    "local_bytes_per_thread": 0
+  },
+  "_Z28activation_register_lut_coreILb0EEvPKjS1_S1_Pm": {
+    "registers_per_thread": 112,
+    "stack_bytes_per_thread": 0,
+    "shared_bytes_per_cta": 0,
+    "local_bytes_per_thread": 0
+  }
+}

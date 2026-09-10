@@ -1,0 +1,56 @@
+{
+  "_Z13w16_pair_halfILb1ELi0ELi2048ELi512EEvPK12aw_work_descPK12aw_tile_desciiiPKi": {
+    "family": "w16_pair",
+    "instructions": 1872,
+    "hfma2": 1024,
+    "ffma": 0,
+    "popc": 0,
+    "ldl": 0,
+    "stl": 0
+  },
+  "_Z13w16_pair_halfILb1ELi0ELi512ELi2048EEvPK12aw_work_descPK12aw_tile_desciiiPKi": {
+    "family": "w16_pair",
+    "instructions": 1872,
+    "hfma2": 1024,
+    "ffma": 0,
+    "popc": 0,
+    "ldl": 0,
+    "stl": 0
+  },
+  "_Z17w16_fallback_halfILb1ELi0EEvPK12aw_work_descPK12aw_tile_desciiiPKi": {
+    "family": "w16_fallback",
+    "instructions": 1440,
+    "hfma2": 512,
+    "ffma": 0,
+    "popc": 0,
+    "ldl": 0,
+    "stl": 0
+  },
+  "_Z17w4_pair_exact_g32ILi2048ELi512EEvPK12w4_work_descPK12aw_tile_desciiiPKi": {
+    "family": "w4_exact_pair",
+    "instructions": 2130,
+    "hfma2": 1024,
+    "ffma": 64,
+    "popc": 0,
+    "ldl": 0,
+    "stl": 0
+  },
+  "_Z17w4_pair_exact_g32ILi512ELi2048EEvPK12w4_work_descPK12aw_tile_desciiiPKi": {
+    "family": "w4_exact_pair",
+    "instructions": 2136,
+    "hfma2": 1024,
+    "ffma": 64,
+    "popc": 0,
+    "ldl": 0,
+    "stl": 0
+  },
+  "_Z14w4_quantize_a4PK6__halfPhPfm": {
+    "family": "w4_quantizer",
+    "instructions": 210,
+    "hfma2": 0,
+    "ffma": 22,
+    "popc": 0,
+    "ldl": 0,
+    "stl": 0
+  }
+}

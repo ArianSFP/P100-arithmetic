@@ -1,0 +1,83 @@
+{
+  "prebuilt-half128-r16": {
+    "samples": 8,
+    "median_us": 6418.485325,
+    "min_us": 6417.67438,
+    "max_us": 6471.26389,
+    "median_useful_tmac_s": 4.684091275,
+    "speedup_vs_matched_half2": 0.5027927558594207,
+    "passes_1p45_admission": false,
+    "above_1p30_optimistic": false
+  },
+  "resident-half2-r8": {
+    "samples": 8,
+    "median_us": 1609.6107200000001,
+    "min_us": 1609.25865,
+    "max_us": 1622.77333,
+    "median_useful_tmac_s": 9.33914355
+  },
+  "prebuilt-full256-r8": {
+    "samples": 8,
+    "median_us": 1457.52533,
+    "min_us": 1457.28,
+    "max_us": 1470.1333,
+    "median_useful_tmac_s": 10.31363585,
+    "speedup_vs_matched_half2": 1.1043449378680783,
+    "passes_1p45_admission": false,
+    "above_1p30_optimistic": false
+  },
+  "prebuilt-half128-r8": {
+    "samples": 8,
+    "median_us": 3140.66124,
+    "min_us": 3137.15204,
+    "max_us": 3160.45856,
+    "median_useful_tmac_s": 4.78637599,
+    "speedup_vs_matched_half2": 0.5125069521983848,
+    "passes_1p45_admission": false,
+    "above_1p30_optimistic": false
+  },
+  "resident-half2-r4": {
+    "samples": 8,
+    "median_us": 819.5520240000001,
+    "min_us": 819.423993,
+    "max_us": 826.56002,
+    "median_useful_tmac_s": 9.171099049999999
+  },
+  "prebuilt-full256-r4": {
+    "samples": 8,
+    "median_us": 816.4266745,
+    "min_us": 816.309373,
+    "max_us": 823.114634,
+    "median_useful_tmac_s": 9.206206785,
+    "speedup_vs_matched_half2": 1.003828083522521,
+    "passes_1p45_admission": false,
+    "above_1p30_optimistic": false
+  },
+  "prebuilt-half128-r4": {
+    "samples": 8,
+    "median_us": 1573.1626350000001,
+    "min_us": 1572.9173,
+    "max_us": 1587.09335,
+    "median_useful_tmac_s": 4.77775953,
+    "speedup_vs_matched_half2": 0.5209582313782835,
+    "passes_1p45_admission": false,
+    "above_1p30_optimistic": false
+  },
+  "resident-half2-r16": {
+    "samples": 8,
+    "median_us": 3227.1679249999997,
+    "min_us": 3224.54389,
+    "max_us": 3250.66662,
+    "median_useful_tmac_s": 9.316147104999999
+  },
+  "prebuilt-full256-r16": {
+    "samples": 8,
+    "median_us": 2438.1600200000003,
+    "min_us": 2437.79198,
+    "max_us": 2457.55736,
+    "median_useful_tmac_s": 12.33092615,
+    "speedup_vs_matched_half2": 1.3236079250450508,
+    "passes_1p45_admission": false,
+    "above_1p30_optimistic": true
+  }
+}

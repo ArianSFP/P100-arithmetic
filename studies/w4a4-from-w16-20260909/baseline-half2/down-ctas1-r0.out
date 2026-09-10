@@ -1,0 +1,20 @@
+QUANT_CHECK groups=262144 code_bytes=4194304 bad=0
+PLANNER_CHECK input_tiles=256 pairs=128 leftovers=0 bad=0
+CHECK mode=w16-dualrail outputs=33554432 samples=256 bad=0 nonfinite=0
+CHECK mode=w4a4-exact-g32 outputs=33554432 samples=256 bad=0 nonfinite=0
+META M=256 N=2048 K=512 experts=64 seed=3911 pair_grid=56 quant_grid=112 planner_timed=1 quantizer_timed_w4=1
+TIME mode=w16-dualrail rep=0 us=3036.74121
+TIME mode=w4a4-exact-g32 rep=0 us=3630.65039
+TIME mode=w4a4-exact-g32 rep=1 us=3630.69849
+TIME mode=w16-dualrail rep=1 us=3040.06934
+TIME mode=w16-dualrail rep=2 us=3038.72534
+TIME mode=w4a4-exact-g32 rep=2 us=3630.30396
+TIME mode=w4a4-exact-g32 rep=3 us=3628.75195
+TIME mode=w16-dualrail rep=3 us=3034.55981
+TIME mode=w16-dualrail rep=4 us=3037.29077
+TIME mode=w4a4-exact-g32 rep=4 us=3630.69336
+TIME mode=w4a4-exact-g32 rep=5 us=3629.38672
+TIME mode=w16-dualrail rep=5 us=3036.87476
+TIME mode=w16-dualrail rep=6 us=3042.1814
+TIME mode=w4a4-exact-g32 rep=6 us=3631.13599
+PASS

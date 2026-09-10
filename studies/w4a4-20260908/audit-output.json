@@ -1,0 +1,72 @@
+{
+  "rows": [
+    {
+      "shape": "5120-5120-1",
+      "selected": "w4a4_h2_r4_b1",
+      "a16_r2_us": 39.0253335,
+      "a16_r3_us": 36.7666665,
+      "a4_selected_us": 39.7333335,
+      "a4_fp32_us": 40.741333,
+      "a4_half2_us": 54.5933325,
+      "a4_slowdown_vs_r3_pct": 8.06890393503583,
+      "paired_slowdown_min_pct": 6.8637584964180265,
+      "paired_slowdown_max_pct": 8.332125957253389,
+      "a4_gain_vs_r2_pct": -1.814206148936548,
+      "a4_gain_vs_fp32_pct": 2.4741446235939213,
+      "synthetic_relative_l2": 0.0989336774
+    },
+    {
+      "shape": "17408-5120-1",
+      "selected": "w4a4_h2_r2_b1_w8_f",
+      "a16_r2_us": 114.984001,
+      "a16_r3_us": 107.422661,
+      "a4_selected_us": 111.14133050000001,
+      "a4_fp32_us": 112.0493355,
+      "a4_half2_us": 149.048004,
+      "a4_slowdown_vs_r3_pct": 3.461717914435214,
+      "paired_slowdown_min_pct": 3.0680198059650277,
+      "paired_slowdown_max_pct": 3.916855718595369,
+      "a4_gain_vs_r2_pct": 3.341917542076134,
+      "a4_gain_vs_fp32_pct": 0.8103617892495141,
+      "synthetic_relative_l2": 0.10187432
+    },
+    {
+      "shape": "5120-17408-1",
+      "selected": "w4a4_h2_r8_b1",
+      "a16_r2_us": 111.936001,
+      "a16_r3_us": 106.73067449999999,
+      "a4_selected_us": 107.16133149999999,
+      "a4_fp32_us": 111.86399850000001,
+      "a4_half2_us": 153.5480045,
+      "a4_slowdown_vs_r3_pct": 0.40349880858290277,
+      "paired_slowdown_min_pct": 0.12349858835833949,
+      "paired_slowdown_max_pct": 0.5052082500470068,
+      "a4_gain_vs_r2_pct": 4.265535178445424,
+      "a4_gain_vs_fp32_pct": 4.203914631211769,
+      "synthetic_relative_l2": 0.0972415842
+    },
+    {
+      "shape": "5120-5120-4",
+      "selected": "w4a4_h0_r4_b4",
+      "a16_r2_us": 65.01333249999999,
+      "a16_r3_us": 63.616001,
+      "a4_selected_us": 69.25466549999999,
+      "a4_fp32_us": 69.25466549999999,
+      "a4_half2_us": 81.55333350000001,
+      "a4_slowdown_vs_r3_pct": 8.863594711022449,
+      "paired_slowdown_min_pct": 8.745716626973321,
+      "paired_slowdown_max_pct": 9.314828536019837,
+      "a4_gain_vs_r2_pct": -6.523789562702387,
+      "a4_gain_vs_fp32_pct": 0.0,
+      "synthetic_relative_l2": 0.101972085
+    }
+  ],
+  "audit": {
+    "successful_workers": 33,
+    "pipeline_checks": 7797,
+    "explicit_checked_values": 10119216,
+    "frozen_workers": 12,
+    "retained_samples": 600,
+    "builds_verified": 5
+  }
+}

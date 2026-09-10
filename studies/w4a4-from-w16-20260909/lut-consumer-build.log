@@ -1,0 +1,37 @@
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_Z20resident_lut_uniformILi4ELi2EEvPKjPmi' for 'sm_60'
+ptxas info    : Function properties for _Z20resident_lut_uniformILi4ELi2EEvPKjPmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 64 registers, used 1 barriers, 32768 bytes smem, 340 bytes cmem[0]
+ptxas info    : Compile time = 17.312 ms
+ptxas info    : Compiling entry function '_Z14resident_half2ILi4EEvPKjPmi' for 'sm_60'
+ptxas info    : Function properties for _Z14resident_half2ILi4EEvPKjPmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 30 registers, used 1 barriers, 32768 bytes smem, 340 bytes cmem[0]
+ptxas info    : Compile time = 31.956 ms
+ptxas info    : Compiling entry function '_Z22resident_lut_divergentILi8EEvPKjPmi' for 'sm_60'
+ptxas info    : Function properties for _Z22resident_lut_divergentILi8EEvPKjPmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 117 registers, used 1 barriers, 32768 bytes smem, 340 bytes cmem[0]
+ptxas info    : Compile time = 23.736 ms
+ptxas info    : Compiling entry function '_Z20resident_lut_uniformILi8ELi2EEvPKjPmi' for 'sm_60'
+ptxas info    : Function properties for _Z20resident_lut_uniformILi8ELi2EEvPKjPmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 109 registers, used 1 barriers, 32768 bytes smem, 340 bytes cmem[0]
+ptxas info    : Compile time = 23.363 ms
+ptxas info    : Compiling entry function '_Z14resident_half2ILi8EEvPKjPmi' for 'sm_60'
+ptxas info    : Function properties for _Z14resident_half2ILi8EEvPKjPmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 54 registers, used 1 barriers, 32768 bytes smem, 340 bytes cmem[0]
+ptxas info    : Compile time = 80.267 ms
+ptxas info    : Compiling entry function '_Z20resident_lut_uniformILi16ELi1EEvPKjPmi' for 'sm_60'
+ptxas info    : Function properties for _Z20resident_lut_uniformILi16ELi1EEvPKjPmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 243 registers, used 1 barriers, 32768 bytes smem, 340 bytes cmem[0]
+ptxas info    : Compile time = 77.481 ms
+ptxas info    : Compiling entry function '_Z14resident_half2ILi16EEvPKjPmi' for 'sm_60'
+ptxas info    : Function properties for _Z14resident_half2ILi16EEvPKjPmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 105 registers, used 1 barriers, 32768 bytes smem, 340 bytes cmem[0]
+ptxas info    : Compile time = 364.099 ms

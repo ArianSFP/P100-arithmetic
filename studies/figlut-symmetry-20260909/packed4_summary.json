@@ -1,0 +1,20 @@
+{
+  "packed4-full16-complete-g32": {
+    "samples": 8,
+    "median_us": 2509.040035,
+    "min_us": 2490.3574,
+    "max_us": 2528.57606,
+    "median_useful_tmac_s": 2.9957713100000003,
+    "speedup_vs_half2_lower_bound": 0.4854169953489802,
+    "passes_10p25_tmac_streamed_admission": false,
+    "passes_9p488_down_mathematical_rate": false,
+    "passes_9p070_gu_mathematical_rate": false
+  },
+  "half2-complete-lower-bound": {
+    "samples": 8,
+    "median_us": 1217.930675,
+    "min_us": 1217.19464,
+    "max_us": 1219.63731,
+    "median_useful_tmac_s": 6.1712812800000005
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "seed": 20260909,
+  "gpu_timing_performed": false,
+  "mu": 8,
+  "packed_rows": 4,
+  "table_entries_full": 256,
+  "table_entries_half": 128,
+  "shared_bytes_full_table_32_columns": 32768,
+  "shared_bytes_half_table_32_columns": 16384,
+  "weight_vectors_checked": 20935,
+  "masks_per_vector": 256,
+  "row_table_values_checked": 21437440,
+  "packed_subtractions_checked": 5359360,
+  "identity_mismatches": 0,
+  "maximum_mu8_lane_cap": 64,
+  "g32_endpoint_normalization": {
+    "vectors": 80000,
+    "all_minus_eight_vectors": 13,
+    "maximum_normalized_l1": 255,
+    "packed_four_slice_accumulation_mismatches": 0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/usr/local/cuda-12.8/bin/nvcc",
+    "-ccbin",
+    "/usr/bin/g++-13",
+    "-O3",
+    "-std=c++17",
+    "-arch=sm_60",
+    "-lineinfo",
+    "-Xptxas=-v",
+    "/home/arian/P100-arithmetic/studies/w4a4-from-w16-20260909/microbench.cu",
+    "-o",
+    "/home/arian/P100-arithmetic/studies/w4a4-from-w16-20260909/microbench"
+  ],
+  "hashes": {
+    "microbench.cu": "008753e6403448db5ab01faf5a6ff8452a5646712a0853e23563dba4b8f3a276",
+    "build_microbench.py": "c6b7dce1fe2ac97726f16bef007a64e89251622448e7d8c2fa4eb1a254597056",
+    "microbench": "6688832fca5fab9dcc4ce711f9fc6d28ce97b408c2f70921e89f2861b4ca3f61"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "seed": 20260909,
+  "evidence": "CPU exact-code validation; no GPU compiler, GPU execution, or timings",
+  "results": {
+    "paired_rows_G32_mu4": {
+      "blocks": 20000,
+      "output_dots": 40000,
+      "mismatches": 0
+    },
+    "two_tokens_G32_mu8": {
+      "blocks": 20000,
+      "output_dots": 40000,
+      "mismatches": 0
+    },
+    "four_tokens_G16_mu8": {
+      "blocks": 20000,
+      "output_dots": 80000,
+      "mismatches": 0
+    },
+    "four_weight_rows_G16_mu8": {
+      "blocks": 20000,
+      "output_dots": 80000,
+      "mismatches": 0
+    },
+    "four_tokens_G32_two_G16": {
+      "blocks": 20000,
+      "output_dots": 80000,
+      "mismatches": 0
+    },
+    "ordinary_half_G32": {
+      "blocks": 20000,
+      "output_dots": 80000,
+      "mismatches": 0
+    },
+    "native_half_LUT_G32_mu8": {
+      "blocks": 20000,
+      "output_dots": 80000,
+      "mismatches": 0
+    },
+    "four_weight_rows_G32_normalized_mu8": {
+      "blocks": 20000,
+      "output_dots": 80000,
+      "mismatches": 0
+    },
+    "exhaustive_mu4_table_bounds": {
+      "activation_vectors": 65536,
+      "table_entries": 1048576,
+      "minimum": 0,
+      "maximum": 32,
+      "mismatches": 0
+    },
+    "radix128_two_term_collision": [
+      {
+        "low_dot": -104,
+        "high_dot": 0,
+        "exact_packed_sum": -104,
+        "fp16_packed_sum": -104.0
+      },
+      {
+        "low_dot": 24,
+        "high_dot": -1,
+        "exact_packed_sum": -104,
+        "fp16_packed_sum": -104.0
+      }
+    ],
+    "one_fp16_state_bound_G32_all_ones": {
+      "values_per_dot": 481,
+      "pairs": 231361,
+      "all_16bit_patterns": 65536,
+      "minimum_bits": 18
+    },
+    "naive_G32_byte_carry_counterexample": {
+      "true_subset_sums_plus_bias": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "observed_fields": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "packed_hex": "0x1010100",
+      "interpretation": "unnormalized G32 byte lanes overflow; G16 or exact endpoint normalization fixes it"
+    },
+    "bank_owned_layout_address_check": {
+      "warp_index_patterns": 10000,
+      "bank_assignment_mismatches": 0,
+      "qualification": "address arithmetic only, not GPU timing; each lane owns a distinct table column"
+    }
+  }
+}

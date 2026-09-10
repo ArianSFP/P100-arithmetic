@@ -1,0 +1,1 @@
+PASS decode_bytes=256 exact_prefix_transitions=3200000 weight_rows=64 activation_groups=10000

@@ -1,0 +1,8 @@
+QUANT_CHECK groups=198 code_bytes=3168 bad=0
+PLANNER_CHECK input_tiles=2 pairs=0 leftovers=2 bad=0
+CHECK mode=w16-dualrail outputs=8448 samples=256 bad=0 nonfinite=0
+CHECK mode=w4a4-exact-g32 outputs=8448 samples=256 bad=0 nonfinite=0
+META M=33 N=128 K=96 experts=2 seed=3911 pair_grid=56 quant_grid=112 planner_timed=1 quantizer_timed_w4=1
+TIME mode=w16-dualrail rep=0 us=24.5760002
+TIME mode=w4a4-exact-g32 rep=0 us=35.0079994
+PASS

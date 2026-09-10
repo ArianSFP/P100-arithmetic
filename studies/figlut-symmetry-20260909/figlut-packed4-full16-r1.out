@@ -1,0 +1,21 @@
+CHECK groups=8 outputs=8192 bit_mismatches=0
+TIME mode=half2-complete-lower-bound rep=0 us=1219.63731 useful_tmac_s=6.1626458
+TIME mode=packed4-full16-complete-g32 rep=0 us=2527.31737 useful_tmac_s=2.97398058
+TIME mode=packed4-full16-complete-g32 rep=1 us=2492.73602 useful_tmac_s=3.01523816
+TIME mode=half2-complete-lower-bound rep=1 us=1219.63731 useful_tmac_s=6.1626458
+TIME mode=half2-complete-lower-bound rep=2 us=1217.19464 useful_tmac_s=6.17501305
+TIME mode=packed4-full16-complete-g32 rep=2 us=2525.34405 useful_tmac_s=2.97630446
+TIME mode=packed4-full16-complete-g32 rep=3 us=2490.83726 useful_tmac_s=3.01753667
+TIME mode=half2-complete-lower-bound rep=3 us=1217.6853 useful_tmac_s=6.17252483
+TIME mode=half2-complete-lower-bound rep=4 us=1217.91999 useful_tmac_s=6.17133544
+TIME mode=packed4-full16-complete-g32 rep=4 us=2528.57606 useful_tmac_s=2.97250017
+TIME mode=packed4-full16-complete-g32 rep=5 us=2492.51207 useful_tmac_s=3.01550908
+TIME mode=half2-complete-lower-bound rep=5 us=1218.75199 useful_tmac_s=6.16712247
+TIME mode=half2-complete-lower-bound rep=6 us=1218.11199 useful_tmac_s=6.17036267
+TIME mode=packed4-full16-complete-g32 rep=6 us=2527.74398 useful_tmac_s=2.97347866
+TIME mode=packed4-full16-complete-g32 rep=7 us=2490.3574 useful_tmac_s=3.01811811
+TIME mode=half2-complete-lower-bound rep=7 us=1217.94136 useful_tmac_s=6.17122712
+TIME mode=half2-complete-lower-bound rep=8 us=1217.30137 useful_tmac_s=6.17447163
+TIME mode=packed4-full16-complete-g32 rep=8 us=2528.40535 useful_tmac_s=2.97270087
+META grid=112 block=512 threads=57344 groups=256 useful_macs_per_thread_group=512 checksum=2040561152 prepared_posneg=1 staged_weight_keys=1 exact_g32_finish=1 persistent_fp32_totals=1
+PASS

@@ -1,0 +1,66 @@
+{
+  "build_half128_one_mu8_slice": {
+    "symbol": "_Z16build_gray_sliceILb0EEvPKjS1_Pj",
+    "registers_per_thread": 23,
+    "shared_bytes_per_cta": 16384,
+    "barriers": 1,
+    "spill_stores_bytes_per_thread": 0,
+    "spill_loads_bytes_per_thread": 0
+  },
+  "build_full256_via_symmetry_one_mu8_slice": {
+    "symbol": "_Z16build_gray_sliceILb1EEvPKjS1_Pj",
+    "registers_per_thread": 28,
+    "shared_bytes_per_cta": 32768,
+    "barriers": 1,
+    "spill_stores_bytes_per_thread": 0,
+    "spill_loads_bytes_per_thread": 0
+  },
+  "prebuilt_full256_r8": {
+    "symbol": "_Z17prebuilt_consumerILi8ELi2ELb0EEvPKjPmi",
+    "registers_per_thread": 109,
+    "shared_bytes_per_cta": 32768,
+    "barriers": 1,
+    "spill_stores_bytes_per_thread": 0,
+    "spill_loads_bytes_per_thread": 0
+  },
+  "prebuilt_half128_r8": {
+    "symbol": "_Z17prebuilt_consumerILi8ELi2ELb1EEvPKjPmi",
+    "registers_per_thread": 96,
+    "shared_bytes_per_cta": 16512,
+    "barriers": 1,
+    "spill_stores_bytes_per_thread": 0,
+    "spill_loads_bytes_per_thread": 0
+  },
+  "prebuilt_full256_r16": {
+    "symbol": "_Z17prebuilt_consumerILi16ELi1ELb0EEvPKjPmi",
+    "registers_per_thread": 243,
+    "shared_bytes_per_cta": 32768,
+    "barriers": 1,
+    "spill_stores_bytes_per_thread": 0,
+    "spill_loads_bytes_per_thread": 0
+  },
+  "prebuilt_half128_r16": {
+    "symbol": "_Z17prebuilt_consumerILi16ELi1ELb1EEvPKjPmi",
+    "registers_per_thread": 200,
+    "shared_bytes_per_cta": 16512,
+    "barriers": 1,
+    "spill_stores_bytes_per_thread": 0,
+    "spill_loads_bytes_per_thread": 0
+  },
+  "precanonical_half128_r8": {
+    "symbol": "_Z26precanonical_half_consumerILi8ELi2EEvPKjPmi",
+    "registers_per_thread": 128,
+    "shared_bytes_per_cta": 16512,
+    "barriers": 1,
+    "spill_stores_bytes_per_thread": 0,
+    "spill_loads_bytes_per_thread": 0
+  },
+  "precanonical_half128_r16": {
+    "symbol": "_Z26precanonical_half_consumerILi16ELi1EEvPKjPmi",
+    "registers_per_thread": 255,
+    "shared_bytes_per_cta": 16512,
+    "barriers": 1,
+    "spill_stores_bytes_per_thread": 24,
+    "spill_loads_bytes_per_thread": 28
+  }
+}

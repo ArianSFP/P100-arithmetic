@@ -1,0 +1,58 @@
+{
+  "tag": "priority3-prebuilt-lut-consumer",
+  "device": 1,
+  "initial_gpu": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 5, 0, 27, 405, 0",
+  "started": 1788965933.410229,
+  "manifest": {
+    "command": [
+      "/usr/local/cuda-12.8/bin/nvcc",
+      "-ccbin",
+      "/usr/bin/g++-13",
+      "-O3",
+      "-std=c++17",
+      "-arch=sm_60",
+      "-lineinfo",
+      "-Xptxas=-v",
+      "/home/arian/P100-arithmetic/studies/w4a4-from-w16-20260909/lut_consumer.cu",
+      "-o",
+      "/home/arian/P100-arithmetic/studies/w4a4-from-w16-20260909/lut_consumer"
+    ],
+    "hashes": {
+      "lut_consumer.cu": "e1822ee5b97bec31f65ffc41c481aed7f721acccadce6f277884c20dfe34657c",
+      "build_lut_consumer.py": "779b6bd1f910a903d48a52b181f9b56ea297c11f56851cb1010f9a7f96a2b13c",
+      "lut_consumer": "9d1a48e8ceda027df187adfa0cc8a36a3468dd1543e080ede262e1ba2dc17054"
+    }
+  },
+  "runner_sha256": "fb5defaa772c1d94b6939895840fa906a3dd068904020f3f9b2806d9bcb516a8",
+  "command": [
+    "env",
+    "-i",
+    "PATH=/usr/local/cuda-12.8/bin:/usr/bin:/bin",
+    "LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64",
+    "CUDA_VISIBLE_DEVICES=1",
+    "taskset",
+    "--cpu-list",
+    "0-11",
+    "/home/arian/P100-arithmetic/studies/w4a4-from-w16-20260909/lut_consumer",
+    "--gpu-approved",
+    "1",
+    "512"
+  ],
+  "telemetry": [
+    [
+      1788965933.4112055,
+      "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 15, 0, 27, 405, 0"
+    ],
+    [
+      1788965934.7891436,
+      "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 265, 100, 31, 1328, 0"
+    ],
+    [
+      1788965935.8391712,
+      "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 265, 100, 32, 1328, 0"
+    ]
+  ],
+  "exit_code": 0,
+  "finished": 1788965936.886155,
+  "final_gpu": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b, 5, 0, 29, 1328, 0"
+}

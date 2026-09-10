@@ -1,0 +1,27 @@
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function 'bench_mixed_hfma2_dfma' for 'sm_60'
+ptxas info    : Function properties for bench_mixed_hfma2_dfma
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 27 registers, used 0 barriers, 340 bytes cmem[0]
+ptxas info    : Compile time = 8.086 ms
+ptxas info    : Compiling entry function 'bench_dfma_pack4' for 'sm_60'
+ptxas info    : Function properties for bench_dfma_pack4
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 15 registers, used 0 barriers, 340 bytes cmem[0]
+ptxas info    : Compile time = 2.798 ms
+ptxas info    : Compiling entry function 'bench_fp32_pack2' for 'sm_60'
+ptxas info    : Function properties for bench_fp32_pack2
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 13 registers, used 0 barriers, 340 bytes cmem[0]
+ptxas info    : Compile time = 3.109 ms
+ptxas info    : Compiling entry function 'bench_xmad_s16' for 'sm_60'
+ptxas info    : Function properties for bench_xmad_s16
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 14 registers, used 0 barriers, 340 bytes cmem[0]
+ptxas info    : Compile time = 2.786 ms
+ptxas info    : Compiling entry function 'bench_hfma2' for 'sm_60'
+ptxas info    : Function properties for bench_hfma2
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 21 registers, used 0 barriers, 340 bytes cmem[0]
+ptxas info    : Compile time = 5.059 ms

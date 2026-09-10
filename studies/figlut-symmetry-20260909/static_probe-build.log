@@ -1,0 +1,43 @@
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+ptxas warning : Registers are spilled to local memory in function '_Z26precanonical_half_consumerILi16ELi1EEvPKjPmi', 24 bytes spill stores, 28 bytes spill loads
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_Z16build_gray_sliceILb1EEvPKjS1_Pj' for 'sm_60'
+ptxas info    : Function properties for _Z16build_gray_sliceILb1EEvPKjS1_Pj
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 28 registers, used 1 barriers, 32768 bytes smem, 344 bytes cmem[0]
+ptxas info    : Compile time = 7.536 ms
+ptxas info    : Compiling entry function '_Z16build_gray_sliceILb0EEvPKjS1_Pj' for 'sm_60'
+ptxas info    : Function properties for _Z16build_gray_sliceILb0EEvPKjS1_Pj
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 23 registers, used 1 barriers, 16384 bytes smem, 344 bytes cmem[0]
+ptxas info    : Compile time = 4.076 ms
+ptxas info    : Compiling entry function '_Z26precanonical_half_consumerILi16ELi1EEvPKjPmi' for 'sm_60'
+ptxas info    : Function properties for _Z26precanonical_half_consumerILi16ELi1EEvPKjPmi
+    24 bytes stack frame, 24 bytes spill stores, 28 bytes spill loads
+ptxas info    : Used 255 registers, used 1 barriers, 24 bytes cumulative stack size, 16512 bytes smem, 340 bytes cmem[0]
+ptxas info    : Compile time = 135.228 ms
+ptxas info    : Compiling entry function '_Z26precanonical_half_consumerILi8ELi2EEvPKjPmi' for 'sm_60'
+ptxas info    : Function properties for _Z26precanonical_half_consumerILi8ELi2EEvPKjPmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 128 registers, used 1 barriers, 16512 bytes smem, 340 bytes cmem[0]
+ptxas info    : Compile time = 45.285 ms
+ptxas info    : Compiling entry function '_Z17prebuilt_consumerILi16ELi1ELb1EEvPKjPmi' for 'sm_60'
+ptxas info    : Function properties for _Z17prebuilt_consumerILi16ELi1ELb1EEvPKjPmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 200 registers, used 1 barriers, 16512 bytes smem, 340 bytes cmem[0]
+ptxas info    : Compile time = 149.470 ms
+ptxas info    : Compiling entry function '_Z17prebuilt_consumerILi16ELi1ELb0EEvPKjPmi' for 'sm_60'
+ptxas info    : Function properties for _Z17prebuilt_consumerILi16ELi1ELb0EEvPKjPmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 243 registers, used 1 barriers, 32768 bytes smem, 340 bytes cmem[0]
+ptxas info    : Compile time = 46.970 ms
+ptxas info    : Compiling entry function '_Z17prebuilt_consumerILi8ELi2ELb1EEvPKjPmi' for 'sm_60'
+ptxas info    : Function properties for _Z17prebuilt_consumerILi8ELi2ELb1EEvPKjPmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 96 registers, used 1 barriers, 16512 bytes smem, 340 bytes cmem[0]
+ptxas info    : Compile time = 52.763 ms
+ptxas info    : Compiling entry function '_Z17prebuilt_consumerILi8ELi2ELb0EEvPKjPmi' for 'sm_60'
+ptxas info    : Function properties for _Z17prebuilt_consumerILi8ELi2ELb0EEvPKjPmi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 109 registers, used 1 barriers, 32768 bytes smem, 340 bytes cmem[0]
+ptxas info    : Compile time = 22.922 ms

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "scalar_products": 256,
+  "decode_pairs": 256,
+  "checked_half_transitions": 244524,
+  "exact_group_bound": 2048,
+  "counterexample_G33": 2049,
+  "gpu_executed": false
+}

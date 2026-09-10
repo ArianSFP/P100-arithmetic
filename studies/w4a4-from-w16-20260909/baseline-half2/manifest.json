@@ -1,0 +1,48 @@
+{
+  "gpu_tested": false,
+  "source_seed": "studies/w16-dualrail-20260909",
+  "seed_files_byte_identical": [
+    "q8.inc",
+    "decode.inc",
+    "packed.inc",
+    "pair.inc",
+    "fallback.inc",
+    "w16-pair.inc",
+    "w16-fallback.inc"
+  ],
+  "command": [
+    "/usr/local/cuda-12.8/bin/nvcc",
+    "-ccbin",
+    "/usr/bin/g++-13",
+    "-O3",
+    "-std=c++17",
+    "-arch=sm_60",
+    "-lineinfo",
+    "-Xptxas=-v",
+    "/home/arian/P100-arithmetic/studies/w4a4-from-w16-20260909/baseline-half2/worker.cu",
+    "-o",
+    "/home/arian/P100-arithmetic/studies/w4a4-from-w16-20260909/baseline-half2/worker"
+  ],
+  "cpu_checks": "PASS decode_bytes=256 exact_prefix_transitions=3200000 weight_rows=64 activation_groups=10000",
+  "hashes": {
+    "worker.cu": "0066f723e18f61ceb425dda793d51abfa0af8b930be3d4cdacb015eac2c8f87d",
+    "q8.inc": "cfc73310e817cbcecf895ce4764c7753cdb3bbe1109ca1f3d539a5f775ac1d00",
+    "decode.inc": "12003f1da3b97ba383e7038fd846d255f565cc2bc7a6713d1ca4b9d7c9688207",
+    "packed.inc": "971fafeaa00dbfd3f731e3d8760b8636aa72c4a54b4c7c53f0b803e37dfbfab8",
+    "pair.inc": "69efe3a7e29b8b2074f941e7a463920b95f2d8414774ac9a7cddab07d3ec8ad9",
+    "fallback.inc": "9b19370c5e7411ea09b75b9e53cb9d2cbbc940f6114b89b39adb38f087288249",
+    "w16-pair.inc": "2be3bdd0fa26571af54d29c3a129e0ed8f932a0f00663d346e774e2384f35a7b",
+    "w16-fallback.inc": "94f304399c448682c2b244c22aeec51b30579ba31099a5aba4e15fa21aa54c8a",
+    "w4-pair.inc": "7806bb10597c38b45188f40cb41530fcb362903118dd069004a4fb8317f125a4",
+    "cpu_checks.py": "beb5daeb39d311b200a38e66102ad39a1a3f0e9268670a1bcb5e28484f21de7f",
+    "audit.py": "f21b9389b9ca0ce90da8c42a737019390f9067f0381793352f3c28ad3fabe2f0",
+    "build.py": "ceddfb5d72fc27d03a6250fd092b76c0ecd53f4eea6ea8f57ab77fb19c682a18",
+    "README.md": "d1dde503dfcd2058412713b246ef879e72576cff09a60623608dcf479abc4e67",
+    "PREPARATION.md": "cbbeebac74c295ac82d5a3eeb77563b3e644c0f27c781b36152a253c4b63b18b",
+    "worker": "6d11f86803626d1e5573f4c848852ef2457aef14393c88fdb3d1a9b34d24e7bb",
+    "worker.sass": "41b82594279fd18ee1d7a3c0af7a9b7d9898de9aec3faf5fc17e3e3411c3613a",
+    "resources.txt": "d9de7f1f0a7de7683b1daad17657adfa3104a95c9cddda99194d5e0ff8fc95a8",
+    "sass-audit.json": "2345aabb20e8c13dc5123d6b9996a6bd1cf2faf24b084db71906b260c2018eba",
+    "cpu-checks.log": "8bd20d6528bf56acc3e1adc198b8940d6b11c7a046f659871f3947e32bacc0b0"
+  }
+}

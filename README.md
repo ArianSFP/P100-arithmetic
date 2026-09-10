@@ -1,9 +1,41 @@
 # P100 arithmetic investigations
 
 GP100 / Tesla P100 (SM60) research into low-bit inference arithmetic, compressed
-layouts, and W4A16 kernels. Measurements were recorded on 2026-09-08 using CUDA
-12.8, GCC 14, and P100-PCIE-16GB GPUs. This is a research archive, not a llama.cpp
-patch or a ready-to-deploy inference backend.
+layouts, and W4A16/W8A16/W16A16 kernels. Measurements were recorded on
+2026-09-08 and 2026-09-09 using CUDA 12.8 and P100-PCIE-16GB GPUs. This is a
+research archive, not a llama.cpp patch or a ready-to-deploy inference backend.
+
+## Current reviewer checkpoint: W16A16 and W4A4
+
+The latest confirmed fast kernel is the
+[W16A16 dual-rail implementation](studies/w16-dualrail-20260909/RESULTS.md).
+At 256 routed tokens per expert across 64 experts, pre-stored FP16 weights
+measure **2462.50 us gate/up** and **2353.96 us down**, 1.0214x and 1.0175x
+faster than the matched W8A16 dual-rail control. The
+[F32-wire variant](studies/w16-dualrail-f32-20260909/RESULTS.md) also wins its
+matched comparison by 1.0243x and 1.0190x. These are synthetic complete-kernel
+measurements; native model weights still require the stated PPL/KLD gate.
+
+The W4A4 investigation is preserved in four layers:
+
+- [Arithmetic constructions and CPU proofs](W4A4-research/) cover packed
+  INT16/FP32/FP64, exact FP16 splitting and residue repair, and LUT-based
+  accumulation.
+- [Initial P100 hardware study](studies/w4a4-20260908/RESULTS.md) tests 55 A4
+  kernels. Its best candidates remain 0.4-8.9% slower than the then-current
+  W4A16 controls after activation quantization and complete finishing costs.
+- [W4A4 port from the fast W16 kernel](studies/w4a4-from-w16-20260909/RESULTS.md)
+  measures a best arithmetic-only ceiling of 1.3553x and a prebuilt-LUT ceiling
+  of 1.3609x, but the complete exact-G32 pipeline reaches only **0.5440x
+  gate/up** and **0.6471x down** relative to W16A16.
+- [FIGLUT symmetry follow-up](studies/figlut-symmetry-20260909/RESULTS.md) closes
+  the tested half-table and activation-derived LUT mappings for the 1.3x goal;
+  neither retained enough throughput after mandatory construction and finish
+  work.
+
+No W4A4 candidate passed the performance admission gate, so no model PPL/KLD
+run or production integration was attempted. The negative results are retained
+to prevent repeating closed layouts without materially new evidence.
 
 ## Latest W4A16 follow-up: round 3
 

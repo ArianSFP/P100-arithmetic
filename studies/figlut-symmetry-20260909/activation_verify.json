@@ -1,0 +1,155 @@
+{
+  "seed": 20260909,
+  "totals": {
+    "cases": 10,
+    "dots": 320144,
+    "full_mismatches": 0,
+    "half_mismatches": 0,
+    "full_half_mismatches": 0,
+    "twos_finish_mismatches": 0,
+    "twos_packed16_bound_failures": 0,
+    "half_identity_word_mismatches": 0,
+    "packed_subtraction_borrow_mismatches": 0,
+    "maximum_accumulated_plane_byte": 224,
+    "production_a4_domain": [
+      -7,
+      7
+    ],
+    "native_w4_domain": [
+      -8,
+      7
+    ]
+  },
+  "records": [
+    {
+      "blocks": 1,
+      "outputs": 4,
+      "dots": 16,
+      "full_mismatches": 0,
+      "half_mismatches": 0,
+      "full_half_mismatches": 0,
+      "twos_finish_mismatches": 0,
+      "twos_packed16_bound_failures": 0,
+      "half_identity_word_mismatches": 0,
+      "packed_subtraction_borrow_mismatches": 0,
+      "maximum_accumulated_plane_byte": 224
+    },
+    {
+      "blocks": 1,
+      "outputs": 4,
+      "dots": 16,
+      "full_mismatches": 0,
+      "half_mismatches": 0,
+      "full_half_mismatches": 0,
+      "twos_finish_mismatches": 0,
+      "twos_packed16_bound_failures": 0,
+      "half_identity_word_mismatches": 0,
+      "packed_subtraction_borrow_mismatches": 0,
+      "maximum_accumulated_plane_byte": 224
+    },
+    {
+      "blocks": 1,
+      "outputs": 4,
+      "dots": 16,
+      "full_mismatches": 0,
+      "half_mismatches": 0,
+      "full_half_mismatches": 0,
+      "twos_finish_mismatches": 0,
+      "twos_packed16_bound_failures": 0,
+      "half_identity_word_mismatches": 0,
+      "packed_subtraction_borrow_mismatches": 0,
+      "maximum_accumulated_plane_byte": 0
+    },
+    {
+      "blocks": 1,
+      "outputs": 4,
+      "dots": 16,
+      "full_mismatches": 0,
+      "half_mismatches": 0,
+      "full_half_mismatches": 0,
+      "twos_finish_mismatches": 0,
+      "twos_packed16_bound_failures": 0,
+      "half_identity_word_mismatches": 0,
+      "packed_subtraction_borrow_mismatches": 0,
+      "maximum_accumulated_plane_byte": 0
+    },
+    {
+      "blocks": 1,
+      "outputs": 4,
+      "dots": 16,
+      "full_mismatches": 0,
+      "half_mismatches": 0,
+      "full_half_mismatches": 0,
+      "twos_finish_mismatches": 0,
+      "twos_packed16_bound_failures": 0,
+      "half_identity_word_mismatches": 0,
+      "packed_subtraction_borrow_mismatches": 0,
+      "maximum_accumulated_plane_byte": 0
+    },
+    {
+      "blocks": 1,
+      "outputs": 4,
+      "dots": 16,
+      "full_mismatches": 0,
+      "half_mismatches": 0,
+      "full_half_mismatches": 0,
+      "twos_finish_mismatches": 0,
+      "twos_packed16_bound_failures": 0,
+      "half_identity_word_mismatches": 0,
+      "packed_subtraction_borrow_mismatches": 0,
+      "maximum_accumulated_plane_byte": 0
+    },
+    {
+      "blocks": 1,
+      "outputs": 4,
+      "dots": 16,
+      "full_mismatches": 0,
+      "half_mismatches": 0,
+      "full_half_mismatches": 0,
+      "twos_finish_mismatches": 0,
+      "twos_packed16_bound_failures": 0,
+      "half_identity_word_mismatches": 0,
+      "packed_subtraction_borrow_mismatches": 0,
+      "maximum_accumulated_plane_byte": 0
+    },
+    {
+      "blocks": 1,
+      "outputs": 4,
+      "dots": 16,
+      "full_mismatches": 0,
+      "half_mismatches": 0,
+      "full_half_mismatches": 0,
+      "twos_finish_mismatches": 0,
+      "twos_packed16_bound_failures": 0,
+      "half_identity_word_mismatches": 0,
+      "packed_subtraction_borrow_mismatches": 0,
+      "maximum_accumulated_plane_byte": 224
+    },
+    {
+      "blocks": 1,
+      "outputs": 4,
+      "dots": 16,
+      "full_mismatches": 0,
+      "half_mismatches": 0,
+      "full_half_mismatches": 0,
+      "twos_finish_mismatches": 0,
+      "twos_packed16_bound_failures": 0,
+      "half_identity_word_mismatches": 0,
+      "packed_subtraction_borrow_mismatches": 0,
+      "maximum_accumulated_plane_byte": 224
+    },
+    {
+      "blocks": 20000,
+      "outputs": 4,
+      "dots": 320000,
+      "full_mismatches": 0,
+      "half_mismatches": 0,
+      "full_half_mismatches": 0,
+      "twos_finish_mismatches": 0,
+      "twos_packed16_bound_failures": 0,
+      "half_identity_word_mismatches": 0,
+      "packed_subtraction_borrow_mismatches": 0,
+      "maximum_accumulated_plane_byte": 224
+    }
+  ]
+}

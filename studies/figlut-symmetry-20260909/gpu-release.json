@@ -1,0 +1,20 @@
+{
+  "recorded_utc": "2026-09-09T16:49:17Z",
+  "device_index": 1,
+  "device_uuid": "GPU-ecc6a1f9-42fe-2932-7ea0-1dd285491b7b",
+  "memory_used_mib": 5,
+  "utilization_percent": 0,
+  "temperature_c": 27,
+  "sm_clock_mhz": 405,
+  "pstate": "P0",
+  "volatile_uncorrected_ecc_errors": 0,
+  "compute_clients": [],
+  "device_lock_available": true,
+  "xsession_errors_bytes": 33017,
+  "workspace_filesystem_available_bytes": 10825039872,
+  "reset_performed": false,
+  "coordination_logs": [
+    "/home/arian/P100-arithmetic/bench/COORDINATION-20260908.md",
+    "/home/arian/llama.cpp-q36-moe/.worktrees/coding-serve-p100-20260906/bench/COORDINATION-20260908.md"
+  ]
+}

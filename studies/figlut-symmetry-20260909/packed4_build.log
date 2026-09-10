@@ -1,0 +1,17 @@
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_Z21direct_integer_oraclePKjS0_S0_PKfS2_Pfi' for 'sm_60'
+ptxas info    : Function properties for _Z21direct_integer_oraclePKjS0_S0_PKfS2_Pfi
+    64 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 48 registers, used 0 barriers, 64 bytes cumulative stack size, 372 bytes cmem[0]
+ptxas info    : Compile time = 49.686 ms
+ptxas info    : Compiling entry function '_Z14packed4_full16PKjS0_S0_PKfS2_Pfi' for 'sm_60'
+ptxas info    : Function properties for _Z14packed4_full16PKjS0_S0_PKfS2_Pfi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 79 registers, used 1 barriers, 2560 bytes smem, 372 bytes cmem[0], 4 bytes cmem[2]
+ptxas info    : Compile time = 42.332 ms
+ptxas info    : Compiling entry function '_Z14half2_completePKjPfi' for 'sm_60'
+ptxas info    : Function properties for _Z14half2_completePKjPfi
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 56 registers, used 0 barriers, 340 bytes cmem[0]
+ptxas info    : Compile time = 27.297 ms

@@ -1,0 +1,17 @@
+{
+  "figlut_header_shuffle": {
+    "registers_per_thread": 32,
+    "shared_bytes_per_cta": 0,
+    "barriers": 0,
+    "spill_stores_bytes_per_thread": 0,
+    "spill_loads_bytes_per_thread": 0
+  },
+  "figlut_header_shared": {
+    "registers_per_thread": 46,
+    "shared_bytes_per_cta": 1024,
+    "barriers": 0,
+    "spill_stores_bytes_per_thread": 0,
+    "spill_loads_bytes_per_thread": 0,
+    "note": "The source has four __syncwarp calls; CUDA 12.8 emits no BAR instruction for these convergent full-warp calls on SM60."
+  }
+}
